@@ -9,83 +9,1701 @@ export default defineConfig({
           items: [
             {
               text: "About me",
-              link: "/profile/aboutme",
+              link: "/profile/aboutme/",
             },
             {
               text: "Resume",
-              link: "/profile/resume",
+              link: "/profile/resume/",
             },
           ],
         },
       ],
-      "/posts/": [
+      "/posts/api/": [
+        // done
         {
-          text: "Javascript",
-          items: [],
+          text: "API란?",
+          items: [
+            {
+              text: "API란?",
+              link: "",
+            },
+          ],
         },
         {
-          text: "Typescript",
-          items: [],
+          text: "API Specification",
+          items: [
+            {
+              text: "SOAP",
+              link: "",
+            },
+            {
+              text: "REST",
+              link: "",
+            },
+          ],
         },
         {
-          text: "Node",
-          items: [],
+          text: "API Gateway",
+          items: [
+            {
+              text: "API Gateway란?",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/posts/architecture/": [
+        // done
+        {
+          text: "Architecture란?",
+          items: [
+            {
+              text: "Architecture란?",
+              link: "",
+            },
+          ],
         },
         {
-          text: "Browser",
-          items: [],
+          text: "History",
+          items: [
+            {
+              text: "MVC",
+              link: "",
+            },
+            {
+              text: "MVVM",
+              link: "",
+            },
+            {
+              text: "Container-Presenter",
+              link: "",
+            },
+            {
+              text: "Flux",
+              link: "",
+            },
+            {
+              text: "Observer-Observable",
+              link: "",
+            },
+            {
+              text: "MVI",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/posts/browser/": [
+        // done
+        {
+          text: "HTML",
+          items: [
+            {
+              text: "script의 위치",
+              link: "",
+            },
+            {
+              text: "link(rel=stylesheet)의 위치",
+              link: "",
+            },
+          ],
         },
         {
-          text: "Git",
-          items: [],
+          text: "CSS",
+          items: [
+            {
+              text: "Pseudo Element",
+              link: "",
+            },
+            {
+              text: "Flexbox",
+              link: "",
+            },
+            {
+              text: "Grid",
+              link: "",
+            },
+          ],
         },
         {
-          text: "API",
-          items: [],
+          text: "Browser Runtime",
+          items: [
+            {
+              text: "구조",
+              link: "",
+            },
+            {
+              text: "비동기 작업 예시",
+              link: "",
+            },
+          ],
         },
         {
-          text: "Vue3",
-          items: [],
+          text: "Populating the page",
+          items: [
+            {
+              text: "Overview",
+              link: "",
+            },
+            {
+              text: "Navigation",
+              link: "",
+            },
+            {
+              text: "Response",
+              link: "",
+            },
+            {
+              text: "Parsing",
+              link: "",
+            },
+            {
+              text: "Reflow / Repaint",
+              link: "",
+            },
+          ],
         },
         {
-          text: "React",
-          items: [],
+          text: "Web Storage",
+          items: [
+            {
+              text: "Cookie",
+              link: "",
+            },
+            {
+              text: "Local Storage",
+              link: "",
+            },
+            {
+              text: "Session Storage",
+              link: "",
+            },
+          ],
         },
         {
-          text: "Develop",
-          items: [],
+          text: "Rendering Strategy",
+          items: [
+            {
+              text: "CSR",
+              link: "",
+            },
+            {
+              text: "SSR",
+              link: "",
+            },
+          ],
         },
         {
-          text: "Security",
-          items: [],
+          text: "Web API",
+          items: [
+            {
+              text: "DOM",
+              link: "",
+            },
+            {
+              text: "Broadcast Channel",
+              link: "",
+            },
+            {
+              text: "Window",
+              link: "",
+            },
+            {
+              text: "Cache Storage",
+              link: "",
+            },
+            {
+              text: "Indexed DB",
+              link: "",
+            },
+          ],
         },
-        {
-          text: "Mobile",
-          items: [],
-        },
-        {
-          text: "Architecture",
-          items: [],
-        },
-        {
-          text: "DevOps",
-          items: [],
-        },
-        {
-          text: "Vite",
-          items: [],
-        },
-        {
-          text: "HTTP",
-          items: [],
-        },
+      ],
+      "/posts/cleancode/": [
+        // done
         {
           text: "Clean Code",
-          items: [],
+          items: [
+            {
+              text: "Guard Clauses",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/posts/devOps/": [
+        // done
+        {
+          text: "DevOps",
+          items: [
+            {
+              text: "DevOps란?",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/posts/frontend/": [
+        // done
+        {
+          text: "Tree Shaking",
+          items: [
+            {
+              text: "Tree Shaking이란?",
+              link: "",
+            },
+          ],
         },
         {
-          text: "Book Studies",
-          items: [],
+          text: "Skeleton UI",
+          items: [
+            {
+              text: "Skeleton UI란?",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Lazy Loading",
+          items: [
+            {
+              text: "Lazy Loading이란?",
+              link: "",
+            },
+            {
+              text: "구현방식",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "SEO",
+          items: [
+            {
+              text: "SEO란?",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Cross-Browsing",
+          items: [
+            {
+              text: "Cross-Browsing이란?",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/posts/git/": [
+        // done
+        {
+          text: "Why Git?",
+          items: [
+            {
+              text: "Why Git?",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Terms",
+          items: [
+            {
+              text: "Pull Request",
+              link: "",
+            },
+            {
+              text: "Staging Area",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Git commands",
+          items: [
+            {
+              text: "git push",
+              link: "",
+            },
+            {
+              text: "git merge",
+              link: "",
+            },
+            {
+              text: "git stash",
+              link: "",
+            },
+            {
+              text: "git init",
+              link: "",
+            },
+            {
+              text: "git clone",
+              link: "",
+            },
+            {
+              text: "git config",
+              link: "",
+            },
+            {
+              text: "git cherrypick",
+              link: "",
+            },
+            {
+              text: "git reset vs. git revert",
+              link: "",
+            },
+            {
+              text: "git fetch vs. git pull",
+              link: "",
+            },
+            {
+              text: "git checkout",
+              link: "",
+            },
+            {
+              text: "git commit --amend",
+              link: "",
+            },
+            {
+              text: "git rebase",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Git Flow",
+          items: [
+            {
+              text: "Main Branches",
+              link: "",
+            },
+            {
+              text: "Support Branches",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/posts/http/": [
+        // done
+        {
+          text: "HTTP/1.x",
+          items: [
+            {
+              text: "Methods",
+              link: "",
+            },
+            {
+              text: "Cache",
+              link: "",
+            },
+            {
+              text: "Message",
+              link: "",
+            },
+            {
+              text: "Connection Management",
+              link: "",
+            },
+            {
+              text: "Domain Sharding",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "HTTP/2",
+          items: [
+            {
+              text: "Binary Framing Layer",
+              link: "",
+            },
+            {
+              text: "Stream, Message, Frame",
+              link: "",
+            },
+            {
+              text: "Req/Res Multiplexing",
+              link: "",
+            },
+            {
+              text: "Stream Prioritization",
+              link: "",
+            },
+            {
+              text: "One Connection Per Origin",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Redirect",
+          items: [
+            {
+              text: "Redirect",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/posts/javascript/": [
+        // done
+        {
+          text: "ECMAScript",
+          items: [
+            {
+              text: "ECMA International",
+              link: "",
+            },
+            {
+              text: "ECMA-262",
+              link: "",
+            },
+            {
+              text: "ECMAScript",
+              link: "",
+            },
+            {
+              text: "Javascript",
+              link: "",
+            },
+            {
+              text: "JS Engine",
+              link: "",
+            },
+            {
+              text: "JS Runtime",
+              link: "",
+            },
+            {
+              text: "Scripting Language",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "메모리 관리",
+          items: [
+            {
+              text: "Garbage Collector(GC)",
+              link: "",
+            },
+            {
+              text: "Reference Count",
+              link: "",
+            },
+            {
+              text: "Mark & Sweep",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Strict Mode",
+          items: [
+            {
+              text: "Strict Mode란?",
+              link: "",
+            },
+            {
+              text: "Invoking Strict Mode",
+              link: "",
+            },
+            {
+              text: "Changes in Strict Mode",
+              link: "",
+            },
+            {
+              text: "Strict Mode in Browsers",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "변수",
+          items: [
+            {
+              text: "var",
+              link: "",
+            },
+            {
+              text: "const & let",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "연산자",
+          items: [
+            {
+              text: "(==) vs. (===)",
+              link: "",
+            },
+            {
+              text: "(?.)",
+              link: "",
+            },
+            {
+              text: "(??)",
+              link: "",
+            },
+            {
+              text: "(??=)",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Data Structures",
+          items: [
+            {
+              text: "Array",
+              link: "",
+            },
+            {
+              text: "Object",
+              link: "",
+            },
+            {
+              text: "Symbol",
+              link: "",
+            },
+            {
+              text: "Map",
+              link: "",
+            },
+            {
+              text: "WeakMap",
+              link: "",
+            },
+            {
+              text: "Set",
+              link: "",
+            },
+            {
+              text: "WeakSet",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Interfaces",
+          items: [
+            {
+              text: "Blob",
+              link: "",
+            },
+            {
+              text: "FileReader",
+              link: "",
+            },
+            {
+              text: "ArrayBuffer",
+              link: "",
+            },
+            {
+              text: "FormData",
+              link: "",
+            },
+            {
+              text: "Proxy",
+              link: "",
+            },
+            {
+              text: "Reflect",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Loop",
+          items: [
+            {
+              text: "Protocols",
+              link: "",
+            },
+            {
+              text: "for",
+              link: "",
+            },
+            {
+              text: "for-in",
+              link: "",
+            },
+            {
+              text: "for-of",
+              link: "",
+            },
+            {
+              text: "for await-of",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Syntatic Sugar",
+          items: [
+            {
+              text: "async/await",
+              link: "",
+            },
+            {
+              text: "Array Intersection",
+              link: "",
+            },
+            {
+              text: "every & some",
+              link: "",
+            },
+            {
+              text: "filter falsy values",
+              link: "",
+            },
+            {
+              text: "computed property",
+              link: "",
+            },
+            {
+              text: "Bitwise NOT",
+              link: "",
+            },
+            {
+              text: "Default Parameters",
+              link: "",
+            },
+            {
+              text: "String => Array",
+              link: "",
+            },
+            {
+              text: "Truncating/Expanding Array",
+              link: "",
+            },
+            {
+              text: "How to Check Empty Array?",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Core",
+          items: [
+            {
+              text: "코어 자바스크립트",
+              link: "/books/core_javascript/",
+            },
+          ],
+        },
+      ],
+      "/posts/node/": [
+        // done
+        {
+          text: "Package",
+          items: [
+            {
+              text: "package란?",
+              link: "",
+            },
+            {
+              text: "Module Resolution",
+              link: "",
+            },
+            {
+              text: "Package Exports",
+              link: "",
+            },
+            {
+              text: "Package Imports",
+              link: "",
+            },
+            {
+              text: "node: protocol imports",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Configuration",
+          items: [
+            {
+              text: "package.json",
+              link: "",
+            },
+            {
+              text: "package-lock.json",
+              link: "",
+            },
+            {
+              text: ".npmrc",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "pnpm",
+          items: [
+            {
+              text: "What is pnpm?",
+              link: "",
+            },
+            {
+              text: "node_modules 구조",
+              link: "",
+            },
+            {
+              text: "PeerDependencies Resolution",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/posts/pwa/": [
+        // done
+        {
+          text: "Progressive Web App",
+          items: [
+            {
+              text: "PWA란?",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Assets and Data",
+          items: [
+            {
+              text: "App Components",
+              link: "",
+            },
+            {
+              text: "Cache & Stroage",
+              link: "",
+            },
+            {
+              text: "Size & Lifespan",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Service Workers",
+          items: [
+            {
+              text: "Service Worker란?",
+              link: "",
+            },
+            {
+              text: "Scope",
+              link: "",
+            },
+            {
+              text: "Lifecycle",
+              link: "",
+            },
+            {
+              text: "Events",
+              link: "",
+            },
+            {
+              text: "Use cases",
+              link: "",
+            },
+            {
+              text: "Workbox docs",
+              link: "",
+            },
+          ],
+        },
+      ],
+      // "/posts/react/": [],
+      "/posts/security/": [
+        // done
+        {
+          text: "XSRF",
+          items: [
+            {
+              text: "XSRF란?",
+              link: "",
+            },
+            {
+              text: "XSRF 예방하기",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "XSS",
+          items: [
+            {
+              text: "XSS란?",
+              link: "",
+            },
+            {
+              text: "XSS 예방하기",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "JWT",
+          items: [
+            {
+              text: "JWT란?",
+              link: "",
+            },
+            {
+              text: "구조",
+              link: "",
+            },
+            {
+              text: "작동방식",
+              link: "",
+            },
+            {
+              text: "장단점",
+              link: "",
+            },
+            {
+              text: "유의할 점",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "CORS",
+          items: [
+            {
+              text: "CORS란?",
+              link: "",
+            },
+            {
+              text: "적용되는 시나리오",
+              link: "",
+            },
+            {
+              text: "에러 해결하는 방법",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "OAuth",
+          items: [
+            {
+              text: "OAuth란?",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "인증(Authentication)",
+          items: [
+            {
+              text: "인증이란?",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "인가(Authorization)",
+          items: [
+            {
+              text: "인가란?",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/posts/typescript/": [
+        // done
+        {
+          text: "Module System",
+          items: [
+            {
+              text: "Module Resolution Strategy",
+              link: "",
+            },
+            {
+              text: "Module Standard",
+              link: "",
+            },
+            {
+              text: "Share Type Declaration",
+              link: "",
+            },
+            {
+              text: "Dynamic Imports",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Working w/ Modules",
+          items: [
+            {
+              text: "Ambient Modules",
+              link: "",
+            },
+            {
+              text: "Shorthand Ambient Modules",
+              link: "",
+            },
+            {
+              text: "Wildcard Module Declaration",
+              link: "",
+            },
+            {
+              text: "Declare Keyword",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Module Resolution", // 위 섹션과 겹칠수도...
+          items: [
+            {
+              text: "Module Imports",
+              link: "",
+            },
+            {
+              text: "Module Resolution Strategies",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Namespace",
+          items: [
+            {
+              text: "Namespace란?",
+              link: "",
+            },
+            {
+              text: "Importing",
+              link: "",
+            },
+            {
+              text: "Exporting",
+              link: "",
+            },
+            {
+              text: "Aliasing",
+              link: "",
+            },
+            {
+              text: "Modularization",
+              link: "",
+            },
+            {
+              text: "Extending",
+              link: "",
+            },
+            {
+              text: "Suggestions",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Compilation",
+          items: [
+            {
+              text: "root-level",
+              link: "",
+            },
+            {
+              text: "compiler options",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Type Declaration",
+          items: [
+            {
+              text: ".d.ts 파일",
+              link: "",
+            },
+            {
+              text: "Global Type Declaration",
+              link: "",
+            },
+            {
+              text: "Local Type Declaration",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Type Assertion",
+          items: [
+            {
+              text: "Non-null operator(!)",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Conditional Type",
+          items: [
+            {
+              text: "Condition Type이란?",
+              link: "",
+            },
+            {
+              text: "With Generic",
+              link: "",
+            },
+            {
+              text: "Constraints",
+              link: "",
+            },
+            {
+              text: "Flatten Type",
+              link: "",
+            },
+            {
+              text: "Inferring",
+              link: "",
+            },
+            {
+              text: "Distributive Type",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Mapped Type",
+          items: [
+            {
+              text: "Mapped Type이란?",
+              link: "",
+            },
+            {
+              text: "Mapping Modifiers",
+              link: "",
+            },
+            {
+              text: "Key Remapping w/ 'as'",
+              link: "",
+            },
+            {
+              text: "Indexed Access Types",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Utility Types",
+          items: [
+            {
+              text: "Union Type",
+              link: "",
+            },
+            {
+              text: "Record",
+              link: "",
+            },
+            {
+              text: "Spread Syntax(...)",
+              link: "",
+            },
+            {
+              text: "Recursion Type",
+              link: "",
+            },
+            {
+              text: "Template Literal",
+              link: "",
+            },
+            {
+              text: "Indexed Signature",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Generic",
+          items: [
+            {
+              text: "Generic이란?",
+              link: "",
+            },
+            {
+              text: "Constraints",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Syntax Sugar",
+          items: [
+            {
+              text: "Array => Object",
+              link: "",
+            },
+            {
+              text: "tuple/array",
+              link: "",
+            },
+            {
+              text: "object",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Keywords",
+          items: [
+            {
+              text: "type vs. interface",
+              link: "",
+            },
+            {
+              text: "as",
+              link: "",
+            },
+            {
+              text: "as const",
+              link: "",
+            },
+            {
+              text: "infer",
+              link: "",
+            },
+            {
+              text: "extends",
+              link: "",
+            },
+            {
+              text: "enum",
+              link: "",
+            },
+            {
+              text: "readonly",
+              link: "",
+            },
+            {
+              text: "typeof",
+              link: "",
+            },
+            {
+              text: "keyof",
+              link: "",
+            },
+          ],
+        },
+      ],
+      // "/posts/vite/": [],
+      "/posts/vue3/": [
+        // done
+        {
+          text: "Reactivity API",
+          items: [
+            {
+              text: "Saving Code To Run Later",
+              link: "",
+            },
+            {
+              text: "Multiple Properties",
+              link: "",
+            },
+            {
+              text: "Multiple Reactive Objects",
+              link: "",
+            },
+            {
+              text: "Proxy & Reflect",
+              link: "",
+            },
+            {
+              text: "activeEffect",
+              link: "",
+            },
+            {
+              text: "ref",
+              link: "",
+            },
+            {
+              text: "computed",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Rendering Mechanism",
+          items: [
+            {
+              text: "Virtual DOM",
+              link: "",
+            },
+            {
+              text: "Render Pipeline",
+              link: "",
+            },
+            {
+              text: "Compiler-Informed VDOM",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Component Lifecycle",
+          items: [
+            {
+              text: "Single Component",
+              link: "",
+            },
+            {
+              text: "Child Component",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Composables",
+          items: [
+            {
+              text: "Option Object Parameter",
+              link: "",
+            },
+            {
+              text: "Flexible args w/ unref",
+              link: "",
+            },
+            {
+              text: "Conditional Returns",
+              link: "",
+            },
+            {
+              text: "Async w/o Await",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/posts/web/": [
+        // done
+        {
+          text: "Domain",
+          items: [
+            {
+              text: "구조 및 관리",
+              link: "",
+            },
+            {
+              text: "DNS Refreshing",
+              link: "",
+            },
+            {
+              text: "DNS Processing",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "URI",
+          items: [
+            {
+              text: "URI란?",
+              link: "",
+            },
+            {
+              text: "URL이란?",
+              link: "",
+            },
+            {
+              text: "URN이란?",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Page vs. Site",
+          items: [
+            {
+              text: "Web Page란?",
+              link: "",
+            },
+            {
+              text: "Web Site란?",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Web Server",
+          items: [
+            {
+              text: "Web Server란?",
+              link: "",
+            },
+            {
+              text: "HTTP 통신",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Search Engine",
+          items: [
+            {
+              text: "검색엔진이란?",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Hyperlink",
+          items: [
+            {
+              text: "Anchor",
+              link: "",
+            },
+            {
+              text: "Links & Search Engine",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Browsing Context",
+          items: [
+            {
+              text: "Browsing Context란?",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "User Agent",
+          items: [
+            {
+              text: "User Agent란?",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/books/composing_software/": [
+        // done
+        {
+          text: "Introduction",
+          items: [
+            {
+              text: "Introduction",
+              link: "",
+            },
+            {
+              text: "The Dao of Immutability",
+              link: "",
+            },
+            {
+              text: "What is FP?",
+              link: "",
+            },
+            {
+              text: "Why FP in JS?",
+              link: "",
+            },
+            {
+              text: "Forgotten History of OOP",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Concepts",
+          items: [
+            {
+              text: "Pure Function",
+              link: "",
+            },
+            {
+              text: "Higher Order Functions",
+              link: "",
+            },
+            {
+              text: "Curry & Function Composition",
+              link: "",
+            },
+            {
+              text: "Abstraction & Composition",
+              link: "",
+            },
+            {
+              text: "Object Composition",
+              link: "",
+            },
+            {
+              text: "Factory Functions",
+              link: "",
+            },
+            {
+              text: "Functional Mixins",
+              link: "",
+            },
+            {
+              text: "Transducers",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Data Structure",
+          items: [
+            {
+              text: "Functors & Categories",
+              link: "",
+            },
+            {
+              text: "Monads",
+              link: "",
+            },
+            {
+              text: "Lenses",
+              link: "",
+            },
+            {
+              text: "Composable Data Types",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "Epilogue",
+          items: [
+            {
+              text: "Mocking is a code smell",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/books/core_javascript/": [
+        // done
+        {
+          text: "데이터 타입",
+          items: [
+            {
+              text: "데이터 타입 종류",
+              link: "",
+            },
+            {
+              text: "변수선언과 데이터 할당",
+              link: "",
+            },
+            {
+              text: "null",
+              link: "",
+            },
+            {
+              text: "undefined",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "실행 컨택스트",
+          items: [
+            {
+              text: "실행 컨택스트란?",
+              link: "",
+            },
+            {
+              text: "Lexical Environment",
+              link: "",
+            },
+            {
+              text: "Variable Environment",
+              link: "",
+            },
+            {
+              text: "this Binding",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "this",
+          items: [
+            {
+              text: "this란?",
+              link: "",
+            },
+            {
+              text: "상황에 따라 달라지는 this",
+              link: "",
+            },
+            {
+              text: "명시적 binding",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "콜백함수",
+          items: [
+            {
+              text: "콜백함수란?",
+              link: "",
+            },
+            {
+              text: "callback HELL",
+              link: "",
+            },
+            {
+              text: "동기 / 비동기",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "클로져(Closure)",
+          items: [
+            {
+              text: "클로져란?",
+              link: "",
+            },
+            {
+              text: "메모리 관리",
+              link: "",
+            },
+            {
+              text: "활용되는 예시",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "프로토타입",
+          items: [
+            {
+              text: "프로토타입이란?",
+              link: "",
+            },
+            {
+              text: "constructor 속성",
+              link: "",
+            },
+            {
+              text: "프로토타입 체인",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "클래스",
+          items: [
+            {
+              text: "클래스 상속",
+              link: "",
+            },
+            {
+              text: "class field delimiter",
+              link: "",
+            },
+            {
+              text: "class accessor",
+              link: "",
+            },
+          ],
+        },
+      ],
+      "/books/network_basics/": [
+        // done
+        {
+          text: "1장",
+          items: [
+            {
+              text: "1.1 네트워크란 무엇인가?",
+              link: "",
+            },
+            {
+              text: "1.2 네트워크와 인터넷",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "2장",
+          items: [
+            {
+              text: "2.1 TCP/IP의 기본",
+              link: "",
+            },
+            {
+              text: "2.2 IPv4 주소 구조",
+              link: "",
+            },
+            {
+              text: "2.3 네트워크 프로토콜",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "3장",
+          items: [
+            {
+              text: "3.1 웹을 구성하는 구조",
+              link: "",
+            },
+            {
+              text: "3.2 도메인",
+              link: "",
+            },
+            {
+              text: "3.3 HTTP와 웹 기술",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "4장",
+          items: [
+            {
+              text: "4.2 방어를 위한 네트워크 기기",
+              link: "",
+            },
+            {
+              text: "4.3 소프트웨어를 조작하는 네트워크",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "5장",
+          items: [
+            {
+              text: "5.1 클라우드와 네트워크의 관계",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "6장",
+          items: [
+            {
+              text: "6.2 웹의 신뢰성을 높이는 기술",
+              link: "",
+            },
+          ],
+        },
+        {
+          text: "7장",
+          items: [
+            {
+              text: "7.2 보안대책의 기초지식",
+              link: "",
+            },
+            {
+              text: "7.3 네트워크 보안대책",
+              link: "",
+            },
+          ],
         },
       ],
     },
@@ -96,7 +1714,97 @@ export default defineConfig({
       },
       {
         text: "Posts",
-        link: "/posts/",
+        items: [
+          {
+            text: "API",
+            link: "/posts/api/",
+          },
+          {
+            text: "Architecture",
+            link: "/posts/architecture/",
+          },
+          {
+            text: "Browser",
+            link: "/posts/browser/",
+          },
+          {
+            text: "Clean Code",
+            link: "/posts/cleancode/",
+          },
+          {
+            text: "DevOps",
+            link: "/posts/devOps/",
+          },
+          {
+            text: "FrontEnd",
+            link: "/posts/frontend/",
+          },
+          {
+            text: "Git",
+            link: "/posts/git/",
+          },
+          {
+            text: "HTTP",
+            link: "/posts/http/",
+          },
+          {
+            text: "Javascript",
+            link: "/posts/javascript/",
+          },
+          {
+            text: "Node",
+            link: "/posts/node/",
+          },
+          {
+            text: "PWA",
+            link: "/posts/pwa/",
+          },
+          {
+            text: "React",
+            link: "/posts/react/",
+          },
+          {
+            text: "Security",
+            link: "/posts/security/",
+          },
+          {
+            text: "Typescript",
+            link: "/posts/typescript/",
+          },
+          {
+            text: "Vite",
+            link: "/posts/vite/",
+          },
+          {
+            text: "Vue3",
+            link: "/posts/vue3/",
+          },
+          {
+            text: "Web",
+            link: "/posts/web/",
+          },
+        ],
+      },
+      {
+        text: "Articles",
+        link: "/articles/",
+      },
+      {
+        text: "Books",
+        items: [
+          {
+            text: "Composing Software",
+            link: "/books/composing_software/",
+          },
+          {
+            text: "코어 자바스크립트",
+            link: "/books/core_javascript/",
+          },
+          {
+            text: "한권으로 끝내는 네트워크 기초",
+            link: "/books/network_basics/",
+          },
+        ],
       },
     ],
   },
