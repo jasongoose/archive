@@ -25,7 +25,7 @@ export default defineConfig({
           items: [
             {
               text: "API란?",
-              link: "",
+              link: "/posts/api/API란",
             },
           ],
           collapsible: true,
@@ -35,24 +35,21 @@ export default defineConfig({
           text: "API Specification",
           items: [
             {
+              text: "Specification",
+              link: "/posts/api/Specification",
+            },
+            {
               text: "SOAP",
-              link: "",
+              link: "/posts/api/SOAP",
             },
             {
-              text: "REST",
-              link: "",
+              text: "RESTful",
+              link: "/posts/api/RESTful",
             },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "API Gateway",
-          items: [
-            {
-              text: "API Gateway란?",
-              link: "",
-            },
+            // {
+            //   text: "GraphQL",
+            //   link: "/posts/api/GraphQL",
+            // },
           ],
           collapsible: true,
           collapsed: true,
