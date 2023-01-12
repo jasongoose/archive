@@ -28,6 +28,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "API Specification",
@@ -41,6 +43,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "API Gateway",
@@ -50,6 +54,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/posts/architecture/": [
@@ -62,6 +68,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "History",
@@ -91,6 +99,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/posts/browser/": [
@@ -107,6 +117,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "CSS",
@@ -124,6 +136,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Browser Runtime",
@@ -137,6 +151,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Populating the page",
@@ -162,6 +178,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Web Storage",
@@ -179,6 +197,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Rendering Strategy",
@@ -192,6 +212,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Web API",
@@ -217,6 +239,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/posts/cleancode/": [
@@ -229,6 +253,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/posts/devOps/": [
@@ -241,6 +267,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/posts/frontend/": [
@@ -253,6 +281,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Skeleton UI",
@@ -262,6 +292,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Lazy Loading",
@@ -275,6 +307,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "SEO",
@@ -284,6 +318,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Cross-Browsing",
@@ -293,6 +329,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/posts/git/": [
@@ -305,6 +343,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Terms",
@@ -318,6 +358,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Git commands",
@@ -371,6 +413,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Git Flow",
@@ -384,6 +428,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/posts/http/": [
@@ -412,6 +458,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "HTTP/2",
@@ -437,6 +485,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Redirect",
@@ -446,6 +496,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/posts/javascript/": [
@@ -482,6 +534,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "메모리 관리",
@@ -499,6 +553,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Strict Mode",
@@ -520,6 +576,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "변수",
@@ -533,6 +591,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "연산자",
@@ -554,6 +614,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Data Structures",
@@ -587,6 +649,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Interfaces",
@@ -616,6 +680,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Loop",
@@ -641,6 +707,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Syntatic Sugar",
@@ -686,6 +754,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Core",
@@ -695,6 +765,8 @@ export default defineConfig({
               link: "/books/core_javascript/",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/posts/node/": [
@@ -723,6 +795,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Configuration",
@@ -740,6 +814,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "pnpm",
@@ -757,6 +833,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/posts/pwa/": [
@@ -769,6 +847,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Assets and Data",
@@ -786,6 +866,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Service Workers",
@@ -815,6 +897,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       // "/posts/react/": [],
@@ -832,6 +916,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "XSS",
@@ -845,6 +931,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "JWT",
@@ -870,6 +958,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "CORS",
@@ -887,6 +977,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "OAuth",
@@ -896,6 +988,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "인증(Authentication)",
@@ -905,6 +999,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "인가(Authorization)",
@@ -914,6 +1010,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/posts/typescript/": [
@@ -938,6 +1036,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Working w/ Modules",
@@ -959,6 +1059,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Module Resolution", // 위 섹션과 겹칠수도...
@@ -972,6 +1074,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Namespace",
@@ -1005,6 +1109,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Compilation",
@@ -1018,6 +1124,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Type Declaration",
@@ -1035,6 +1143,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Type Assertion",
@@ -1044,6 +1154,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Conditional Type",
@@ -1073,6 +1185,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Mapped Type",
@@ -1094,6 +1208,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Utility Types",
@@ -1123,6 +1239,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Generic",
@@ -1136,6 +1254,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Syntax Sugar",
@@ -1153,6 +1273,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Keywords",
@@ -1194,6 +1316,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       // "/posts/vite/": [],
@@ -1231,6 +1355,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Rendering Mechanism",
@@ -1248,6 +1374,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Component Lifecycle",
@@ -1261,6 +1389,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Composables",
@@ -1282,6 +1412,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/posts/web/": [
@@ -1302,6 +1434,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "URI",
@@ -1319,6 +1453,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Page vs. Site",
@@ -1332,6 +1468,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Web Server",
@@ -1345,6 +1483,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Search Engine",
@@ -1354,6 +1494,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Hyperlink",
@@ -1367,6 +1509,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Browsing Context",
@@ -1376,6 +1520,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "User Agent",
@@ -1385,6 +1531,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/books/composing_software/": [
@@ -1413,6 +1561,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Concepts",
@@ -1450,6 +1600,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Data Structure",
@@ -1471,6 +1623,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "Epilogue",
@@ -1480,6 +1634,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/books/core_javascript/": [
@@ -1504,6 +1660,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "실행 컨택스트",
@@ -1525,6 +1683,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "this",
@@ -1542,6 +1702,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "콜백함수",
@@ -1559,6 +1721,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "클로져(Closure)",
@@ -1576,6 +1740,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "프로토타입",
@@ -1593,6 +1759,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "클래스",
@@ -1610,6 +1778,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
       "/books/network_basics/": [
@@ -1626,6 +1796,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "2장",
@@ -1643,6 +1815,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "3장",
@@ -1660,6 +1834,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "4장",
@@ -1673,6 +1849,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "5장",
@@ -1682,6 +1860,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "6장",
@@ -1691,6 +1871,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
         {
           text: "7장",
@@ -1704,6 +1886,8 @@ export default defineConfig({
               link: "",
             },
           ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
     },
