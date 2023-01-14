@@ -118,7 +118,7 @@ export default defineConfig({
           items: [
             {
               text: "Pseudo Element",
-              link: "",
+              link: "/posts/browser/Pseudo_Element",
             },
             {
               text: "Flexbox",
