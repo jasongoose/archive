@@ -122,7 +122,7 @@ export default defineConfig({
             },
             {
               text: "Flexbox",
-              link: "",
+              link: "/posts/browser/Flexbox",
             },
             {
               text: "Grid",
