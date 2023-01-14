@@ -126,7 +126,7 @@ export default defineConfig({
             },
             {
               text: "Grid",
-              link: "",
+              link: "/posts/browser/Grid",
             },
           ],
           collapsible: true,
