@@ -106,12 +106,8 @@ export default defineConfig({
           text: "HTML",
           items: [
             {
-              text: "script의 위치",
-              link: "",
-            },
-            {
-              text: "link(rel=stylesheet)의 위치",
-              link: "",
+              text: '&lt;script src=".js"/&gt; 위치',
+              link: "/posts/browser/script의_위치",
             },
           ],
           collapsible: true,
