@@ -58,11 +58,11 @@ export default defineConfig({
       "/posts/architecture/": [
         // done
         {
-          text: "Architecture란?",
+          text: "SW Architecture란?",
           items: [
             {
-              text: "Architecture란?",
-              link: "",
+              text: "SW Architecture란?",
+              link: "/posts/architecture/SW_Architecture란",
             },
           ],
           collapsible: true,
@@ -73,27 +73,27 @@ export default defineConfig({
           items: [
             {
               text: "MVC",
-              link: "",
+              link: "/posts/architecture/MVC",
             },
             {
               text: "MVVM",
-              link: "",
+              link: "/posts/architecture/MVVM",
             },
             {
               text: "Container-Presenter",
-              link: "",
+              link: "/posts/architecture/Container-Presenter",
             },
             {
               text: "Flux",
-              link: "",
+              link: "/posts/architecture/Flux",
             },
             {
               text: "Observer-Observable",
-              link: "",
+              link: "/posts/architecture/Observer-Observable",
             },
             {
               text: "MVI",
-              link: "",
+              link: "/posts/architecture/MVI",
             },
           ],
           collapsible: true,
@@ -1901,7 +1901,7 @@ export default defineConfig({
             link: "/posts/api/",
           },
           {
-            text: "Architecture",
+            text: "SW Architecture",
             link: "/posts/architecture/",
           },
           {
