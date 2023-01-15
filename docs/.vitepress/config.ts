@@ -137,11 +137,11 @@ export default defineConfig({
           items: [
             {
               text: "구조",
-              link: "",
+              link: "/posts/browser/브라우저_런타임_구조",
             },
             {
               text: "비동기 작업 예시",
-              link: "",
+              link: "/posts/browser/비동기_작업_예시",
             },
           ],
           collapsible: true,
