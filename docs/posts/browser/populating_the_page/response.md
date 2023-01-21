@@ -4,7 +4,7 @@ Navigation을 끝내면 브라우저는 생성된 세션을 통해서 서버로 
 
 ## TCP Slow Start(14KB Rule)
 
-![TCP Slow Start](./images/tcp_slow_start.jpg)
+![TCP Slow Start](../_images/tcp_slow_start.jpg)
 
 HTTP 응답으로 전달되는 첫 번재 데이터의 크기는 보통 14KB입니다.
 

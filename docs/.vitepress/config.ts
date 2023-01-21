@@ -107,7 +107,7 @@ export default defineConfig({
           items: [
             {
               text: '&lt;script src=".js"/&gt; 위치',
-              link: "/posts/browser/script의_위치",
+              link: "/posts/browser/html/script의_위치",
             },
           ],
           collapsible: true,
@@ -118,15 +118,15 @@ export default defineConfig({
           items: [
             {
               text: "Pseudo Element",
-              link: "/posts/browser/Pseudo_Element",
+              link: "/posts/browser/css/Pseudo_Element",
             },
             {
               text: "Flexbox",
-              link: "/posts/browser/Flexbox",
+              link: "/posts/browser/css/Flexbox",
             },
             {
               text: "Grid",
-              link: "/posts/browser/Grid",
+              link: "/posts/browser/css/Grid",
             },
           ],
           collapsible: true,
@@ -137,11 +137,11 @@ export default defineConfig({
           items: [
             {
               text: "구조",
-              link: "/posts/browser/브라우저_런타임_구조",
+              link: "/posts/browser/browser_runtime/브라우저_런타임_구조",
             },
             {
               text: "비동기 작업 예시",
-              link: "/posts/browser/비동기_작업_예시",
+              link: "/posts/browser/browser_runtime/비동기_작업_예시",
             },
           ],
           collapsible: true,
@@ -152,23 +152,23 @@ export default defineConfig({
           items: [
             {
               text: "Overview",
-              link: "/posts/browser/overview",
+              link: "/posts/browser/populating_the_page/overview",
             },
             {
               text: "Navigation",
-              link: "/posts/browser/navigation",
+              link: "/posts/browser/populating_the_page/navigation",
             },
             {
               text: "Response",
-              link: "/posts/browser/response",
+              link: "/posts/browser/populating_the_page/response",
             },
             {
               text: "Critical Rendering Path",
-              link: "/posts/browser/crp",
+              link: "/posts/browser/populating_the_page/crp",
             },
             {
               text: "Reflow/paint",
-              link: "/posts/browser/reflowrepaint",
+              link: "/posts/browser/populating_the_page/reflowrepaint",
             },
           ],
           collapsible: true,
