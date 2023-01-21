@@ -1,6 +1,6 @@
 # API란?
 
-![what_is_api](./images/what_is_api.png)
+![what_is_api](./_images/what_is_api.png)
 
 ## 정의
 

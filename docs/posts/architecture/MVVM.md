@@ -1,6 +1,6 @@
 # MVVM
 
-![MVVM](./images/MVVM.jpeg)
+![MVVM](./_images/MVVM.jpeg)
 
 MVC 패턴의 Controller는 다음과 같은 반복적인 개발패턴을 가집니다.
 
