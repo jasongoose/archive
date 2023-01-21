@@ -152,23 +152,23 @@ export default defineConfig({
           items: [
             {
               text: "Overview",
-              link: "",
+              link: "/posts/browser/overview",
             },
             {
               text: "Navigation",
-              link: "",
+              link: "/posts/browser/navigation",
             },
             {
               text: "Response",
-              link: "",
+              link: "/posts/browser/response",
             },
             {
-              text: "Parsing",
-              link: "",
+              text: "Critical Rendering Path",
+              link: "/posts/browser/crp",
             },
             {
-              text: "Reflow / Repaint",
-              link: "",
+              text: "Reflow/paint",
+              link: "/posts/browser/reflowrepaint",
             },
           ],
           collapsible: true,
