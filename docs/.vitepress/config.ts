@@ -179,15 +179,15 @@ export default defineConfig({
           items: [
             {
               text: "Cookie",
-              link: "",
+              link: "/posts/browser/web_storage/cookie",
             },
             {
               text: "Local Storage",
-              link: "",
+              link: "/posts/browser/web_storage/local_storage",
             },
             {
               text: "Session Storage",
-              link: "",
+              link: "/posts/browser/web_storage/session_storage",
             },
           ],
           collapsible: true,

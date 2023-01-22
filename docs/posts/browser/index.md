@@ -15,3 +15,9 @@
 [📜 Virtual DOM](https://elmprogramming.com/virtual-dom.html)
 
 [📜 Reflow Repaint](https://dev.to/gopal1996/understanding-reflow-and-repaint-in-the-browser-1jbg)
+
+[📜 HTTP Session Management](https://mytechblogs.medium.com/http-session-management-javaee-b648eb4edc1e)
+
+[📜 Web - 쿠키와 세션의 차이, 용도, 사용법](https://jeong-pro.tistory.com/80)
+
+[📜 [Web] HTTP Only와 Secure Cookie 이해하기](https://nsinc.tistory.com/121)
