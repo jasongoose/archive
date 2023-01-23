@@ -194,11 +194,11 @@ export default defineConfig({
           items: [
             {
               text: "CSR",
-              link: "",
+              link: "/posts/browser/rendering_strategy/csr",
             },
             {
               text: "SSR",
-              link: "",
+              link: "/posts/browser/rendering_strategy/ssr",
             },
           ],
           collapsible: true,
