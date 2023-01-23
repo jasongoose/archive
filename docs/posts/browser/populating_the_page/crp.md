@@ -10,11 +10,11 @@
 
 DOM을 사용하면 프로그램(특히 JS)을 사용하여 동적으로 페이지를 조작할 수 있게 되는데, 브라우저는 아래와 같이 2가지 과정을 거쳐서 DOM tree를 생성합니다.
 
-#### Tokenization
+### Tokenization
 
 브라우저의 HTML parser는 startTag(`<tag>`), endTag(`</tag>`), 태그 내부의 문자열, 주석들을 token 단위로 변환합니다. 연관된 token들을 pair로 묶으면 단일 node가 됩니다.
 
-#### Tree Construction
+### Tree Construction
 
 임의의 start/endTag token이 다른 start/endTag token 사이에 위치한다면 두 태그 간의 포함관계(hierarchy)가 나타냅니다. 이 성질을 이용하면 node간의 부모-자식관계를 하나의 link로 표현할 수 있고 모두 이어지면 DOM tree가 생성됩니다.
 

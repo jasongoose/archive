@@ -209,23 +209,23 @@ export default defineConfig({
           items: [
             {
               text: "DOM",
-              link: "",
+              link: "/posts/browser/web_api/dom",
             },
             {
               text: "Broadcast Channel",
-              link: "",
+              link: "/posts/browser/web_api/broadcast_channel",
             },
             {
               text: "Window",
-              link: "",
+              link: "/posts/browser/web_api/window",
             },
             {
               text: "Cache Storage",
-              link: "",
+              link: "/posts/browser/web_api/cache_storage",
             },
             {
-              text: "Indexed DB",
-              link: "",
+              text: "IndexedDB",
+              link: "/posts/browser/web_api/indexed_db",
             },
           ],
           collapsible: true,
