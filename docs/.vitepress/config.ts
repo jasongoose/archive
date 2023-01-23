@@ -175,19 +175,15 @@ export default defineConfig({
           collapsed: true,
         },
         {
-          text: "Web Storage",
+          text: "Storage",
           items: [
             {
               text: "Cookie",
-              link: "/posts/browser/web_storage/cookie",
+              link: "/posts/browser/storage/cookie",
             },
             {
-              text: "Local Storage",
-              link: "/posts/browser/web_storage/local_storage",
-            },
-            {
-              text: "Session Storage",
-              link: "/posts/browser/web_storage/session_storage",
+              text: "Web Storage",
+              link: "/posts/browser/storage/web_storage",
             },
           ],
           collapsible: true,

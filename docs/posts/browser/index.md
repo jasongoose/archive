@@ -21,3 +21,15 @@
 [📜 Web - 쿠키와 세션의 차이, 용도, 사용법](https://jeong-pro.tistory.com/80)
 
 [📜 [Web] HTTP Only와 Secure Cookie 이해하기](https://nsinc.tistory.com/121)
+
+[📜 Web Storage](https://en.wikipedia.org/wiki/Web_storage)
+
+[📜 Cookie vs. localStorage](https://medium.com/swlh/cookies-vs-localstorage-whats-the-difference-d99f0eb09b44)
+
+[📜 Same-origin policy](https://en.wikipedia.org/wiki/Same-origin_policy)
+
+[📜 localStorage and how to use it](https://www.smashingmagazine.com/2010/10/local-storage-and-how-to-use-it/)
+
+[📜 Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+
+[📜 Window.sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage)

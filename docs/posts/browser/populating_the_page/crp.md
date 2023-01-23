@@ -73,7 +73,7 @@ Render tree의 node들을 화면에 어떻게 배치할지 결정하는 과정�
 ::: tip
 device에 따라서 viewport의 가로/세로 길이를 조정하고 싶으면 `<meta />`를 사용하면 됩니다.
 
-모바일의 orientation 즉, portrait mode와 landscape mode에 따라 viewport를 지정할 때 유용하다.
+모바일의 orientation 즉, portrait mode와 landscape mode에 따라 viewport를 지정할 때 유용합니다.
 
 ```html
 <meta name="viewport" content="width=device-width" />
