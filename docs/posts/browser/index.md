@@ -53,3 +53,7 @@
 [📜 Window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
 
 [📜 Cache Storage](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage)
+
+[📜 What is an Object-Oriented Database?](https://www.mongodb.com/databases/what-is-an-object-oriented-database)
+
+[📜 IndexedDB Basic Terminology](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Terminology)
