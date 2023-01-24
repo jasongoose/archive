@@ -47,3 +47,7 @@
 [📜 Broadcast Channel API](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API)
 
 [📜 Browsing Context](https://developer.mozilla.org/en-US/docs/Glossary/Browsing_context)
+
+[📜 What is the difference between window and Window?](https://stackoverflow.com/questions/24008630/what-is-the-difference-between-window-and-window)
+
+[📜 Window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
