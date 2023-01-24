@@ -51,3 +51,5 @@
 [📜 What is the difference between window and Window?](https://stackoverflow.com/questions/24008630/what-is-the-difference-between-window-and-window)
 
 [📜 Window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+
+[📜 Cache Storage](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage)
