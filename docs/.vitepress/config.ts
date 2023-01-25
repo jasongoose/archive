@@ -168,7 +168,7 @@ export default defineConfig({
             },
             {
               text: "Reflow/paint",
-              link: "/posts/browser/populating_the_page/reflowrepaint",
+              link: "/posts/browser/populating_the_page/reflow_repaint",
             },
           ],
           collapsible: true,
@@ -246,14 +246,14 @@ export default defineConfig({
           collapsed: true,
         },
       ],
-      "/posts/devOps/": [
+      "/posts/devops/": [
         // done
         {
           text: "DevOps",
           items: [
             {
               text: "DevOps란?",
-              link: "",
+              link: "/posts/devops/DevOps란",
             },
           ],
           collapsible: true,
@@ -1906,7 +1906,7 @@ export default defineConfig({
           },
           {
             text: "DevOps",
-            link: "/posts/devOps/",
+            link: "/posts/devops/",
           },
           {
             text: "FrontEnd",
