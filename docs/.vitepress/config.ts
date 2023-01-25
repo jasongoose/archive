@@ -232,14 +232,14 @@ export default defineConfig({
           collapsed: true,
         },
       ],
-      "/posts/cleancode/": [
+      "/posts/clean_code/": [
         // done
         {
           text: "Clean Code",
           items: [
             {
               text: "Guard Clauses",
-              link: "",
+              link: "/posts/clean_code/guard_clauses",
             },
           ],
           collapsible: true,
@@ -1902,7 +1902,7 @@ export default defineConfig({
           },
           {
             text: "Clean Code",
-            link: "/posts/cleancode/",
+            link: "/posts/clean_code/",
           },
           {
             text: "DevOps",
