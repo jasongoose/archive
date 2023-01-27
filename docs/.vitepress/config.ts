@@ -1771,108 +1771,25 @@ export default defineConfig({
           collapsed: true,
         },
       ],
-      "/books/network_basics/": [
-        // done
+      "/books/tcp_ip_complete_guide/": [
         {
           text: "1장",
           items: [
             {
-              text: "1.1 네트워크란 무엇인가?",
-              link: "",
+              text: "기본 네트워킹 특성",
+              link: "/books/tcp_ip_complete_guide/1장/1-2",
             },
             {
-              text: "1.2 네트워크와 인터넷",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "2장",
-          items: [
-            {
-              text: "2.1 TCP/IP의 기본",
-              link: "",
+              text: "메시지: 패킷, 프레임, 데이터그램, 셀",
+              link: "/books/tcp_ip_complete_guide/1장/1-3",
             },
             {
-              text: "2.2 IPv4 주소 구조",
-              link: "",
+              text: "네트워크 구조 모델과 클라이언트/서버, 피어투피어 네트워킹",
+              link: "/books/tcp_ip_complete_guide/1장/1-4",
             },
             {
-              text: "2.3 네트워크 프로토콜",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "3장",
-          items: [
-            {
-              text: "3.1 웹을 구성하는 구조",
-              link: "",
-            },
-            {
-              text: "3.2 도메인",
-              link: "",
-            },
-            {
-              text: "3.3 HTTP와 웹 기술",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "4장",
-          items: [
-            {
-              text: "4.2 방어를 위한 네트워크 기기",
-              link: "",
-            },
-            {
-              text: "4.3 소프트웨어를 조작하는 네트워크",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "5장",
-          items: [
-            {
-              text: "5.1 클라우드와 네트워크의 관계",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "6장",
-          items: [
-            {
-              text: "6.2 웹의 신뢰성을 높이는 기술",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "7장",
-          items: [
-            {
-              text: "7.2 보안대책의 기초지식",
-              link: "",
-            },
-            {
-              text: "7.3 네트워크 보안대책",
-              link: "",
+              text: "세그먼트, 네트워크, 서브네트워크, 인터네트워크",
+              link: "/books/tcp_ip_complete_guide/1장/1-6",
             },
           ],
           collapsible: true,
@@ -1974,8 +1891,8 @@ export default defineConfig({
             link: "/books/core_javascript/",
           },
           {
-            text: "한권으로 끝내는 네트워크 기초",
-            link: "/books/network_basics/",
+            text: "TCP/IP 완벽 가이드",
+            link: "/books/tcp_ip_complete_guide/",
           },
         ],
       },
