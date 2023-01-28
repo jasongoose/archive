@@ -399,12 +399,16 @@ export default defineConfig({
           text: "Git Flow",
           items: [
             {
+              text: "Git Flow란?",
+              link: "/posts/git/git_flow/Git_Flow란",
+            },
+            {
               text: "Main Branches",
-              link: "",
+              link: "/posts/git/git_flow/main_branches",
             },
             {
               text: "Support Branches",
-              link: "",
+              link: "/posts/git/git_flow/support_branches",
             },
           ],
           collapsible: true,
