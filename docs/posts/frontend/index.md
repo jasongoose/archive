@@ -9,3 +9,5 @@
 [📜 Lazy Loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading)
 
 [📜 Code Splitting](https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting)
+
+[📜 Cross Browsing](https://okayoon.tistory.com/entry/%ED%81%AC%EB%A1%9C%EC%8A%A4-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95cross-browsing)
