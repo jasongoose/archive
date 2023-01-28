@@ -1520,7 +1520,7 @@ export default defineConfig({
           collapsed: true,
         },
       ],
-      "/books/composing_software/": [
+      "/books/Composing_Software/": [
         // done
         {
           text: "Introduction",
@@ -1623,7 +1623,7 @@ export default defineConfig({
           collapsed: true,
         },
       ],
-      "/books/core_javascript/": [
+      "/books/코어_자바스크립트/": [
         // done
         {
           text: "데이터 타입",
@@ -1767,25 +1767,25 @@ export default defineConfig({
           collapsed: true,
         },
       ],
-      "/books/tcp_ip_complete_guide/": [
+      "/books/TCP_IP_완벽_가이드/": [
         {
           text: "1장",
           items: [
             {
               text: "기본 네트워킹 특성",
-              link: "/books/tcp_ip_complete_guide/1장/1-2",
+              link: "/books/TCP_IP_완벽_가이드/1장/1-2",
             },
             {
               text: "메시지: 패킷, 프레임, 데이터그램, 셀",
-              link: "/books/tcp_ip_complete_guide/1장/1-3",
+              link: "/books/TCP_IP_완벽_가이드/1장/1-3",
             },
             {
               text: "네트워크 구조 모델과 클라이언트/서버, 피어투피어 네트워킹",
-              link: "/books/tcp_ip_complete_guide/1장/1-4",
+              link: "/books/TCP_IP_완벽_가이드/1장/1-4",
             },
             {
               text: "세그먼트, 네트워크, 서브네트워크, 인터네트워크",
-              link: "/books/tcp_ip_complete_guide/1장/1-6",
+              link: "/books/TCP_IP_완벽_가이드/1장/1-6",
             },
           ],
           collapsible: true,
@@ -1884,11 +1884,11 @@ export default defineConfig({
           },
           {
             text: "코어 자바스크립트",
-            link: "/books/core_javascript/",
+            link: "/books/코어_자바스크립트/",
           },
           {
             text: "TCP/IP 완벽 가이드",
-            link: "/books/tcp_ip_complete_guide/",
+            link: "/books/TCP_IP_완벽_가이드/",
           },
         ],
       },
