@@ -330,11 +330,11 @@ export default defineConfig({
           items: [
             {
               text: "Pull Request",
-              link: "",
+              link: "/posts/git/terms/pull_request",
             },
             {
               text: "Staging Area",
-              link: "",
+              link: "/posts/git/terms/staging_area",
             },
           ],
           collapsible: true,
