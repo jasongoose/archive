@@ -19,7 +19,6 @@ export default defineConfig({
         },
       ],
       "/posts/api/": [
-        // done
         {
           text: "API란?",
           items: [
@@ -56,7 +55,6 @@ export default defineConfig({
         },
       ],
       "/posts/architecture/": [
-        // done
         {
           text: "SW Architecture란?",
           items: [
@@ -101,7 +99,6 @@ export default defineConfig({
         },
       ],
       "/posts/browser/": [
-        // done
         {
           text: "HTML",
           items: [
@@ -233,7 +230,6 @@ export default defineConfig({
         },
       ],
       "/posts/clean_code/": [
-        // done
         {
           text: "Clean Code",
           items: [
@@ -247,7 +243,6 @@ export default defineConfig({
         },
       ],
       "/posts/devops/": [
-        // done
         {
           text: "DevOps",
           items: [
@@ -261,7 +256,6 @@ export default defineConfig({
         },
       ],
       "/posts/frontend/": [
-        // done
         {
           text: "Tree Shaking",
           items: [
@@ -325,7 +319,7 @@ export default defineConfig({
           items: [
             {
               text: "Why Git?",
-              link: "",
+              link: "/posts/git/why_git",
             },
           ],
           collapsible: true,

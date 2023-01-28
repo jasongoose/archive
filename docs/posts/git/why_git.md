@@ -1,0 +1,28 @@
+# Why Git?
+
+## VSC
+
+Version Control System은 하나의 프로젝트를 구성하는 파일들마다 시간별로 발생한 변화들(history)을 추적하고 관리하기 위한 메커니즘입니다.
+
+다음과 같은 편리성이 있습니다.
+
+- 롤백(버그가 발생하기 이전 버전으로 돌아가는 작업)이 가능하여 디버깅이 용이하다.
+- 여러 개발자들이 작성한 코드들 사이의 호환성을 고려하여 프로젝트를 유지할 수 있다.
+
+## 그 전에는...
+
+초기 VSC 툴인 CVS(Central Version Control) 또는 Subversion은 프로젝트 history를 remote repo에만 저장했습니다.
+
+2005년 리누즈 토발즈에 의해서 탄생한 Distributed VCS 툴로, 프로젝트의 history를 remote repo(central repo) 뿐만 아니라 개발자마다 local repo(file system)에서도 관리가 가능하다는 특징이 있습니다.
+
+## 장단점
+
+### pros
+
+- 로컬 file system에 history가 저장되어 있어서 네트워크 없이 commit을 생성할 수 있습니다.
+- remote repo에 push하기 전에 다른 개발자들로부터 피드백(PR)을 받을 수 있습니다.
+- 여러 개의 commit들을 한번에 push할 수 있습니다.
+
+### cons
+
+- 프로젝트 자체 또는 history의 크기가 방대하다면 remote repo를 저장하기 위해 그만한 디스크 공간이 필요하고 local repo로 clone하는데 시간이 좀 걸릴 수 있습니다.
