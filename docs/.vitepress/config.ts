@@ -1789,6 +1789,29 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
         },
+        {
+          text: "2장",
+          items: [
+            {
+              text: "네트워크 성능: 전체적인 관점에서 바라보기",
+              link: "/books/TCP_IP_완벽_가이드/2장/2-1",
+            },
+            {
+              text: "네트워크 성능과 기타 주요 특성 사이의 균형 조정",
+              link: "/books/TCP_IP_완벽_가이드/2장/2-3",
+            },
+            {
+              text: "성능측정",
+              link: "/books/TCP_IP_완벽_가이드/2장/2-4",
+            },
+            {
+              text: "성능 측정 단위 이해",
+              link: "/books/TCP_IP_완벽_가이드/2장/2-5",
+            },
+          ],
+          collapsible: true,
+          collapsed: true,
+        },
       ],
     },
     nav: [
