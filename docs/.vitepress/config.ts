@@ -289,11 +289,7 @@ export default defineConfig({
           items: [
             {
               text: "Lazy Loading이란?",
-              link: "/posts/frontend/lazy_loading/Lazy_Loading이란",
-            },
-            {
-              text: "구현방식",
-              link: "/posts/frontend/lazy_loading/구현방식",
+              link: "/posts/frontend/Lazy_Loading이란",
             },
           ],
           collapsible: true,

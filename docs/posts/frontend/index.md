@@ -5,3 +5,7 @@
 [📜 Improve React UX with skeleton UIs](https://blog.logrocket.com/improve-react-ux-skeleton-ui/#:~:text=A%20skeleton%20screen%20is%20a,shape%20similar%20to%20actual%20content.&text=In%20addition%20to%20skeleton%20screens,content%20loaders%2C%20and%20ghost%20elements)
 
 [📜 Search Engine Optimization](https://www.optimizely.com/optimization-glossary/search-engine-optimization/)
+
+[📜 Lazy Loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading)
+
+[📜 Code Splitting](https://developer.mozilla.org/en-US/docs/Glossary/Code_splitting)
