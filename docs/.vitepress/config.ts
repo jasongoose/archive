@@ -1797,15 +1797,27 @@ export default defineConfig({
             },
             {
               text: "네트워크 성능과 기타 주요 특성 사이의 균형 조정",
-              link: "/books/TCP_IP_완벽_가이드/2장/2-3",
+              link: "/books/TCP_IP_완벽_가이드/2장/2-2",
             },
             {
               text: "성능측정",
-              link: "/books/TCP_IP_완벽_가이드/2장/2-4",
+              link: "/books/TCP_IP_완벽_가이드/2장/2-3",
             },
             {
               text: "성능 측정 단위 이해",
+              link: "/books/TCP_IP_완벽_가이드/2장/2-4",
+            },
+            {
+              text: "이론적 처리율과 실제 처리율, 네트워크 성능에 영향을 주는 요인",
               link: "/books/TCP_IP_완벽_가이드/2장/2-5",
+            },
+            {
+              text: "단방향, 양방향, 반양방향",
+              link: "/books/TCP_IP_완벽_가이드/2장/2-6",
+            },
+            {
+              text: "서비스 품질",
+              link: "/books/TCP_IP_완벽_가이드/2장/2-7",
             },
           ],
           collapsible: true,
