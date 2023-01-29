@@ -1,7 +1,7 @@
 # Observer-Observable
 
 <p align="center">
-    <img src="./_images/OO.png" alt="Observer-Observable" />
+    <img src="../_images/OO.png" alt="Observer-Observable" />
 </p>
 
 Flux는 상태관리를 이용하여 일관된 수단으로 앱을 제어할 수 있다는 장점이 있지만 action, dispatch 등의 생소한 개념과 장황한 문법으로 인한 높은 진입장벽이 문제였습니다.

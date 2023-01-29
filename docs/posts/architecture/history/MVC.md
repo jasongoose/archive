@@ -1,7 +1,7 @@
 # MVC
 
 <p align="center">
-    <img src="./_images/MVC.png" alt="MVC" />
+    <img src="../_images/MVC.png" alt="MVC" />
 </p>
 
 가장 초창기에 나온 모델로, 사용자들에게 노출되는 페이지 영역과 화면에 표시할 데이터를 관리하는 영역을 분리하고자 했습니다.

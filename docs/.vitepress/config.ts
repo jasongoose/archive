@@ -24,7 +24,7 @@ export default defineConfig({
           items: [
             {
               text: "API란?",
-              link: "/posts/api/API란",
+              link: "/posts/api/api란/API란",
             },
           ],
           collapsible: true,
@@ -35,15 +35,15 @@ export default defineConfig({
           items: [
             {
               text: "Specification",
-              link: "/posts/api/Specification",
+              link: "/posts/api/api_specification/Specification",
             },
             {
               text: "SOAP",
-              link: "/posts/api/SOAP",
+              link: "/posts/api/api_specification/SOAP",
             },
             {
               text: "RESTful",
-              link: "/posts/api/RESTful",
+              link: "/posts/api/api_specification/RESTful",
             },
             // {
             //   text: "GraphQL",
@@ -60,7 +60,7 @@ export default defineConfig({
           items: [
             {
               text: "SW Architecture란?",
-              link: "/posts/architecture/SW_Architecture란",
+              link: "/posts/architecture/sw_architecture란/SW_Architecture란",
             },
           ],
           collapsible: true,
@@ -71,27 +71,27 @@ export default defineConfig({
           items: [
             {
               text: "MVC",
-              link: "/posts/architecture/MVC",
+              link: "/posts/architecture/history/MVC",
             },
             {
               text: "MVVM",
-              link: "/posts/architecture/MVVM",
+              link: "/posts/architecture/history/MVVM",
             },
             {
               text: "Container-Presenter",
-              link: "/posts/architecture/Container-Presenter",
+              link: "/posts/architecture/history/Container-Presenter",
             },
             {
               text: "Flux",
-              link: "/posts/architecture/Flux",
+              link: "/posts/architecture/history/Flux",
             },
             {
               text: "Observer-Observable",
-              link: "/posts/architecture/Observer-Observable",
+              link: "/posts/architecture/history/Observer-Observable",
             },
             {
               text: "MVI",
-              link: "/posts/architecture/MVI",
+              link: "/posts/architecture/history/MVI",
             },
           ],
           collapsible: true,
@@ -235,7 +235,7 @@ export default defineConfig({
           items: [
             {
               text: "Guard Clauses",
-              link: "/posts/clean_code/guard_clauses",
+              link: "/posts/clean_code/clean_code/guard_clauses",
             },
           ],
           collapsible: true,
@@ -248,7 +248,7 @@ export default defineConfig({
           items: [
             {
               text: "DevOps란?",
-              link: "/posts/devops/DevOps란",
+              link: "/posts/devops/devops란/DevOps란",
             },
           ],
           collapsible: true,
@@ -261,7 +261,7 @@ export default defineConfig({
           items: [
             {
               text: "Tree Shaking이란?",
-              link: "/posts/frontend/Tree_Shaking이란",
+              link: "/posts/frontend/tree_shaking/Tree_Shaking이란",
             },
           ],
           collapsible: true,
@@ -272,7 +272,7 @@ export default defineConfig({
           items: [
             {
               text: "Skeleton UI란?",
-              link: "/posts/frontend/Skeleton_UI란",
+              link: "/posts/frontend/skeleton_ui/Skeleton_UI란",
             },
           ],
           collapsible: true,
@@ -283,7 +283,7 @@ export default defineConfig({
           items: [
             {
               text: "Lazy Loading이란?",
-              link: "/posts/frontend/Lazy_Loading이란",
+              link: "/posts/frontend/lazy_loading/Lazy_Loading이란",
             },
           ],
           collapsible: true,
@@ -294,7 +294,7 @@ export default defineConfig({
           items: [
             {
               text: "SEO란?",
-              link: "/posts/frontend/SEO란",
+              link: "/posts/frontend/seo/SEO란",
             },
           ],
           collapsible: true,
@@ -305,7 +305,7 @@ export default defineConfig({
           items: [
             {
               text: "Cross-Browsing이란?",
-              link: "/posts/frontend/Cross_Browsing이란",
+              link: "/posts/frontend/cross_browsing/Cross_Browsing이란",
             },
           ],
           collapsible: true,
@@ -313,7 +313,6 @@ export default defineConfig({
         },
       ],
       "/posts/git/": [
-        // done
         {
           text: "Why Git?",
           items: [
