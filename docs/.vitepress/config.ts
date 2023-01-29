@@ -421,23 +421,23 @@ export default defineConfig({
           items: [
             {
               text: "Methods",
-              link: "",
+              link: "/posts/http/http1/methods",
             },
             {
               text: "Cache",
-              link: "",
+              link: "/posts/http/http1/cache",
             },
             {
               text: "Message",
-              link: "",
+              link: "/posts/http/http1/message",
             },
             {
               text: "Connection Management",
-              link: "",
+              link: "/posts/http/http1/connection_management",
             },
             {
               text: "Domain Sharding",
-              link: "",
+              link: "/posts/http/http1/domain_sharding",
             },
           ],
           collapsible: true,
@@ -448,23 +448,23 @@ export default defineConfig({
           items: [
             {
               text: "Binary Framing Layer",
-              link: "",
+              link: "/posts/http/http2/binary_framing_layer",
             },
             {
               text: "Stream, Message, Frame",
-              link: "",
+              link: "/posts/http/http2/stream_message_frame",
             },
             {
-              text: "Req/Res Multiplexing",
-              link: "",
+              text: "Multiplexing",
+              link: "/posts/http/http2/multiplexing",
             },
             {
               text: "Stream Prioritization",
-              link: "",
+              link: "/posts/http/http2/stream_prioritization",
             },
             {
               text: "One Connection Per Origin",
-              link: "",
+              link: "/posts/http/http2/one_connection_per_origin",
             },
           ],
           collapsible: true,
@@ -475,7 +475,7 @@ export default defineConfig({
           items: [
             {
               text: "Redirect",
-              link: "",
+              link: "/posts/http/redirect/redirect",
             },
           ],
           collapsible: true,
