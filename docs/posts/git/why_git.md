@@ -1,6 +1,6 @@
 # Why Git?
 
-## VSC
+## VCS
 
 Version Control System은 하나의 프로젝트를 구성하는 파일들마다 시간별로 발생한 변화들(history)을 추적하고 관리하기 위한 메커니즘입니다.
 
@@ -11,7 +11,7 @@ Version Control System은 하나의 프로젝트를 구성하는 파일들마다
 
 ## 그 전에는...
 
-초기 VSC 툴인 CVS(Central Version Control) 또는 Subversion은 프로젝트 history를 remote repo에만 저장했습니다.
+초기 VCS 툴인 CVS(Central Version Control) 또는 Subversion은 프로젝트 history를 remote repo에만 저장했습니다.
 
 2005년 리누즈 토발즈에 의해서 탄생한 Distributed VCS 툴로, 프로젝트의 history를 remote repo(central repo) 뿐만 아니라 개발자마다 local repo(file system)에서도 관리가 가능하다는 특징이 있습니다.
 

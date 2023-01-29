@@ -17,7 +17,7 @@ reflow가 발생하는 원인들을 정리하면 다음과 같습니다.
 - `.css`, `.sass` 같은 style sheet를 추가, 삭제한 경우
 
 ::: tip
-reflow를 줄이기 위한 방법들은 다양해서 관련 문서들을 대신 공유드립니다😁
+reflow를 줄이기 위한 방법들은 다양해서 관련 문서들을 대신 공유드립니다.😁
 
 [📜 reflow를 일으키는 css 속성들](https://devhints.io/layout-thrashing)
 
