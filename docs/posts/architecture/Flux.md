@@ -1,6 +1,8 @@
 # Flux
 
-![Flux](./_images/Flux.png)
+<p align="center">
+    <img src="./_images/Flux.png" alt="Flux" />
+</p>
 
 Container-Presenter 패턴의 props drilling 문제를 해결하려는 목적으로 facebook(현 Meta)에서 제안했던 패턴입니다.
 

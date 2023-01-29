@@ -1,6 +1,8 @@
 # Cache Storage
 
-![Cache Storage](../_images/cache-storage.png)
+<p align="center">
+    <img src="../_images/cache-storage.png" alt="Cache Storage" />
+</p>
 
 브라우저 상에서 `Cache` 객체들을 저장하는 interface로 `Cache` 객체별로 고유한 id를 가집니다.
 

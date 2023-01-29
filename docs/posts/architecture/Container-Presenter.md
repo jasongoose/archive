@@ -1,6 +1,8 @@
 # Container-Presenter
 
-![Container-Presenter](./_images/Container-Presenter.png)
+<p align="center">
+    <img src="./_images/Container-Presenter.png" alt="Container-Presenter" />
+</p>
 
 MVVM 패턴의 등장 이후로, 하나의 페이지는 단일 문서가 아닌 다수의 재사용이 가능한 단위 즉, 컴포넌트들의 조합이라는 새로운 관점이 생겨났습니다.
 
@@ -10,7 +12,9 @@ MVVM 패턴의 등장 이후로, 하나의 페이지는 단일 문서가 아닌 
 
 ### Props Drilling
 
-![Props Drilling](./_images/Props_Drilling.png)
+<p align="center">
+    <img src="./_images/Props_Drilling.png" alt="Props Drilling" />
+</p>
 
 Container-Presenter 패턴을 따르는 페이지에서 컴포넌트들은 계층구조를 가지고 Container는 props를 통해 Presenter로 데이터를 전달합니다.
 

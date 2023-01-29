@@ -1,6 +1,8 @@
 # API란?
 
-![what_is_api](./_images/what_is_api.png)
+<p align="center">
+    <img src="./_images/what_is_api.png" alt="what_is_api" />
+</p>
 
 ## 정의
 

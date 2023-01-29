@@ -37,7 +37,9 @@ HTTP는 클라이언트와 서버 사이의 통신을 할 때마다 TCP 연결(c
 
 ### 통신절차
 
-![Cookie Communication](../_images/cookie_comm.png)
+<p align="center">
+    <img src="../_images/cookie_comm.png" alt="Cookie Communication" />
+</p>
 
 쿠키를 사용한 통신절차는 다음과 같습니다.
 
@@ -103,7 +105,9 @@ HTTP는 클라이언트와 서버 사이의 통신을 할 때마다 TCP 연결(c
 
 #### 7. Third-party Cookie
 
-![Third-party Cookie](../_images/third_party_cookie.png)
+<p align="center">
+    <img src="../_images/third_party_cookie.png" alt="Third-party Cookie" />
+</p>
 
 first-party cookie처럼 사용자들의 온라인 활동에 관한 정보를 추적하고 수집하기 위한 쿠키지만 현재 이용하고 있는 사이트가 아닌 전혀 다른 도메인(서버)에 의해서 생성된다는 차이점이 있습니다.
 

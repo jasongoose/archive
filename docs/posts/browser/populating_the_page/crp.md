@@ -6,7 +6,9 @@
 
 브라우저가 HTML, XML 문서 내의 태그(tag)를 단일 객체로 처리하는 방식(model)으로, 이 객체를 node로 가지는 트리 데이터를 DOM tree하고 합니다.
 
-![DOM](../_images/dom.png)
+<p align="center">
+    <img src="../_images/dom.png" alt="DOM" />
+</p>
 
 DOM을 사용하면 프로그램(특히 JS)을 사용하여 동적으로 페이지를 조작할 수 있게 되는데, 브라우저는 아래와 같이 2가지 과정을 거쳐서 DOM tree를 생성합니다.
 
@@ -26,7 +28,9 @@ DOM을 사용하면 프로그램(특히 JS)을 사용하여 동적으로 페이�
 
 `.css` 파일의 selector로 지정된 HTML tag들을 단일 객체로 처리하는 방식으로, 이 객체를 node로 가지면서 각 node에 적용할 스타일(`font`, `color`, `display`, ...) 정보를 가지는 트리 데이터를 CSSOM tree라고 합니다.
 
-![CSSOM Tree](../_images/cssom_tree.png)
+<p align="center">
+    <img src="../_images/cssom_tree.png" alt="CSSOM Tree" />
+</p>
 
 처음에는 아주 일반적인 스타일(class, id selector)부터 시작해서 더 구체적인 selector들을 기반하여 재귀적으로 스타일들을 개선하게 되는데 이 부분에서 CSS의 cascading 성질을 알 수 있습니다.
 
@@ -50,7 +54,9 @@ DOM을 사용하면 프로그램(특히 JS)을 사용하여 동적으로 페이�
 
 DOM tree의 content와 CSSOM의 style을 결합한 tree 데이터로, 화면 상의 올바른 순서와 위치에 DOM node를 배치하기 위한 목적으로 생성됩니다.
 
-![Render Tree](../_images/render_tree.png)
+<p align="center">
+    <img src="../_images/render_tree.png" alt="Render Tree" />
+</p>
 
 Render tree의 node를 frame 또는 render object라고 부르는데 이 객체에는 node의 width, height, position 등 CSS box 정보가 담겨있습니다.
 
@@ -66,7 +72,9 @@ CSS Rule을 적용했을 때 화면에 보여지는 DOM node들만 Render tree�
 
 Render tree의 node들을 화면에 어떻게 배치할지 결정하는 과정입니다.
 
-![Layout](../_images/layout.jpg)
+<p align="center">
+    <img src="../_images/layout.jpg" alt="Layout" />
+</p>
 
 배치할 때 고려할 점은 viewport의 크기로, 보통 node의 가로 길이는 관련 CSS rule이 없는 한 default로 부모 node의 가로 길이를 그대로 상속하는데, 그렇게 Render tree를 올라가다 보면 최종적으로 viewport의 가로 길이를 따르게 됩니다. 반면 세로 길이는 default로 0을 가집니다.
 
