@@ -344,52 +344,52 @@ export default defineConfig({
           text: "Git commands",
           items: [
             {
-              text: "git push",
-              link: "",
-            },
-            {
-              text: "git merge",
-              link: "",
-            },
-            {
-              text: "git stash",
-              link: "",
-            },
-            {
               text: "git init",
-              link: "",
+              link: "/posts/git/git_commands/git_init",
             },
             {
               text: "git clone",
-              link: "",
+              link: "/posts/git/git_commands/git_clone",
             },
             {
               text: "git config",
-              link: "",
-            },
-            {
-              text: "git cherrypick",
-              link: "",
-            },
-            {
-              text: "git reset vs. git revert",
-              link: "",
-            },
-            {
-              text: "git fetch vs. git pull",
-              link: "",
-            },
-            {
-              text: "git checkout",
-              link: "",
+              link: "/posts/git/git_commands/git_config",
             },
             {
               text: "git commit --amend",
-              link: "",
+              link: "/posts/git/git_commands/git_commit_amend",
+            },
+            {
+              text: "git push",
+              link: "/posts/git/git_commands/git_push",
+            },
+            {
+              text: "git merge",
+              link: "/posts/git/git_commands/git_merge",
+            },
+            {
+              text: "git stash",
+              link: "/posts/git/git_commands/git_stash",
+            },
+            {
+              text: "git cherrypick",
+              link: "/posts/git/git_commands/git_cherrypick",
+            },
+            {
+              text: "git reset vs. git revert",
+              link: "/posts/git/git_commands/git_reset_revert",
+            },
+            {
+              text: "git fetch vs. git pull",
+              link: "/posts/git/git_commands/git_fetch_pull",
+            },
+            {
+              text: "git checkout",
+              link: "/posts/git/git_commands/git_checkout",
             },
             {
               text: "git rebase",
-              link: "",
+              link: "/posts/git/git_commands/git_rebase",
             },
           ],
           collapsible: true,

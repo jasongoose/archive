@@ -1,6 +1,8 @@
 # Main Branches
 
-![Main Branches](../_images/main-branches.png)
+<p align="center">
+    <img src="../_images/main-branches.png" alt="Main Branches" />
+</p>
 
 ## master(main)
 
