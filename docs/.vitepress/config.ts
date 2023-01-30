@@ -1823,6 +1823,19 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
         },
+        {
+          text: "5장",
+          items: [
+            {
+              text: "전반적인 참조 모델 이슈",
+              link: "/books/TCP_IP_완벽_가이드/5장/5-2",
+            },
+            {
+              text: "핵심 OSI 참조 모델 개념",
+              link: "/books/TCP_IP_완벽_가이드/5장/5-3",
+            },
+          ],
+        },
       ],
     },
     nav: [
