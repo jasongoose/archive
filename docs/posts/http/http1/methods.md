@@ -1,8 +1,6 @@
 # Methods
 
-주어진 자원(resource)에 대해서 실행할 작업들을 명시힙니다.
-
-각 method는 다른 의미와 역할을 가지고 공통 특성(safe, idempotent, cacheable)을 기준으로 grouping할 수 있습니다.
+주어진 자원(resource)에 대해서 실행할 작업들을 명시합니다.
 
 ## GET
 
@@ -40,7 +38,7 @@ HTTP/1.1 spec에 따르면 `POST` method는 일반적으로 다음과 같은 상
 
 ### 요청
 
-```text
+```bash
 PUT /new.html HTTP/1.1
 Host: example.com
 Content-type: text/html
@@ -51,19 +49,19 @@ Content-length: 16
 
 ### 응답
 
-```text
+```bash
 // 새로운 자원 생성이 완료된 경우
 HTTP/1.1 201 Created
 Content-Location: /new.html
 ```
 
-```text
+```bash
 // 자원 수정이 완료된 경우
 HTTP/1.1 200 Ok
 Content-Location: /existing.html
 ```
 
-```text
+```bash
 // 또는 수정되고 나서 변경된 내용이 그대로인 경우
 HTTP/1.1 204 No Content
 Content-Location: /existing.html
@@ -75,24 +73,24 @@ Content-Location: /existing.html
 
 ### 요청
 
-```text
+```bash
 DELETE /file.html HTTP/1.1
 Host: example.com
 ```
 
 ### 응답
 
-```text
+```bash
 // 삭제완료 + 응답 body에 status 정보가 포함되는 경우
 200 Ok
 ```
 
-```text
+```bash
 // 요청은 수신해지만 아직 삭제되지 않은 경우
 202 Accepted
 ```
 
-```text
+```bash
 // 삭제완료 + 응답 body가 없는 경우
 204 No Content
 ```
@@ -111,7 +109,7 @@ patch가 완료상태는 2xx response code로 확인할 수 있습니다.
 
 ### 요청
 
-```text
+```bash
 PATCH /file.txt HTTP/1.1
 Host: www.example.com
 Content-Type: application/example
@@ -123,7 +121,7 @@ Content-Length: 100
 
 ### 응답
 
-```text
+```bash
 // response body에 payload가 없는 경우
 HTTP/1.1 204 No Content
 Content-Location: /file.txt
@@ -138,7 +136,7 @@ CORS에서 브라우저가 서버로 preflight request를 전송할 때, 이 met
 
 ### 요청
 
-```text
+```bash
 OPTIONS /resources/post-here/ HTTP/1.1
 Host: bar.example
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
@@ -160,7 +158,7 @@ Access-Control-Request-Headers: X-PINGOTHER, Content-Type
 
 ### 응답
 
-```text
+```bash
 HTTP/1.1 204 No Content
 Date: Mon, 01 Dec 2008 01:15:39 GMT
 Server: Apache/2.0.61 (Unix)
@@ -198,14 +196,14 @@ proxy가 upstream 서버로의 TCP tunnel을 생성하면 클라이언트에서 
 
 ### client -> HTTP proxy 요청 예시
 
-```text
+```bash
 CONNECT reqbin.com:443 HTTP/1.1
 Host: reqbin.com:443
 ```
 
 ### HTTP proxy → client 응답 예시
 
-```text
+```bash
 // tunnel 생성 성공 시
 HTTP/1.1 200 Connection Established
 
@@ -230,3 +228,69 @@ HTTP/1.1 504 Gateway Timeout
 또 다른 예로, `HEAD` 응답을 통해 browser cache의 유효여부를 판단하여 실제 리소스를 받기도 전에 cache를 무효화할 수 있습니다.
 
 ## 공통 특성
+
+개별 HTTP method는 다른 의미와 역할을 가지고 공통 특성(safe, idempotent, cacheable)을 기준으로 grouping할 수 있습니다.
+
+|         | safe | idempotent | cacheable |
+| ------- | :--: | :--------: | :-------: |
+| GET     |  ✅  |     ✅     |    ✅     |
+| POST    |      |            |     △     |
+| PATCH   |      |            |           |
+| HEAD    |  ✅  |     ✅     |    ✅     |
+| PUT     |      |     ✅     |           |
+| DELETE  |      |     ✅     |           |
+| CONNECT |      |            |           |
+| OPTIONS |  ✅  |     ✅     |           |
+
+△ : `POST` 경우, `content-location` 헤더 값을 명시하면 캐싱이 가능하다.
+
+### safe
+
+서버의 데이터를 read만 하고 write하지 않는(실제 서버의 state를 바꾸지 않는) 특성입니다.
+
+### idempotent
+
+동일한 서버로 동일한 요청을 연속으로 여러 번 전송해도 서버의 state가 바뀌지 않는 특성으로 보통 safe이면 idempotent입니다. 단, 역은 성립하지 않습니다.
+
+동일한 요청을 여러 번 전송해도 응답별 status code는 달라질 수 있습니다.
+
+:::info
+`DELETE` method로 DB의 마지막 entry를 제거한다면 서버의 요청처리 로직에 따라서 idempotence가 지켜지지 않을 수도 있습니다.
+
+```bash
+DELETE /idX/delete HTTP/1.1   -> Returns 200 if idX exists
+DELETE /idX/delete HTTP/1.1   -> Returns 404
+DELETE /idX/delete HTTP/1.1   -> Returns 404
+```
+
+:::
+
+### cacheable
+
+client cache에 저장할 수 있는 특성으로 다음과 같은 데이터가 caching이 가능합니다.
+
+- 요청 method 자체
+- 요청 message 자체
+- 응답 payload
+- 응답 status code
+  - 2xx : `200`, `203`, `204`, `206`
+  - 3xx : `300`, `301`
+  - 4xx : `404`, `405`, `410`, `414`
+  - 5xx : `501`
+
+method의 종류뿐만 아니라 response의 `Cache-Control` 헤더 값에 따라서도 caching 가능여부가 달라집니다.
+
+```bash
+200 OK
+Cache-Control: no-cache
+(…)
+```
+
+정리하면 caching 가능여부는 HTTP 메서드 타입 + 응답의 status code + 응답의 `Cache-Control` 헤더 값을 모두 따져야만 합니다.
+
+:::info
+특정 URI로의 non-cacheable 요청/응답은 동일한 리소스의 기존 caching을 무효화합니다.
+
+예를 들어, pageX.html 파일에 대한 `PUT` 요청은 `GET` 요청에 의해서 caching된 pageX.html을 cache로부터 제거합니다.
+
+:::
