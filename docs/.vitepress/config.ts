@@ -1835,6 +1835,43 @@ export default defineConfig({
               link: "/books/TCP_IP_완벽_가이드/5장/5-3",
             },
           ],
+          collapsible: true,
+          collapsed: true,
+        },
+        {
+          text: "6장",
+          items: [
+            {
+              text: "물리 계층(1계층)",
+              link: "/books/TCP_IP_완벽_가이드/6장/6-1",
+            },
+            {
+              text: "데이터링크 계층(2계층)",
+              link: "/books/TCP_IP_완벽_가이드/6장/6-2",
+            },
+            {
+              text: "네트워크 계층(3계층)",
+              link: "/books/TCP_IP_완벽_가이드/6장/6-3",
+            },
+            {
+              text: "전송 계층(4계층)",
+              link: "/books/TCP_IP_완벽_가이드/6장/6-4",
+            },
+            {
+              text: "세션 계층(5계층)",
+              link: "/books/TCP_IP_완벽_가이드/6장/6-5",
+            },
+            {
+              text: "프리젠테이션 계층(6계층)",
+              link: "/books/TCP_IP_완벽_가이드/6장/6-6",
+            },
+            {
+              text: "애플리케이션 계층(7게층)",
+              link: "/books/TCP_IP_완벽_가이드/6장/6-7",
+            },
+          ],
+          collapsible: true,
+          collapsed: true,
         },
       ],
     },
