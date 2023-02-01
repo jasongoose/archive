@@ -219,11 +219,11 @@ HTTP/1.1 504 Gateway Timeout
 
 ## HEAD
 
-특정 URL로 `GET` 요청을 전송했을 때, 응답 메시지에 포함될 헤더들만 요청할 때 주로 사용됩니다.
+특정 URL로 `GET` 요청을 전송했을 때, 응답 메시지에 포함될 header들만 요청할 때 주로 사용됩니다.
 
 따라서 요청/응답 message에는 body 부분이 반드시 없어야 합니다.
 
-예를 들면, URL에 대응되는 리소스의 용량이 크다면 실제 리소스를 받기 전에 `HEAD` 응답에 포함된 `Content-Length` 헤더값으로 파일 크기를 알 수 있습니다.
+예를 들면, URL에 대응되는 리소스의 용량이 크다면 실제 리소스를 받기 전에 `HEAD` 응답에 포함된 `Content-Length` header 값으로 파일 크기를 알 수 있습니다.
 
 또 다른 예로, `HEAD` 응답을 통해 browser cache의 유효여부를 판단하여 실제 리소스를 받기도 전에 cache를 무효화할 수 있습니다.
 
@@ -242,7 +242,7 @@ HTTP/1.1 504 Gateway Timeout
 | CONNECT |      |            |           |
 | OPTIONS |  ✅  |     ✅     |           |
 
-△ : `POST` 경우, `content-location` 헤더 값을 명시하면 캐싱이 가능하다.
+△ : `POST` 경우, `content-location` header 값을 명시하면 캐싱이 가능하다.
 
 ### safe
 
@@ -278,7 +278,7 @@ client cache에 저장할 수 있는 특성으로 다음과 같은 데이터가 
   - 4xx : `404`, `405`, `410`, `414`
   - 5xx : `501`
 
-method의 종류뿐만 아니라 response의 `Cache-Control` 헤더 값에 따라서도 caching 가능여부가 달라집니다.
+method의 종류뿐만 아니라 response의 `Cache-Control` header 값에 따라서도 caching 가능여부가 달라집니다.
 
 ```bash
 200 OK
@@ -286,7 +286,7 @@ Cache-Control: no-cache
 (…)
 ```
 
-정리하면 caching 가능여부는 HTTP 메서드 타입 + 응답의 status code + 응답의 `Cache-Control` 헤더 값을 모두 따져야만 합니다.
+정리하면 caching 가능여부는 HTTP 메서드 타입 + 응답의 status code + 응답의 `Cache-Control` header 값을 모두 따져야만 합니다.
 
 :::info
 특정 URI로의 non-cacheable 요청/응답은 동일한 리소스의 기존 caching을 무효화합니다.
