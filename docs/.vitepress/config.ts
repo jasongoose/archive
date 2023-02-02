@@ -1866,7 +1866,7 @@ export default defineConfig({
               link: "/books/TCP_IP_완벽_가이드/6장/6-6",
             },
             {
-              text: "애플리케이션 계층(7게층)",
+              text: "애플리케이션 계층(7계층)",
               link: "/books/TCP_IP_완벽_가이드/6장/6-7",
             },
           ],
