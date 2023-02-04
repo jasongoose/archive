@@ -428,16 +428,24 @@ export default defineConfig({
               link: "/posts/http/http1/cache",
             },
             {
-              text: "Message",
-              link: "/posts/http/http1/message",
+              text: "Message(start-line)",
+              link: "/posts/http/http1/message/start-line",
+            },
+            {
+              text: "Message(headers)",
+              link: "/posts/http/http1/message/headers",
+            },
+            {
+              text: "Message(body)",
+              link: "/posts/http/http1/message/body",
+            },
+            {
+              text: "Message(MIME)",
+              link: "/posts/http/http1/message/mime",
             },
             {
               text: "Connection Management",
               link: "/posts/http/http1/connection_management",
-            },
-            {
-              text: "Domain Sharding",
-              link: "/posts/http/http1/domain_sharding",
             },
           ],
           collapsible: true,
