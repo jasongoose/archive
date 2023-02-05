@@ -23,12 +23,12 @@ indexedDB에서 transaction은 비동기적인 요청에 의해서 수행되고 
 
 다수의 [object store](./indexed_db.md#object-store)들, [index](./indexed_db.md#index)들의 집합을 의미하고, 다음과 같은 속성을 가져야 합니다.
 
-#### 이름
+#### 1. 이름
 
 - db를 구분하기 위한 `string` 타입 id
 - 단일 origin은 하나의 db를 일정 기간(life time) 동안 가질 수 있다.
 
-#### 현재 버전
+#### 2. 현재 버전
 
 - 버전을 나타내는 integer
 - 임의의 db는 다수의 버전을 동시에 가동할 수 없다.
@@ -52,13 +52,13 @@ key로 사용할 수 있는 데이터 타입은 다음과 같습니다.
 
 record를 저장할 때 사용할 key 값은 수동으로 지정하거나 아래와 같은 방법을 사용하여 자동으로 만들 수 있습니다.
 
-#### key generator
+#### 1. key generator
 
 단일 object store 내에서 순서에 맞게 key를 생성해주는 mechanism으로, 선택적으로 사용할 수 있습니다.
 
 key genenerator는 object store들 사이에서 공유할 수 없고 생성된 key는 record의 value와는 별도로 저장되기 때문에 “out-of-line key”라고 합니다.
 
-#### key path
+#### 2. key path
 
 브라우저에게 record의 value로부터 key를 extract하기 위한 경로를 알려주는 mechanism입니다.
 

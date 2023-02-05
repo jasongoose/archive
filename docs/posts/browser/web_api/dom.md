@@ -34,16 +34,16 @@ target의 parent 요소에서 최상위 요소(window)로 event가 전달되는 
 
 자주 사용하는 Event 관련 메서드들을 정리하면 다음과 같습니다.
 
-#### Event.stopPropagation
+#### 1. Event.stopPropagation
 
 다음 event bubbling / capture 단계를 더 이상 진행하지 않을 때 사용합니다. 즉, `capture` 옵션이 변경되지 않았다면 `currentTarget` 요소의 handler만 실행하고 다음 노드의 event handler를 실행하지 않습니다.
 
-#### Event.preventDefault
+#### 2. Event.preventDefault
 
 user agent(browser)가 DOM에서 발생한 특정 event에 의한 default action을 발생시키지 않을 때 사용하는 메서드입니다.
 
 예를 들어 type이 submit인 input 태그를 클릭했을 때 default action은 form을 submit하는 것이고 anchor 태그를 클릭했을 때 default action은 화면 새로고침입니다. 여기서 특정 event에 preventDefault 메서드를 적용할 수 있는지 여부는 event의 `cancelable` 속성값에 따라 달라집니다.
 
-#### Event.stopImmediatePropagation
+#### 3. Event.stopImmediatePropagation
 
 동일한 요소에 동일한 event에 대한 event listener들을 여러 개를 추가한다면 등록된 순서대로 실행합니다. 중간에 특정 listener에서 해당 메서드를 실행한다면 그 뒤에 등록된 listener들은 실행되지 않습니다.

@@ -25,7 +25,7 @@ type/subtype; parameter=value
 
 여러 개의 MIME type으로 구성된 단일 documnet 종류 또는 동일한 transaction에서 주고받는 파일들을 나타낼 때 사용합니다.
 
-#### multipart/form
+#### 1. multipart/form
 
 `POST` method로 `<form></form>`에 입력된 값들을 클라이언트에서 서버로 전달할 때 사용됩니다.
 

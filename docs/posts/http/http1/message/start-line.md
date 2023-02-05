@@ -14,7 +14,7 @@
 
 ### URI
 
-#### absolute path(origin form)
+#### 1. absolute path(origin form)
 
 `GET`, `POST`, `HEAD`, `OPTIONS` 메서드에서 주로 사용합니다.
 
@@ -36,7 +36,7 @@ HEAD /test.html?query=alibaba HTTP/1.1
 OPTIONS /anypage.html HTTP/1.0
 ```
 
-#### complete URL(absolute form)
+#### 2. complete URL(absolute form)
 
 HTTP proxy로의 `GET` 요청에서 주로 사용합니다.
 
@@ -46,7 +46,7 @@ HTTP proxy로의 `GET` 요청에서 주로 사용합니다.
 GET https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages HTTP/1.1
 ```
 
-#### authority component(authority form)
+#### 3. authority component(authority form)
 
 주로 `CONNECT` 메서드에서 사용합니다.
 
@@ -56,7 +56,7 @@ GET https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages HTTP/1.1
 CONNECT developer.mozilla.org:80 HTTP/1.1
 ```
 
-#### asterisk form(\*)
+#### 4. asterisk form(\*)
 
 주로 `OPTIONS` 메서드에서 주로 사용합니다.
 

@@ -105,14 +105,14 @@ Render tree의 root에서 시작하여 부모 node가 layout 메서드를 호출
 
 layout은 root로부터 시작하는 global layout과 subtree에서 시작하는 incremental layout이 있습니다.
 
-#### Global Layout
+#### 1. Global Layout
 
 다음과 같은 경우에 _동기적으로_ 발생합니다.
 
 - font 크기와 같은 모든 node에 영향이 가는 변화가 필요할 때
 - 창/탭의 크기를 바꿀 때
 
-#### Incremental Layout
+#### 2. Incremental Layout
 
 기존 DOM에 새로운 node(sub DOM)가 추가되거나 삭제될 때, sub DOM의 descendent + ancestor node들에 한해서만 _비동기적으로_ 수행됩니다.
 
