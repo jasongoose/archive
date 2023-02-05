@@ -21,3 +21,5 @@
 [📜 도메인 샤딩이란?](https://wonism.github.io/domain-sharding/)
 
 [📜 Introduction to HTTP/2](https://web.dev/performance-http2/)
+
+[📜 HTTP Redirection](https://developer.mozilla.org/en-US/docs/Web/HTTP/Redirections)
