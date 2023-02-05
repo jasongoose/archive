@@ -470,10 +470,6 @@ export default defineConfig({
               text: "Stream Prioritization",
               link: "/posts/http/http2/stream_prioritization",
             },
-            {
-              text: "One Connection Per Origin",
-              link: "/posts/http/http2/one_connection_per_origin",
-            },
           ],
           collapsible: true,
           collapsed: true,

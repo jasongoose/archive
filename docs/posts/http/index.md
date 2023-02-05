@@ -19,3 +19,5 @@
 [📜 Domain Sharding](https://www.keycdn.com/support/domain-sharding)
 
 [📜 도메인 샤딩이란?](https://wonism.github.io/domain-sharding/)
+
+[📜 Introduction to HTTP/2](https://web.dev/performance-http2/)
