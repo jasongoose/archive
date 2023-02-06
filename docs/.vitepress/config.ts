@@ -415,7 +415,6 @@ export default defineConfig({
         },
       ],
       "/posts/http/": [
-        // done
         {
           text: "HTTP/1.x",
           items: [
@@ -493,31 +492,31 @@ export default defineConfig({
           items: [
             {
               text: "ECMA International",
-              link: "",
+              link: "/posts/javascript/ecmascript/ecma_international",
             },
             {
               text: "ECMA-262",
-              link: "",
+              link: "/posts/javascript/ecmascript/ecma_262",
             },
             {
               text: "ECMAScript",
-              link: "",
+              link: "/posts/javascript/ecmascript/ecmascript",
             },
             {
               text: "Javascript",
-              link: "",
+              link: "/posts/javascript/ecmascript/javascript",
             },
             {
               text: "JS Engine",
-              link: "",
+              link: "/posts/javascript/ecmascript/javascript_engine",
             },
             {
               text: "JS Runtime",
-              link: "",
+              link: "/posts/javascript/ecmascript/javascript_runtime",
             },
             {
               text: "Scripting Language",
-              link: "",
+              link: "/posts/javascript/ecmascript/scripting_language",
             },
           ],
           collapsible: true,
