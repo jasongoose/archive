@@ -1876,6 +1876,17 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
         },
+        {
+          text: "13장",
+          items: [
+            {
+              text: "주소결정 개념과 이슈",
+              link: "/books/TCP_IP_완벽_가이드/13장/13-1",
+            },
+          ],
+          collapsible: true,
+          collapsed: true,
+        },
       ],
     },
     nav: [
