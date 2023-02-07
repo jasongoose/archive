@@ -1883,6 +1883,10 @@ export default defineConfig({
               text: "주소결정 개념과 이슈",
               link: "/books/TCP_IP_완벽_가이드/13장/13-1",
             },
+            {
+              text: "TCP/IP 주소 결정 프로토콜",
+              link: "/books/TCP_IP_완벽_가이드/13장/13-2",
+            },
           ],
           collapsible: true,
           collapsed: true,
