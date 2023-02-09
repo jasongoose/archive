@@ -1887,6 +1887,18 @@ export default defineConfig({
               text: "TCP/IP 주소 결정 프로토콜",
               link: "/books/TCP_IP_완벽_가이드/13장/13-2",
             },
+            {
+              text: "ARP 캐싱",
+              link: "/books/TCP_IP_완벽_가이드/13장/13-3",
+            },
+            {
+              text: "프록시 ARP",
+              link: "/books/TCP_IP_완벽_가이드/13장/13-4",
+            },
+            {
+              text: "IP 멀티캐스트 주소의 TCP/IP 주소 결정",
+              link: "/books/TCP_IP_완벽_가이드/13장/13-5",
+            },
           ],
           collapsible: true,
           collapsed: true,
