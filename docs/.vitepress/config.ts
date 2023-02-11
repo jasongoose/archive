@@ -564,12 +564,16 @@ export default defineConfig({
           text: "변수",
           items: [
             {
-              text: "var",
-              link: "",
+              text: "Declare => Initialize => Assign",
+              link: "/posts/javascript/variable/선언_초기화_할당",
             },
             {
-              text: "const & let",
-              link: "",
+              text: "var",
+              link: "/posts/javascript/variable/var",
+            },
+            {
+              text: "const, let",
+              link: "/posts/javascript/variable/const_let",
             },
           ],
           collapsible: true,

@@ -15,3 +15,9 @@
 [📜 Feature Preview: Incremental Garbage Collection](https://blog.unity.com/technology/feature-preview-incremental-garbage-collection)
 
 [📜 Strict Mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
+
+[📜 var](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+
+[📜 let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+
+[📜 const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
