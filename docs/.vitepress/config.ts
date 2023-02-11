@@ -526,16 +526,16 @@ export default defineConfig({
           text: "메모리 관리",
           items: [
             {
-              text: "Garbage Collector(GC)",
-              link: "",
+              text: "Garbage Collector",
+              link: "/posts/javascript/memory_management/garbage_collector",
             },
             {
               text: "Reference Count",
-              link: "",
+              link: "/posts/javascript/memory_management/reference_count",
             },
             {
-              text: "Mark & Sweep",
-              link: "",
+              text: "Mark and Sweep",
+              link: "/posts/javascript/memory_management/mark_and_sweep",
             },
           ],
           collapsible: true,
