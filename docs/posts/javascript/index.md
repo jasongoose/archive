@@ -21,3 +21,7 @@
 [📜 let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
 [📜 const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+
+[📜 Optional Chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+
+[📜 Nullsh Coalescing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing)

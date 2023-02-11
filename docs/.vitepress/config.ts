@@ -583,20 +583,24 @@ export default defineConfig({
           text: "연산자",
           items: [
             {
-              text: "(==) vs. (===)",
-              link: "",
+              text: "(==)",
+              link: "/posts/javascript/operators/equality",
+            },
+            {
+              text: "(===)",
+              link: "/posts/javascript/operators/strict_equality",
             },
             {
               text: "(?.)",
-              link: "",
+              link: "/posts/javascript/operators/optional_chaining",
             },
             {
               text: "(??)",
-              link: "",
+              link: "/posts/javascript/operators/nullish_coalescing",
             },
             {
               text: "(??=)",
-              link: "",
+              link: "/posts/javascript/operators/logical_nullish_assignment",
             },
           ],
           collapsible: true,
