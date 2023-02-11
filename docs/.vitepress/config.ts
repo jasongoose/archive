@@ -546,19 +546,15 @@ export default defineConfig({
           items: [
             {
               text: "Strict Mode란?",
-              link: "",
+              link: "/posts/javascript/strict_mode/strict_mode란",
             },
             {
               text: "Invoking Strict Mode",
-              link: "",
+              link: "/posts/javascript/strict_mode/invoking_strict_mode",
             },
             {
               text: "Changes in Strict Mode",
-              link: "",
-            },
-            {
-              text: "Strict Mode in Browsers",
-              link: "",
+              link: "/posts/javascript/strict_mode/changes_in_strict_mode",
             },
           ],
           collapsible: true,
