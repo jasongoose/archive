@@ -611,31 +611,31 @@ export default defineConfig({
           items: [
             {
               text: "Array",
-              link: "",
+              link: "/posts/javascript/data_structures/array",
             },
             {
               text: "Object",
-              link: "",
+              link: "/posts/javascript/data_structures/object",
             },
             {
               text: "Symbol",
-              link: "",
+              link: "/posts/javascript/data_structures/symbol",
             },
             {
               text: "Map",
-              link: "",
+              link: "/posts/javascript/data_structures/map",
             },
             {
               text: "WeakMap",
-              link: "",
+              link: "/posts/javascript/data_structures/weakmap",
             },
             {
               text: "Set",
-              link: "",
+              link: "/posts/javascript/data_structures/set",
             },
             {
               text: "WeakSet",
-              link: "",
+              link: "/posts/javascript/data_structures/weakset",
             },
           ],
           collapsible: true,
