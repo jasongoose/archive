@@ -646,27 +646,27 @@ export default defineConfig({
           items: [
             {
               text: "Blob",
-              link: "",
+              link: "/posts/javascript/interfaces/blob",
             },
             {
               text: "FileReader",
-              link: "",
+              link: "/posts/javascript/interfaces/filereader",
             },
             {
               text: "ArrayBuffer",
-              link: "",
+              link: "/posts/javascript/interfaces/arraybuffer",
             },
             {
               text: "FormData",
-              link: "",
+              link: "/posts/javascript/interfaces/formdata",
             },
             {
               text: "Proxy",
-              link: "",
+              link: "/posts/javascript/interfaces/proxy",
             },
             {
               text: "Reflect",
-              link: "",
+              link: "/posts/javascript/interfaces/reflect",
             },
           ],
           collapsible: true,

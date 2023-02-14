@@ -41,3 +41,23 @@
 [📜 Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 
 [📜 JavaScript Symbols: But Why?](https://medium.com/intrinsic-blog/javascript-symbols-but-why-6b02768f4a5c)
+
+[📜 Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob)
+
+[📜 FileReader](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)
+
+[📜 ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
+
+[📜 Data URLs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs)
+
+[📜 Base64](https://developer.mozilla.org/en-US/docs/Glossary/Base64)
+
+[📜 Encoding Base64](https://developercookie.wordpress.com/2019/12/29/encoding-base-64/)
+
+[📜 Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
+
+[📜 Reflect](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
+
+[📜 What does the Reflect object do in Javascript?](https://stackoverflow.com/questions/25421903/what-does-the-reflect-object-do-in-javascript)
+
+[📜 What is a receiver in Javascript?](https://stackoverflow.com/questions/37563495/what-is-a-receiver-in-javascript)
