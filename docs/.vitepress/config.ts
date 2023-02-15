@@ -677,23 +677,23 @@ export default defineConfig({
           items: [
             {
               text: "Protocols",
-              link: "",
+              link: "/posts/javascript/loop/protocols",
             },
             {
               text: "for",
-              link: "",
+              link: "/posts/javascript/loop/for",
             },
             {
               text: "for-in",
-              link: "",
+              link: "/posts/javascript/loop/for_in",
             },
             {
               text: "for-of",
-              link: "",
+              link: "/posts/javascript/loop/for_of",
             },
             {
               text: "for await-of",
-              link: "",
+              link: "/posts/javascript/loop/for_await_of",
             },
           ],
           collapsible: true,
