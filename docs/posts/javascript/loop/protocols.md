@@ -23,6 +23,12 @@ JS에 내장된 iterable로는 다음이 있습니다.
 - TypedArray
 - Map
 - Set
+- Array-like object
+  - arguments
+  - DOM Collection(NodeList)
+  - FileList
+  - …
+- [generator](#generator)
 
 iterable를 순회하는 방법으로는 다음이 있습니다.
 
