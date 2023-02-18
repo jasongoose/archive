@@ -704,43 +704,43 @@ export default defineConfig({
           items: [
             {
               text: "async/await",
-              link: "",
+              link: "/posts/javascript/syntatic_sugar/async_await",
             },
             {
               text: "Array Intersection",
-              link: "",
+              link: "/posts/javascript/syntatic_sugar/array_intersection",
             },
             {
               text: "every & some",
-              link: "",
+              link: "/posts/javascript/syntatic_sugar/every_some",
             },
             {
-              text: "filter falsy values",
-              link: "",
+              text: "Filter falsy values",
+              link: "/posts/javascript/syntatic_sugar/filter_falsy_values",
             },
             {
-              text: "computed property",
-              link: "",
+              text: "Computed property",
+              link: "/posts/javascript/syntatic_sugar/computed_property",
             },
             {
-              text: "Bitwise NOT",
-              link: "",
+              text: "-1 bit",
+              link: "/posts/javascript/syntatic_sugar/-1_bit",
             },
             {
               text: "Default Parameters",
-              link: "",
+              link: "/posts/javascript/syntatic_sugar/default_parameters",
             },
             {
-              text: "String => Array",
-              link: "",
+              text: "String to Array",
+              link: "/posts/javascript/syntatic_sugar/string_to_array",
             },
             {
               text: "Truncating/Expanding Array",
-              link: "",
+              link: "/posts/javascript/syntatic_sugar/truncating_expanding_array",
             },
             {
               text: "How to Check Empty Array?",
-              link: "",
+              link: "/posts/javascript/syntatic_sugar/how_to_check_empty_array",
             },
           ],
           collapsible: true,

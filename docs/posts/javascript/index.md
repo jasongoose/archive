@@ -61,3 +61,7 @@
 [📜 What does the Reflect object do in Javascript?](https://stackoverflow.com/questions/25421903/what-does-the-reflect-object-do-in-javascript)
 
 [📜 What is a receiver in Javascript?](https://stackoverflow.com/questions/37563495/what-is-a-receiver-in-javascript)
+
+[📜 await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await)
+
+[📜 How to check if an array is empty or exists?](https://stackoverflow.com/questions/11743392/how-to-check-if-an-array-is-empty-or-exists)
