@@ -486,7 +486,6 @@ export default defineConfig({
         },
       ],
       "/posts/javascript/": [
-        // done
         {
           text: "ECMAScript",
           items: [
@@ -746,42 +745,26 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
         },
-        {
-          text: "Core",
-          items: [
-            {
-              text: "코어 자바스크립트",
-              link: "/books/core_javascript/",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
       ],
       "/posts/node/": [
-        // done
         {
           text: "Package",
           items: [
             {
               text: "package란?",
-              link: "",
+              link: "/posts/node/package/package란",
             },
             {
               text: "Module Resolution",
-              link: "",
+              link: "/posts/node/package/module_resolution",
             },
             {
               text: "Package Exports",
-              link: "",
+              link: "/posts/node/package/package_exports",
             },
             {
               text: "Package Imports",
-              link: "",
-            },
-            {
-              text: "node: protocol imports",
-              link: "",
+              link: "/posts/node/package/package_imports",
             },
           ],
           collapsible: true,
@@ -810,16 +793,16 @@ export default defineConfig({
           text: "pnpm",
           items: [
             {
-              text: "What is pnpm?",
-              link: "",
+              text: "pnpm이란?",
+              link: "/posts/node/pnpm/pnpm이란",
             },
             {
               text: "node_modules 구조",
-              link: "",
+              link: "/posts/node/pnpm/node_modules의_구조",
             },
             {
-              text: "PeerDependencies Resolution",
-              link: "",
+              text: "peerDependencies Resolution",
+              link: "/posts/node/pnpm/peerDependencies_resolution",
             },
           ],
           collapsible: true,
