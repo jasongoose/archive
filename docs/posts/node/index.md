@@ -5,3 +5,7 @@
 [📜 Flat node_modules is not the only way](https://pnpm.io/blog/2020/05/27/flat-node-modules-is-not-the-only-way)
 
 [📜 Symlinked node_modules structure](https://pnpm.io/symlinked-node-modules-structure)
+
+[📜 Using class url to explore how module specifiers work](https://2ality.com/2022/01/esm-specifiers.html#using-class-url-to-explore-how-module-specifiers-work)
+
+[📜 Contributing packages to the registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry)

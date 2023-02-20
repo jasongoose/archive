@@ -1,0 +1,87 @@
+# Package란?
+
+## 패키지란?
+
+소프트웨어가 배포되는 단위로, 보통 라이브러리, 개발툴(컴파일러, test ruuner, documentation generator) 등이 있습니다.
+
+보통 패키지 안에는 JS 라이브러리, 라이브러리 테스트를 위한 test code들이 포함됩니다.
+
+### registry
+
+패키지들은 보통 [npm software registry](https://www.npmjs.com/about)에 업로드되면 원격으로 프로젝트에 다운로드하여 사용할 수 있습니다.
+
+registry에 등록된 패키지들을 구분할 때는 다음과 같은 name을 부여합니다.
+
+- Global names : 전체 registry에서 유일한 이름
+- Scoped names : 전체 registry에서 유일한 scope 내에서 이름
+
+## 구조
+
+보통 패키지는 다음과 같은 file system(폴더구조)를 가집니다.
+
+<p align="center">
+    <img src="../_images/package_structure.png" alt="패키지 구조"/>
+</p>
+
+### package.json
+
+패키지의 meta 데이터(name, version, author 등)와 dependencies(패키지를 동작할 때 필요한 라이브러나 개발툴들) 정보를 저장합니다.
+
+### node_modules
+
+dependencies에 해당 패키지들의 소스가 위치한 폴더로, `npm install` 명령어를 실행하면 프로젝트 root에 node_modules 폴더를 생성하여(원래 없다면) package.json의 `dependencies` 필드에 명시된 패키지들을 버전에 맞게 설치합니다.
+
+## Module Specifiers
+
+`node_modules`에 설치된 패키지 내의 모듈들을 사용하려면, 해당 리소스를 구분하기 위한 **module specifier**와 모듈을 access하기 위한 **import statement**을 사용해야 합니다.
+
+import statement로는 static import과 dynamic import가 있습니다.
+
+```js
+// Static import
+import { namedExport } from "https://example.com/some-module.js"; // (A)
+console.log(namedExport);
+```
+
+```js
+// Dynamic import
+import("https://example.com/some-module.js") // (B)
+  .then((moduleNamespace) => {
+    console.log(moduleNamespace.namedExport);
+  });
+```
+
+### Absolute specifier
+
+웹 상에서 호스팅되는 라이브러리에 access할 때 사용하는 full URL로, 마지막에 파일 확장자가 붙습니다.
+
+```js
+"https://www.unpkg.com/browse/yargs@17.3.1/browser.mjs";
+"file:///opt/nodejs/config.mjs";
+```
+
+### Relative specifier
+
+`/`, `./`, `../`로 시작하는 relative URL로, JS 엔진은 현재 모듈 url을 기준으로 하는(resolved) absolute specifier로 변환하고 마지막에 파일 확장자가 붙입니다.
+
+```js
+"./sibling-module.js";
+"../module-in-parent-dir.mjs";
+"../../dir/other-module.js";
+```
+
+### Bare specifier
+
+protocol(scheme)과 domain이 없고 보통 `node_modules` 폴더에 설치된 npm 패키지를 참조할 때 사용합니다.
+
+```js
+"some-package";
+"some-package/sync";
+"some-package/util/files/path-tools.js";
+
+"@some-scope/scoped-name";
+"@some-scope/scoped-name/async";
+"@some-scope/scoped-name/dir/some-module.mjs";
+```
+
+JS 엔진은 현재 모듈 url을 기준으로 하는 absolute specifier로 변환합니다.
