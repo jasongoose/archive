@@ -6,6 +6,16 @@
 
 보통 패키지 안에는 JS 라이브러리, 라이브러리 테스트를 위한 test code들이 포함됩니다.
 
+:::tip package vs. module
+패키지(package)는 파일 또는 `package.json`을 포함한 디렉토리이자 npm registry에서 지정된 범위에 공개되는 프로젝트를 가리킵니다.
+
+모듈(module)은 Node 환경에서 `require` 함수에 의해서 load될 수 있는 파일이나 디렉토리로, node_modules 디렉토리에 위치합니다.
+
+`require` 함수에 의해서 load되려면 `.js` 파일이거나 `package.json`(main 필드를 가진)을 포함한 디렉토리여야 합니다.
+
+package.json을 요구하지 않는다는 점에서 패키지와의 차이점이 있습니다.
+:::
+
 ### registry
 
 패키지들은 보통 [npm software registry](https://www.npmjs.com/about)에 업로드되면 원격으로 프로젝트에 다운로드하여 사용할 수 있습니다.

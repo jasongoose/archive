@@ -9,3 +9,5 @@
 [📜 Using class url to explore how module specifiers work](https://2ality.com/2022/01/esm-specifiers.html#using-class-url-to-explore-how-module-specifiers-work)
 
 [📜 Contributing packages to the registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry)
+
+[📜 About packages and modules](https://docs.npmjs.com/about-packages-and-modules)
