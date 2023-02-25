@@ -11,3 +11,5 @@
 [📜 Contributing packages to the registry](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry)
 
 [📜 About packages and modules](https://docs.npmjs.com/about-packages-and-modules)
+
+[📜 package-lock.json](https://docs.npmjs.com/cli/v8/configuring-npm/package-lock-json)

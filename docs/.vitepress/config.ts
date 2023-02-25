@@ -775,15 +775,11 @@ export default defineConfig({
           items: [
             {
               text: "package.json",
-              link: "",
+              link: "/posts/node/configuration/package_json",
             },
             {
               text: "package-lock.json",
-              link: "",
-            },
-            {
-              text: ".npmrc",
-              link: "",
+              link: "/posts/node/configuration/package_lock_json",
             },
           ],
           collapsible: true,
