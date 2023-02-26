@@ -806,13 +806,12 @@ export default defineConfig({
         },
       ],
       "/posts/pwa/": [
-        // done
         {
           text: "Progressive Web App",
           items: [
             {
               text: "PWA란?",
-              link: "",
+              link: "/posts/pwa/pwa/pwa란",
             },
           ],
           collapsible: true,
@@ -823,15 +822,15 @@ export default defineConfig({
           items: [
             {
               text: "App Components",
-              link: "",
+              link: "/posts/pwa/assets_and_data/app_components",
             },
             {
               text: "Cache & Stroage",
-              link: "",
+              link: "/posts/pwa/assets_and_data/cache_storage",
             },
             {
               text: "Size & Lifespan",
-              link: "",
+              link: "/posts/pwa/assets_and_data/size_lifespan",
             },
           ],
           collapsible: true,
@@ -842,34 +841,22 @@ export default defineConfig({
           items: [
             {
               text: "Service Worker란?",
-              link: "",
+              link: "/posts/pwa/service_workers/service_worker란",
             },
             {
               text: "Scope",
-              link: "",
+              link: "/posts/pwa/service_workers/scope",
             },
             {
               text: "Lifecycle",
-              link: "",
-            },
-            {
-              text: "Events",
-              link: "",
-            },
-            {
-              text: "Use cases",
-              link: "",
-            },
-            {
-              text: "Workbox docs",
-              link: "",
+              link: "/posts/pwa/service_workers/lifecycle",
             },
           ],
           collapsible: true,
           collapsed: true,
         },
       ],
-      // "/posts/react/": [],
+      "/posts/react/": [],
       "/posts/security/": [
         // done
         {
