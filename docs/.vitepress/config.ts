@@ -858,17 +858,16 @@ export default defineConfig({
       ],
       "/posts/react/": [],
       "/posts/security/": [
-        // done
         {
           text: "XSRF",
           items: [
             {
               text: "XSRF란?",
-              link: "",
+              link: "/posts/security/xsrf/xsrf란",
             },
             {
               text: "XSRF 예방하기",
-              link: "",
+              link: "/posts/security/xsrf/xsrf_예방하기",
             },
           ],
           collapsible: true,
