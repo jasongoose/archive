@@ -6,9 +6,7 @@ dev(elopment)와 op(erations)의 합성어로, 개발과 운영 사이에서 수
 
 ## Life Cycle
 
-<p align="center">
-    <img src="../_images/life_cycle.png" alt="Life Cycle" />
-</p>
+<Image src="../_images/life_cycle.png" alt="Life Cycle" />
 
 DevOps 모델은 보통 지속성을 상징하는 뫼비우스 띠 모양으로 표현되는데, 왼쪽 고리가 “개발”, 오른쪽 고리가 “운영”에 해당합니다.
 

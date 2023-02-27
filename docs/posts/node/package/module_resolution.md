@@ -2,9 +2,7 @@
 
 Node 환경에서는 "Node.js resolution algorithm"으로 module specifier를 resolve하여 module들을 구분합니다.
 
-<p align="center">
-    <img src="../_images/module_resolution.png" alt="Module Resolution" />
-</p>
+<Image src="../_images/module_resolution.png" alt="Module Resolution" />
 
 ## Relative Specifier
 

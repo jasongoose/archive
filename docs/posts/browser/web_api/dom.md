@@ -4,9 +4,7 @@
 
 DOM tree는 웹 페이지를 구성하는 요소(element) 객체 사이의 포함관계를 나타나는 트리 구조의 데이터로 브라우저에 의해서 생성됩니다. 사용자 또는 외부 원인에 의해서 DOM 요소에서 어떤 event가 발생하면 target 요소 뿐만 아니라 상위, 하위 요소에 동일한 event가 전달되는데 event가 흐르는 방향은 다음과 같이 3가지가 있습니다.
 
-<p align="center">
-    <img src="../_images/event_flow.png" alt="Event 흐름" />
-</p>
+<Image src="../_images/event_flow.png" alt="Event 흐름" />
 
 #### 1. Capturing
 

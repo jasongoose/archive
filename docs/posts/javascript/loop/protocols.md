@@ -8,9 +8,7 @@ JS 자바스크립트 객체의 property들을 순회(iterate)하는 방식을 �
 
 object에서 정의할 때는 `[Symbol.iterator]`라는 키를 사용합니다.
 
-<p align="center">
-    <img src="../_images/iterable.png" alt="Iterable"/>
-</p>
+<Image src="../_images/iterable.png" alt="Iterable"/>
 
 object가 iterate된다면 `@@iterator` 메서드가 반환한 iterator 객체로부터 iterated value를 얻을 수 있습니다.
 
@@ -43,9 +41,7 @@ iterable를 순회하는 방법으로는 다음이 있습니다.
 
 `next` 메서드는 호출될 때마다 `done`과 `value`라는 property를 가지는 객체를 계속 반환하는데, 생성할 값들이 고갈되면 반환을 멈춥니다.
 
-<p align="center">
-    <img src="../_images/iterator.png" alt="Iterator"/>
-</p>
+<Image src="../_images/iterator.png" alt="Iterator"/>
 
 ## generator
 

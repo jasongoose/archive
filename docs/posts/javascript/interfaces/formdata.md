@@ -46,9 +46,7 @@ data:[<mediatype>][;base64],<data>
 
 인코딩은 원본 binary data를 6bit씩 자르고 아래 base64 표를 참고하여 각 block에 대응되는 문자로 바꾸면 됩니다.
 
-<p align="center">
-    <img src="../_images/base64_encoding.png" alt="Base64 Encoding"/>
-</p>
+<Image src="../_images/base64_encoding.png" alt="Base64 Encoding"/>
 
 예를 들어, “Man” base64로 인코딩하면 다음과 같습니다.
 

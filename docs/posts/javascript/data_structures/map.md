@@ -2,9 +2,7 @@
 
 reference 타입 중 하나인 Map은 key-value pair로 property를 저장한다는 점에서 기존 object(Object inst)와 거의 비슷하지만 다음과 같은 차이점이 있습니다.
 
-<p align="center">
-    <img src="../_images/map_object_diff.png" alt="Map과 Object 차이점"/>
-</p>
+<Image src="../_images/map_object_diff.png" alt="Map과 Object 차이점"/>
 
 ## Iterating Map with forEach method
 

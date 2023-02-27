@@ -2,9 +2,7 @@
 
 `HTTP/2` 에서는 stream간의 frame 결합과 재조립으로 multiplexing을 구현합니다.
 
-<p align="center">
-    <img src='../_images/req_res_multiplexing.png' placeholder="Multiplexing" />
-</p>
+<Image src='../_images/req_res_multiplexing.png' placeholder="Multiplexing" />
 
 전송할 HTTP message들을 [단일 persistent TCP connection](../http1/connection_management#persistent) 내에서 결합된 stream으로 주고받는 로직은 다음과 같은 장점을 가집니다.
 

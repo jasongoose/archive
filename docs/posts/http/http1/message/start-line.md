@@ -4,9 +4,7 @@
 
 요청 메시지의 경우, 아래와 같은 구성을 가집니다.
 
-<p align="center">
-    <img src="../../_images/http1-start-line-req.jpeg" alt="start-line-req" />
-</p>
+<Image src="../../_images/http1-start-line-req.jpeg" alt="start-line-req" />
 
 ### Method
 
@@ -74,6 +72,4 @@ OPTIONS * HTTP/1.1
 
 응답 메시지의 경우, 아래와 같이 HTTP version + Status Code로만 간단하게 구성됩니다.
 
-<p align="center">
-    <img src="../../_images/http1-start-line-res.jpeg" alt="start-line-res" />
-</p>
+<Image src="../../_images/http1-start-line-res.jpeg" alt="start-line-res" />

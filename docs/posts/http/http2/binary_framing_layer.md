@@ -4,9 +4,7 @@
 
 변환된 message는 byte stream 형식을 가집니다.
 
-<p align="center">
-    <img src='../_images/bfl.png' placeholder="Binary Framing Layer" />
-</p>
+<Image src='../_images/bfl.png' placeholder="Binary Framing Layer" />
 
 :::info
 BFL은 OSI 계층모델에서 [6계층](../../../books/TCP_IP_완벽_가이드/6장/6-6.html#프리젠테이션-계층-6계층)의 구현체로 볼 수 있습니다.
@@ -30,9 +28,7 @@ TCP 세그먼트의 제어 비트값을 이용하여 특정 stream은 별다른 
 
 그래서 HTTP/2는 HTTP/1.x message의 header와 body를 각각 별도의 binary frame 단위로 변환한 message를 사용합니다.
 
-<p align="center">
-    <img src='../_images/http2-frame.png' placeholder="HTTP2 Frame" />
-</p>
+<Image src='../_images/http2-frame.png' placeholder="HTTP2 Frame" />
 
 frame을 사용하면 아래와 같은 문제를 해결할 수 있습니다.
 

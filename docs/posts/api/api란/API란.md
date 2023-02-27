@@ -1,8 +1,6 @@
 # API란?
 
-<p align="center">
-    <img src="../_images/what_is_api.png" alt="what_is_api" />
-</p>
+<Image src="../_images/what_is_api.png" alt="what_is_api" />
 
 ## 정의
 

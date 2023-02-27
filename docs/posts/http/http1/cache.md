@@ -2,9 +2,7 @@
 
 HTTP를 따르는 요청과 그에 대응하는 응답 데이터를 같이 따로 저장하여, 추후 동일한 요청을 처리할 때 재사용하기 위한 메커니즘으로 서버의 트래픽 분산을 목적으로 많이 사용됩니다.
 
-<p align="center">
-    <img src="../_images/http1-cache.png" alt="Cache"/>
-</p>
+<Image src="../_images/http1-cache.png" alt="Cache"/>
 
 HTTP cache는 여러 클라이언트들 사이에서 공유되는지 여부에 따라서 2가지 타입으로 나뉩니다.
 

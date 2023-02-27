@@ -1,8 +1,6 @@
 # Broadcast Channel
 
-<p align="center">
-    <img src="../_images/bc.png" alt="Broadcast Channel" />
-</p>
+<Image src="../_images/bc.png" alt="Broadcast Channel" />
 
 서로 다른 origin을 가진 browsing context(bCtx)사이의 통신은 제한적이지만 동일한 origin 사이의 경우, Broadcast Channel API를 사용하면 됩니다.
 

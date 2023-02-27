@@ -2,9 +2,7 @@
 
 local repo의 history에 맞춰서 remote repo의 history에 commit들을 추가/삭제하는 명령어입니다.
 
-<p align="center">
-    <img src="../_images/git_push.png" alt="git push" />
-</p>
+<Image src="../_images/git_push.png" alt="git push" />
 
 `git push`를 할 때, remote 브랜치와 local 브랜치가 서로 갈라져서(diverged) non-fastfoward merge가 필요한 상황이면 git은 default로 이러한 push를 차단합니다.
 
