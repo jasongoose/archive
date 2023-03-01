@@ -9,3 +9,17 @@
 [📜 What is CSRF?](https://www.synopsys.com/glossary/what-is-csrf.html)
 
 [📜 Bypassing token validation](https://portswigger.net/web-security/csrf/bypassing-token-validation)
+
+[📜 XSS](https://owasp.org/www-community/attacks/xss/)
+
+[📜 Cross Site Scripting](https://portswigger.net/web-security/cross-site-scripting)
+
+[📜 XSS Attack](https://nordvpn.com/ko/blog/xss-attack/)
+
+[📜 DOM Based XSS](https://owasp.org/www-community/attacks/DOM_Based_XSS)
+
+[📜 Blacklisting, Whitelisting, GreyListing](https://www.packetlabs.net/posts/blacklisting-whitelisting-greylisting/)
+
+[📜 Content Security Policy](https://portswigger.net/web-security/cross-site-scripting/content-security-policy#mitigating-xss-attacks-using-csp)
+
+[📜 Unicode](https://exploringjs.com/es6/ch_unicode.html)

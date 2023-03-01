@@ -878,11 +878,11 @@ export default defineConfig({
           items: [
             {
               text: "XSS란?",
-              link: "",
+              link: "/posts/security/xss/xss란",
             },
             {
               text: "XSS 예방하기",
-              link: "",
+              link: "/posts/security/xss/xss_예방하기",
             },
           ],
           collapsible: true,
