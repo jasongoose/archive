@@ -23,3 +23,9 @@
 [📜 Content Security Policy](https://portswigger.net/web-security/cross-site-scripting/content-security-policy#mitigating-xss-attacks-using-csp)
 
 [📜 Unicode](https://exploringjs.com/es6/ch_unicode.html)
+
+[📜 JWT](https://jwt.io/introduction)
+
+[📜 What to consider before using jwt](https://serengetitech.com/tech/what-to-consider-before-using-jwt/)
+
+[📜 HTML5 Security Cheat Sheet#localStorage](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html#local-storage)

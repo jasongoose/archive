@@ -892,25 +892,25 @@ export default defineConfig({
           text: "JWT",
           items: [
             {
-              text: "JWT란?",
-              link: "",
+              text: "JWT",
+              link: "/posts/security/jwt/jwt",
             },
-            {
-              text: "구조",
-              link: "",
-            },
-            {
-              text: "작동방식",
-              link: "",
-            },
-            {
-              text: "장단점",
-              link: "",
-            },
-            {
-              text: "유의할 점",
-              link: "",
-            },
+            // {
+            //   text: "구조",
+            //   link: "",
+            // },
+            // {
+            //   text: "작동방식",
+            //   link: "",
+            // },
+            // {
+            //   text: "장단점",
+            //   link: "",
+            // },
+            // {
+            //   text: "유의할 점",
+            //   link: "",
+            // },
           ],
           collapsible: true,
           collapsed: true,
