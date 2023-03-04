@@ -915,7 +915,7 @@ export default defineConfig({
           items: [
             {
               text: "OAuth란?",
-              link: "",
+              link: "/posts/security/oauth/oauth",
             },
           ],
           collapsible: true,

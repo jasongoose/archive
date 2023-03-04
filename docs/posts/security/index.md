@@ -33,3 +33,7 @@
 [📜 About CORS](https://evan-moon.github.io/2020/05/21/about-cors/)
 
 [📜 CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
+[📜 What is OAuth](https://www.varonis.com/blog/what-is-oauth)
+
+[📜 Github - Authorizing OAuth Apps](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
