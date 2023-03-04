@@ -925,61 +925,35 @@ export default defineConfig({
       "/posts/typescript/": [
         // done
         {
-          text: "Module System",
-          items: [
-            {
-              text: "Module Resolution Strategy",
-              link: "",
-            },
-            {
-              text: "Module Standard",
-              link: "",
-            },
-            {
-              text: "Share Type Declaration",
-              link: "",
-            },
-            {
-              text: "Dynamic Imports",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "Working w/ Modules",
-          items: [
-            {
-              text: "Ambient Modules",
-              link: "",
-            },
-            {
-              text: "Shorthand Ambient Modules",
-              link: "",
-            },
-            {
-              text: "Wildcard Module Declaration",
-              link: "",
-            },
-            {
-              text: "Declare Keyword",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "Module Resolution", // 위 섹션과 겹칠수도...
+          text: "Module",
           items: [
             {
               text: "Module Imports",
-              link: "",
+              link: "/posts/typescript/module/module_imports",
             },
             {
               text: "Module Resolution Strategies",
-              link: "",
+              link: "/posts/typescript/module/module_resolution_strategies",
+            },
+            {
+              text: "Module Standard",
+              link: "/posts/typescript/module/module_standard",
+            },
+            {
+              text: "Share Type Declaration",
+              link: "/posts/typescript/module/share_type_declaration",
+            },
+            {
+              text: "Dynamic Imports",
+              link: "/posts/typescript/module/dynamic_imports",
+            },
+            {
+              text: "Declare Keyword",
+              link: "/posts/typescript/module/declare_keyword",
+            },
+            {
+              text: "Ambient Modules",
+              link: "/posts/typescript/module/ambient_modules",
             },
           ],
           collapsible: true,
