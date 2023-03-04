@@ -29,3 +29,7 @@
 [📜 What to consider before using jwt](https://serengetitech.com/tech/what-to-consider-before-using-jwt/)
 
 [📜 HTML5 Security Cheat Sheet#localStorage](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html#local-storage)
+
+[📜 About CORS](https://evan-moon.github.io/2020/05/21/about-cors/)
+
+[📜 CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)

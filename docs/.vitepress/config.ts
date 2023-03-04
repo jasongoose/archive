@@ -895,22 +895,6 @@ export default defineConfig({
               text: "JWT",
               link: "/posts/security/jwt/jwt",
             },
-            // {
-            //   text: "구조",
-            //   link: "",
-            // },
-            // {
-            //   text: "작동방식",
-            //   link: "",
-            // },
-            // {
-            //   text: "장단점",
-            //   link: "",
-            // },
-            // {
-            //   text: "유의할 점",
-            //   link: "",
-            // },
           ],
           collapsible: true,
           collapsed: true,
@@ -919,16 +903,8 @@ export default defineConfig({
           text: "CORS",
           items: [
             {
-              text: "CORS란?",
-              link: "",
-            },
-            {
-              text: "적용되는 시나리오",
-              link: "",
-            },
-            {
-              text: "에러 해결하는 방법",
-              link: "",
+              text: "CORS",
+              link: "/posts/security/cors/cors",
             },
           ],
           collapsible: true,
