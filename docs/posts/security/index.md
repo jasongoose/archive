@@ -37,3 +37,5 @@
 [📜 What is OAuth](https://www.varonis.com/blog/what-is-oauth)
 
 [📜 Github - Authorizing OAuth Apps](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps)
+
+[👉 비슷해보이지만 다른 두 친구를 소개합니다. Authentication vs Authorization](https://baek.dev/post/24/)

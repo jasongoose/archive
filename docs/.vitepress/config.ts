@@ -921,28 +921,6 @@ export default defineConfig({
           collapsible: true,
           collapsed: true,
         },
-        {
-          text: "인증(Authentication)",
-          items: [
-            {
-              text: "인증이란?",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "인가(Authorization)",
-          items: [
-            {
-              text: "인가란?",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
       ],
       "/posts/typescript/": [
         // done
