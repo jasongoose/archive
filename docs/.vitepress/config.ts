@@ -963,32 +963,8 @@ export default defineConfig({
           text: "Namespace",
           items: [
             {
-              text: "Namespace란?",
-              link: "",
-            },
-            {
-              text: "Importing",
-              link: "",
-            },
-            {
-              text: "Exporting",
-              link: "",
-            },
-            {
-              text: "Aliasing",
-              link: "",
-            },
-            {
-              text: "Modularization",
-              link: "",
-            },
-            {
-              text: "Extending",
-              link: "",
-            },
-            {
-              text: "Suggestions",
-              link: "",
+              text: "Namespace",
+              link: "/posts/typescript/namespace/namespace",
             },
           ],
           collapsible: true,
