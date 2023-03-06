@@ -971,21 +971,6 @@ export default defineConfig({
           collapsed: true,
         },
         {
-          text: "Compilation",
-          items: [
-            {
-              text: "root-level",
-              link: "",
-            },
-            {
-              text: "compiler options",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
           text: "Type Declaration",
           items: [
             {
