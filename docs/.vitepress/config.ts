@@ -975,15 +975,15 @@ export default defineConfig({
           items: [
             {
               text: ".d.ts 파일",
-              link: "",
-            },
-            {
-              text: "Global Type Declaration",
-              link: "",
+              link: "/posts/typescript/type_declaration/.d.ts_파일",
             },
             {
               text: "Local Type Declaration",
-              link: "",
+              link: "/posts/typescript/type_declaration/local_type_declaration",
+            },
+            {
+              text: "Global Type Declaration",
+              link: "/posts/typescript/type_declaration/global_type_declaration",
             },
           ],
           collapsible: true,
