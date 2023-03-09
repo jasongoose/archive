@@ -1012,23 +1012,11 @@ export default defineConfig({
           collapsed: true,
         },
         {
-          text: "Mapped Type",
+          text: "Mapped Types",
           items: [
             {
-              text: "Mapped Type이란?",
-              link: "",
-            },
-            {
-              text: "Mapping Modifiers",
-              link: "",
-            },
-            {
-              text: "Key Remapping w/ 'as'",
-              link: "",
-            },
-            {
-              text: "Indexed Access Types",
-              link: "",
+              text: "Mapped Types",
+              link: "/posts/typescript/mapped_types/mapped_types",
             },
           ],
           collapsible: true,

@@ -21,3 +21,7 @@
 [📜 Non-null Assertion Operator](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#non-null-assertion-operator-postfix-)
 
 [📜 const assertion](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#const-assertions)
+
+[📜 Mapped Types](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html)
+
+[📜 Indexed Access Types](https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html)
