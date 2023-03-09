@@ -990,42 +990,11 @@ export default defineConfig({
           collapsed: true,
         },
         {
-          text: "Type Assertion",
+          text: "Conditional Types",
           items: [
             {
-              text: "Non-null operator(!)",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "Conditional Type",
-          items: [
-            {
-              text: "Condition Type이란?",
-              link: "",
-            },
-            {
-              text: "With Generic",
-              link: "",
-            },
-            {
-              text: "Constraints",
-              link: "",
-            },
-            {
-              text: "Flatten Type",
-              link: "",
-            },
-            {
-              text: "Inferring",
-              link: "",
-            },
-            {
-              text: "Distributive Type",
-              link: "",
+              text: "Conditional Types",
+              link: "/posts/typescript/conditional_types/conditional_types",
             },
           ],
           collapsible: true,

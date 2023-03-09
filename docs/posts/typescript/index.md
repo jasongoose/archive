@@ -15,3 +15,5 @@
 [📜 What is the difference between _.d.ts vs _.ts in typescript?](https://stackoverflow.com/questions/29196657/what-is-the-difference-between-d-ts-vs-ts-in-typescript)
 
 [📜 Modules .d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-d-ts.html)
+
+[📜 Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)
