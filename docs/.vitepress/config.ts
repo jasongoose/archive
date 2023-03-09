@@ -990,6 +990,17 @@ export default defineConfig({
           collapsed: true,
         },
         {
+          text: "Type Assertion",
+          items: [
+            {
+              text: "Type Assertion",
+              link: "/posts/typescript/type_assertion/type_assertion",
+            },
+          ],
+          collapsible: true,
+          collapsed: true,
+        },
+        {
           text: "Conditional Types",
           items: [
             {

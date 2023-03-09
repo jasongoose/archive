@@ -17,3 +17,7 @@
 [📜 Modules .d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/templates/module-d-ts.html)
 
 [📜 Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)
+
+[📜 Non-null Assertion Operator](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#non-null-assertion-operator-postfix-)
+
+[📜 const assertion](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-4.html#const-assertions)
