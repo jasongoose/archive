@@ -33,3 +33,11 @@
 [📜 TypeScript: 제네릭(Generic)](https://hyunseob.github.io/2017/01/14/typescript-generic/)
 
 [📜 Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)
+
+[📜 Type Inference In Conditional Types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html#type-inference-in-conditional-types)
+
+[📜 What does "keyof typeof" mean in TypeScript?](https://stackoverflow.com/questions/55377365/what-does-keyof-typeof-mean-in-typescript)
+
+[📜 Enums](https://www.typescriptlang.org/docs/handbook/enums.html)
+
+[🎬 How to use TypeScript Enums and why not to, maybe](https://www.youtube.com/watch?v=pWPClHdcvVg)

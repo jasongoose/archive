@@ -1087,40 +1087,12 @@ export default defineConfig({
           text: "Keywords",
           items: [
             {
-              text: "type vs. interface",
-              link: "",
-            },
-            {
-              text: "as",
-              link: "",
-            },
-            {
-              text: "as const",
-              link: "",
-            },
-            {
               text: "infer",
-              link: "",
-            },
-            {
-              text: "extends",
-              link: "",
+              link: "/posts/typescript/keywords/infer",
             },
             {
               text: "enum",
-              link: "",
-            },
-            {
-              text: "readonly",
-              link: "",
-            },
-            {
-              text: "typeof",
-              link: "",
-            },
-            {
-              text: "keyof",
-              link: "",
+              link: "/posts/typescript/keywords/enum",
             },
           ],
           collapsible: true,

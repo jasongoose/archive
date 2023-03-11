@@ -102,14 +102,6 @@ type Num = Flatten<number>; // number
 
 ## Inferring within Conditional Types
 
-`infer` 키워드는 type을 직접 지정하는 것이 아닌 실제 적용했을 때 데이터로부터 type을 추론하라는 의미를 가집니다.
-
-Flatten type은 사실 다음과 같이 더 간단하게(?) 작성할 수 있습니다.
-
-```ts
-type Flatten<Type> = Type extends Array<infer Item> ? Item : Type;
-```
-
 `infer` 키워드를 사용하면 함수의 return type을 구하는 타입을 다르게 구할 수 있습니다.
 
 ```ts
@@ -123,6 +115,15 @@ type Str = GetReturnType<(x: string) => string>; // string
 
 type Bools = GetReturnType<(a: boolean, b: boolean) => boolean[]>; // boolean[]
 ```
+
+:::tip
+위의 Flatten type은 사실 다음과 같이 더 간단하게(?) 작성할 수 있습니다.
+
+```ts
+type Flatten<Type> = Type extends Array<infer Item> ? Item : Type;
+```
+
+:::
 
 ## Distributive Conditional Types
 
