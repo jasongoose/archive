@@ -25,3 +25,7 @@
 [📜 Mapped Types](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html)
 
 [📜 Indexed Access Types](https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html)
+
+[📜 Template Literal Types](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html)
+
+[📜 Template Literal Types로 타입 안전하게 코딩하기](https://toss.tech/article/template-literal-types)

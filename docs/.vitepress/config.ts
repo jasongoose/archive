@@ -1027,27 +1027,27 @@ export default defineConfig({
           items: [
             {
               text: "Union Type",
-              link: "",
+              link: "/posts/typescript/utility_types/union_type",
             },
             {
-              text: "Record",
-              link: "",
+              text: "Record Type",
+              link: "/posts/typescript/utility_types/record_type",
             },
             {
-              text: "Spread Syntax(...)",
-              link: "",
+              text: "Spread Syntax",
+              link: "/posts/typescript/utility_types/spread_syntax",
             },
             {
               text: "Recursion Type",
-              link: "",
+              link: "/posts/typescript/utility_types/recursion_type",
             },
             {
-              text: "Template Literal",
-              link: "",
+              text: "Template Literal Type",
+              link: "/posts/typescript/utility_types/template_literal_type",
             },
             {
               text: "Indexed Signature",
-              link: "",
+              link: "/posts/typescript/utility_types/indexed_signature",
             },
           ],
           collapsible: true,
