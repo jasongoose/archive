@@ -29,3 +29,7 @@
 [📜 Template Literal Types](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html)
 
 [📜 Template Literal Types로 타입 안전하게 코딩하기](https://toss.tech/article/template-literal-types)
+
+[📜 TypeScript: 제네릭(Generic)](https://hyunseob.github.io/2017/01/14/typescript-generic/)
+
+[📜 Generics](https://www.typescriptlang.org/docs/handbook/2/generics.html)

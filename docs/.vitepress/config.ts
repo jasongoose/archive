@@ -1057,12 +1057,8 @@ export default defineConfig({
           text: "Generic",
           items: [
             {
-              text: "Generic이란?",
-              link: "",
-            },
-            {
-              text: "Constraints",
-              link: "",
+              text: "Generic",
+              link: "/posts/typescript/generic/generic",
             },
           ],
           collapsible: true,
