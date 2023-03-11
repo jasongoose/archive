@@ -1068,16 +1068,16 @@ export default defineConfig({
           text: "Syntax Sugar",
           items: [
             {
-              text: "Array => Object",
-              link: "",
+              text: "Array Type",
+              link: "/posts/typescript/syntax_sugar/array_type",
             },
             {
-              text: "tuple/array",
-              link: "",
+              text: "Tuple Type",
+              link: "/posts/typescript/syntax_sugar/tuple_type",
             },
             {
-              text: "object",
-              link: "",
+              text: "Object Type",
+              link: "/posts/typescript/syntax_sugar/object_type",
             },
           ],
           collapsible: true,
