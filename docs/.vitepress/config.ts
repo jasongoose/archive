@@ -1141,15 +1141,15 @@ export default defineConfig({
           items: [
             {
               text: "Virtual DOM",
-              link: "",
+              link: "/posts/vue3/rendering_mechanism/virtual_dom",
             },
             {
               text: "Render Pipeline",
-              link: "",
+              link: "/posts/vue3/rendering_mechanism/render_pipeline",
             },
             {
               text: "Compiler-Informed VDOM",
-              link: "",
+              link: "/posts/vue3/rendering_mechanism/compiler_informed_virtual_dom",
             },
           ],
           collapsible: true,
