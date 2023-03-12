@@ -856,7 +856,7 @@ export default defineConfig({
           collapsed: true,
         },
       ],
-      "/posts/react/": [],
+      // "/posts/react/": [],
       "/posts/security/": [
         {
           text: "XSRF",
@@ -923,7 +923,6 @@ export default defineConfig({
         },
       ],
       "/posts/typescript/": [
-        // done
         {
           text: "Module",
           items: [
@@ -1107,31 +1106,31 @@ export default defineConfig({
           items: [
             {
               text: "Saving Code To Run Later",
-              link: "",
+              link: "/posts/vue3/reactivity_api/saving_code_to_run_later",
             },
             {
               text: "Multiple Properties",
-              link: "",
+              link: "/posts/vue3/reactivity_api/multiple_properties",
             },
             {
               text: "Multiple Reactive Objects",
-              link: "",
+              link: "/posts/vue3/reactivity_api/multiple_reactive_objects",
             },
             {
-              text: "Proxy & Reflect",
-              link: "",
+              text: "Proxy, Reflect",
+              link: "/posts/vue3/reactivity_api/proxy_reflect",
             },
             {
               text: "activeEffect",
-              link: "",
+              link: "/posts/vue3/reactivity_api/active_effect",
             },
             {
               text: "ref",
-              link: "",
+              link: "/posts/vue3/reactivity_api/ref",
             },
             {
               text: "computed",
-              link: "",
+              link: "/posts/vue3/reactivity_api/computed",
             },
           ],
           collapsible: true,
@@ -1751,10 +1750,10 @@ export default defineConfig({
             text: "PWA",
             link: "/posts/pwa/",
           },
-          {
-            text: "React",
-            link: "/posts/react/",
-          },
+          // {
+          //   text: "React",
+          //   link: "/posts/react/",
+          // },
           {
             text: "Security",
             link: "/posts/security/",
@@ -1763,10 +1762,10 @@ export default defineConfig({
             text: "Typescript",
             link: "/posts/typescript/",
           },
-          {
-            text: "Vite",
-            link: "/posts/vite/",
-          },
+          // {
+          //   text: "Vite",
+          //   link: "/posts/vite/",
+          // },
           {
             text: "Vue3",
             link: "/posts/vue3/",
