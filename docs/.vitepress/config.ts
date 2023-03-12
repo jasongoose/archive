@@ -1159,12 +1159,8 @@ export default defineConfig({
           text: "Component Lifecycle",
           items: [
             {
-              text: "Single Component",
-              link: "",
-            },
-            {
-              text: "Child Component",
-              link: "",
+              text: "Component Lifecycle",
+              link: "/posts/vue3/component_lifecycle/component_lifecycle",
             },
           ],
           collapsible: true,
