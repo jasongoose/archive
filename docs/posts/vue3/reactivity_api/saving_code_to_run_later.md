@@ -1,6 +1,6 @@
 # Saving Code To Run Later
 
-vue의 반응성(reactivity)은 3가지 함수와 dependency(dep)에 의해서 구현됩니다.
+Vue3의 반응성(reactivity)은 3가지 함수와 dependency(dep)에 의해서 구현됩니다.
 
 <Image src="../_images/saving_code_to_run_later.png" alt="Saving code to run later" />
 
