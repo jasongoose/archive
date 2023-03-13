@@ -1171,19 +1171,15 @@ export default defineConfig({
           items: [
             {
               text: "Option Object Parameter",
-              link: "",
+              link: "/posts/vue3/composable/option_object_parameter",
             },
             {
-              text: "Flexible args w/ unref",
-              link: "",
+              text: "Flexible arguments",
+              link: "/posts/vue3/composable/flexible_arguments",
             },
             {
-              text: "Conditional Returns",
-              link: "",
-            },
-            {
-              text: "Async w/o Await",
-              link: "",
+              text: "Async Without Await",
+              link: "/posts/vue3/composable/async_without_await",
             },
           ],
           collapsible: true,
