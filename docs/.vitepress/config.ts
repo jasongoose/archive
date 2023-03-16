@@ -18,42 +18,6 @@ export default defineConfig({
           ],
         },
       ],
-      "/posts/api/": [
-        {
-          text: "API란?",
-          items: [
-            {
-              text: "API란?",
-              link: "/posts/api/api란/API란",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "API Specification",
-          items: [
-            {
-              text: "Specification",
-              link: "/posts/api/api_specification/Specification",
-            },
-            {
-              text: "SOAP",
-              link: "/posts/api/api_specification/SOAP",
-            },
-            {
-              text: "RESTful",
-              link: "/posts/api/api_specification/RESTful",
-            },
-            // {
-            //   text: "GraphQL",
-            //   link: "/posts/api/GraphQL",
-            // },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-      ],
       "/posts/architecture/": [
         {
           text: "SW Architecture란?",
@@ -1185,17 +1149,17 @@ export default defineConfig({
           collapsed: true,
         },
       ],
-      "/posts/web/": [
+      "/posts/web_용어정리/": [
         {
           text: "Domain",
           items: [
             {
               text: "Domain",
-              link: "/posts/web/domain/domain",
+              link: "/posts/web_용어정리/domain/domain",
             },
             {
               text: "Page vs. Site",
-              link: "/posts/web/domain/page_vs_site",
+              link: "/posts/web_용어정리/domain/page_vs_site",
             },
           ],
           collapsible: true,
@@ -1206,11 +1170,11 @@ export default defineConfig({
           items: [
             {
               text: "URI",
-              link: "/posts/web/uri/uri",
+              link: "/posts/web_용어정리/uri/uri",
             },
             {
               text: "Encoding",
-              link: "/posts/web/uri/encoding",
+              link: "/posts/web_용어정리/uri/encoding",
             },
           ],
           collapsible: true,
@@ -1221,7 +1185,7 @@ export default defineConfig({
           items: [
             {
               text: "Web Server",
-              link: "/posts/web/web_server/web_server",
+              link: "/posts/web_용어정리/web_server/web_server",
             },
           ],
           collapsible: true,
@@ -1232,7 +1196,7 @@ export default defineConfig({
           items: [
             {
               text: "Search Engine",
-              link: "/posts/web/search_engine/search_engine",
+              link: "/posts/web_용어정리/search_engine/search_engine",
             },
           ],
           collapsible: true,
@@ -1243,7 +1207,7 @@ export default defineConfig({
           items: [
             {
               text: "HyperLink",
-              link: "/posts/web/hyperlink/hyperlink",
+              link: "/posts/web_용어정리/hyperlink/hyperlink",
             },
           ],
           collapsible: true,
@@ -1254,7 +1218,7 @@ export default defineConfig({
           items: [
             {
               text: "Browsing Context",
-              link: "/posts/web/browsing_context/browsing_context",
+              link: "/posts/web_용어정리/browsing_context/browsing_context",
             },
           ],
           collapsible: true,
@@ -1265,7 +1229,18 @@ export default defineConfig({
           items: [
             {
               text: "User Agent",
-              link: "/posts/web/user_agent/user_agent",
+              link: "/posts/web_용어정리/user_agent/user_agent",
+            },
+          ],
+          collapsible: true,
+          collapsed: true,
+        },
+        {
+          text: "API",
+          items: [
+            {
+              text: "API",
+              link: "/posts/web_용어정리/api/api",
             },
           ],
           collapsible: true,
@@ -1666,10 +1641,6 @@ export default defineConfig({
         text: "Posts",
         items: [
           {
-            text: "API",
-            link: "/posts/api/",
-          },
-          {
             text: "SW Architecture",
             link: "/posts/architecture/",
           },
@@ -1730,8 +1701,8 @@ export default defineConfig({
             link: "/posts/vue3/",
           },
           {
-            text: "Web",
-            link: "/posts/web/",
+            text: "Web 용어정리",
+            link: "/posts/web_용어정리/",
           },
         ],
       },

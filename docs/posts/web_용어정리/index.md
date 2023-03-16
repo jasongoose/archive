@@ -15,3 +15,5 @@
 [📜 ASCII](https://www.britannica.com/topic/ASCII)
 
 [📜 User Agent](https://developer.mozilla.org/en-US/docs/Glossary/User_agent)
+
+[📜 What is an API?](https://www.redhat.com/en/topics/api/what-are-application-programming-interfaces)
