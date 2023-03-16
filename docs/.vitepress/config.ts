@@ -20,11 +20,11 @@ export default defineConfig({
       ],
       "/posts/architecture/": [
         {
-          text: "SW Architecture란?",
+          text: "Architecture",
           items: [
             {
-              text: "SW Architecture란?",
-              link: "/posts/architecture/sw_architecture란/SW_Architecture란",
+              text: "Architecture",
+              link: "/posts/architecture/architecture/architecture",
             },
           ],
           collapsible: true,
@@ -1641,7 +1641,7 @@ export default defineConfig({
         text: "Posts",
         items: [
           {
-            text: "SW Architecture",
+            text: "Architecture",
             link: "/posts/architecture/",
           },
           {
