@@ -139,8 +139,8 @@ export default defineConfig({
           text: "Storage",
           items: [
             {
-              text: "Cookie",
-              link: "/posts/browser/storage/cookie",
+              text: "Session, Cookie",
+              link: "/posts/browser/storage/session_cookie",
             },
             {
               text: "Web Storage",
