@@ -1100,7 +1100,6 @@ export default defineConfig({
       ],
       // "/posts/vite/": [],
       "/posts/vue3/": [
-        // done
         {
           text: "Reactivity API",
           items: [
@@ -1187,21 +1186,16 @@ export default defineConfig({
         },
       ],
       "/posts/web/": [
-        // done
         {
           text: "Domain",
           items: [
             {
-              text: "구조 및 관리",
-              link: "",
+              text: "Domain",
+              link: "/posts/web/domain/domain",
             },
             {
-              text: "DNS Refreshing",
-              link: "",
-            },
-            {
-              text: "DNS Processing",
-              link: "",
+              text: "Page vs. Site",
+              link: "/posts/web/domain/page_vs_site",
             },
           ],
           collapsible: true,
@@ -1211,31 +1205,12 @@ export default defineConfig({
           text: "URI",
           items: [
             {
-              text: "URI란?",
-              link: "",
+              text: "URI",
+              link: "/posts/web/uri/uri",
             },
             {
-              text: "URL이란?",
-              link: "",
-            },
-            {
-              text: "URN이란?",
-              link: "",
-            },
-          ],
-          collapsible: true,
-          collapsed: true,
-        },
-        {
-          text: "Page vs. Site",
-          items: [
-            {
-              text: "Web Page란?",
-              link: "",
-            },
-            {
-              text: "Web Site란?",
-              link: "",
+              text: "Encoding",
+              link: "/posts/web/uri/encoding",
             },
           ],
           collapsible: true,
@@ -1245,12 +1220,8 @@ export default defineConfig({
           text: "Web Server",
           items: [
             {
-              text: "Web Server란?",
-              link: "",
-            },
-            {
-              text: "HTTP 통신",
-              link: "",
+              text: "Web Server",
+              link: "/posts/web/web_server/web_server",
             },
           ],
           collapsible: true,
@@ -1260,8 +1231,8 @@ export default defineConfig({
           text: "Search Engine",
           items: [
             {
-              text: "검색엔진이란?",
-              link: "",
+              text: "Search Engine",
+              link: "/posts/web/search_engine/search_engine",
             },
           ],
           collapsible: true,
@@ -1271,12 +1242,8 @@ export default defineConfig({
           text: "Hyperlink",
           items: [
             {
-              text: "Anchor",
-              link: "",
-            },
-            {
-              text: "Links & Search Engine",
-              link: "",
+              text: "HyperLink",
+              link: "/posts/web/hyperlink/hyperlink",
             },
           ],
           collapsible: true,
@@ -1286,8 +1253,8 @@ export default defineConfig({
           text: "Browsing Context",
           items: [
             {
-              text: "Browsing Context란?",
-              link: "",
+              text: "Browsing Context",
+              link: "/posts/web/browsing_context/browsing_context",
             },
           ],
           collapsible: true,
@@ -1297,8 +1264,8 @@ export default defineConfig({
           text: "User Agent",
           items: [
             {
-              text: "User Agent란?",
-              link: "",
+              text: "User Agent",
+              link: "/posts/web/user_agent/user_agent",
             },
           ],
           collapsible: true,

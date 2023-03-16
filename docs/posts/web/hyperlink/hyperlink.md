@@ -1,0 +1,35 @@
+# Hyper Link
+
+## Hyperlink란?
+
+웹 페이지로 이동하기 위한 수단으로 보통 페이지의 URL과 연결된 문자열로 표현됩니다.
+
+## Link Types
+
+### internal link
+
+동일한 도메인을 가지는 두 페이지들 사이를 이동할 때 사용하는 링크입니다.
+
+### external link
+
+다른 도메인을 가진 웹 페이지로 이동할 때 사용하는 링크입니다.
+
+### incoming link
+
+다른 도메인에 속하는 페이지에서 현재 페이지로 연결하는 링크로, external link의 방향과 반대입니다.
+
+:::tip
+웹 사이트를 만들 때는 internal link의 적절한 구성이 중요하지만 검색엔진에 의해서 발견되려면 external, incoming link의 구성도 중요하다.
+:::
+
+## Anchors
+
+<Image src="../_images/anchors.png" alt="Anchors" />
+
+하나의 웹 페이지를 구성하는 section(viewport 최상단부터 보여줄 HTML tag)간의 이동을 위해서 사용하는 링크입니다.
+
+:::tip
+실제로 `href`에 CSS selector를 작성하면 해당 tag로 이동합니다.
+:::
+
+물론 아예 다른 페이지로 이동할 때도 사용할 수 있습니다!
