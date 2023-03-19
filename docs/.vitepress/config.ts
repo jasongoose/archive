@@ -211,8 +211,8 @@ export default defineConfig({
           text: "DevOps",
           items: [
             {
-              text: "DevOps란?",
-              link: "/posts/devops/devops란/DevOps란",
+              text: "DevOps",
+              link: "/posts/devops/devops/devops",
             },
           ],
           collapsible: true,
