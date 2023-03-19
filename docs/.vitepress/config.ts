@@ -224,8 +224,8 @@ export default defineConfig({
           text: "Tree Shaking",
           items: [
             {
-              text: "Tree Shaking이란?",
-              link: "/posts/frontend/tree_shaking/Tree_Shaking이란",
+              text: "Tree Shaking",
+              link: "/posts/frontend/tree_shaking/tree_shaking",
             },
           ],
           collapsible: true,
@@ -235,8 +235,8 @@ export default defineConfig({
           text: "Skeleton UI",
           items: [
             {
-              text: "Skeleton UI란?",
-              link: "/posts/frontend/skeleton_ui/Skeleton_UI란",
+              text: "Skeleton UI",
+              link: "/posts/frontend/skeleton_ui/skeleton_ui",
             },
           ],
           collapsible: true,
@@ -246,8 +246,8 @@ export default defineConfig({
           text: "Lazy Loading",
           items: [
             {
-              text: "Lazy Loading이란?",
-              link: "/posts/frontend/lazy_loading/Lazy_Loading이란",
+              text: "Lazy Loading",
+              link: "/posts/frontend/lazy_loading/lazy_loading",
             },
           ],
           collapsible: true,
@@ -257,8 +257,8 @@ export default defineConfig({
           text: "SEO",
           items: [
             {
-              text: "SEO란?",
-              link: "/posts/frontend/seo/SEO란",
+              text: "SEO",
+              link: "/posts/frontend/seo/seo",
             },
           ],
           collapsible: true,
@@ -268,8 +268,8 @@ export default defineConfig({
           text: "Cross-Browsing",
           items: [
             {
-              text: "Cross-Browsing이란?",
-              link: "/posts/frontend/cross_browsing/Cross_Browsing이란",
+              text: "Cross-Browsing",
+              link: "/posts/frontend/cross_browsing/cross_browsing",
             },
           ],
           collapsible: true,
