@@ -6,7 +6,7 @@
 
 ## data: URL
 
-브라우저 단에서 HTML document에 작은 용량의 파일을 inline 방식으로 삽입하도록 도와주는 URL로 `data:` prefix를 가집니다.
+브라우저 단에서 HTML 문서에 작은 용량의 파일을 inline 방식으로 삽입하도록 도와주는 URL로 `data:` prefix를 가집니다.
 
 ### 구조
 

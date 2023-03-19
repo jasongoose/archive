@@ -26,7 +26,7 @@ DOM을 사용하면 프로그램(특히 JS)을 사용하여 동적으로 페이�
 
 브라우저가 parsing하는 중간에 `async` 또는 `defer` attribute이 없는 `<script src="" />`를 만나면 `src`에 명시한 실행파일을 요청하여 _동기적으로_ 처리 즉, 다운받고 모든 코드를 실행할 때까지 parsing을 중지합니다.
 
-그래서 `<script />`의 개수가 많아질수록 rendering 중 bottleneck이 되기 때문에 클라이언트에서 다운받을 파일의 개수를 줄이기 위한 번들링 과정이 필요합니다.
+그래서 `<script />`의 개수가 많아질수록 렌더링 중 bottleneck이 되기 때문에 클라이언트에서 다운받을 파일의 개수를 줄이기 위한 번들링 과정이 필요합니다.
 
 ## CSS Object Model
 
@@ -118,7 +118,7 @@ layout은 root로부터 시작하는 global layout과 서브트리에서 시작�
 
 ## Paint
 
-render tree와 layout을 기반으로 화면에 콘텐츠를 픽셀 단위로 표시하는 작업입니다.
+render tree와 layout을 기반으로 화면에 컨텐츠를 픽셀 단위로 표시하는 작업입니다.
 
 페이지가 최초로 viewport에 그려진 이후, 전체가 아닌 최소한의 영역에 대해서만 [repaint](reflow_repaint.md#repaint)가 일어납니다.
 
