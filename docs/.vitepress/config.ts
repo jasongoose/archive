@@ -67,7 +67,7 @@ export default defineConfig({
           text: "HTML",
           items: [
             {
-              text: '&lt;script src=".js"/&gt; 위치',
+              text: "script의 위치",
               link: "/posts/browser/html/script의_위치",
             },
           ],
@@ -128,7 +128,7 @@ export default defineConfig({
               link: "/posts/browser/populating_the_page/crp",
             },
             {
-              text: "Reflow/paint",
+              text: "Reflow, Repaint",
               link: "/posts/browser/populating_the_page/reflow_repaint",
             },
           ],

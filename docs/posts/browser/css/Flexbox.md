@@ -28,9 +28,9 @@ flex item별로 위치를 지정할 때는 `align-self`, `justify-self`를 사�
 
 ---
 
-`flex-shrink`(dflt 1) : available space가 없을 때, item별 영역이 줄어드는 비율
+`flex-shrink`(default 1) : available space가 없을 때, item별 영역이 줄어드는 비율
 
-`flex-grow`(dflt 0) : available space가 있을 때, item별 영역이 늘어나는 비율
+`flex-grow`(default 0) : available space가 있을 때, item별 영역이 늘어나는 비율
 
 `flex-basis` : flex item의 grow, shrink가 적용되기 전 main axis 방향의 변의 길이
 
