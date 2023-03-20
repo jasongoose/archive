@@ -2,7 +2,7 @@
 
 forked history를 다시 하나로 합치기 위한 명령어로, 보통 하나의 common base(공통 commit)에서 갈라진 branch들을 하나의 branch로 만들 때 사용합니다.
 
-::: info
+:::tip
 `git merge` + checkout + `git branch -d` 조합으로 많이 사용됩니다.
 
 :::
@@ -25,9 +25,9 @@ Git은 branch들을 합치는 대신에 **FROM** branch tip이 **TO** branch tip
 
 보통 `git rebase`와 함께 사용되어 사소한 feature나 bugfix를 할 때 사용합니다.
 
-fast-foward 방식이여도 기록을 유지하기 위한 수단으로 merge commit을 생성하려면 `—-no-ff` 옵션을 사용하면 됩니다.
+fast-foward 방식이 아닌 기록을 유지하기 위한 수단으로 merge commit을 생성하려면 `—-no-ff` 옵션을 사용하면 됩니다.
 
-### 3-way merge
+### 3-way
 
 Fast Forward merge와 다르게 **FROM** branch에서 feature를 개발하는 동안에 **TO** branch에서 계속 commit이 생성될 때도 사용할 수 있는 방식으로, 보통 규모가 큰 feature를 개발하거나 팀 단위로 project를 진행할 때 활용합니다.
 
@@ -64,27 +64,27 @@ merge 과정은 마치 만드려는 제품의 구성품 도안들을 겹치는 �
 
 <Image src="../_images/mark_1.jpeg" alt="mark_1" />
 
-### feature -> master(main)
+### feature → master(main)
 
-평소에 `feature`에서 작업하는 중에 `master`에 새로운 commit이 올라올 때마다 master → feat 방향 merge를 수행하면 된다.
+평소에 `feature`에서 작업하는 중에 `master`에 새로운 commit이 올라올 때마다 master → feat 방향 merge를 수행합니다.
 
 <Image src="../_images/feat_to_master.png" alt="feat_to_master" />
 
-### feature -> develop, test
+### feature → develop, test
 
-`develop`, `test`는 각각 개발용, 검증용 환경에서 테스트하기 위한 브랜치로, 저 말고도 다른 분들에 의해서 live 환경에 추가할 기능들을 테스트하기 위한 목적으로 이미 많은 merge들이 이루어진 상태입니다.
+`develop`, `test`는 각각 개발용, 검증용 환경에서 테스트하기 위한 브랜치로, 다른 분들에 의해서 live 환경에 추가할 기능들을 테스트하기 위한 목적으로 이미 많은 merge들이 이루어진 상태입니다.
 
 :::danger
 `develop`, `test` → `feature` 방향으로 merge를 수행하여 해결해서는 **절대로 안됩니다.**
 
 - 제 `feature`에 아직 배포준비가 되지 않은 다른 사람의 코드들이 반영되어 live에 배포될 수 있습니다.
-- merge를 수행한 뒤에 `feature`에서 작업하다가 다른 분이 생성한 코드를 수정하거나 삭제해서 다시 `develop`, `test`에 반영될 수 있습니다.
+- `feature`에서 작업하다가 다른 분이 생성한 코드를 수정하거나 삭제해서 다시 `develop`, `test`에 반영될 수 있습니다.
 
 :::
 
 conflict는 아래와 같이 해결하면 됩니다.
 
-1. target(`develop`, `test`)으로 checkout한 뒤에, 아래와 같은 브랜치를 생성한다.
+1. `develop`, `test`로 checkout한 뒤에, 아래와 같은 브랜치를 생성한다.
 
 ```js
 `${feat 이름}-${target 이름}`

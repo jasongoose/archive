@@ -12,7 +12,7 @@
 
 `feature` 브랜치를 rebase했을 때, 기존 commit들을 어떻게 재구성할지 commit 단위로 작업할 수 있습니다.
 
-보통 순서 수정, commit msg 수정, 이전 commit으로 squash, 제거 등 작업에 주로 활용됩니다.
+보통 commit 순서 수정, commit 메시지 수정, 이전 commit으로 squash, 제거 등 작업에 주로 활용됩니다.
 
 `—-onto` 옵션을 붙이면 rebase되기 전후 브랜치를 명시하여 안전하게 변경사항들을 반영할 수 있습니다.
 

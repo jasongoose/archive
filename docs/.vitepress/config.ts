@@ -362,8 +362,8 @@ export default defineConfig({
           text: "Git Flow",
           items: [
             {
-              text: "Git Flow란?",
-              link: "/posts/git/git_flow/Git_Flow란",
+              text: "Git Flow",
+              link: "/posts/git/git_flow/git_flow",
             },
             {
               text: "Main Branches",

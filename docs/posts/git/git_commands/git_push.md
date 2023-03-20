@@ -2,16 +2,14 @@
 
 local repo의 history에 맞춰서 remote repo의 history에 commit들을 추가/삭제하는 명령어입니다.
 
-<Image src="../_images/git_push.png" alt="git push" />
-
-`git push`를 할 때, remote 브랜치와 local 브랜치가 서로 갈라져서(diverged) non-fastfoward merge가 필요한 상황이면 git은 default로 이러한 push를 차단합니다.
+`git push`를 할 때, remote 브랜치와 local 브랜치가 서로 갈라져서 non-fastfoward merge가 필요한 상황이면 git은 default로 이러한 push를 차단합니다.
 
 이 상황에서는 2가지 해결방법이 있습니다.
 
 - remote repo 브랜치에서 pull 받은 뒤, push 재수행
 - `git push -—force` 로 강제로 history를 overwrite한다.
 
-:::info
+:::tip
 `git push -—force` 는 아래와 같은 상황에 보통 필요합니다.
 
 - `git reset` 이후
