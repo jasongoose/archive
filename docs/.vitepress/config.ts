@@ -391,20 +391,12 @@ export default defineConfig({
               link: "/posts/http/http1/cache",
             },
             {
-              text: "Message(start-line)",
-              link: "/posts/http/http1/message/start-line",
+              text: "Message Structure",
+              link: "/posts/http/http1/message_structure",
             },
             {
-              text: "Message(headers)",
-              link: "/posts/http/http1/message/headers",
-            },
-            {
-              text: "Message(body)",
-              link: "/posts/http/http1/message/body",
-            },
-            {
-              text: "Message(MIME)",
-              link: "/posts/http/http1/message/mime",
+              text: "MIME",
+              link: "/posts/http/http1/mime",
             },
             {
               text: "Connection Management",
