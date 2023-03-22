@@ -2,9 +2,9 @@
 
 reference 타입 중 하나인 Object는 key-value pair로 entity들을 저장하기 위해서 사용되는 타입입니다.
 
-대부분의 객체들을 모두 Object의 instance이기 때문에 prototype chain을 따라서 `Object.prototype`에 정의된 property들과 method들을 사용할 수 있습니다.
+대부분의 객체들을 모두 `Object`의 instance이기 때문에 prototype chain을 따라서 `Object.prototype`에 정의된 속성들과 메서드들을 사용할 수 있습니다.
 
-object의 property 자체를 삭제하는 method는 없기 때문에 delete 연산자를 사용해야 합니다.
+object의 속성 자체를 삭제하는 메서드는 없기 때문에 `delete` 연산자를 사용합니다.
 
 ```js
 const Employee = {
@@ -69,6 +69,40 @@ console.log(Object.keys(myObj)); // console: ['foo']
 ES6에서는 모든 non-integer property들은 삽입순서를 따릅니다.
 :::
 
+```js
+const arr = ["a", "b", "c"];
+console.log(Object.getOwnPropertyNames(arr).sort());
+// ["0", "1", "2", "length"]
+
+// Array-like object
+const obj = { 0: "a", 1: "b", 2: "c" };
+console.log(Object.getOwnPropertyNames(obj).sort());
+// ["0", "1", "2"]
+
+Object.getOwnPropertyNames(obj).forEach((val, idx, array) => {
+  console.log(`${val} -> ${obj[val]}`);
+});
+// 0 -> a
+// 1 -> b
+// 2 -> c
+
+// non-enumerable property
+const myObj = Object.create(
+  {},
+  {
+    getFoo: {
+      value() {
+        return this.foo;
+      },
+      enumerable: false,
+    },
+  }
+);
+myObj.foo = 1;
+
+console.log(Object.getOwnPropertyNames(myObj).sort()); // ["foo", "getFoo"]
+```
+
 ## Object.getOwnPropertySymbols
 
 object의 **own-symbol property들**만 추려서 array로 반환하는 static 메서드입니다.
@@ -88,9 +122,9 @@ console.log(objectSymbols); // [Symbol(a), Symbol(b)]
 console.log(objectSymbols[0]); // Symbol(a)
 ```
 
-## Object serialization
+## Object Serialization
 
-JS object를 네트워크를 통해 전송하거나 브라우저 스토리지 또는 로컬 디스크에 저장할 수 있는 format으로 변경하는 작업을 가리킵니다.
+JS 객체를 네트워크를 통해 전송하거나 브라우저 스토리지 또는 로컬 디스크에 저장할 수 있는 format으로 변경하는 작업을 가리킵니다.
 
 여기서 직렬화된 객체는 다시 원상복구가 되어야 합니다.
 

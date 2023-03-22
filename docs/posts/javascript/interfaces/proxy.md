@@ -2,13 +2,13 @@
 
 원본 객체의 object internal method의 동작방식을 재정의(intercept, redefine)하기 위한 interface를 제공합니다.
 
-보통 객체의 property에 접근하면서 로그를 남기거나, 값을 검증하거나, 값을 sanitize하거나(trim 같은), 출력 포맷을 지정하는 등의 작업에 사용됩니다.
+보통 객체의 속성에 접근하면서 로그를 남기거나, 값을 검증하거나, 값을 sanitize하거나(trim 같은), 출력 포맷을 지정하는 등의 작업에 사용됩니다.
 
 :::info
-proxy에 의한 interception은 2가지 경우에 발생한다.
+proxy에 의한 interception은 2가지 경우에 발생합니다.
 
-- proxy에 대해서 trap을 수행할 때
-- trap에 대응되는 `Reflect` 메서드를 proxy에 대해 실행할 때
+- proxy에 대해서 trap을 수행하는 경우
+- trap에 대응되는 `Reflect` 메서드를 proxy에 대해 실행하는 경우
 
 :::
 
@@ -20,11 +20,11 @@ JS는 기본적으로(언어 자체에서) 컴퓨터가 객체의 속성을 직�
 
 ## Trap
 
-Proxy를 통해 object internal method의 동작방식이 원본과는 다른 객체를 exotic object라고 부르고 재정의 대상이 되는 internal method를 trap이라고 부릅니다.
+Proxy를 걸쳐서 object internal method의 동작방식이 원본과는 다른 객체를 exotic object라고 부르고 재정의 대상이 되는 internal method를 trap이라고 부릅니다.
 
 ### handler.get
 
-proxy를 통해 target 객체의 특정 prop을 lookup(read)할 때, 수행되는 trap으로 아래와 같은 매개변수를 가집니다.
+proxy를 통해 target 객체의 특정 속성을 read할 때, 수행되는 trap으로 아래와 같은 매개변수를 가집니다.
 
 ```js
 const proxy = new Proxy(obj, {
@@ -60,9 +60,17 @@ const inherited = Object.create(proxy);
 console.log(inherited.latest); // inherited
 ```
 
+:::info receiver
+여기서 receiver는 target의 `getter`, `setter` 내부 `this`에 binding되는 객체를 가르키는데, 가능한 값으로 2가지가 됩니다.
+
+- proxy 자체
+- proxy를 prototype으로 가지는 객체
+
+:::
+
 ### handler.set
 
-proxy를 통해 target 객체의 특정 prop을 write할 때, 수행되는 trap으로 아래와 같은 매개변수를 가집니다.
+proxy를 통해 target 객체의 특정 속성을 write할 때, 수행되는 trap으로 아래와 같은 매개변수를 가집니다.
 
 ```js
 const proxy = new Proxy(obj, {
@@ -96,11 +104,3 @@ proxy.current = "EN"; // proxy
 const inherited = Object.create(proxy);
 inherited.current = "hello"; // inherited
 ```
-
-:::danger receiver
-여기서 receiver는 target의 `getter`, `setter` 내부 `this`에 binding되는 객체를 가르키는데, 가능한 값으로 2가지가 됩니다.
-
-- proxy 자체
-- proxy를 prototype으로 가지는 객체
-
-:::

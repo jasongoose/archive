@@ -484,14 +484,6 @@ export default defineConfig({
               text: "Garbage Collector",
               link: "/posts/javascript/memory_management/garbage_collector",
             },
-            {
-              text: "Reference Count",
-              link: "/posts/javascript/memory_management/reference_count",
-            },
-            {
-              text: "Mark and Sweep",
-              link: "/posts/javascript/memory_management/mark_and_sweep",
-            },
           ],
           collapsible: true,
           collapsed: true,
@@ -519,8 +511,8 @@ export default defineConfig({
           text: "변수",
           items: [
             {
-              text: "Declare => Initialize => Assign",
-              link: "/posts/javascript/variable/선언_초기화_할당",
+              text: "Declare → Initialize → Assign",
+              link: "/posts/javascript/variable/declare_initialize_assign",
             },
             {
               text: "var",
@@ -670,11 +662,11 @@ export default defineConfig({
               link: "/posts/javascript/syntatic_sugar/every_some",
             },
             {
-              text: "Filter falsy values",
+              text: "Filter Falsy Values",
               link: "/posts/javascript/syntatic_sugar/filter_falsy_values",
             },
             {
-              text: "Computed property",
+              text: "Computed Property",
               link: "/posts/javascript/syntatic_sugar/computed_property",
             },
             {
@@ -686,15 +678,15 @@ export default defineConfig({
               link: "/posts/javascript/syntatic_sugar/default_parameters",
             },
             {
-              text: "String to Array",
+              text: "String To Array",
               link: "/posts/javascript/syntatic_sugar/string_to_array",
             },
             {
-              text: "Truncating/Expanding Array",
+              text: "Truncating, Expanding Array",
               link: "/posts/javascript/syntatic_sugar/truncating_expanding_array",
             },
             {
-              text: "How to Check Empty Array?",
+              text: "How to check empty array?",
               link: "/posts/javascript/syntatic_sugar/how_to_check_empty_array",
             },
           ],

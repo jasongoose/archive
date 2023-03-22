@@ -1,4 +1,4 @@
-# 선언 => 초기화 => 할당
+# Declare → Initialize → Assign
 
 ## 선언
 

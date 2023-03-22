@@ -2,7 +2,7 @@
 
 block scope를 가지는 변수를 선언할 때 사용하는 키워드입니다.
 
-`var`와 다르게 전역으로 선언되었을 때 global object의 property로 처리되지 않습니다.
+`var`와 다르게 전역으로 선언되었을 때 전역객체의 property로 처리되지 않습니다.
 
 block statement(`{...}`)을 사용하여 closure를 사용하지 않고 private 변수를 구현할 수 있습니다.
 

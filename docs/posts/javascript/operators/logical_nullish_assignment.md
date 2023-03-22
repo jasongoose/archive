@@ -1,6 +1,6 @@
 # logical nullish assignment
 
-nullish coalescing을 활용한 특이한 short-circut입니다.
+nullish coalescing을 활용한 특이한 short-circute입니다.
 
 ```js
 x ??= y; // x ?? (x = y);

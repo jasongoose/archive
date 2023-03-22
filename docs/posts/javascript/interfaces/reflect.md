@@ -1,8 +1,8 @@
 # Reflect
 
-JS에서 intercept가 가능한 연산들을 static 메서드로 가지는 built-in 객체로, 함수가 아니므로 `new` 키워드로 생성자 함수처럼 사용해서는 안됩니다.
+JS에서 intercept가 가능한 연산들을 static 메서드로 가지는 built-in 객체로, 함수가 아니므로 생성자 함수처럼 사용하면 안됩니다.
 
-`Reflect` 메서드들은 proxy trap들과 일대일 대응되어서 주로 target 객체의 원본(proxy에 의해서 intercept되기 전) internal method를 수행(invoke)할 때 사용됩니다.
+`Reflect` 메서드들은 proxy trap들과 일대일 대응되어서 주로 target 객체의 원본(proxy에 의해서 intercept되기 전) internal method를 수행할 때 사용됩니다.
 
 ```js
 const target = {
@@ -29,7 +29,7 @@ console.log(proxy3.message2); // world
 
 ## Better syntax
 
-기존의 syntax보다 가독성을 높일 수 있는 효과가 같습니다.
+기존의 syntax보다 가독성을 높일 수 있습니다.
 
 ```js
 Reflect.has(obj, name); // (name in object)

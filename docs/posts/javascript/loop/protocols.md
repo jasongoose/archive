@@ -1,18 +1,26 @@
 # protocols
 
+## iterator
+
+일련의 값들을 생성하기 위한 방법을 정의하는 객체로, `next` 메서드를 구현해야 합니다.
+
+`next` 메서드는 호출될 때마다 `done`과 `value`라는 속성을 가지는 객체를 계속 반환하는데, 생성할 값들이 고갈되면 반환을 멈춥니다.
+
+<Image src="../_images/iterator.png" alt="Iterator"/>
+
 ## iterable
 
-JS 자바스크립트 객체의 property들을 순회(iterate)하는 방식을 커스터마이징하는데 사용됩니다.
+JS 객체의 속성들을 순회하는 방식을 커스터마이징하는데 사용됩니다.
 
-반드시 객체 자체 또는 프로토타입 체인 상에서 `@@iterator`라는 zero-argument 메서드를 가져야 합니다.
+반드시 객체 자체 또는 prototype chain 상에서 `@@iterator`라는 zero-argument 메서드를 가져야 합니다.
 
 object에서 정의할 때는 `[Symbol.iterator]`라는 키를 사용합니다.
 
 <Image src="../_images/iterable.png" alt="Iterable"/>
 
-object가 iterate된다면 `@@iterator` 메서드가 반환한 iterator 객체로부터 iterated value를 얻을 수 있습니다.
+object가 순회된다면 `@@iterator` 메서드가 반환한 [iterator](#iterator) 객체로부터 iterated value를 얻을 수 있습니다.
 
-반환되는 iterator를 정의할 때 내부에서 `this` 키워드를 사용하면 object의 property에 접근할 수 있습니다.
+반환되는 iterator를 정의할 때 내부에서 `this` 키워드를 사용하면 object의 속성에 접근할 수 있습니다.
 
 JS에 내장된 iterable로는 다음이 있습니다.
 
@@ -35,27 +43,17 @@ iterable를 순회하는 방법으로는 다음이 있습니다.
 - `yield*`
 - destructuring assignment
 
-## iterator
-
-일련의 값들을 생성하기 위한 방법을 정의하는 객체로, `next` 메서드를 구현해야 합니다.
-
-`next` 메서드는 호출될 때마다 `done`과 `value`라는 property를 가지는 객체를 계속 반환하는데, 생성할 값들이 고갈되면 반환을 멈춥니다.
-
-<Image src="../_images/iterator.png" alt="Iterator"/>
-
 ## generator
 
-generator function에 의해서 반환되는 객체로, iterable이자 iterator입니다.
+generator function에 의해서 반환되는 iterable이자 iterator인 객체입니다.
 
 :::tip
-iterable이므로 `for-of` 문 등으로 value들을 순회하거나, iterator이므로 `next` 메서드로 생성된 value들을 하나씩 읽을 수 있습니다.
+iterable이므로 `for-of` 문 등으로 value들을 순회할 수 있고, iterator이므로 `next` 메서드로 생성된 value들을 하나씩 읽을 수 있습니다.
 :::
 
 generator + Promise의 조합을 사용하면 Callback Hell, Inversion of Control 등의 문제를 해결하는 도구로 사용할 수 있습니다.
 
-generator function은 iterator를 반환합니다.
-
-해당 iterator의 `next` 메서드를 호출할 때마다 `yield` statement에서 실행을 멈추고 바로 뒤에 있는 값을 아래와 같은 객체로 반환한다.
+generator의 `next` 메서드를 호출할 때마다 `yield` 문에서 실행을 멈추고 바로 뒤에 있는 값을 아래와 같은 객체로 반환합니다.
 
 ```js
 yield x;

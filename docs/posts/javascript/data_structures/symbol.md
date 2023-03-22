@@ -2,13 +2,13 @@
 
 ES6에서 추가한 새로운 primitive 값으로 매 생성할 때마다 고유한 즉, 중복되지 않는 값을 가진다는 특징이 있습니다.
 
-이 값은 `number`도, `string`도 아닌 `symbol`이라는 타입을 가진다.
+이 값은 `number`도, `string`도 아닌 `symbol`이라는 타입을 가집니다.
 
-> 가변성을 지닌(reference 타입처럼 생성할 때마다 새로운 값을 가지는) primitive 데이터 타입
+> 가변성을 지닌 primitive 데이터 타입
 
 ## Using Symbol
 
-symbol을 생성할 때는 `new` Symbol 생성자를 사용하면 됩니다.
+symbol을 생성할 때는 `Symbol` 생성자를 사용하면 됩니다.
 
 ```js
 let sym1 = Symbol();
@@ -20,7 +20,7 @@ Symbol("foo") === Symbol("foo"); // false
 
 ## Global Symbol Registry
 
-Symbol 생성자로 만들어진 `symbol`은 일회성이기 때문에 한번 정의하면 다시 해당 값을 read할 수 없습니다.
+Symbol 생성자로 만들어진 `symbol`은 일회성이기 때문에 한번 정의하면 다시 해당 값을 읽을 수 없습니다.
 
 코드 상에서 사용된 symbol들을 전역으로 관리할 때는 Global Symbol Registry를 사용합니다.
 
@@ -41,9 +41,9 @@ const sym = Symbol.for("mario");
 sym.toString(); // "Symbol(mario)"
 ```
 
-## Object private property
+## Object Private Property
 
-symbol은 object key로 사용할 수 있습니다.
+symbol은 객체의 key 값으로 사용할 수 있습니다.
 
 ```js
 const obj = {};
@@ -58,7 +58,7 @@ console.log(obj[sym]); // foo
 console.log(Object.keys(obj)); // ['bar']
 ```
 
-`Object.keys()`의 반환값에 symbol이 포함되지 않은 것은 ES6 이전 명세와의 호환성을 위해서인데, 이러한 성질을 이용하면 외부에 공개하지 않을(not-readable) private property를 만들 수 있습니다.
+`Object.keys()`의 반환값에 symbol이 포함되지 않은 것은 ES6 이전 명세와의 호환성을 위해서인데, 이러한 성질을 이용하면 외부에 공개하지 않을 private 속성을 만들 수 있습니다.
 
 :::tip
 `Reflect`의 메서드를 사용하면 symbol key를 읽을 수 있습니다.
@@ -77,7 +77,7 @@ console.log(Reflect.ownKeys(obj)); // [ 'prop', Symbol(Pseudo Private) ]
 
 ## Preventing Property Name Collisions
 
-symbol은 라이브러리(패키지)에서 사용자가 생성한 객체에 metadata property를 append하면서 기존 property key값의 충돌을 방지할 때 유용하게 사용됩니다.
+symbol은 라이브러리(패키지)에서 사용자가 생성한 객체에 metadata 속성을 append하면서 기존 key값의 충돌을 방지할 때 유용하게 사용됩니다.
 
 ```js
 const obj = {};

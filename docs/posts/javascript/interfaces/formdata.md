@@ -1,12 +1,12 @@
 # FormData
 
-`<form enctype="multipart/form-data"></form>` 의 field와 value를 key/value pair형식으로 생성/수정/삭제할 수 있는 interface를 제공합니다.
+`<form enctype="multipart/form-data"></form>`의 input field와 value를 key-value pair형식으로 생성/수정/삭제할 수 있는 interface를 제공합니다.
 
-`FormData`로 만든 인스턴스는 POST 요청의 body로 바로 사용할 수 있어서 `File`과 같은 `Blob` 데이터를 API로 전달할 때 자주 사용됩니다.
+`FormData`로 만든 인스턴스는 `POST` 요청의 body로 바로 사용할 수 있어서 `File`과 같은 `Blob` 데이터를 API로 전달할 때 자주 사용됩니다.
 
 ## data: URL
 
-브라우저 단에서 HTML 문서에 작은 용량의 파일을 inline 방식으로 삽입하도록 도와주는 URL로 `data:` prefix를 가집니다.
+HTML 문서에 작은 용량의 파일을 inline 방식으로 삽입하도록 도와주는 URL로 `data:` prefix를 가집니다.
 
 ### 구조
 

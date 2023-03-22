@@ -1,6 +1,6 @@
 # Changes in Strict Mode
 
-strict mode의 적용전후로 코드에서는 다음과 같은 변화가 있습니다.
+Strict Mode를 적용하면 코드에서는 다음과 같은 변화가 생깁니다.
 
 ## Converting mistakes into Errors
 
@@ -101,7 +101,7 @@ console.log(sumWithOctal); // 16
 })();
 ```
 
-7. 객체에 중복된 속성이 있는 경우 에러가 발생합니다(ES5 strict mode 기준)
+7. 객체에 중복된 속성이 있는 경우 에러가 발생합니다(ES5 기준)
 
 ```js
 "use strict";
@@ -227,7 +227,7 @@ fun(1, 2); // doesn't expose v (or a or b)
 
 미래에 새로운 ECMAScript의 새로운 syntax나 기능들을 공개될 수 있도록 스포일러를 방지합니다.
 
-1. 해당 리스트에 포함된 이름들을 reserved keyword로 변수명, 함수명, 인자명으로 사용할 수 없습니다.
+1. 아래 리스트에 포함된 이름들은 reserved keyword로 변수명, 함수명, 인자명으로 사용할 수 없습니다.
 
 - implements
 - interface

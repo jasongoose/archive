@@ -2,7 +2,7 @@
 
 function 또는 global scope 변수를 선언할 때 사용하는 키워드입니다.
 
-global context에서 `var`로 선언된 변수들은 모두 global object의 read-only property로 처리됩니다.
+global context에서 `var`로 선언된 변수들은 모두 전역객체의 read-only property로 처리됩니다.
 
 CommonJS 또는 ESM 모듈 내에 top-level 변수들은 global이 아닌 module scope를 가집니다.
 

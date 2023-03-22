@@ -7,7 +7,7 @@
 
 `WeakMap`과 비슷한 이유로 요소가 언제, 어떻게 수거될지 모르기 때문에 반복문을 통한 enumeration이 불가합니다.
 
-`WeakSet`은 중첩된 객체를 재귀적으로 접근하면서 순환참조(circular reference)를 방지할 때 유용합니다.
+`WeakSet`은 중첩된 객체를 재귀적으로 접근하면서 순환참조를 방지할 때 유용합니다.
 
 ```js
 // Execute a callback on everything stored inside an object

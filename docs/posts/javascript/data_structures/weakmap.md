@@ -1,9 +1,9 @@
 # WeakMap
 
-기존의 `Map` 과 같이 key/value pair로 데이터를 저장하는 객체인데, 아래와 같은 두드러진 차이점이 있습니다.
+기존의 `Map` 과 같이 key-value pair로 데이터를 저장하는 객체인데, 아래와 같은 두드러진 차이점이 있습니다.
 
-- key가 무조건 `object`여야 한다.
-- key로 사용되는 `object` 가 외부에서 garbage collect 대상이 되면 매핑된 value도 동일하게 수거대상이 된다.
+- key가 무조건 객체여야 한다.
+- key로 사용되는 객체가 외부에서 garbage collect 대상이 되면 매핑된 value도 동일하게 수거대상이 된다.
 
 `WeakMap` 객체의 key가 언제, 어떻게 수거되어 없어질지 모르기 때문에 반복문을 통한 enumeration이 불가하고, 따로 key들만 조회하는 메서드가 처음부터 없습니다.
 

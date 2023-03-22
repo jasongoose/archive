@@ -1,6 +1,6 @@
 # Computed Property
 
-객체의 property로 접근하기 위한 key값은 굳이 상수일 필요는 없습니다.
+객체의 속성으로 접근하기 위한 key값은 굳이 상수일 필요는 없습니다.
 
 ```js
 const user = {

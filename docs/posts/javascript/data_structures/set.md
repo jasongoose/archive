@@ -4,7 +4,7 @@ reference 타입 중 하나인 Set은 임의의 타입(primitive + reference)의
 
 Set의 요소들간의 중복여부는 일치연산자(===)의 알고리즘을 따릅니다.
 
-순회순서(iteration order)는 Map처럼 요소 삽입순서(insertion order)를 따르지만 요소는 key-value pair로 가지지 않습니다.
+순회순서는 Map처럼 요소 삽입순서를 따르지만 요소는 key-value pair로 가지지 않습니다.
 
 :::tip
 Set에는 `null`, `NaN`, `undefined`도 저장할 수 있습니다.
@@ -16,10 +16,6 @@ console.assert(NaN !== NaN);
 ```
 
 :::
-
-Set 내의 특정 값이 존재하는지 여부를 알아낼 때는 `Set.prototype.has` 메서드를 사용하면 됩니다.
-
-해당 메서드는 동일한 개수, 종류의 요소를 가지는 배열에 대해서 `Array.prototype.includes` 메서드를 적용하는 것보다 더 빠른 속도를 가집니다.
 
 ## Using Set
 
@@ -34,7 +30,7 @@ mySet1.add("some text"); // Set [ 1, 5, 'some text' ]
 const o = { a: 1, b: 2 };
 mySet1.add(o);
 
-// 여기서 o와 다른 객체를 참조하기 때문에 그대로 insert할 수 있다.
+// 여기서 o와 다른 객체를 참조하기 때문에 그대로 insert할 수 있습니다.
 mySet1.add({ a: 1, b: 2 });
 
 mySet1.delete(5); // removes 5 from the set
@@ -111,9 +107,7 @@ console.log([...new Set(numbers)]); // [2, 3, 4, 5, 6, 7, 32]
 ## Ensure the uniqueness of the array
 
 ```js
-const array = Array.from(document.querySelectorAll("[id]")).map(function (e) {
-  return e.id;
-});
+const array = Array.from(document.querySelectorAll("[id]")).map((e) => e.id);
 
 const set = new Set(array);
 console.assert(set.size == array.length);

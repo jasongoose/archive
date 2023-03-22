@@ -1,6 +1,6 @@
 # Invoking Strice Mode
 
-strict mode는 전체 스크립트 코드나 개별 함수 범위에 적용할 수 있습니다.
+Strict Mode는 전체 스크립트 코드나 개별 함수 범위에 적용할 수 있습니다.
 
 ## scripts
 
@@ -33,8 +33,8 @@ function notStrict() {
 
 ## modules
 
-ES2015에 소개된 module의 경우, 전체 코드가 자동적으로 strict mode가 적용됩니다.
+ES2015에 소개된 module의 경우, 전체 코드가 자동적으로 Strict Mode가 적용됩니다.
 
 ## classes
 
-ES2015에 소개된 Class defintion, Class expression을 포함한 모든 코드에 자동적으로 strict mode가 적용됩니다.
+ES2015에 소개된 Class defintion, Class expression을 포함한 모든 코드에 자동적으로 Strict Mode가 적용됩니다.

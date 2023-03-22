@@ -22,7 +22,7 @@ for ([initialization]; [condition]; [final_expression]) {
 // condition에서 true로 판정되었을 때 수행할 로직이 위치합니다.
 ```
 
-`var`로 선언된 변수는 for 문과 동일한 scope를, `let`으로 선언된 변수는 block statement와 동일한 scope를 가집니다.
+`var`로 선언된 변수는 for 문과 동일한 scope를, `let`으로 선언된 변수는 for 문 내부 block scope를 가집니다.
 
 ```js
 var i = 0;

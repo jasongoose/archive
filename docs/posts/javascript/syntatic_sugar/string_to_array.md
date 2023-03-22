@@ -1,7 +1,7 @@
-# String to Array
+# String To Array
 
 ```js
 const str = "apple";
-console.log([...apple]);
-// ['ap','p', ㅡl', 'e']
+console.log([...str]);
+// [ 'a', 'p', 'p', 'l', 'e' ]
 ```
