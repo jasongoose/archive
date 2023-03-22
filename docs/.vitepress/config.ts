@@ -3,21 +3,6 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   themeConfig: {
     sidebar: {
-      "/profile/": [
-        {
-          text: "Profile",
-          items: [
-            {
-              text: "About me",
-              link: "/profile/aboutme/",
-            },
-            {
-              text: "Resume",
-              link: "/profile/resume/",
-            },
-          ],
-        },
-      ],
       "/posts/architecture/": [
         {
           text: "Architecture",
@@ -1617,10 +1602,6 @@ export default defineConfig({
       ],
     },
     nav: [
-      {
-        text: "Profile",
-        link: "/profile/",
-      },
       {
         text: "Posts",
         items: [
