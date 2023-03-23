@@ -740,11 +740,11 @@ export default defineConfig({
       ],
       "/posts/pwa/": [
         {
-          text: "Progressive Web App",
+          text: "PWA",
           items: [
             {
-              text: "PWA란?",
-              link: "/posts/pwa/pwa/pwa란",
+              text: "PWA",
+              link: "/posts/pwa/pwa/pwa",
             },
           ],
           collapsible: true,
@@ -770,19 +770,19 @@ export default defineConfig({
           collapsed: true,
         },
         {
-          text: "Service Workers",
+          text: "Service Worker",
           items: [
             {
-              text: "Service Worker란?",
-              link: "/posts/pwa/service_workers/service_worker란",
+              text: "Service Worker",
+              link: "/posts/pwa/service_worker/service_worker",
             },
             {
               text: "Scope",
-              link: "/posts/pwa/service_workers/scope",
+              link: "/posts/pwa/service_worker/scope",
             },
             {
               text: "Lifecycle",
-              link: "/posts/pwa/service_workers/lifecycle",
+              link: "/posts/pwa/service_worker/lifecycle",
             },
           ],
           collapsible: true,

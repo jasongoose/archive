@@ -34,6 +34,8 @@
 
 [📜 Window.sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage)
 
+[📜 Storage for the web](https://web.dev/i18n/en/storage-for-the-web/)
+
 [📜 CSR-SSR](https://velog.io/@namezin/CSR-SSR)
 
 [📜 CSR vs. SSR](https://dev.to/jeremypanjaitan/ssr-vs-csr-2617)
