@@ -1,15 +1,15 @@
 # Module Resolution
 
-Node 환경에서는 "Node.js resolution algorithm"으로 module specifier를 resolve하여 module들을 구분합니다.
+Node 환경에서는 "Node.js Resolution Algorithm"으로 module specifier를 해석하여 module들을 구분합니다.
 
 <Image src="../_images/module_resolution.png" alt="Module Resolution" />
 
 ## Relative Specifier
 
-import하는 module의 URL에 대해서 resolve되어 반환된 absoulte URL에서 다음 3가지를 확인합니다.
+import하는 module의 URL로부터 해석된 absoulte URL에서 다음 3가지를 확인합니다.
 
 - (module).js
-- (module)/package.json : `main` 필드에 지정된 .js 파일
+- (module)/package.json의 `main` 필드에 지정된 `.js` 파일
 - (module)/index.js
 
 ## Bare Specifier

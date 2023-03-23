@@ -684,8 +684,8 @@ export default defineConfig({
           text: "Package",
           items: [
             {
-              text: "package란?",
-              link: "/posts/node/package/package란",
+              text: "Package",
+              link: "/posts/node/package/package",
             },
             {
               text: "Module Resolution",
@@ -722,8 +722,8 @@ export default defineConfig({
           text: "pnpm",
           items: [
             {
-              text: "pnpm이란?",
-              link: "/posts/node/pnpm/pnpm이란",
+              text: "pnpm",
+              link: "/posts/node/pnpm/pnpm",
             },
             {
               text: "node_modules 구조",

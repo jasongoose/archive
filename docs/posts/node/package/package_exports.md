@@ -67,7 +67,7 @@ import { someFunction } from "my-lib/lib/main";
 import { UserError } from "my-lib/lib/util/errors";
 ```
 
-여기서 ‘\*’(asterisk)는 단순히 하나의 파일이름만을 가리키는 것이 아니라 더 긴 실제 path를 가리킵니다.
+여기서 \*(asterisk)는 단순히 하나의 파일이름만을 가리키는 것이 아니라 더 긴 실제 path를 가리킵니다.
 
 만일 부분적으로만 path를 노출하기 위해서는 다음과 같이 패턴에 맞게 `null`을 지정하면 됩니다.
 

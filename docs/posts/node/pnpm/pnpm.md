@@ -1,6 +1,6 @@
-# pnpm이란?
+# pnpm
 
-node 패키지들을 관리하기 위한 툴로, local fs에 버전별로 패키지를 하나만 저장하고 node 프로젝트들이 필요한 버전을 symlink를 통해 참조하는 메커니즘을 가집니다.
+node 패키지들을 관리하기 위한 툴로, 로컬 파일 시스템에 버전별로 패키지를 하나만 저장하고 node 프로젝트들이 필요한 버전을 symlink를 통해 참조하는 메커니즘을 가집니다.
 
 여기서 원본 패키지들이 저장된 단일 폴더를 content-addressable store(cas)라고 부르고 default path는 `~/Library/pnpm/store/v3`입니다.
 

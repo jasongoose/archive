@@ -43,13 +43,13 @@ default value는 `index.js` 입니다.
 
 ## scripts
 
-프로젝트 내에서 실행할 수 있는 npm script command들을 지정하는 필드입니다.
+프로젝트 내에서 실행할 수 있는 npm script 명령어들을 지정하는 필드입니다.
 
 npm built-in script나 패키지 life cycle event hook으로서 실행하는 script가 위치하고 보통 `npm run <script 이름>` 형식으로 실행합니다.
 
 ### Pre/Post Scripts
 
-특정 script command를 실행하기 전과 후에 자동으로 실행하는 script로, `pre*`, `post*` prefix가를 가집니다.
+특정 script 명령어들을 실행하기 전과 후에 자동으로 실행하는 script로, `pre*`, `post*` prefix를 가집니다.
 
 ```json
 {
@@ -62,7 +62,7 @@ npm built-in script나 패키지 life cycle event hook으로서 실행하는 scr
 // npm run compress를 실행하면 precompress, postcompress도 자동으로 실행합니다.
 ```
 
-### Life cycle Scripts
+### Life Cycle Scripts
 
 패키지 life cycle event가 발생할 때마다 실행하는 script로, 예시는 다음과 같습니다.
 
@@ -83,21 +83,21 @@ npm CLI command 하나를 실행할 때마다 life cycle script들이 순서대�
 
 ## dependencies
 
-패키지의 구성모듈들이 사용하는 패키지들의 name과 버전을 명시한 필드로, `npm install` command로 패키지들을 설치할 수 있습니다.
+패키지의 구성모듈들이 사용하는 패키지들의 name과 버전을 명시한 필드로, `npm install` 명령어로 패키지들을 설치할 수 있습니다.
 
 보통 번들링, 빌드과정에 포함되는 패키지들이 위치합니다.
 
 `dependencies`의 가능한 값들을 나열하면 다음과 같습니다.
 
 - semantic versioning
-- url
-- git url
-- github url
+- URL
+- Git URL
+- Github URL
 - local path w/ `file:` scheme
 
 ## devDependencies
 
-transpiler, compiler 등 개발 중에 사용하는 패키지들의 name과 버전을 명시한 필드로, `npm install` 또는 `npm link` command로 패키지들을 설치할 수 있습니다.
+transpiler, compiler 등 개발 중에 사용하는 패키지들의 name과 버전을 명시한 필드로 `npm install -D` 또는 `npm link` 명령어로 패키지들을 설치할 수 있습니다.
 
 ```json
 {
@@ -116,7 +116,7 @@ transpiler, compiler 등 개발 중에 사용하는 패키지들의 name과 버�
 
 ## peerDependencies
 
-현재 패키지를 다운로드한 프로젝트(부모 패키지)에서 제대로 동작하기 위해 필요한 dependencies들을 지정하는 필드입니다.
+현재 패키지를 다운로드한 프로젝트(부모 패키지)에서 제대로 동작하기 위해 필요한 dependency들을 지정하는 필드입니다.
 
 예를 들어, `react@17.0.0`을 기반으로 만든 패키지에 다음과 같은 `peerDependencies`를 지정한다고 해봅시다.
 
