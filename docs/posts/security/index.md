@@ -16,7 +16,7 @@
 
 [📜 XSS Attack](https://nordvpn.com/ko/blog/xss-attack/)
 
-[📜 DOM Based XSS](https://owasp.org/www-community/attacks/DOM_Based_XSS)
+[📜 DOM 기반 XSS(DOM based Cross Site Scripting) 공격과 방어](https://junhyunny.github.io/information/security/dom-based-cross-site-scripting/)
 
 [📜 Blacklisting, Whitelisting, GreyListing](https://www.packetlabs.net/posts/blacklisting-whitelisting-greylisting/)
 

@@ -795,12 +795,8 @@ export default defineConfig({
           text: "XSRF",
           items: [
             {
-              text: "XSRF란?",
-              link: "/posts/security/xsrf/xsrf란",
-            },
-            {
-              text: "XSRF 예방하기",
-              link: "/posts/security/xsrf/xsrf_예방하기",
+              text: "XSRF",
+              link: "/posts/security/xsrf/xsrf",
             },
           ],
           collapsible: true,
@@ -810,12 +806,8 @@ export default defineConfig({
           text: "XSS",
           items: [
             {
-              text: "XSS란?",
-              link: "/posts/security/xss/xss란",
-            },
-            {
-              text: "XSS 예방하기",
-              link: "/posts/security/xss/xss_예방하기",
+              text: "XSS",
+              link: "/posts/security/xss/xss",
             },
           ],
           collapsible: true,
@@ -847,7 +839,7 @@ export default defineConfig({
           text: "OAuth",
           items: [
             {
-              text: "OAuth란?",
+              text: "OAuth",
               link: "/posts/security/oauth/oauth",
             },
           ],

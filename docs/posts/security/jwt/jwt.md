@@ -1,14 +1,12 @@
 # JWT
 
-<Image src="../_images/jwt-diagram.png" alt="JWT Diagram" />
-
-## JWT란?
-
 JSON Web Token의 줄임말로, 두 주체 사이에서 정보를 JSON 객체로 주고받기 위한 조밀하고(compact) 독립적인(self-contained) 방법을 제시합니다.
+
+<Image src="../_images/jwt-diagram.png" alt="JWT Diagram" />
 
 이 방식은 비밀키를 이용한 내부 데이터의 암호화 방식을 통해 정보의 고결성(integrity)을 유지하는 특징이 있습니다.
 
-JWT는 HTTP 요청과 같이 서버로 전송되어 이미 인증된 사용자(authenticated)가 서버의 특정 자원(route, service 등)에 접근하기 위한 권한이 있는지를 확인하는 인가 과정에서 흔히 사용되는 메커니즘입니다.
+HTTP 요청과 함께 서버로 전송되어 이미 인증된 사용자가 서버의 특정 리소스에 접근하기 위한 권한이 있는지를 확인하는 인가 과정에서 흔히 사용되는 메커니즘입니다.
 
 JWT 방식을 사용하면 정보의 고결성뿐만 아니라 서버 단에서 요청한 주체가 누구인지도 알 수 있습니다.
 
@@ -77,7 +75,7 @@ HMACSHA256(base64UrlEncode(header) + "." + base64UrlEncode(payload), secret);
 
 <Image src="../_images/jwt-auth.png" alt="JWT Auth" />
 
-1. 먼저 클라이언트는 인증(로그인) 이후, 인가 서버로부터 jwt 토큰을 받습니다.
+1. 클라이언트는 인증 이후, 인가 서버로부터 jwt 토큰을 받습니다.
 
 2. 리소스 서버는 JWT의 인코딩된 header와 payload, 그리고 서버에 저장된 비밀키를 사용하여 signature를 생성하고 이 signature와 토큰으로 전달된 signature를 비교합니다.
 
@@ -100,7 +98,7 @@ JWT는 다음과 같은 장점을 가집니다.
 - 암호화 알고리즘이 복잡합니다.
 
 :::danger 유의사항
-JWT 토큰과 같은 인가 수단 데이터는 가급적이면 localStorage에 저장해서는 안됩니다.
+JWT 토큰과 같은 인가 수단 데이터는 가급적이면 로컬 스토리지에 저장해서는 안됩니다.
 
-localStorage에 저장된 정보는 브라우저를 닫아도 로컬 디스크에 계속 저장되기 때문에 기기를 사용하는 누구나, 브라우저를 실행하는 언제든지 접근할 수 있다는 보안상 취약점을 가집니다.
+로컬 스토리지에 저장된 정보는 브라우저를 닫아도 로컬 디스크에 계속 저장되기 때문에 기기를 사용하는 누구나, 브라우저를 실행하는 언제든지 접근할 수 있다는 보안상 취약점을 가집니다.
 :::
