@@ -917,7 +917,6 @@ export default defineConfig({
           ],
         },
       ],
-      // "/posts/vite/": [],
       "/posts/vue3/": [
         {
           text: "Reactivity API",
@@ -1501,23 +1500,23 @@ export default defineConfig({
           },
         ],
       },
-      {
-        text: "Books",
-        items: [
-          {
-            text: "Composing Software",
-            link: "/books/composing_software/",
-          },
-          {
-            text: "코어 자바스크립트",
-            link: "/books/코어_자바스크립트/",
-          },
-          {
-            text: "TCP/IP 완벽 가이드",
-            link: "/books/TCP_IP_완벽_가이드/",
-          },
-        ],
-      },
+      // {
+      //   text: "Books",
+      //   items: [
+      //     {
+      //       text: "Composing Software",
+      //       link: "/books/composing_software/",
+      //     },
+      //     {
+      //       text: "코어 자바스크립트",
+      //       link: "/books/코어_자바스크립트/",
+      //     },
+      //     {
+      //       text: "TCP/IP 완벽 가이드",
+      //       link: "/books/TCP_IP_완벽_가이드/",
+      //     },
+      //   ],
+      // },
     ],
   },
 });
