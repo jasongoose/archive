@@ -22,7 +22,7 @@ const ross: Person = {
 };
 ```
 
-`.d.ts`에서 선언된 type은 `import` 구문 또는 triple slash directive(이 경우 global type + `export` statment 사용금지)를 사용하여 이용할 수 있습니다.
+`.d.ts`에서 선언된 type은 `import` 구문 또는 triple slash directive를 사용하여 이용할 수 있습니다.
 
 물론 tsc에 의해 컴파일된 `.js` 파일에는 type import 구문을 제거합니다.
 

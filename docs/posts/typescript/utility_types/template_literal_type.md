@@ -25,7 +25,7 @@ type AllLocaleIDs =
 */
 ```
 
-## String Unions in Types
+## String Unions In Types
 
 특정 객체를 전달하면 객체에 `on(eventName: ‘${key}Changed’, cb: (newValue: any) ⇒ void)` 타입의 메서드를 추가하는 함수 `makeWatchedObject`를 만든다고 합시다.
 
@@ -67,7 +67,7 @@ type PropEventSource<Type> = {
 };
 ```
 
-## Intrinsic string manipulation types
+## Intrinsic String Manipulation Types
 
 tsc의 built-in type들 중, `string` type을 수정할 수 있는 generic type들을 정리하면 다음과 같습니다.
 
@@ -119,7 +119,7 @@ type UncomfortableGreeting = Uncapitalize<UppercaseGreeting>;
 // type UncomfortableGreeting = "hELLO WORLD"
 ```
 
-## string Type 분해
+## String Type 분해
 
 `infer` 키워드를 사용하여 기존 string literal을 문자가 아닌 `string` 단위로 분해할 수 있습니다.
 
@@ -131,7 +131,7 @@ type Y = a extends `${infer F}${infer R}` ? R : a; // type bb = 'bcdefg'
 ```
 
 :::tip
-참고로, empty string type(`’’`)은 template literal로 분해할 수 없습니다!
+참고로, empty string type(`’’`)은 template literal로 분해할 수 없습니다.
 
 ```ts
 type E = "" extends `${infer H}${infer R}` ? true : false; // false

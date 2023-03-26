@@ -8,13 +8,13 @@
 
 이 방식은 모듈의 import로 일어나는 side-effect를 오직 한번만 만들 수 있다는 점에서 유용합니다.
 
-## Import position
+## Import Position
 
 `import` 구문은 모듈의 첫 번째 줄에 작성해야 합니다.
 
 함수 블럭 내부나 조건문 블럭 내부에 작성하면 컴파일 에러가 발생합니다.
 
-함수 안에 `import`를 사용하면 import되는 모듈이 언제 초기화될지를 분석하는 control flow analysis가 tsc에 의해서 수행되어야 합니다.
+함수 안에 `import`를 사용하려면 import되는 모듈이 언제 초기화될지를 분석하는 control flow analysis가 tsc에 의해서 수행되어야 합니다.
 
 ## Module File Path
 
@@ -28,7 +28,7 @@ TS 모듈의 제일 윗줄에서 `import` 구문을 사용하는 방식 말고�
 
 dynamic loading은 `import()` expression을 사용합니다.
 
-인자(argument)로 import할 모듈의 상대/절대경로를 전달하면 유효할 경우 해당 경로를 가진 모듈의 [named export value](./module_standard.md#named-exports), [default export value](./module_standard.md#default-export)를 resolve하는 `Promise` 객체를 반환합니다.
+인자로 import할 모듈의 상대/절대경로를 전달하면 유효할 경우 해당 경로를 가진 모듈의 [named export member](./module_standard.md#named-exports), [default export member](./module_standard.md#default-export)를 resolve하는 `Promise` 객체를 반환합니다.
 
 유효하지 않은 경로라면 rejected `Promise`를 반환합니다.
 

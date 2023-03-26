@@ -1,6 +1,6 @@
 # Mapped Types
 
-객체의 type을 정의할 때 property type을 "index signature"로 지정합니다.
+객체의 type을 정의할 때 속성의 key type은 "index signature"로 지정합니다.
 
 ```ts
 type OnlyBoolsAndHorses = {
@@ -34,7 +34,7 @@ type FeatureOptions = OptionsFlags<FeatureFlags>;
 
 ## Mapping Modifiers
 
-매핑하는 property type에 있는 `readonly` 또는 `?` 같은 modifier를 추가하거나 제거할 때 `+`, `-`를 prefix로 붙이면 됩니다.
+매핑하는 속성의 key type에 있는 `readonly` 또는 `?` 같은 modifier를 추가하거나 제거할 때 `+`, `-`를 prefix로 붙이면 됩니다.
 
 ```ts
 // Removes 'readonly' attributes from a type's properties
@@ -80,7 +80,7 @@ type User = Concrete<MaybeUser>;
 
 ## Key Remapping via `as`
 
-mapping된 property type은 `as` 키워드를 사용해서 다른 type으로 remapping할 수 있습니다.
+mapping된 속성의 key type은 `as` 키워드를 사용해서 다른 type으로 remapping할 수 있습니다.
 
 ```ts
 type MappedTypeWithNewProperties<Type> = {
@@ -90,7 +90,7 @@ type MappedTypeWithNewProperties<Type> = {
 
 ### 예시1
 
-template literal type을 사용하면 새로운 property type을 정의할 수 있습니다.
+template literal type을 사용하면 새로운 속성의 key type을 정의할 수 있습니다.
 
 ```ts
 type Getters<Type> = {
@@ -117,7 +117,7 @@ type LazyPerson = {
 
 ### 예시2
 
-`as` 키워드 뒤의 conditional type으로 원하는 property type만 남길 수 있습니다.
+`as` 키워드 뒤의 conditional type으로 원하는 속성의 key type만 남길 수 있습니다.
 
 ```ts
 // Remove the 'kind' property
@@ -161,9 +161,7 @@ type Config = {
 
 ## Indexed Access Types
 
-임의의 `type` 또는 `interface`에서 특정 property type을 참조할 때 사용합니다.
-
-`keyof` 연산자와 함께 사용하면 굉장히 유용합니다.
+임의의 `type` 또는 `interface`에서 특정 속성의 value type을 참조할 때 사용하는데, `keyof` 연산자와 함께 사용하면 굉장히 유용합니다.
 
 ```ts
 type Person = { age: number; name: string; alive: boolean };
@@ -190,7 +188,7 @@ type Person = typeof MyArray[number]; // { name: string; age: number }
 type Age2 = Person["age"]; // number
 ```
 
-type alias(`type` 변수에 타입을 할당하는 것)을 사용하면 약간의 리팩토링도 가능합니다.
+type alias를 사용하면 약간의 리팩토링도 가능합니다.
 
 ```ts
 type key = "age";

@@ -1,6 +1,6 @@
 # Ambient Modules
 
-TS 프로젝트에서 JS 라이브러리를 사용하려면 각 모듈에서 export하는 객체, 상수, 변수, 함수, 클래스 등에 대응되는 `type alias`들, `interface`들의 정보가 tsc로 전달되어야 합니다.
+TS 프로젝트에서 JS 라이브러리를 사용하려면 각 모듈에서 export하는 객체, 상수, 변수, 함수, 클래스 등에 대응되는 `type alias`와 `interface`들의 정보가 tsc로 전달되어야 합니다.
 
 이를 위해서는 정의가 없는 선언들 즉, “ambient declaration”들을 담은 top-level `.d.ts` 파일과 `declare` 키워드가 필요합니다.
 
@@ -34,7 +34,7 @@ declare module "path" {
 그럼 이제 `.ts` 파일에서 아래와 같이 사용하면 됩니다.
 
 ```ts
-/// <reference path="node.d.ts"/>   <= 컴파일에 포함시킬 경우에만 작성, 그 외는 생략
+/// <reference path="node.d.ts"/> ← 컴파일에 포함시킬 경우에만 작성, 그 외는 생략
 import * as URL from "url";
 
 let myUrl = URL.parse("https://www.typescriptlang.org");

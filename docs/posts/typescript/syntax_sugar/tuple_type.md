@@ -6,7 +6,7 @@ TS에서 tuple 또는 array는 한가지 고유의 property 즉, `length`가 있
 
 ```ts
 type L<T> = T extends { length: 0 } ? true : false;
-type R<T> = T extends Record<number, unknown> ? true : false;
+type R<T> = T extends Record<number, never> ? true : false;
 ```
 
 tuple에 대한 conditional type은 다음과 같이 지정하면 됩니다.

@@ -1,6 +1,6 @@
-# Indexed Signature
+# Index Signature
 
-Mapped types에서 사전에 정의되지 않은 property type을 표시할 때는 index signature를 사용합니다.
+Mapped type에서 사전에 정의되지 않은 property type을 표시할 때는 index signature를 사용합니다.
 
 사전에 정의되지 않았기 때문에 해당 property는 `string` type을 extend하지 않는 성질이 있습니다.
 

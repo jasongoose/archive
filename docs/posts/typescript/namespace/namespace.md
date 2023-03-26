@@ -4,7 +4,7 @@
 
 `.ts` 파일의 특정 영역을 전역공간(global scope)에 노출되지 않도록 생성한 공간입니다.
 
-global scope에 노출되면 안되는 이유는 (1) 제3의 라이브러리가 전역공간에 만든 함수, 변수의 이름과의 피하고 (2) 외부에서 바로 접근하면 안되는 중요한 데이터가 숨기기 위해서입니다.
+전역공간에 노출되면 안되는 이유는 (1) 제3의 라이브러리가 전역공간에 만든 함수, 변수들과의 이름 충돌을 피하고 (2) 외부에서 바로 접근하면 안되는 중요한 데이터를 숨기기 위해서입니다.
 
 과거에는 이러한 성격을 반영하듯이 namespace를 “internal module”이라고 불렀습니니다.
 
@@ -43,13 +43,12 @@ namespace 내부 `export` 키워드는 선언, 할당과 동시에 부여할 수
 ```ts
 namespace P {
   const private = 1;
-  function privateFunc() { ... };
   export const public = 2;
   export function publicFunc() { ... };
 }
 ```
 
-tsc에 의해 컴파일된 `.js` 파일에서 namespace는 IIFE(Immediate Invoked Function Expression)와 empty variable declaration으로 구현됩니다.
+namespace는 tsc에 의해 컴파일된 `.js` 파일에서 IIFE(Immediate Invoked Function Expression)와 empty variable declaration으로 구현됩니다.
 
 ```js
 // a.js
@@ -100,7 +99,7 @@ var MyLibA;
 var ross = MyLibA.getPerson("Ross", 30);
 ```
 
-namespace는 결과적으로 JS object이므로 `export`가 가능한데 아래와 같이 중첩된(nested) namespace가 가능합니다.
+namespace는 결과적으로 JS 객체이므로 `export`가 가능한데 아래와 같이 중첩된 namespace도 구현할 수도 있습니다.
 
 ```ts
 // a.ts
@@ -123,9 +122,9 @@ const ross: MyLibA.Types.Person = MyLibA.Functions.getPerson("Ross Geller", 30);
 
 ## Aliasing
 
-nested namespace의 export value를 사용할 때는 chaining을 여러 번 해야하기 때문에 코드 가독성이 떨어질 수도 있습니다.
+중첩된 namespace의 export memeber를 사용할 때는 chaining을 여러 번 해야하기 때문에 코드 가독성이 떨어질 수도 있습니다.
 
-이를 해결하기 위해 `import` 구문을 사용하여 특정 namespace의 exported value에 alias를 부여할 수 있습니다.
+이를 해결하기 위해 `import` 구문을 사용하여 특정 namespace의 export member에 alias를 부여할 수 있습니다.
 
 ```ts
 // a.ts
@@ -203,7 +202,7 @@ namespace MyLibA {
 }
 ```
 
-`tsc a.ts` 명령어를 사용하면 아래 코드로 컴파일되는데, 이 상태에서 `a.js`, `b.js`는 모듈이 아니기 때문에 node에서 실행할 수 없습니다.
+`tsc a.ts` 명령어를 실행하면 아래 코드로 컴파일되는데, 이 상태에서 `a.js`, `b.js`는 모듈이 아니기 때문에 node에서 실행할 수 없습니다.
 
 ```js
 // a.js
@@ -301,5 +300,5 @@ var ross = MyLibA.getPerson("Ross Geller", 30);
 :::info
 namespace + reference directive + bundling을 이용하면 ESM을 지원하지 않는 오래된 브라우저에서도 실행되는 앱을 만들 수 있습니다.
 
-TS에서는 ESM, CommonJS module들의 bundling이 불가능하지만 browserify, webpack, vite와 같은 번들러 도구를 사용하면 bundling을 가능하게 하여 cross-platform + backward compatible 앱을 충분히 만들 수 있습니다.
+TS에서는 ESM, CommonJS module들의 bundling이 불가능하지만 browserify, webpack, vite와 같은 번들러 도구를 사용하면 bundling을 가능하게 하여 cross-platform + backward compatible한 앱을 충분히 만들 수 있습니다.
 :::

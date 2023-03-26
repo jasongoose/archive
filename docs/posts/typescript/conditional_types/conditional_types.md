@@ -7,6 +7,7 @@ JS의 삼항연산자와 비슷한 구조를 가지는데 이를 통해 input, o
 ```ts
 SomeType extends OtherType ? TrueType : FalseType;
 // A extends B => B 타입을 가진 변수에 A 타입 데이터를 할당할 수 있다.
+// A는 B의 부분집합
 ```
 
 간단하게 다음과 같이 사용할 수 있습니다.

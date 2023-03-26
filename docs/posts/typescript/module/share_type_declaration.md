@@ -1,6 +1,6 @@
-# Share type declarations between modules
+# Share Type Declarations Between Modules
 
-TS 모듈에서 export한 type declaration(type, interface)은 다른 모듈에서 import하여 사용할 수 있습니다.
+TS 모듈에서 export한 type declaration(`type`, `interface`)은 다른 모듈에서 import하여 사용할 수 있습니다.
 
 tsc에 의해서 원본 `.ts` 파일을 컴파일하여 만들어진 `.js` 파일에는 기존의 type declaration의 import/export한 부분은 모두 없어집니다.
 

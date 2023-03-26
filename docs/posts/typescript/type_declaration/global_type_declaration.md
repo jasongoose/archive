@@ -134,7 +134,7 @@ $ npm install -D @types/[package_name]
 
 ambient value는 실행 중에만 존재하는 값으로, 대표적인 예로는 Node의 `global`, 브라우저의` window` 같은 전역객체가 있습니다.
 
-typescript에서 만일 ambient value를 바로 사용한다면 `undefined` 에러가 발생하는데, 이를 해결하기 위해서 `declare` 키워드를 사용하면 됩니다.
+TS에서 만일 ambient value를 바로 사용한다면 `undefined` 에러가 발생하는데, 이를 해결하기 위해서 `declare` 키워드를 사용하면 됩니다.
 
 ```ts
 declare var window: any;
@@ -146,7 +146,7 @@ declare var window: any;
 `declare` 키워드는 tsc로 하여금 해당 변수는 언젠가 어디서든 정의되어 있으니 컴파일 에러를 발생시키지 말라는 의미를 가집니다.
 :::
 
-ambient declaration은 전역적으로 사용되어야 하므로 global declaration 파일(entry)에 작성되어야 합니다.
+ambient declaration은 전역적으로 사용되어야 하므로 global declaration entry에 작성되어야 합니다.
 
 ```ts
 // types/common/main.d.ts
@@ -191,7 +191,7 @@ declare namespace common {
 `namespace`는 value이므로 ambient declaration을 사용하여 전역적으로 사용할 수 있도록 만드는 겁니다.
 :::
 
-namespace 내부의 `type`, `interface`, `class`, `function`은 자동으로(implicitly) export됩니다.
+namespace 내부의 `type`, `interface`, `class`, `function`은 자동으로 export됩니다.
 
 naemespace는 type annotation에만 사용되기 때문에 컴파일 과정에는 포함되지 않습니다.
 
@@ -220,7 +220,7 @@ declare namespace common {
 
 TS에서 동일한 이름을 가진 `interface`가 동일한 **module** 내에서 선언되면 `interface`의 속성들이 결합되면서 결과적으로 하나의 `interface`가 선언됩니다.
 
-또한 이미 존재하고 있는 `namespace`를 **script**에서 다시 선언하면 기존의 `namespace`에 새로운 exported value들이 추가되면서 확장됩니다.
+또한 이미 존재하고 있는 `namespace`를 **script**에서 다시 선언하면 기존의 `namespace`에 새로운 export member들이 추가되면서 확장됩니다.
 
 ```ts
 // program.ts
@@ -282,7 +282,7 @@ console.log("isAgeEven", isAgeEven);
 export {};
 ```
 
-Person `interface`와 Number `interface`는 기존 global scoped declaration을 확장하는 것이 아닌 module scope에서 새로 선언된 `interface`가 되므로 없는 속성을 사용하는 부분에서 에러가 발생합니다.
+Person `interface`와 Number `interface`는 기존 global declaration을 확장하는 것이 아닌 module scope에서 새로 선언된 `interface`가 되므로 없는 속성을 사용하는 부분에서 에러가 발생합니다.
 
 :::info
 컴파일 과정에 포함되는 script 파일들만이 서로 value와 type들을 공유할 수 있지만 모듈은 import, export하지 않는 이상 서로 주고받을 방법이 없습니다.

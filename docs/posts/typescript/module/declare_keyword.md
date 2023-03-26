@@ -44,6 +44,7 @@ app.mount("#app");
 import { getCurrentInstance, ComponentInternalInstance } from "vue";
 
 const { proxy } = getCurrentInstance() as ComponentInternalInstance;
+
 proxy!.$axios
   .get("https://jsonplaceholder.typicode.com/todos/1")
   .then((response) => response.data)

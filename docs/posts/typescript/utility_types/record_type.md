@@ -1,6 +1,6 @@
 # Record Type
 
-property key가 K, property value type은 T인 type O는 아래와 같이 생성할 수 있습니다.
+property key와 value의 타입이 각각 K, T인 type O는 아래와 같이 생성할 수 있습니다.
 
 ```ts
 type O = Record<K, T>;

@@ -2,7 +2,7 @@
 
 ## Generic Type
 
-generic type을 사용하면 동적으로 type을 정의할 수 있는데,특히 함수의 parameter type과 return type 간의 관계를 추측할 때 굉장히 유용합니다.
+generic type을 사용하면 동적으로 type을 정의할 수 있는데, 특히 함수의 parameter type과 return type 간의 관계를 추측할 때 굉장히 유용합니다.
 
 generic type은 `interface` 형태로 정의할 수 있습니다.
 
@@ -28,7 +28,7 @@ type Readonly<T, K extends keyof T = keyof T> = Omit<T, K> & {
 
 ## Generic Constraint
 
-generic 함수의 type argument로 가능한 type들을 제한하는 것을 의미하는데, 보통 `extends` 키워드를 사용하여 구현합니다.
+generic 함수의 type parameter로 가능한 type들을 제한하는 것을 의미하는데, 보통 `extends` 키워드를 사용하여 구현합니다.
 
 ```ts
 interface Lengthwise {

@@ -84,7 +84,7 @@ import Apple, { B, C } from 'path/to/values'; // 이 순서로 import하면 됩�
 
 ## Import & Export Alias
 
-`as` 키워드를 사용하여 named export value를 다른 이름(alias)으로 import할 수 있습니다.
+`as` 키워드를 사용하여 [named export](#named-exports) member들을 다른 이름(alias)으로 import할 수 있습니다.
 
 ```ts
 // program.ts
@@ -93,7 +93,7 @@ console.log(B); // ❌ Error: Cannot find name 'B'.
 console.log(Ball); // ✅ legal
 ```
 
-또한 defaut export value도 alias를 부여하여 import할 수 있습니다.
+또한 [defaut export](#default-export) member도 alias를 부여하여 import할 수 있습니다.
 
 ```ts
 import { default as A, B as Ball } from "path/to/values";
@@ -111,9 +111,9 @@ enum D {}
 export { A as default, B, C as Cat, D };
 ```
 
-## Import all Named Exports
+## Import All Named Exports
 
-모듈에서 named export value 모두 하나의 객체로 import할 때, `* as` 키워드를 사용하면 됩니다.
+모듈에서 [named export](#named-exports) member들 모두 하나의 객체로 import할 때, `* as` 키워드를 사용하면 됩니다.
 
 ```ts
 // program.ts
@@ -126,9 +126,9 @@ console.log(values.D);
 
 ## Re-exports
 
-`export-from` 구문을 사용하여 모듈의 named export value들을 처음부터 import하지 않고 바로 export할 수 있습니다.
+`export-from` 구문을 사용하여 모듈의 [named export](#named-exports) member들을 처음부터 import하지 않고 바로 export할 수 있습니다.
 
-또한 `as` 키워드로 alias도 사용할 수 있는데, 여기서 `export-from` 구문으로 re-export된 member들은 코드 내에서 사용할 수 없습니다.
+`as` 키워드로 alias도 사용할 수 있는데, 여기서 `export-from` 구문으로 re-export된 member들은 코드 내에서 사용할 수 없습니다.
 
 ```ts
 // lib.ts
@@ -149,7 +149,7 @@ function C() {}
 export { B, C as Cat };
 ```
 
-`export * from` 구문으로 named export value들 모두 re-export할 수 있는데, 여기서도 `as` 키워드로 alias를 사용할 수 있습니다.
+`export * from` 구문으로 [named export](#named-exports) member들을 모두 re-export할 수 있는데, 여기서도 `as` 키워드로 alias를 사용할 수 있습니다.
 
 ```ts
 // lib.ts
@@ -160,7 +160,7 @@ export * as values2 from "path/to/other/values-2";
 import { P, Q, values2 } from "path/to/lib";
 ```
 
-`export-from` 구문에 `default` 키워드를 사용하면 모듈의 default export value를 re-export할 수 있고, 물론 alias도 가능합니다.
+`export-from` 구문에 `default` 키워드를 사용하면 모듈의 [default export](#default-export) member를 re-export할 수 있고, 물론 alias도 가능합니다.
 
 ```ts
 // lib.ts

@@ -1,6 +1,6 @@
 # Array Type
 
-Array 내 element-wise 접근은 Indexed Access Type을 사용하면 됩니다.
+Array 내 element-wise 접근은 [Indexed Access Type](../mapped_types/mapped_types.md#indexed-access-types)을 사용하면 됩니다.
 
 ```ts
 const a = [1, "a", Promise.resolve(0)] as const;
