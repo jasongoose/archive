@@ -1502,10 +1502,6 @@ export default defineConfig({
         ],
       },
       {
-        text: "Articles",
-        link: "/articles/",
-      },
-      {
         text: "Books",
         items: [
           {
