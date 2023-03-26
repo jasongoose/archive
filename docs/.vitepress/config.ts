@@ -12,8 +12,6 @@ export default defineConfig({
               link: "/posts/architecture/architecture/architecture",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "History",
@@ -43,8 +41,6 @@ export default defineConfig({
               link: "/posts/architecture/history/MVI",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/posts/browser/": [
@@ -56,8 +52,6 @@ export default defineConfig({
               link: "/posts/browser/html/script의_위치",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "CSS",
@@ -75,8 +69,6 @@ export default defineConfig({
               link: "/posts/browser/css/Grid",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Browser Runtime",
@@ -90,8 +82,6 @@ export default defineConfig({
               link: "/posts/browser/browser_runtime/비동기_작업_예시",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Populating the page",
@@ -117,8 +107,6 @@ export default defineConfig({
               link: "/posts/browser/populating_the_page/reflow_repaint",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Storage",
@@ -132,8 +120,6 @@ export default defineConfig({
               link: "/posts/browser/storage/web_storage",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Rendering Strategy",
@@ -147,8 +133,6 @@ export default defineConfig({
               link: "/posts/browser/rendering_strategy/ssr",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Web API",
@@ -174,8 +158,6 @@ export default defineConfig({
               link: "/posts/browser/web_api/indexed_db",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/posts/clean_code/": [
@@ -187,8 +169,6 @@ export default defineConfig({
               link: "/posts/clean_code/clean_code/guard_clauses",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/posts/devops/": [
@@ -200,8 +180,6 @@ export default defineConfig({
               link: "/posts/devops/devops/devops",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/posts/frontend/": [
@@ -213,8 +191,6 @@ export default defineConfig({
               link: "/posts/frontend/tree_shaking/tree_shaking",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Skeleton UI",
@@ -224,8 +200,6 @@ export default defineConfig({
               link: "/posts/frontend/skeleton_ui/skeleton_ui",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Lazy Loading",
@@ -235,8 +209,6 @@ export default defineConfig({
               link: "/posts/frontend/lazy_loading/lazy_loading",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "SEO",
@@ -246,8 +218,6 @@ export default defineConfig({
               link: "/posts/frontend/seo/seo",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Cross-Browsing",
@@ -257,8 +227,6 @@ export default defineConfig({
               link: "/posts/frontend/cross_browsing/cross_browsing",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/posts/git/": [
@@ -270,8 +238,6 @@ export default defineConfig({
               link: "/posts/git/why_git",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Terms",
@@ -285,8 +251,6 @@ export default defineConfig({
               link: "/posts/git/terms/staging_area",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Git commands",
@@ -340,8 +304,6 @@ export default defineConfig({
               link: "/posts/git/git_commands/git_rebase",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Git Flow",
@@ -359,8 +321,6 @@ export default defineConfig({
               link: "/posts/git/git_flow/support_branches",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/posts/http/": [
@@ -388,8 +348,6 @@ export default defineConfig({
               link: "/posts/http/http1/connection_management",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "HTTP/2",
@@ -411,8 +369,6 @@ export default defineConfig({
               link: "/posts/http/http2/stream_prioritization",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Redirect",
@@ -422,8 +378,6 @@ export default defineConfig({
               link: "/posts/http/redirect/redirect",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/posts/javascript/": [
@@ -459,8 +413,6 @@ export default defineConfig({
               link: "/posts/javascript/ecmascript/scripting_language",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "메모리 관리",
@@ -470,8 +422,6 @@ export default defineConfig({
               link: "/posts/javascript/memory_management/garbage_collector",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Strict Mode",
@@ -489,8 +439,6 @@ export default defineConfig({
               link: "/posts/javascript/strict_mode/changes_in_strict_mode",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "변수",
@@ -508,8 +456,6 @@ export default defineConfig({
               link: "/posts/javascript/variable/const_let",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "연산자",
@@ -535,8 +481,6 @@ export default defineConfig({
               link: "/posts/javascript/operators/logical_nullish_assignment",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Data Structures",
@@ -570,8 +514,6 @@ export default defineConfig({
               link: "/posts/javascript/data_structures/weakset",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Interfaces",
@@ -601,8 +543,6 @@ export default defineConfig({
               link: "/posts/javascript/interfaces/reflect",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Loop",
@@ -628,8 +568,6 @@ export default defineConfig({
               link: "/posts/javascript/loop/for_await_of",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Syntatic Sugar",
@@ -675,8 +613,6 @@ export default defineConfig({
               link: "/posts/javascript/syntatic_sugar/how_to_check_empty_array",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/posts/node/": [
@@ -700,8 +636,6 @@ export default defineConfig({
               link: "/posts/node/package/package_imports",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Configuration",
@@ -715,8 +649,6 @@ export default defineConfig({
               link: "/posts/node/configuration/package_lock_json",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "pnpm",
@@ -734,8 +666,6 @@ export default defineConfig({
               link: "/posts/node/pnpm/peerDependencies_resolution",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/posts/pwa/": [
@@ -747,8 +677,6 @@ export default defineConfig({
               link: "/posts/pwa/pwa/pwa",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Assets and Data",
@@ -766,8 +694,6 @@ export default defineConfig({
               link: "/posts/pwa/assets_and_data/size_lifespan",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Service Worker",
@@ -785,8 +711,6 @@ export default defineConfig({
               link: "/posts/pwa/service_worker/lifecycle",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       // "/posts/react/": [],
@@ -799,8 +723,6 @@ export default defineConfig({
               link: "/posts/security/xsrf/xsrf",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "XSS",
@@ -810,8 +732,6 @@ export default defineConfig({
               link: "/posts/security/xss/xss",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "JWT",
@@ -821,8 +741,6 @@ export default defineConfig({
               link: "/posts/security/jwt/jwt",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "CORS",
@@ -832,8 +750,6 @@ export default defineConfig({
               link: "/posts/security/cors/cors",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "OAuth",
@@ -843,8 +759,6 @@ export default defineConfig({
               link: "/posts/security/oauth/oauth",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/posts/typescript/": [
@@ -880,8 +794,6 @@ export default defineConfig({
               link: "/posts/typescript/module/ambient_modules",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Namespace",
@@ -891,8 +803,6 @@ export default defineConfig({
               link: "/posts/typescript/namespace/namespace",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Type Declaration",
@@ -910,8 +820,6 @@ export default defineConfig({
               link: "/posts/typescript/type_declaration/global_type_declaration",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Type Assertion",
@@ -921,8 +829,6 @@ export default defineConfig({
               link: "/posts/typescript/type_assertion/type_assertion",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Conditional Types",
@@ -932,8 +838,6 @@ export default defineConfig({
               link: "/posts/typescript/conditional_types/conditional_types",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Mapped Types",
@@ -943,8 +847,6 @@ export default defineConfig({
               link: "/posts/typescript/mapped_types/mapped_types",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Utility Types",
@@ -974,8 +876,6 @@ export default defineConfig({
               link: "/posts/typescript/utility_types/indexed_signature",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Generic",
@@ -985,8 +885,6 @@ export default defineConfig({
               link: "/posts/typescript/generic/generic",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Syntax Sugar",
@@ -1004,8 +902,6 @@ export default defineConfig({
               link: "/posts/typescript/syntax_sugar/object_type",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Keywords",
@@ -1019,8 +915,6 @@ export default defineConfig({
               link: "/posts/typescript/keywords/enum",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       // "/posts/vite/": [],
@@ -1057,8 +951,6 @@ export default defineConfig({
               link: "/posts/vue3/reactivity_api/computed",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Rendering Mechanism",
@@ -1076,8 +968,6 @@ export default defineConfig({
               link: "/posts/vue3/rendering_mechanism/compiler_informed_virtual_dom",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Component Lifecycle",
@@ -1087,8 +977,6 @@ export default defineConfig({
               link: "/posts/vue3/component_lifecycle/component_lifecycle",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Composables",
@@ -1106,8 +994,6 @@ export default defineConfig({
               link: "/posts/vue3/composable/async_without_await",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/posts/web_용어정리/": [
@@ -1123,8 +1009,6 @@ export default defineConfig({
               link: "/posts/web_용어정리/domain/page_vs_site",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "URI",
@@ -1138,8 +1022,6 @@ export default defineConfig({
               link: "/posts/web_용어정리/uri/encoding",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Web Server",
@@ -1149,8 +1031,6 @@ export default defineConfig({
               link: "/posts/web_용어정리/web_server/web_server",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Search Engine",
@@ -1160,8 +1040,6 @@ export default defineConfig({
               link: "/posts/web_용어정리/search_engine/search_engine",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Hyperlink",
@@ -1171,8 +1049,6 @@ export default defineConfig({
               link: "/posts/web_용어정리/hyperlink/hyperlink",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Browsing Context",
@@ -1182,8 +1058,6 @@ export default defineConfig({
               link: "/posts/web_용어정리/browsing_context/browsing_context",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "User Agent",
@@ -1193,8 +1067,6 @@ export default defineConfig({
               link: "/posts/web_용어정리/user_agent/user_agent",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "API",
@@ -1204,8 +1076,6 @@ export default defineConfig({
               link: "/posts/web_용어정리/api/api",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/books/Composing_Software/": [
@@ -1234,8 +1104,6 @@ export default defineConfig({
               link: "",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Concepts",
@@ -1273,8 +1141,6 @@ export default defineConfig({
               link: "",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Data Structure",
@@ -1296,8 +1162,6 @@ export default defineConfig({
               link: "",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "Epilogue",
@@ -1307,8 +1171,6 @@ export default defineConfig({
               link: "",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/books/코어_자바스크립트/": [
@@ -1333,8 +1195,6 @@ export default defineConfig({
               link: "",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "실행 컨택스트",
@@ -1356,8 +1216,6 @@ export default defineConfig({
               link: "",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "this",
@@ -1375,8 +1233,6 @@ export default defineConfig({
               link: "",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "콜백함수",
@@ -1394,8 +1250,6 @@ export default defineConfig({
               link: "",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "클로져(Closure)",
@@ -1413,8 +1267,6 @@ export default defineConfig({
               link: "",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "프로토타입",
@@ -1432,8 +1284,6 @@ export default defineConfig({
               link: "",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "클래스",
@@ -1451,8 +1301,6 @@ export default defineConfig({
               link: "",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
       "/books/TCP_IP_완벽_가이드/": [
@@ -1476,8 +1324,6 @@ export default defineConfig({
               link: "/books/TCP_IP_완벽_가이드/1장/1-6",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "2장",
@@ -1511,8 +1357,6 @@ export default defineConfig({
               link: "/books/TCP_IP_완벽_가이드/2장/2-7",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "5장",
@@ -1526,8 +1370,6 @@ export default defineConfig({
               link: "/books/TCP_IP_완벽_가이드/5장/5-3",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "6장",
@@ -1561,8 +1403,6 @@ export default defineConfig({
               link: "/books/TCP_IP_완벽_가이드/6장/6-7",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
         {
           text: "13장",
@@ -1588,8 +1428,6 @@ export default defineConfig({
               link: "/books/TCP_IP_완벽_가이드/13장/13-5",
             },
           ],
-          collapsible: true,
-          collapsed: true,
         },
       ],
     },
