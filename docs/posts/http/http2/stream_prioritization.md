@@ -1,10 +1,8 @@
 # Stream Prioritization
 
-`HTTP/2` 에서는 리소스의 우선순위를 반영하여 stream들 사이의 우선순위를 결정합니다.
-
 <Image src='../_images/stream_prioritization.png' placeholder="Stream Prioritization" />
 
-결정요인은 2가지가 있습니다.
+`HTTP/2` 에서는 리소스의 우선순위를 반영하여 stream들 사이의 우선순위를 결정하는데, 결정요인은 2가지가 있습니다.
 
 ### dependency(1~256)
 
