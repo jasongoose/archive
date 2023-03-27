@@ -1019,6 +1019,14 @@ export default defineConfig({
               link: "/posts/web_용어정리/uri/uri",
             },
             {
+              text: "URL",
+              link: "/posts/web_용어정리/uri/url",
+            },
+            {
+              text: "URN",
+              link: "/posts/web_용어정리/uri/urn",
+            },
+            {
               text: "Encoding",
               link: "/posts/web_용어정리/uri/encoding",
             },
