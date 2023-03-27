@@ -1,8 +1,8 @@
 # Compiler-Informed Virtual DOM
 
-VDOM은 vanillaJS, jQuery 등을 사용하여 직접적인 DOM 조작없이 선언적으로(declarative), 그리고 동적으로(programatically) 원하는 UI를 생성할 수 있다는 개발편의성을 장점으로 가집니다.
+VDOM은 vanillaJS, jQuery 등을 사용하여 직접적인 DOM 조작없이 선언적으로, 그리고 동적으로 원하는 UI를 생성할 수 있다는 개발편의성을 장점으로 가집니다.
 
-하지만 runtime 중 사소한 변화에 의해서 re-rendering이 필요할 때마다 변하지 않는 Node들도 포함하여 VDom을 처음부터 재생성하는 “중복에 의한 비효율성”이라는 단점도 가집니다.
+하지만 runtime 중 사소한 변화에 의해서 리렌더링이 필요할 때마다 변하지 않는 Node들도 포함하여 VDom을 처음부터 재생성하는 “중복에 의한 비효율성”이라는 단점도 가집니다.
 
 Vue3에서는 compile-time optimization으로 위 한계점을 해결합니다.
 
@@ -10,7 +10,7 @@ compiler가 컴포넌트의 template를 파싱하면서 static Vnode를 제외�
 
 ## Static Hoisting
 
-예를 들어 아래와 같은 컴포넌트 template이 있다면, foo `<div>` 와 bar `<div>` 는 컴포넌트 data와 binding된 부분이 없어서 변할 경우가 없으므로 re-rendering이 불필요합니다.
+예를 들어 아래와 같은 컴포넌트 template이 있다면, foo `<div>` 와 bar `<div>` 는 컴포넌트 data와 binding된 부분이 없어서 변할 경우가 없으므로 리렌더링이 불필요합니다.
 
 ```html
 <div>
@@ -20,7 +20,7 @@ compiler가 컴포넌트의 template를 파싱하면서 static Vnode를 제외�
 </div>
 ```
 
-compiler는 static Vnode들을 생성하는 함수들을 render 함수 밖으로 hoist하여 re-rendering이 발생할 때마다 재사용하고 renderer에게 patch 대상에서 제외하도록 flag(`HOISTED`)를 전달합니다.
+compiler는 static Vnode들을 생성하는 함수들을 render 함수 밖으로 hoist하여 리렌더링이 발생할 때마다 재사용하고 renderer에게 patch 대상에서 제외하도록 flag(`HOISTED`)를 전달합니다.
 
 ```js
 const _hoisted_1 = /*#__PURE__*/ _createElementVNode(
@@ -55,7 +55,7 @@ export function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 추가적으로 template 상의 static element들이 어느 정도 연속으로 위치한다면, 개별 static Vnode들을 생성하는 대신 단일 Vnode(merged Vnode)로 압축합니다.
 
-해당 Vnode는 element들을 모두 포함하는 HTML string을 내부에 가지는데, `.innerHTML` 메서드에 의해서 직접 RDOM에 삽입됩니다.
+해당 Vnode는 element들을 모두 포함하는 HTML string을 내부에 가지는데, `innerHTML` 메서드에 의해서 직접 RDOM에 삽입됩니다.
 
 여기서 첫 mount 단계에서 생성된 merged Vnode는 따로 cache에 저장되고 [cloneNode](https://developer.mozilla.org/en-US/docs/Web/API/Node/cloneNode)로 만든 복사본들은 Vue 앱 전반에 걸쳐 재사용됩니다.
 
@@ -94,7 +94,7 @@ export function render(_ctx, _cache, $props, $setup, $data, $options) {
 
 ## Patch Flags
 
-compiler가 dynamic binding(들)을 가진 단일 element에 대응하는 Vnode를 생성할 때 전달하는 인자값으로, 추후 re-rendering에 의해서 진행할 patch의 종류를 나타냅니다.
+compiler가 dynamic binding(들)을 가진 단일 element에 대응하는 Vnode를 생성할 때 전달하는 인자값으로, 추후 리렌더링에 의해서 진행할 patch의 종류를 나타냅니다.
 
 ```html
 <!-- class binding only -->

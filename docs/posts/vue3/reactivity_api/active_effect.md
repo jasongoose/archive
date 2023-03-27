@@ -1,8 +1,8 @@
 # activeEffect
 
-앞에서 살펴보았듯이 effect를 실행하면 reactive object의 property들을 읽어내고 해당 property의 dep에 실행한 effect가 추가됩니다.
+앞에서 살펴보았듯이 effect를 실행하면 reactive object의 속성들을 읽어내고 해당 속성의 dep에 실행한 effect가 추가됩니다.
 
-하지만 effect가 아닌 그저 코드에서 reactive object의 property를 읽는다면 앞서 정의한 effect가 dep에 있음에도 불구하고 targetMap, depsMap, dep을 거쳐서 동일한 effect를 추가하려고 한다.
+하지만 reactive object의 속성을 읽으려고 하면 앞서 정의한 effect가 dep에 있음에도 불구하고 targetMap, depsMap, dep을 거쳐서 동일한 effect를 추가하려고 합니다.
 
 ```js
 let product = reactive({ price: 5, quantity: 2 });

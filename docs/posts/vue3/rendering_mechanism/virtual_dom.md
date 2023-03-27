@@ -2,7 +2,7 @@
 
 <Image src="../_images/vdom.jpeg" alt="Virtual DOM" />
 
-React에서 처음 소개한 개념으로 메모리 상에 DOM tree(UI)을 구현한 JS 객체를 저장한 상태에서 Real DOM tree(Rtree)와 동기화시키는 메커니즘입니다.
+React에서 처음 소개한 개념으로 메모리 상에 DOM 트리(Virtual DOM 트리, Vtree)를 구현한 JS 객체를 저장한 상태에서 Real DOM 트리(Rtree)와 동기화시키는 메커니즘입니다.
 
 임의의 Node의 변화를 반영한 DOM tree를 렌더링할 때, 새로고침으로 처음부터 다시 Rtree를 구축하지 않습니다.
 

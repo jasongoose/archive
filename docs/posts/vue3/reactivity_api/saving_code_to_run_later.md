@@ -1,18 +1,18 @@
 # Saving Code To Run Later
 
-Vue3의 반응성(reactivity)은 3가지 함수와 dependency(dep)에 의해서 구현됩니다.
+Vue3의 반응성은 3가지 함수와 dependency(dep)에 의해서 구현됩니다.
 
 <Image src="../_images/saving_code_to_run_later.png" alt="Saving code to run later" />
 
 ## effect
 
-특정 데이터 x(primitive or property)가 변했을 때 다시 실행시켜야 코드 즉, x에 의존하는 연산을 수행하는 wrapper function입니다.
+특정 데이터 x가 변했을 때 다시 실행시켜야 코드 즉, x에 의존하는 연산을 수행하는 wrapper function입니다.
 
 data fetching을 위해 비동기 작업이 위치하기도 합니다.
 
 ## dependency(dep)
 
-특정 데이터 x의 1개 이상의 effect들을 저장하는 Set 자료구조입니다.
+특정 데이터 x의 effect들을 저장하는 Set 자료구조입니다.
 
 Set을 사용하는 이유는 가리키는 effect들 간의 중복을 방지하기 위해서입니다.
 
@@ -22,7 +22,7 @@ Set을 사용하는 이유는 가리키는 effect들 간의 중복을 방지하�
 
 ## trigger
 
-데이터 x의 dep에 저장된 모든 effect들을 실행하여 갱신된 x를 기준으로 의존 연산들을 다시 수행하는 함수입니다.
+업데이트된 x를 기준으로 데이터 x의 dep에 저장된 모든 effect들을 실행하는 함수입니다.
 
 ---
 

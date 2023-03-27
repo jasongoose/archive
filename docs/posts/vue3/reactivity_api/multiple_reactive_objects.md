@@ -2,9 +2,9 @@
 
 <Image src="../_images/multiple_reactive_objects.jpg" alt="Multiple Reactive Objects"/>
 
-reactive object의 개수가 늘어났을 때는 각 객체 속성들의 effect를 관리해야 하는데, 여기서 객체를 key로 가지는 WeakMap인 targetMap을 사용합니다.
+reactive object의 개수가 늘어났을 때는 객체별 effect를 관리해야 하는데, 여기서 객체를 key로 가지는 WeakMap인 targetMap을 사용합니다.
 
-targetMap의 key는 reactive object, value는 해당 object 속성들의 개별 dep 정보를 담은 depsMap을 가지면 됩니다.
+targetMap의 key는 reactive object, value는 depsMap을 가지면 됩니다.
 
 위 내용을 바탕으로 track, trigger를 구현하면 다음과 같습니다.
 

@@ -2,9 +2,9 @@
 
 <Image src="../_images/proxy_reflect.png" alt="Proxy, Reflect" />
 
-Proxy와 Reflect를 이용하면 객체의 속성을 읽을 때는 track, 쓸 때는 trigger 함수를 자동으로 실행할 수 있습니다.
+`Proxy`와 `Reflect`를 이용하면 객체의 속성을 읽을 때는 track, 쓸 때는 trigger 함수를 자동으로 실행하도록 구현할 수 있습니다.
 
-`Proxy`의 get/set trap에 각각 `Reflect`의 정적 메소드와 track(), trigger()를 함께 작성하여 아래와 같이 구현할 수 있습니다.
+`Proxy`의 get/set trap에 각각 `Reflect`의 정적 메소드와 track, trigger를 함께 작성하여 아래와 같이 구현할 수 있습니다.
 
 ```js
 function reactive(obj) {

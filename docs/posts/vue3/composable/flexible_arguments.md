@@ -4,7 +4,7 @@ composable은 primitive 타입 인자 또는 `Ref` 타입 인자를 받을 수 �
 
 ## ref(...)
 
-전달된 composabl 인자에 반응성을 부여하고 싶다면 아래와 같이 `ref` 함수를 적용하면 됩니다.
+composable의 인자에 반응성을 부여하고 싶다면 아래와 같이 `ref` 함수를 적용하면 됩니다.
 
 ```js
 // When we need to use a ref in the composable
@@ -21,7 +21,7 @@ ref(ref(ref(ref( ... )))) === ref(...)
 
 ## unref(...)
 
-전달된 hook 인자의 반응성을 제거한 상태로 사용하고 싶다면 아래와 같이 `unref` 함수를 적용하면 됩니다.
+composable 인자의 반응성을 제거한 상태로 사용하고 싶다면 아래와 같이 `unref` 함수를 적용하면 됩니다.
 
 ```js
 // When we need to use a raw value in the composable
