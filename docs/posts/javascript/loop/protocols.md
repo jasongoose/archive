@@ -6,7 +6,7 @@
 
 `next` 메서드는 호출될 때마다 `done`과 `value`라는 속성을 가지는 객체를 계속 반환하는데, 생성할 값들이 고갈되면 반환을 멈춥니다.
 
-<Image src="../_images/iterator.png" alt="Iterator"/>
+<Image src="/image/javascript/iterator.png" alt="Iterator"/>
 
 ## iterable
 
@@ -16,7 +16,7 @@ JS 객체의 속성들을 순회하는 방식을 커스터마이징하는데 사
 
 object에서 정의할 때는 `[Symbol.iterator]`라는 키를 사용합니다.
 
-<Image src="../_images/iterable.png" alt="Iterable"/>
+<Image src="/image/javascript/iterable.png" alt="Iterable"/>
 
 object가 순회된다면 `@@iterator` 메서드가 반환한 [iterator](#iterator) 객체로부터 iterated value를 얻을 수 있습니다.
 
