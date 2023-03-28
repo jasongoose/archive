@@ -23,7 +23,7 @@ Cross-Origin Resource Sharing의 줄임말로, 서버 origin과 현재 클라이
 
 ### Preflight Request
 
-<Image src="../_images/cors-preflight-request.png" alt="Preflight Request"/>
+<Image src="/image/security/cors-preflight-request.png" alt="Preflight Request"/>
 
 클라이언트에서 서버로 원본 요청을 전송하기 전에 [OPTIONS 메서드](../../http/http1/methods#options)를 사용한 예비 요청(preflight request)을 전송하여 서버가 허용하는 요청 설정(?)을 확인합니다.
 
@@ -48,7 +48,7 @@ Cross-Origin Resource Sharing의 줄임말로, 서버 origin과 현재 클라이
 
 ### Simple Request
 
-<Image src="../_images/cors-simple-request.png" alt="Simple Request"/>
+<Image src="/image/security/cors-simple-request.png" alt="Simple Request"/>
 
 예비요청 없이 클라이언트에서 원본 요청이 서버로 전송되면 서버의 `Access-Control-Allow-Origin`과 원본 요청의 `Origin`을 비교하여 CORS 정책 위반 여부를 검사하는 방식입니다.
 
