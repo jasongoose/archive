@@ -1,6 +1,6 @@
 # Stream, Message, Frame
 
-<Image src='../_images/streams_messages_frames.png' placeholder="Binary Framing Layer" />
+<Image src='/image/http/streams_messages_frames.png' placeholder="Binary Framing Layer" />
 
 ## 단위
 
