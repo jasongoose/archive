@@ -237,7 +237,7 @@ export default defineConfig({
           items: [
             {
               text: "Why Git?",
-              link: "/posts/git/why_git",
+              link: "/posts/git/why_git/why_git",
             },
           ],
         },
