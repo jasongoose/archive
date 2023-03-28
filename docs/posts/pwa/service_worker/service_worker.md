@@ -2,7 +2,7 @@
 
 웹 클라이언트와 서버 사이에 위치한 미들웨어 proxy로, 앱 navigation을 수정하거나 asset 요청을 중간에 intercept하여 특정 상황(특히, 오프라인 상)에서 관련 페이지의 동작을 제어하는 기능을 가집니다.
 
-<Image src="../_images/pwa.png" alt="pwa" />
+<Image src="/image/pwa/pwa.png" alt="pwa" />
 
 ## 기능
 
