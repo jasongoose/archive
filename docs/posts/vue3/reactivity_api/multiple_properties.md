@@ -1,6 +1,6 @@
 # Multiple Properties
 
-<Image src="../_images/multiple_properties.jpg" alt="Multiple Properties"/>
+<Image src="/image/vue3/multiple_properties.jpg" alt="Multiple Properties"/>
 
 하나의 객체에는 여러 개의 속성들을 가지므로 속성별 effect들도 따로 관리할 필요가 있습니다.
 

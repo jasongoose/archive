@@ -2,7 +2,7 @@
 
 Vue3의 반응성은 3가지 함수와 dependency(dep)에 의해서 구현됩니다.
 
-<Image src="../_images/saving_code_to_run_later.png" alt="Saving code to run later" />
+<Image src="/image/vue3/saving_code_to_run_later.png" alt="Saving code to run later" />
 
 ## effect
 

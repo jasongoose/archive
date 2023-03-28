@@ -1,6 +1,6 @@
 # Proxy, Reflect
 
-<Image src="../_images/proxy_reflect.png" alt="Proxy, Reflect" />
+<Image src="/image/vue3/proxy_reflect.png" alt="Proxy, Reflect" />
 
 `Proxy`와 `Reflect`를 이용하면 객체의 속성을 읽을 때는 track, 쓸 때는 trigger 함수를 자동으로 실행하도록 구현할 수 있습니다.
 
