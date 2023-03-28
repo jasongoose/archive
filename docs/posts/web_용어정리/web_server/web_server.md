@@ -2,7 +2,7 @@
 
 1개 이상의 웹 사이트들을 호스팅하는 물리적인 하드웨어와 소프트웨어를 동시에 가리킵니다.
 
-<Image src="../_images/web_server.png" alt="Web Server" />
+<Image src="/image/web_용어정리/web_server.png" alt="Web Server" />
 
 :::info 호스팅(hosting)
 임의의 웹 사이트로 사용자의 요청이 들어올 때마다 요청한 웹 페이지와 관련 리소스를 브라우저로 제공한다는 뜻입니다.

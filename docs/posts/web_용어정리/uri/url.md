@@ -4,7 +4,7 @@
 
 URL 자체 문자열 값과 URL이 가리키는 리소스를 관리하는 것은 웹 서버가 담당합니다.
 
-<Image src="../_images/url_구조.png" alt="URL 구조" />
+<Image src="/image/web_용어정리/url_구조.png" alt="URL 구조" />
 
 ## scheme(protocol)
 
@@ -34,7 +34,7 @@ URL 자체 문자열 값과 URL이 가리키는 리소스를 관리하는 것은
 
 웹 서버로 전달하는 부가적인 데이터로, `key=value` 형태의 문자열들을 `&`로 구분합니다.
 
-<Image src="../_images/query.png" alt="Query" />
+<Image src="/image/web_용어정리/query.png" alt="Query" />
 
 ## anchor
 
