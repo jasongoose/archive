@@ -7,7 +7,7 @@ Application Programming Interface의 약자로 2가지 정의가 있습니다.
 
 시스템의 구현방식은 몰라도 interface에 맞춰서 요청을 구성하면 필요한 리소스나 기능을 사용할 수 있습니다.
 
-<Image src="../_images/what_is_api.png" alt="what_is_api" />
+<Image src="/image/web_용어정리/what_is_api.png" alt="what_is_api" />
 
 ## 공개범위
 
