@@ -41,7 +41,7 @@ HTTP는 클라이언트와 서버 사이의 통신을 할 때마다 TCP 연결�
 
 ### 통신절차
 
-<Image src="../_images/cookie_comm.png" alt="Cookie Communication" />
+<Image src="/image/browser/cookie_comm.png" alt="Cookie Communication" />
 
 쿠키를 사용한 통신절차는 다음과 같습니다.
 
@@ -115,7 +115,7 @@ HTTP는 클라이언트와 서버 사이의 통신을 할 때마다 TCP 연결�
 
 first-party cookie처럼 사용자들의 온라인 활동에 관한 정보를 추적하고 수집하기 위한 쿠키지만 현재 이용하고 있는 사이트가 아닌 전혀 다른 도메인에 의해서 생성된다는 차이점이 있습니다.
 
-<Image src="../_images/third_party_cookie.png" alt="Third-party Cookie" />
+<Image src="/image/browser/third_party_cookie.png" alt="Third-party Cookie" />
 
 주로 온라인 광고에서 많이 활용되는데 사용자가 특정 사이트를 방문하여 제3의 도메인에서 운영하는 광고가 화면에 노출되면 쿠키가 저장됩니다.
 
