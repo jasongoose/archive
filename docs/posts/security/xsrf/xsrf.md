@@ -4,7 +4,7 @@
 
 Cross Site Request Forgery의 약자로, 특정 서버가 클라이언트를 신뢰하는 상태를 노린 공격입니다.
 
-<Image src="/image/security/xsrf.png" alt="XSRF란"/>
+![XSRF](../image/xsrf.png){ align="center" }
 
 서버가 요청주체가 인증된 사용자인지, 인증되지도 않은 공격자인지를 구별하지 못하는 웹 취약점이 주원인입니다.
 
