@@ -2,7 +2,7 @@
 
 reference 타입 중 하나인 Map은 key-value pair로 속성을 저장한다는 점에서 일반적인 객체와 거의 비슷하지만 다음과 같은 차이점이 있습니다.
 
-<Image src="/image/javascript/map_object_diff.png" alt="Map과 Object 차이점"/>
+![Map과 Object 차이점](../image/map_object_diff.png){ align="center" }
 
 ## Iterating Map with forEach method
 
