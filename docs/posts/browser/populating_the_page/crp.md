@@ -8,7 +8,7 @@
 
 여기서 이 객체를 node로 가지는 트리 데이터를 "DOM 트리" 라고 합니다.
 
-<Image src="/image/browser/dom.png" alt="DOM" />
+![DOM](../image/dom.png){ align="center" }
 
 DOM을 사용하면 프로그램(특히 JS)을 사용하여 동적으로 페이지를 조작할 수 있게 되는데, 브라우저는 아래와 같이 2가지 과정을 거쳐서 DOM tree를 생성합니다.
 
@@ -34,7 +34,7 @@ DOM을 사용하면 프로그램(특히 JS)을 사용하여 동적으로 페이�
 
 여기서 이 객체를 node로 가지면서 각 node에 적용할 스타일(`font`, `color`, `display`, ...) 정보를 가지는 트리 데이터를 "CSSOM 트리" 라고 합니다.
 
-<Image src="/image/browser/cssom_tree.png" alt="CSSOM Tree" />
+![CSSOM Tree](../image/cssom_tree.png){ align="center" }
 
 처음에는 일반적인 스타일(class, id selector)부터 시작해서 더 구체적인 selector들을 기반하여 재귀적으로 스타일들을 개선하게 되는데, 이 부분에서 CSS의 cascading 성질을 알 수 있습니다.
 
@@ -58,7 +58,7 @@ DOM을 사용하면 프로그램(특히 JS)을 사용하여 동적으로 페이�
 
 DOM 트리와 CSSOM 트리가 결합한 트리로, 화면 상의 올바른 순서와 위치에 DOM node를 배치하기 위한 목적으로 생성됩니다.
 
-<Image src="/image/browser/render_tree.png" alt="Render Tree" />
+![Render Tree](../image/render_tree.png){ align="center" }
 
 render 트리의 node를 "frame" 또는 "render object" 라고 하는데, 이 객체에는 node의 width, height, position 등 CSS box 정보가 담겨있습니다.
 
@@ -74,7 +74,7 @@ CSS Rule을 적용했을 때 화면에 보여지는 DOM node들만 render 트리
 
 render 트리의 node들을 화면에 어떻게 배치할지 결정하는 과정입니다.
 
-<Image src="/image/browser/layout.jpg" alt="Layout" />
+![Layout](../image/layout.jpg){ align="center" }
 
 배치할 때 고려할 점은 viewport의 크기로, 보통 node의 가로 길이는 관련 CSS rule이 없는 한 default로 부모 node의 가로 길이를 그대로 상속하고 세로 길이는 0을 가집니다.
 

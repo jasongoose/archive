@@ -4,7 +4,7 @@
 
 DOM 트리는 웹 페이지를 구성하는 node들 사이의 포함관계를 나타나는 트리 구조의 데이터로 브라우저에 의해서 생성됩니다.
 
-<Image src="/image/browser/event_flow.png" alt="Event 흐름" />
+![Event 흐름](../image/event_flow.png){ align="center" }
 
 사용자 또는 외부 원인에 의해 node로부터 어떤 event가 발생하면 target 요소 뿐만 아니라 상위, 하위 node에도 동일한 event가 전달되는데 event가 흐르는 방향은 다음과 같이 3가지가 있습니다.
 

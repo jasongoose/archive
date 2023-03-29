@@ -2,7 +2,7 @@
 
 서로 다른 origin을 가진 [browsing context](../../web_용어정리/browsing_context/browsing_context.md)사이의 통신은 제한적이지만, 동일한 origin이라면 Broadcast Channel API를 사용하면 됩니다.
 
-<Image src="/image/browser/bc.png" alt="Broadcast Channel" />
+![Broadcast Channel](../image/bc.png){ align="center" }
 
 동일한 origin을 가지는 context들이 공용 채널에 구독하는 방식으로 통신이 이루어지는데, 임의의 context에서 메시지를 채널로 전송하면 해당 채널을 구독하는 나머지 context들에게도 그대로 메시지가 전달됩니다.
 
