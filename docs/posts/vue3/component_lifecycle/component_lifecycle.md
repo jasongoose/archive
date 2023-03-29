@@ -2,8 +2,8 @@
 
 ## Single Component
 
-<Image src="/image/vue3/single_lifecycle.png" alt="Single Lifecycle" />
+![Single Lifecycle](../image/single_lifecycle.png){ align="center" }
 
 ## Nested Component
 
-<Image src="/image/vue3/nested_lifecycle.png" alt="Nested Lifecycle" />
+![Nested Lifecycle](../image/nested_lifecycle.png){ align="center" }
