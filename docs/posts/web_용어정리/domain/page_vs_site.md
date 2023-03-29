@@ -2,7 +2,7 @@
 
 ## Page
 
-<Image src="/image/web_용어정리/web_page.jpg" alt="Web Page" />
+![Web Page](../image/web_page.jpg){ align="center" }
 
 브라우저에 의해서 화면에 그려지는 하나의 HTML 문서로 스타일(`.css`), 스크립트(`.js`), 미디어(이미지, 영상, 음성 등) 등 다양한 리소스들을 포함합니다.
 
@@ -10,7 +10,7 @@
 
 ## Site
 
-<Image src="/image/web_용어정리/web_site.jpg" alt="Website" />
+![Website](../image/web_site.jpg){ align="center" }
 
 서로 연결된 웹 페이지들과 관련 리소스들의 집합으로 고유한 도메인을 가집니다.
 

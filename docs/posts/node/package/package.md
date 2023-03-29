@@ -27,7 +27,7 @@ registry에 등록된 패키지들을 구분할 때는 다음과 같은 name을 
 
 보통 패키지는 다음과 같은 file system(폴더구조)를 가집니다.
 
-<Image src="/image/node/package_structure.png" alt="패키지 구조"/>
+![패키지 구조](../image/package_structure.png){ align="center" }
 
 ### package.json
 

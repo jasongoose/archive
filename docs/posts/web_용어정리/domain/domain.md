@@ -4,6 +4,8 @@
 
 <Image src="/image/web_용어정리/domain_구조.png" alt="Domain 구조" />
 
+![Domain 구조](../image/domain_%EA%B5%AC%EC%A1%B0.png){ align="center" }
+
 도메인은 서버 주소의 가독성을 높이기 위해서 사용하는 주소지정 방식으로, 보통 오른쪽에서 왼쪽 방향으로 읽습니다.
 
 ### TLD(Top Level Domain)
@@ -39,7 +41,7 @@ registrar(레지스트라)라고 불리는 기관/회사에서 도메인 이름 
 
 ## DNS Refreshing
 
-<Image src="/image/web_용어정리/dns_refreshing.jpeg" alt="DNS Refreshing" />
+![DNS Refreshing](../image/dns_refreshing.jpeg){ align="center" }
 
 전세계적으로 퍼져 있는 DNS 서버들은 계층구조의 형태를 가지고 각자 담당하는 도메인에 속하는 서브 도메인들의 IP 주소들을 관리합니다.
 
@@ -49,7 +51,7 @@ registrar(레지스트라)라고 불리는 기관/회사에서 도메인 이름 
 
 ## DNS Process
 
-<Image src="/image/web_용어정리/dns_process.png" alt="DNS Process" />
+![DNS Process](../image/dns_process.png){ align="center" }
 
 브라우저에서 도메인 주소를 입력하고 엔터키를 누르면 브라우저는 먼저 local DNS cache을 먼저 확인해봅니다.
 

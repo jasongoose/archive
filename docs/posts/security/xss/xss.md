@@ -47,7 +47,7 @@ Chrome이나 Safari 등 현대 브라우저들은 Reflected XSS 공격에 대응
 
 사용자의 입력값이 검증되지 않은 채 바로 DB에 저장하는 사이트에서 발생할 수 있습니다.
 
-<Image src="/image/security/xss-stored-attack.png" alt="Stored Attack"/>
+![Stored Attack](../image/xss_stored_attack.png){ align="center" }
 
 ### DOM-based Attack
 
@@ -55,7 +55,7 @@ Reflected XSS와 굉장히 유사하지만 악성 스크립트가 주입되는 �
 
 Reflected XSS는 서버에서 요청 URL을 파싱하여 악성 스크립트가 주입된 페이지를 내려주지만 DOM-based XSS는 클라이언트가 페이지를 받은 뒤에 페이지 URL query나 fragment를 파싱하여 DOM에 악성 스크립트를 의도치않게 주입하고 실행합니다.
 
-<Image src="/image/security/dom_based_xss.png" alt="DOM-based Attack" />
+![DOM-based Attack](../image/dom_based_xss.png){ align="center" }
 
 ## XSS 예방하기
 
@@ -91,7 +91,8 @@ prefix로 `&`, postfix로 `;`를 가지는 string으로, HTML reserved character
 JS 코드 상에서 특수문자를 그저 문자로서, 또는 키보드로 표시할 수 없는 문자들을 사용하려면 escape 처리가 필요한데, back-slash(\\) 뒤에 대응되는 문자가 위치합니다.
 
 여기서 escape 처리가 된 결과물을 escape sequence라고 합니다.
-<Image src="/image/security/unicode-escape.png" alt="Unicode Escape" />
+
+![Unicode Escape](../image/unicode_escape.png){ align="center" }
 
 ES6에서 지원하는 escape 처리들은 다음과 같습니다.
 

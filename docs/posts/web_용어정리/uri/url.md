@@ -6,6 +6,8 @@ URL 자체 문자열 값과 URL이 가리키는 리소스를 관리하는 것은
 
 <Image src="/image/web_용어정리/url_구조.png" alt="URL 구조" />
 
+![URL 구조](../image/url_%EA%B5%AC%EC%A1%B0.png){ align="center" }
+
 ## scheme(protocol)
 
 브라우저가 리소스를 요청하기 위해서 사용할 프로토콜 이름입니다.
@@ -35,6 +37,8 @@ URL 자체 문자열 값과 URL이 가리키는 리소스를 관리하는 것은
 웹 서버로 전달하는 부가적인 데이터로, `key=value` 형태의 문자열들을 `&`로 구분합니다.
 
 <Image src="/image/web_용어정리/query.png" alt="Query" />
+
+![Query](../image/query.png){ align="center" }
 
 ## anchor
 

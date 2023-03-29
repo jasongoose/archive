@@ -2,7 +2,7 @@
 
 Node 환경에서는 "Node.js Resolution Algorithm"으로 module specifier를 해석하여 module들을 구분합니다.
 
-<Image src="/image/node/module_resolution.png" alt="Module Resolution" />
+![Module Resolution](../image/module_resolution.png){ align="center" }
 
 ## Relative Specifier
 

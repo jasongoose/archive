@@ -1,3 +1,3 @@
 # Lifecycle
 
-<Image src="/image/pwa/sw-lifecycle.png" alt="SW Lifecycle" />
+![SW Lifecycle](../image/sw_lifecycle.png){ align="center" }

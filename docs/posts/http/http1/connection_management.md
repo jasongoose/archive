@@ -1,6 +1,6 @@
 # Connection Management
 
-<Image src="/image/http/connection_management.png" alt="Connection Management"/>
+![Connection Management](../image/connection_management.png){ align="center" }
 
 ## Short-lived
 
@@ -80,7 +80,7 @@ HOL blocking 현상은 특히 `HTTP/1.1` proxy 서버에서 자주 발생했습�
 
 필요한 리소스들을 단일 도메인이 아닌 동일한 서버를 참조하는 여러 개의 subdomain들을 향해 병렬적으로 요청하는 방식을 이루어집니다.
 
-<Image src="/image/http/domain_sharding.png" placeholder="Domain Sharding" />
+![Domain Sharding](../image/domain_sharding.png){ align="center" }
 
 ### 장점
 

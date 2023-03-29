@@ -19,7 +19,7 @@ forked history를 다시 하나로 합치기 위한 명령어로, 보통 하나�
 
 **FROM** branch에서 **TO** branch로 하나의 경로로 이어질 수 있을 때 사용할 수 있는 방법입니다.
 
-<Image src="/image/git/git_merge_ff.png" alt="Fast Foward" />
+![Fast Foward](../image/git_merge_ff.png){ align="center" }
 
 Git은 branch들을 합치는 대신에 **FROM** branch tip이 **TO** branch tip으로 이동시켜서 하나의 history를 만들기에 새로운 merge commit을 생성하지 않습니다.
 
@@ -31,7 +31,7 @@ fast-foward 방식이 아닌 기록을 유지하기 위한 수단으로 merge co
 
 Fast Forward merge와 다르게 **FROM** branch에서 feature를 개발하는 동안에 **TO** branch에서 계속 commit이 생성될 때도 사용할 수 있는 방식으로, 보통 규모가 큰 feature를 개발하거나 팀 단위로 project를 진행할 때 활용합니다.
 
-<Image src="/image/git/git_merge_3_way.png" alt="3-way" />
+![3-way](../image/git_merge_3_way.png){ align="center" }
 
 3개의 commit 즉, **FROM** branch의 tip + **TO** branch의 tip + common base commit을 사용하는데, Git은 merge 전에 common base를 기준으로 두 tip에서 각각 어떤 부분이 달라졌는지를 확인합니다.
 
@@ -62,13 +62,13 @@ Fast Forward merge와 다르게 **FROM** branch에서 feature를 개발하는 �
 
 merge 과정은 마치 만드려는 제품의 구성품 도안들을 겹치는 행위와 동일합니다. 2개 이상의 도안들이 같은 파트를 동시에 설계하여 중복된다면 conflict가 발생합니다.
 
-<Image src="/image/git/mark_1.jpeg" alt="mark_1" />
+![Mark1](../image/mark_1.jpeg){ align="center" }
 
 ### feature → master(main)
 
 평소에 `feature`에서 작업하는 중에 `master`에 새로운 commit이 올라올 때마다 master → feat 방향 merge를 수행합니다.
 
-<Image src="/image/git/feat_to_master.png" alt="feat_to_master" />
+![Feat To Master](../image/feat_to_master.png){ align="center" }
 
 ### feature → develop, test
 

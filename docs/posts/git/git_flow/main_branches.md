@@ -1,6 +1,6 @@
 # Main Branches
 
-<Image src="/image/git/main-branches.png" alt="Main Branches" />
+![Main Branches](../image/main_branches.png){ align="center" }
 
 ## master(main)
 

@@ -1,6 +1,6 @@
 # Multiple Reactive Objects
 
-<Image src="/image/vue3/multiple_reactive_objects.jpg" alt="Multiple Reactive Objects"/>
+![Multiple Reactive Objects](../image/multiple_reactive_objects.jpg){ align="center" }
 
 reactive object의 개수가 늘어났을 때는 객체별 effect를 관리해야 하는데, 여기서 객체를 key로 가지는 WeakMap인 targetMap을 사용합니다.
 

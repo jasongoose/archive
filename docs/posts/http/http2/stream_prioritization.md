@@ -1,6 +1,6 @@
 # Stream Prioritization
 
-<Image src='/image/http/stream_prioritization.png' placeholder="Stream Prioritization" />
+![Stream Prioritization](../image/stream_prioritization.png){ align="center" }
 
 `HTTP/2` 에서는 리소스의 우선순위를 반영하여 stream들 사이의 우선순위를 결정하는데, 결정요인은 2가지가 있습니다.
 
