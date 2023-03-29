@@ -1088,30 +1088,30 @@ export default defineConfig({
           ],
         },
       ],
-      "/books/Composing_Software/": [
+      "/books/composing_software/": [
         // done
         {
           text: "Introduction",
           items: [
             {
               text: "Introduction",
-              link: "",
+              link: "/books/composing_software/introduction/introduction",
             },
             {
               text: "The Dao of Immutability",
-              link: "",
+              link: "/books/composing_software/introduction/the_dao_of_immutability",
             },
             {
               text: "What is FP?",
-              link: "",
+              link: "/books/composing_software/introduction/what_is_fp",
             },
             {
               text: "Why FP in JS?",
-              link: "",
+              link: "/books/composing_software/introduction/why_fp_in_js",
             },
             {
               text: "Forgotten History of OOP",
-              link: "",
+              link: "/books/composing_software/introduction/forgotten_history_of_oop",
             },
           ],
         },
@@ -1120,35 +1120,35 @@ export default defineConfig({
           items: [
             {
               text: "Pure Function",
-              link: "",
+              link: "/books/composing_software/concepts/pure_function",
             },
             {
               text: "Higher Order Functions",
-              link: "",
+              link: "/books/composing_software/concepts/higher_order_functions",
             },
             {
               text: "Curry & Function Composition",
-              link: "",
+              link: "/books/composing_software/concepts/curry_function_composition",
             },
             {
               text: "Abstraction & Composition",
-              link: "",
+              link: "/books/composing_software/concepts/abstraction_composition",
             },
             {
               text: "Object Composition",
-              link: "",
+              link: "/books/composing_software/concepts/object_composition",
             },
             {
               text: "Factory Functions",
-              link: "",
+              link: "/books/composing_software/concepts/factory_functions",
             },
             {
               text: "Functional Mixins",
-              link: "",
+              link: "/books/composing_software/concepts/functional_mixins",
             },
             {
               text: "Transducers",
-              link: "",
+              link: "/books/composing_software/concepts/transducers",
             },
           ],
         },
@@ -1157,19 +1157,19 @@ export default defineConfig({
           items: [
             {
               text: "Functors & Categories",
-              link: "",
+              link: "/books/composing_software/data_structure/functors_categories",
             },
             {
               text: "Monads",
-              link: "",
+              link: "/books/composing_software/data_structure/monads",
             },
             {
               text: "Lenses",
-              link: "",
+              link: "/books/composing_software/data_structure/lenses",
             },
             {
               text: "Composable Data Types",
-              link: "",
+              link: "/books/composing_software/data_structure/composable_data_types",
             },
           ],
         },
@@ -1178,7 +1178,7 @@ export default defineConfig({
           items: [
             {
               text: "Mocking is a code smell",
-              link: "",
+              link: "/books/composing_software/epilogue/mocking_is_a_code_smell",
             },
           ],
         },
@@ -1511,23 +1511,23 @@ export default defineConfig({
           },
         ],
       },
-      // {
-      //   text: "Books",
-      //   items: [
-      //     {
-      //       text: "Composing Software",
-      //       link: "/books/composing_software/",
-      //     },
-      //     {
-      //       text: "코어 자바스크립트",
-      //       link: "/books/코어_자바스크립트/",
-      //     },
-      //     {
-      //       text: "TCP/IP 완벽 가이드",
-      //       link: "/books/TCP_IP_완벽_가이드/",
-      //     },
-      //   ],
-      // },
+      {
+        text: "Books",
+        items: [
+          {
+            text: "Composing Software",
+            link: "/books/composing_software/",
+          },
+          {
+            text: "코어 자바스크립트",
+            link: "/books/코어_자바스크립트/",
+          },
+          {
+            text: "TCP/IP 완벽 가이드",
+            link: "/books/TCP_IP_완벽_가이드/",
+          },
+        ],
+      },
     ],
   },
 });
