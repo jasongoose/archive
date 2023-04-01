@@ -1,10 +1,8 @@
 # Object Composition
 
-SW에서 추상화는 공통 interface를 일반화하면서 해당 interface에 기능을 추가/오버라이드/확장하여 구체화하는 작업을 가리킵니다.
+SW에서 추상화는 공통 interface에 기능을 추가/오버라이드/확장하여 구체화할 수 있도록 일반화하는 작업을 의미합니다.
 
-이를 구현하는 방법으로 OOP의 상속이 흔하게 사용되지만 필자는 Object Composition 방법을 권장합니다.
-
-Object Composition의 목적은 독립적이고 작은 단위의 객체들을 합성하여 복잡하고 확장된 객체를 만드는 겁니다.
+추상화 구현은 보통 OOP의 상속이 흔하게 사용되지만, 필자는 독립적이고 작은 단위의 객체들을 합성하여 복잡하고 확장된 객체를 만드는 Object Composition 방법을 권장합니다.
 
 객체를 구성하는 방법들은 3가지가 있는데 아래 예시 코드를 공통으로 사용하겠습니다.
 
@@ -22,7 +20,7 @@ aggreation으로 생성되는 객체들을 나열하면 다음과 같습니다.
 - Map
 - Set
 - DOM Nodes
-- UI components
+- UI Components
 
 ### Array Aggreation
 
@@ -72,9 +70,9 @@ enumerable keys: 0,1
 
 단, 아래 사항들을 유의해야 합니다.
 
-- side-effect가 일어나지 않도록 원본 객체를 mutate해서는 안됩니다.
+- side-effect가 일어나지 않도록 원본 객체를 mutate하면 안됩니다.
 - 클래스 상속이나 객체 간의 is-a 관계를 구현하지 않습니다.
-- 속성 key값간의 충돌이 발생하지 않도록 합니다.
+- 속성 key값들 사이에서 충돌이 발생하지 않도록 합니다.
 
 ```js
 const concatenate = (a, o) => ({ ...a, ...o });
@@ -87,7 +85,7 @@ console.log("concatenation", c, `enumerable keys: ${Object.keys(c)}`);
 
 ## Delegation
 
-객체의 속성, 메서드 검색을 다른 객체로 넘겨주는 기법으로, JS에서는 prototype chain으로 구현됩니다.
+객체의 속성과 메서드 검색을 다른 객체로 넘겨주는 기법으로, JS에서는 prototype chain으로 구현됩니다.
 
 Delegation은 다음과 같은 이점이 있습니다.
 

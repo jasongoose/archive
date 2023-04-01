@@ -8,11 +8,11 @@
 
 ### Generalization
 
-반복된 pattern들에서 명백한 유사성들을 은닉하여 중복을 줄인다.
+반복된 pattern들 사이에서 보이는 유사성들을 은닉하여 중복을 줄인다.
 
 ### Specialization
 
-사용처별로 사용하기 위해서 추상화된 단위에 다른 부분만 적용한다.
+추상화된 단위에서 차이나는 부분만 고정하여 용도별로 사용한다.
 
 ### Simplization
 
@@ -30,8 +30,8 @@
 
 FP에서 추상화 단위는 오직 **순수함수**입니다.
 
-코드를 pure function 단위로 분리 ⇒ decomposition,
+코드를 pure function 단위로 분리 ⇒ decomposition, simplization
 
-커리함수와 같은 고차함수의 정의 ⇒ generalization,
+커리함수와 같은 고차함수의 정의 ⇒ generalization
 
 고차함수에 1개 이상의 함수형 인자들을 전달 ⇒ specialization

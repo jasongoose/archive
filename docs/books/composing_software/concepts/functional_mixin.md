@@ -33,7 +33,7 @@ console.log(`
 
 ## Functional Inheritance
 
-함수를 사용하여 객체의 속성과 메서드를 상속시키는 기법입니다.
+함수를 사용하여 특정 객체의 속성과 메서드를 상속시키는 기법입니다.
 
 ```js
 // Base object factory
@@ -88,7 +88,7 @@ console.log(bird.isFlying()); // false
 console.log(bird.fly().isFlying()); // true
 ```
 
-Functional Mixin의 사용이점들을 정리하면 다음과 같습니다.
+Functional Mixin의 사용이점들은 다음과 같습니다.
 
 - closure 현상으로 private 속성을 추가할 수 있다.
 - [compose](./curry_function.md#compose)나 [pipe](./curry_function.md#pipe)를 사용하여 합성할 수 있다.

@@ -2,7 +2,7 @@
 
 OOP(Object Oriented Programming)이라는 용어는 미국의 컴퓨터 과학자 Alan Kay의 1966/67년에 작성한 대학원 논문에서 처음 등장했습니다.
 
-원래는 전체 시스템을 “encapsulate된 mini-computer(object)들 사이의 data sharing이 아닌 message passing에 기반한 통신”으로 구성하려는 시도에서 비롯되었습니다.
+전체 시스템을 “encapsulate된 mini-computer(object)들 사이의 data sharing이 아닌 message passing에 기반한 통신”으로 구성하려는 시도에서 비롯되었습니다.
 
 ![Fish](../image/fish.jpg)
 
@@ -10,15 +10,15 @@ OOP(Object Oriented Programming)이라는 용어는 미국의 컴퓨터 과학�
 
 ### Encapsulated State
 
-외부에서 object를 사용할 때는 내부가 어떻게 구현되는지에 대해서 알 필요가 없으므로 내부 state의 구조와 구현체는 은닉하여 추상화 합니다.
+외부에서 object를 사용할 때 내부가 어떻게 구현되는지 알 수 없도록 내부 state의 구조와 구현체는 은닉하여 추상화합니다.
 
-state 관련 read/write 연산은 메서드(외부 interface)나 일반함수를 사용하여 message를 전송(dispatch)하는 방법으로만 제한합니다.
+state 관련 read/write 연산은 메서드나 일반함수를 사용하여 message를 전송(dispatch)하는 방법으로만 제한합니다.
 
-### Decoupling objects
+### Decoupling Objects
 
 object들은 개별적으로 분리되어 서로의 state에 영향을 주지 않습니다.
 
-### Runtime adaptability
+### Runtime Adaptability
 
 런타임 중 object hot-swapping이 가능합니다.
 

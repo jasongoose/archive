@@ -1,6 +1,6 @@
 # Monad
 
-Functor와 마찬가지로 타입 A에서 타입 B로 매핑할 수 있는 메서드를 가진 interface인데, 일반 map이 아닌 flatMap을 사용한다는 차이점이 있습니다.
+Functor와 마찬가지로 타입 A에서 타입 B로 매핑하는 interface인데, 일반 map이 아닌 flatMap을 사용한다는 차이점이 있습니다.
 
 ## flatMap
 
@@ -26,7 +26,7 @@ Array에 대해 `map`을 수행하면 iteration 일어나고, Promise에 대해 
 
 :::
 
-monad의 매핑연산은 다음과 같이 수식(?)으로 표현할 수 있습니다.
+monad의 매핑연산은 아래와 같은 수식(?)으로 표현할 수 있습니다.
 
 ```js
 M(a).flatMap(a => M(b))
@@ -45,7 +45,7 @@ M(a).flatMap(a => M(b))
 
 ## Composition
 
-Monad는 flatMap을 연속으로 적용하여 단일 합성함수에 의한 flatMap을 구현하거나, 단일 arrow에 의한 flatMap을 다수 arrow들의 연속된 flatMap으로 구현할 수 있습니다.
+arrow들을 연속으로 합성하거나, 단일 arrow로부터 다수 arrow들을 분리하여 Monad를 계산할 수 있습니다.
 
 ![Monad Composition 1](../image/monad_composition_1.png)
 

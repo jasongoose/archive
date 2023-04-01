@@ -1174,263 +1174,263 @@ export default defineConfig({
           ],
         },
       ],
-      "/books/코어_자바스크립트/": [
-        // done
-        {
-          text: "데이터 타입",
-          items: [
-            {
-              text: "데이터 타입 종류",
-              link: "",
-            },
-            {
-              text: "변수선언과 데이터 할당",
-              link: "",
-            },
-            {
-              text: "null",
-              link: "",
-            },
-            {
-              text: "undefined",
-              link: "",
-            },
-          ],
-        },
-        {
-          text: "실행 컨택스트",
-          items: [
-            {
-              text: "실행 컨택스트란?",
-              link: "",
-            },
-            {
-              text: "Lexical Environment",
-              link: "",
-            },
-            {
-              text: "Variable Environment",
-              link: "",
-            },
-            {
-              text: "this Binding",
-              link: "",
-            },
-          ],
-        },
-        {
-          text: "this",
-          items: [
-            {
-              text: "this란?",
-              link: "",
-            },
-            {
-              text: "상황에 따라 달라지는 this",
-              link: "",
-            },
-            {
-              text: "명시적 binding",
-              link: "",
-            },
-          ],
-        },
-        {
-          text: "콜백함수",
-          items: [
-            {
-              text: "콜백함수란?",
-              link: "",
-            },
-            {
-              text: "callback HELL",
-              link: "",
-            },
-            {
-              text: "동기 / 비동기",
-              link: "",
-            },
-          ],
-        },
-        {
-          text: "클로져(Closure)",
-          items: [
-            {
-              text: "클로져란?",
-              link: "",
-            },
-            {
-              text: "메모리 관리",
-              link: "",
-            },
-            {
-              text: "활용되는 예시",
-              link: "",
-            },
-          ],
-        },
-        {
-          text: "프로토타입",
-          items: [
-            {
-              text: "프로토타입이란?",
-              link: "",
-            },
-            {
-              text: "constructor 속성",
-              link: "",
-            },
-            {
-              text: "프로토타입 체인",
-              link: "",
-            },
-          ],
-        },
-        {
-          text: "클래스",
-          items: [
-            {
-              text: "클래스 상속",
-              link: "",
-            },
-            {
-              text: "class field delimiter",
-              link: "",
-            },
-            {
-              text: "class accessor",
-              link: "",
-            },
-          ],
-        },
-      ],
-      "/books/TCP_IP_완벽_가이드/": [
-        {
-          text: "1장",
-          items: [
-            {
-              text: "기본 네트워킹 특성",
-              link: "/books/TCP_IP_완벽_가이드/1장/1-2",
-            },
-            {
-              text: "메시지: 패킷, 프레임, 데이터그램, 셀",
-              link: "/books/TCP_IP_완벽_가이드/1장/1-3",
-            },
-            {
-              text: "네트워크 구조 모델과 클라이언트/서버, 피어투피어 네트워킹",
-              link: "/books/TCP_IP_완벽_가이드/1장/1-4",
-            },
-            {
-              text: "세그먼트, 네트워크, 서브네트워크, 인터네트워크",
-              link: "/books/TCP_IP_완벽_가이드/1장/1-6",
-            },
-          ],
-        },
-        {
-          text: "2장",
-          items: [
-            {
-              text: "네트워크 성능: 전체적인 관점에서 바라보기",
-              link: "/books/TCP_IP_완벽_가이드/2장/2-1",
-            },
-            {
-              text: "네트워크 성능과 기타 주요 특성 사이의 균형 조정",
-              link: "/books/TCP_IP_완벽_가이드/2장/2-2",
-            },
-            {
-              text: "성능측정",
-              link: "/books/TCP_IP_완벽_가이드/2장/2-3",
-            },
-            {
-              text: "성능 측정 단위 이해",
-              link: "/books/TCP_IP_완벽_가이드/2장/2-4",
-            },
-            {
-              text: "이론적 처리율과 실제 처리율, 네트워크 성능에 영향을 주는 요인",
-              link: "/books/TCP_IP_완벽_가이드/2장/2-5",
-            },
-            {
-              text: "단방향, 양방향, 반양방향",
-              link: "/books/TCP_IP_완벽_가이드/2장/2-6",
-            },
-            {
-              text: "서비스 품질",
-              link: "/books/TCP_IP_완벽_가이드/2장/2-7",
-            },
-          ],
-        },
-        {
-          text: "5장",
-          items: [
-            {
-              text: "전반적인 참조 모델 이슈",
-              link: "/books/TCP_IP_완벽_가이드/5장/5-2",
-            },
-            {
-              text: "핵심 OSI 참조 모델 개념",
-              link: "/books/TCP_IP_완벽_가이드/5장/5-3",
-            },
-          ],
-        },
-        {
-          text: "6장",
-          items: [
-            {
-              text: "물리 계층(1계층)",
-              link: "/books/TCP_IP_완벽_가이드/6장/6-1",
-            },
-            {
-              text: "데이터링크 계층(2계층)",
-              link: "/books/TCP_IP_완벽_가이드/6장/6-2",
-            },
-            {
-              text: "네트워크 계층(3계층)",
-              link: "/books/TCP_IP_완벽_가이드/6장/6-3",
-            },
-            {
-              text: "전송 계층(4계층)",
-              link: "/books/TCP_IP_완벽_가이드/6장/6-4",
-            },
-            {
-              text: "세션 계층(5계층)",
-              link: "/books/TCP_IP_완벽_가이드/6장/6-5",
-            },
-            {
-              text: "프리젠테이션 계층(6계층)",
-              link: "/books/TCP_IP_완벽_가이드/6장/6-6",
-            },
-            {
-              text: "애플리케이션 계층(7계층)",
-              link: "/books/TCP_IP_완벽_가이드/6장/6-7",
-            },
-          ],
-        },
-        {
-          text: "13장",
-          items: [
-            {
-              text: "주소결정 개념과 이슈",
-              link: "/books/TCP_IP_완벽_가이드/13장/13-1",
-            },
-            {
-              text: "TCP/IP 주소 결정 프로토콜",
-              link: "/books/TCP_IP_완벽_가이드/13장/13-2",
-            },
-            {
-              text: "ARP 캐싱",
-              link: "/books/TCP_IP_완벽_가이드/13장/13-3",
-            },
-            {
-              text: "프록시 ARP",
-              link: "/books/TCP_IP_완벽_가이드/13장/13-4",
-            },
-            {
-              text: "IP 멀티캐스트 주소의 TCP/IP 주소 결정",
-              link: "/books/TCP_IP_완벽_가이드/13장/13-5",
-            },
-          ],
-        },
-      ],
+      // "/books/코어_자바스크립트/": [
+      //   // done
+      //   {
+      //     text: "데이터 타입",
+      //     items: [
+      //       {
+      //         text: "데이터 타입 종류",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "변수선언과 데이터 할당",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "null",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "undefined",
+      //         link: "",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "실행 컨택스트",
+      //     items: [
+      //       {
+      //         text: "실행 컨택스트란?",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "Lexical Environment",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "Variable Environment",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "this Binding",
+      //         link: "",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "this",
+      //     items: [
+      //       {
+      //         text: "this란?",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "상황에 따라 달라지는 this",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "명시적 binding",
+      //         link: "",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "콜백함수",
+      //     items: [
+      //       {
+      //         text: "콜백함수란?",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "callback HELL",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "동기 / 비동기",
+      //         link: "",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "클로져(Closure)",
+      //     items: [
+      //       {
+      //         text: "클로져란?",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "메모리 관리",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "활용되는 예시",
+      //         link: "",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "프로토타입",
+      //     items: [
+      //       {
+      //         text: "프로토타입이란?",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "constructor 속성",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "프로토타입 체인",
+      //         link: "",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "클래스",
+      //     items: [
+      //       {
+      //         text: "클래스 상속",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "class field delimiter",
+      //         link: "",
+      //       },
+      //       {
+      //         text: "class accessor",
+      //         link: "",
+      //       },
+      //     ],
+      //   },
+      // ],
+      // "/books/TCP_IP_완벽_가이드/": [
+      //   {
+      //     text: "1장",
+      //     items: [
+      //       {
+      //         text: "기본 네트워킹 특성",
+      //         link: "/books/TCP_IP_완벽_가이드/1장/1-2",
+      //       },
+      //       {
+      //         text: "메시지: 패킷, 프레임, 데이터그램, 셀",
+      //         link: "/books/TCP_IP_완벽_가이드/1장/1-3",
+      //       },
+      //       {
+      //         text: "네트워크 구조 모델과 클라이언트/서버, 피어투피어 네트워킹",
+      //         link: "/books/TCP_IP_완벽_가이드/1장/1-4",
+      //       },
+      //       {
+      //         text: "세그먼트, 네트워크, 서브네트워크, 인터네트워크",
+      //         link: "/books/TCP_IP_완벽_가이드/1장/1-6",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "2장",
+      //     items: [
+      //       {
+      //         text: "네트워크 성능: 전체적인 관점에서 바라보기",
+      //         link: "/books/TCP_IP_완벽_가이드/2장/2-1",
+      //       },
+      //       {
+      //         text: "네트워크 성능과 기타 주요 특성 사이의 균형 조정",
+      //         link: "/books/TCP_IP_완벽_가이드/2장/2-2",
+      //       },
+      //       {
+      //         text: "성능측정",
+      //         link: "/books/TCP_IP_완벽_가이드/2장/2-3",
+      //       },
+      //       {
+      //         text: "성능 측정 단위 이해",
+      //         link: "/books/TCP_IP_완벽_가이드/2장/2-4",
+      //       },
+      //       {
+      //         text: "이론적 처리율과 실제 처리율, 네트워크 성능에 영향을 주는 요인",
+      //         link: "/books/TCP_IP_완벽_가이드/2장/2-5",
+      //       },
+      //       {
+      //         text: "단방향, 양방향, 반양방향",
+      //         link: "/books/TCP_IP_완벽_가이드/2장/2-6",
+      //       },
+      //       {
+      //         text: "서비스 품질",
+      //         link: "/books/TCP_IP_완벽_가이드/2장/2-7",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "5장",
+      //     items: [
+      //       {
+      //         text: "전반적인 참조 모델 이슈",
+      //         link: "/books/TCP_IP_완벽_가이드/5장/5-2",
+      //       },
+      //       {
+      //         text: "핵심 OSI 참조 모델 개념",
+      //         link: "/books/TCP_IP_완벽_가이드/5장/5-3",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "6장",
+      //     items: [
+      //       {
+      //         text: "물리 계층(1계층)",
+      //         link: "/books/TCP_IP_완벽_가이드/6장/6-1",
+      //       },
+      //       {
+      //         text: "데이터링크 계층(2계층)",
+      //         link: "/books/TCP_IP_완벽_가이드/6장/6-2",
+      //       },
+      //       {
+      //         text: "네트워크 계층(3계층)",
+      //         link: "/books/TCP_IP_완벽_가이드/6장/6-3",
+      //       },
+      //       {
+      //         text: "전송 계층(4계층)",
+      //         link: "/books/TCP_IP_완벽_가이드/6장/6-4",
+      //       },
+      //       {
+      //         text: "세션 계층(5계층)",
+      //         link: "/books/TCP_IP_완벽_가이드/6장/6-5",
+      //       },
+      //       {
+      //         text: "프리젠테이션 계층(6계층)",
+      //         link: "/books/TCP_IP_완벽_가이드/6장/6-6",
+      //       },
+      //       {
+      //         text: "애플리케이션 계층(7계층)",
+      //         link: "/books/TCP_IP_완벽_가이드/6장/6-7",
+      //       },
+      //     ],
+      //   },
+      //   {
+      //     text: "13장",
+      //     items: [
+      //       {
+      //         text: "주소결정 개념과 이슈",
+      //         link: "/books/TCP_IP_완벽_가이드/13장/13-1",
+      //       },
+      //       {
+      //         text: "TCP/IP 주소 결정 프로토콜",
+      //         link: "/books/TCP_IP_완벽_가이드/13장/13-2",
+      //       },
+      //       {
+      //         text: "ARP 캐싱",
+      //         link: "/books/TCP_IP_완벽_가이드/13장/13-3",
+      //       },
+      //       {
+      //         text: "프록시 ARP",
+      //         link: "/books/TCP_IP_완벽_가이드/13장/13-4",
+      //       },
+      //       {
+      //         text: "IP 멀티캐스트 주소의 TCP/IP 주소 결정",
+      //         link: "/books/TCP_IP_완벽_가이드/13장/13-5",
+      //       },
+      //     ],
+      //   },
+      // ],
     },
     nav: [
       {
@@ -1509,14 +1509,14 @@ export default defineConfig({
             text: "Composing Software",
             link: "/books/composing_software/",
           },
-          {
-            text: "코어 자바스크립트",
-            link: "/books/코어_자바스크립트/",
-          },
-          {
-            text: "TCP/IP 완벽 가이드",
-            link: "/books/TCP_IP_완벽_가이드/",
-          },
+          // {
+          //   text: "코어 자바스크립트",
+          //   link: "/books/코어_자바스크립트/",
+          // },
+          // {
+          //   text: "TCP/IP 완벽 가이드",
+          //   link: "/books/TCP_IP_완벽_가이드/",
+          // },
         ],
       },
     ],

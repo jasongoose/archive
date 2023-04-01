@@ -4,13 +4,13 @@
 
 ## Why Transducers?
 
-reducer를 입력으로 받아서 새로운 reducer를 반환하는 고차함수를 가리킵니다.
+reducer를 인자로 받아서 새로운 reducer를 반환하는 고차함수입니다.
 
 > reducer: 다수의 입력들을 일련의 누적과정을 거쳐서 하나의 출력을 만드는 함수
 
 ```jsx
 reducer = (accumulator, current) => accumulator;
-transducer = (reducer) => reducer;
+transducer = (reducer) => newReducer;
 ```
 
 transducer는 다음과 같은 사용이점들이 있습니다.
@@ -22,18 +22,18 @@ transducer는 다음과 같은 사용이점들이 있습니다.
 
 ## Iterate 연산
 
-JS에서 [iterable](../../../posts/javascript/loop/protocols.md#iterable) object의 요소별로 변환하는 연산은 2가지로 나눌 수 있습니다.
+JS에서 [iterable](../../../posts/javascript/loop/protocols.md#iterable)의 요소별로 변환하는 연산은 2가지로 나눌 수 있습니다.
 
 ### Push API
 
-`Array.prototype.reduce`와 같이 요소별로 모든 변환을 거쳐서 최종 결과값이 나올 때마다 누적시키는 Eager evaluation 방식입니다.
+`Array.prototype.reduce`와 같이 요소별로 모든 변환을 거쳐서 최종 결과값이 나올 때마다 누적시키는 eager evaluation 방식입니다.
 
 ### Pull API
 
-[Generator](../../../posts/javascript/loop/protocols.md#generator), [Iterable](../../../posts/javascript/loop/protocols.md#iterable)와 같이 요소의 변환이 필요할 때마다 consumer가 next 요청을 전달해야 하는 Lazy evaluation 방식입니다.
+[Generator](../../../posts/javascript/loop/protocols.md#generator), [Iterable](../../../posts/javascript/loop/protocols.md#iterable)와 같이 요소의 변환이 필요할 때마다 consumer가 next 요청을 전달해야 하는 lazy evaluation 방식입니다.
 
 :::tip
-transducer로 입력으로부터 출력을 생성하는 과정은 마치 신호 변환기의 원리와 유사합니다.
+transducer를 통해 입력으로부터 출력을 생성하는 과정은 마치 신호 변환기의 원리와 유사합니다.
 
 그래서 reducer의 입출력을 signal 또는 stream(시간에 따라 나타나는 일련의 값들)으로도 불립니다.
 :::

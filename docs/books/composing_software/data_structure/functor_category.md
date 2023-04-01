@@ -9,7 +9,7 @@ JS에서 흔히 볼 수 있는 functor(mappable)로 Array, Promise, Stream 등�
 functor의 사용이점들은 다음과 같습니다.
 
 - 내부 데이터의 구체적인 값을 알지 않아도 타입만 안다면 매핑을 구현할 수 있다.
-- functor 안에 데이터가 있던지 없던지 매핑로직은 변하지 않고 그대로 수행된다.
+- functor 안에 데이터가 없어도 매핑로직은 그대로 수행된다.
 - functor 내부 데이터에 적용할 매핑 함수들을 하나의 합성함수로 구현할 수 있다.
 
 ## Category
