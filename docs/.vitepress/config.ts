@@ -1123,15 +1123,15 @@ export default defineConfig({
               link: "/books/composing_software/concepts/pure_function",
             },
             {
-              text: "Higher Order Functions",
-              link: "/books/composing_software/concepts/higher_order_functions",
+              text: "Higher Order Function",
+              link: "/books/composing_software/concepts/higher_order_function",
             },
             {
-              text: "Curry & Function Composition",
-              link: "/books/composing_software/concepts/curry_function_composition",
+              text: "Curry Function",
+              link: "/books/composing_software/concepts/curry_function",
             },
             {
-              text: "Abstraction & Composition",
+              text: "Abstraction, Composition",
               link: "/books/composing_software/concepts/abstraction_composition",
             },
             {
@@ -1139,16 +1139,16 @@ export default defineConfig({
               link: "/books/composing_software/concepts/object_composition",
             },
             {
-              text: "Factory Functions",
-              link: "/books/composing_software/concepts/factory_functions",
+              text: "Factory Function",
+              link: "/books/composing_software/concepts/factory_function",
             },
             {
-              text: "Functional Mixins",
-              link: "/books/composing_software/concepts/functional_mixins",
+              text: "Functional Mixin",
+              link: "/books/composing_software/concepts/functional_mixin",
             },
             {
-              text: "Transducers",
-              link: "/books/composing_software/concepts/transducers",
+              text: "Transducer",
+              link: "/books/composing_software/concepts/transducer",
             },
           ],
         },
@@ -1156,29 +1156,20 @@ export default defineConfig({
           text: "Data Structure",
           items: [
             {
-              text: "Functors & Categories",
-              link: "/books/composing_software/data_structure/functors_categories",
+              text: "Functor, Category",
+              link: "/books/composing_software/data_structure/functor_category",
             },
             {
-              text: "Monads",
-              link: "/books/composing_software/data_structure/monads",
+              text: "Monad",
+              link: "/books/composing_software/data_structure/monad",
             },
             {
-              text: "Lenses",
-              link: "/books/composing_software/data_structure/lenses",
+              text: "Lens",
+              link: "/books/composing_software/data_structure/lens",
             },
             {
               text: "Composable Data Types",
               link: "/books/composing_software/data_structure/composable_data_types",
-            },
-          ],
-        },
-        {
-          text: "Epilogue",
-          items: [
-            {
-              text: "Mocking is a code smell",
-              link: "/books/composing_software/epilogue/mocking_is_a_code_smell",
             },
           ],
         },
