@@ -174,17 +174,6 @@ export default defineConfig({
           ],
         },
       ],
-      "/posts/devops/": [
-        {
-          text: "DevOps",
-          items: [
-            {
-              text: "DevOps",
-              link: "/posts/devops/devops/devops",
-            },
-          ],
-        },
-      ],
       "/posts/frontend/": [
         {
           text: "Tree Shaking",
@@ -1447,10 +1436,6 @@ export default defineConfig({
           {
             text: "Clean Code",
             link: "/posts/clean_code/",
-          },
-          {
-            text: "DevOps",
-            link: "/posts/devops/",
           },
           {
             text: "FrontEnd",
