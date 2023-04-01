@@ -803,6 +803,68 @@ export default defineConfig({
             },
           ],
         },
+        {
+          text: "Devloper Way: React",
+          items: [
+            {
+              text: "How to write performant React code: rules, patterns, do's and don'ts",
+              link: "",
+            },
+            {
+              text: "Why custom react hooks could destroy your app performance",
+              link: "",
+            },
+            {
+              text: "How to write performant React apps with Context",
+              link: "",
+            },
+            {
+              text: "React component as prop: the right way",
+              link: "",
+            },
+            {
+              text: "Higher-Order Components in React Hooks era",
+              link: "",
+            },
+            {
+              text: "Implementing advanced usePrevious hook with React useRef",
+              link: "",
+            },
+            {
+              text: "React components composition: how to get it right",
+              link: "",
+            },
+            {
+              text: "React key attribute: best practices for performant lists",
+              link: "",
+            },
+            {
+              text: "How to useMemo and useCallback: you can remove most of them",
+              link: "",
+            },
+            {
+              text: "The mystery of React Element, children, parents and re-renders",
+              link: "",
+            },
+            {
+              text: "How to fetch data in React with performance in mind",
+              link: "",
+            },
+            {
+              text: "Fetching data in React: the case of lost Promises",
+              link: "",
+            },
+            {
+              text: "How to debounce and throttle in React without losing your mind",
+              link: "",
+            },
+            {
+              text: "How to handle errors in React: full guide",
+              link: "",
+            },
+          ],
+        },
+      ],
       "/posts/security/": [
         {
           text: "XSRF",
