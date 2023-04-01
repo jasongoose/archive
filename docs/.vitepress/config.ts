@@ -705,7 +705,104 @@ export default defineConfig({
           ],
         },
       ],
-      // "/posts/react/": [],
+      "/posts/react/": [
+        {
+          text: "Learn React",
+          items: [
+            {
+              text: "Keeping Components Pure",
+              link: "/posts/react/learn_react/keeping_components_pure",
+            },
+            {
+              text: "Responding to Events",
+              link: "/posts/react/learn_react/responding_to_events",
+            },
+            {
+              text: "State: A Component’s Memory",
+              link: "/posts/react/learn_react/state_a_components_memory",
+            },
+            {
+              text: "Render and Commit",
+              link: "/posts/react/learn_react/render_and_commit",
+            },
+            {
+              text: "State as a Snapshot",
+              link: "/posts/react/learn_react/state_as_a_snapshot",
+            },
+            {
+              text: "Queueing a Series of State Updates",
+              link: "/posts/react/learn_react/queueing_a_series_of_state_updates",
+            },
+            {
+              text: "Updating Objects in State",
+              link: "/posts/react/learn_react/updating_objects_in_state",
+            },
+            {
+              text: "Updating Arrays in State",
+              link: "/posts/react/learn_react/updating_arrays_in_state",
+            },
+            {
+              text: "Reacting to Input with State",
+              link: "/posts/react/learn_react/reacting_to_input_with_state",
+            },
+            {
+              text: "Choosing the State Structure",
+              link: "/posts/react/learn_react/choosing_the_state_structure",
+            },
+            {
+              text: "Sharing State Between Components",
+              link: "/posts/react/learn_react/sharing_state_between_components",
+            },
+            {
+              text: "Preserving and Resetting State",
+              link: "/posts/react/learn_react/preventing_and_resetting_state",
+            },
+            {
+              text: "Extracting State Logic into a Reducer",
+              link: "/posts/react/learn_react/extracting_state_logic_into_a_reducer",
+            },
+            {
+              text: "Passing Data Deeply w/ Context",
+              link: "/posts/react/learn_react/passing_data_deeply_with_context",
+            },
+            {
+              text: "Scaling Up with Reducer and Context",
+              link: "/posts/react/learn_react/scaling_up_with_reducer_and_context",
+            },
+            {
+              text: "Referencing Values with Refs",
+              link: "/posts/react/learn_react/referencing_values_with_refs",
+            },
+            {
+              text: "Manipulating the DOM w/ Refs",
+              link: "/posts/react/learn_react/manipulating_the_dom_with_refs",
+            },
+            {
+              text: "Synchronizing w/ Effects",
+              link: "/posts/react/learn_react/synchronizing_with_effects",
+            },
+            {
+              text: "You Might Not Need an Effect",
+              link: "/posts/react/learn_react/you_might_not_need_an_effect",
+            },
+            {
+              text: "Lifecyle of Reactive Effects",
+              link: "/posts/react/learn_react/lifecycle_of_reactive_effects",
+            },
+            {
+              text: "Seperating Events from Effects",
+              link: "/posts/react/learn_react/seperating_events_from_effects",
+            },
+            {
+              text: "Removing Effect Dependencies",
+              link: "/posts/react/learn_react/removing_effect_dependencies",
+            },
+            {
+              text: "Reusing Logic w/ Custom Hooks",
+              link: "/posts/react/learn_react/reusing_logic_with_custom_hooks",
+            },
+          ],
+        },
       "/posts/security/": [
         {
           text: "XSRF",
@@ -1078,7 +1175,6 @@ export default defineConfig({
         },
       ],
       "/books/composing_software/": [
-        // done
         {
           text: "Introduction",
           items: [
@@ -1461,10 +1557,10 @@ export default defineConfig({
             text: "PWA",
             link: "/posts/pwa/",
           },
-          // {
-          //   text: "React",
-          //   link: "/posts/react/",
-          // },
+          {
+            text: "React",
+            link: "/posts/react/",
+          },
           {
             text: "Security",
             link: "/posts/security/",
