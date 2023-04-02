@@ -755,7 +755,7 @@ export default defineConfig({
             },
             {
               text: "Preserving and Resetting State",
-              link: "/posts/react/learn_react/preventing_and_resetting_state",
+              link: "/posts/react/learn_react/preserving_and_resetting_state",
             },
             {
               text: "Extracting State Logic into a Reducer",

@@ -1,6 +1,6 @@
 # Updating Objects in State
 
-`useState` hook으로 객체 상태를 관리할 때도 동일한 syntax를 사용하면 됩니다.
+`useState` hook으로 객체 state를 관리할 때도 동일한 syntax를 사용하면 됩니다.
 
 ```jsx
 const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -31,7 +31,7 @@ setPosition({
 });
 ```
 
-중첩된 객체의 상태를 업데이트하는 방법도 마찬가집니다.
+중첩된 객체의 state를 업데이트하는 방법도 마찬가집니다.
 
 ```jsx
 const [person, setPerson] = useState({
@@ -55,7 +55,7 @@ setPerson({
 });
 ```
 
-위와 같이 중첩된 객체의 깊은 속성을 업데이트하는 코드는 꽤 복잡해질 수 있는데, 여기서 [ImmerJS](https://github.com/immerjs/use-immer)를 사용하면 object mutation syntax로 중첩된 상태를 업데이트할 수 있습니다.
+위와 같이 중첩된 객체의 깊은 속성을 업데이트하는 코드는 꽤 복잡해질 수 있는데, 여기서 [ImmerJS](https://github.com/immerjs/use-immer)를 사용하면 object mutation syntax로 중첩된 state를 업데이트할 수 있습니다.
 
 ```jsx
 import { useImmer } from "use-immer";

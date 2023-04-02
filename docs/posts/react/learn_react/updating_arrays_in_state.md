@@ -1,8 +1,8 @@
 # Updating Arrays in State
 
-`useState` hook으로 배열 상태를 관리하는 방식은 객체 상태를 관리하는 방식과 동일합니다.
+`useState` hook으로 배열형 state를 관리하는 방식은 객체형 state를 관리하는 방식과 동일합니다.
 
-배열 상태를 업데이트할 때 아래와 같이 요소에 대한 mutation을 적용해도 리렌더링이 trigger되지 않습니다.
+배열형 state를 업데이트할 때 아래와 같이 요소에 대한 mutation을 적용해도 리렌더링이 trigger되지 않습니다.
 
 ```jsx
 const arr = useState(["d", "e", "f"]);
