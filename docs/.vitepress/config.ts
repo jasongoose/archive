@@ -797,10 +797,6 @@ export default defineConfig({
               text: "Removing Effect Dependencies",
               link: "/posts/react/learn_react/removing_effect_dependencies",
             },
-            {
-              text: "Reusing Logic w/ Custom Hooks",
-              link: "/posts/react/learn_react/reusing_logic_with_custom_hooks",
-            },
           ],
         },
         {
