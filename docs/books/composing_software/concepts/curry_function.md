@@ -30,13 +30,12 @@ inc(3); // => 4
 
 point-free style 함수는 다음과 같은 사용이점들이 있습니다.
 
-### generalization
+1. generalization
 
-다양한 타입의 데이터를 인자로 전달할 수 있습니다.
+   - 다양한 타입의 데이터를 인자로 전달할 수 있습니다.
 
-### specialization
-
-일부 인자를 고정하여 원하는 용도로 범위를 좁힐 수 있어서 function composition을 구현할 수 있습니다.
+2. specialization
+   - 일부 인자를 고정하여 원하는 용도로 범위를 좁힐 수 있어서 function composition을 구현할 수 있습니다.
 
 ## Utils
 

@@ -15,10 +15,10 @@ transducer = (reducer) => newReducer;
 
 transducer는 다음과 같은 사용이점들이 있습니다.
 
-- 여러 함수들을 합성해서 만들 수 있다.
-- 중간에 새로운 객체를 생성할 필요없이 대량의 연산을 요소별로 + 한번에 + 연속적으로 처리할 수 있다.
-- array, stream 등의 enumerable 데이터에 대해서 적용할 수 있다.
-- 서로 다른 타입의 데이터 사이의 mapping, filtering, insertion 등을 구현할 수 있다.
+1. 여러 함수들을 합성해서 만들 수 있다.
+2. 중간에 새로운 객체를 생성할 필요없이 대량의 연산을 요소별로 + 한번에 + 연속적으로 처리할 수 있다.
+3. array, stream 등의 enumerable 데이터에 대해서 적용할 수 있다.
+4. 서로 다른 타입의 데이터 사이의 mapping, filtering, insertion 등을 구현할 수 있다.
 
 ## Iterate 연산
 

@@ -41,6 +41,6 @@ shared state는 다음과 같은 문제점을 가집니다.
 
 함수를 인자 또는 반환값으로 가지는 고차함수를 의미하는데, 아래와 같은 사용이점들이 있습니다.
 
-- 데이터 타입에 일반화하여 재사용하기 용이한 함수들을 만들 수 있다.
-- 콜백함수와 Promise로 함수 내의 비동기 흐름을 제어할 수 있다.
-- [부분적용함수, 커링함수](../concepts/curry_function.md)로 function composition을 구현할 수 있다.
+1. 데이터 타입에 일반화하여 재사용하기 용이한 함수들을 만들 수 있다.
+2. 콜백함수와 Promise로 함수 내의 비동기 흐름을 제어할 수 있다.
+3. [부분적용함수, 커링함수](../concepts/curry_function.md)로 function composition을 구현할 수 있다.
