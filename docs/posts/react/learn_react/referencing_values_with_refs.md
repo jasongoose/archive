@@ -22,7 +22,7 @@ ref.current = {...};
 
 `useRef`의 hook에서 반환되는 값은 JS 객체이고 아래와 같은 특징을 가집니다.
 
-1. state와는 달리 mutate되거나 새로운 객체로 할당되어도 컴포넌트 re-rendering을 trigger하지 않는다.
+1. state와는 달리 새로운 객체로 할당되어도 컴포넌트 리렌더링을 trigger하지 않는다.
 2. 첫 렌더링 때만 초기화되고, 컴포넌트가 리렌더링되어도 이전 값을 유지한다.
 
 ref는 컴포넌트 렌더링 주기의 영향없이(escape hatch) 외부 API(Browser API)를 사용할 수 있다는 점에서 아래 값들을 저장하는데 활용됩니다.

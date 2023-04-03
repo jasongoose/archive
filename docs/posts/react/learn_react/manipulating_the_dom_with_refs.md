@@ -86,7 +86,7 @@ const MyInput = forwardRef((props, ref) => {
 
 ## How to manage a list of refs
 
-`<ul></ul>` 내부의 다수 `<li></li>` 들을 개별적으로 참조할 때는 여러 개의 `useRef`를 호출하는 대신에 개별 `<li></li>` 마다 [ref callback](https://react.dev/reference/react-dom/components/common#ref-callback)을 전달하여 여러 개의 node들을 `Map` 같은 collection에서 관리합니다.
+`<ul></ul>` 내부의 다수 `<li></li>` 들을 개별적으로 참조할 때는 여러 개의 `useRef`를 호출하는 대신에 개별 `<li></li>` 마다 [ref callback](https://react.dev/reference/react-dom/components/common#ref-callback)을 전달하여 여러 개의 node들을 `Map` 같은 collection에서 관리하면 됩니다.
 
 ```jsx
 import { useRef } from "react";

@@ -4,14 +4,15 @@ React의 Effect를 사용하면 컴포넌트의 mount(첫 렌더링) 또는 리�
 
 ## useEffect
 
-Effect를 사용하려면 먼저 `useEffect` hook으로 해당 Effect를 정의한 함수를 wrap하면 됩니다.
+Effect를 사용하려면 먼저 `useEffect` hook으로 Effect를 정의한 함수를 wrap하면 됩니다.
 
 ```jsx
 import { useEffect } from "react";
 
 function MyComponent() {
   useEffect(() => {
-    // Effect는 commit 이후 DOM에 반영된 이후에 실행됩니다.
+    // Effect는 commit 이후에 실행됩니다.
+    // 컴포넌트가 렌더링될 때마다 useEffect 함수가 호출되면서 기능은 동일하지만 새로운 Effect가 등록됩니다.
   });
   return <div />;
 }
@@ -20,9 +21,6 @@ function MyComponent() {
 컴포넌트의 렌더링 이후, 특정 dependency(state)들의 변화에 맞춰서도 Effect를 수행하려면 dependency array에 해당 state들을 전달하면 됩니다.
 
 ```jsx
-// 언제 Effect를 수행하는가?
-// => 컴포넌트가 렌더링될 때마다 useEffect 함수가 호출되면서 기능은 동일하지만 새로운 Effect가 등록됩니다.
-
 useEffect(() => {
   // 첫 렌더링(mount) + 이후 리렌더링(commit)이 끝날 때마다 한번씩
 });
@@ -37,14 +35,14 @@ useEffect(() => {
 ```
 
 :::warning
-여기서 컴포넌트 context에서 정의된 `useRe`f의 ref는 언제나 동일한 DOM 객체를 참조하기 때문에 dependency로 추가해도 Effect를 호출하지 않습니다.
+여기서 컴포넌트 context에서 정의된 `useRef`의 ref는 언제나 동일한 DOM 객체를 참조하기 때문에 dependency로 추가해도 Effect를 호출하지 않습니다.
 
 단, 상위 컴포넌트에서 props로 전달된 ref 같은 경우, 변화여부를 하위 컴포넌트에서 확인할 수 없으므로 dependency로 추가할 수 있습니다.
 :::
 
 ## cleanup
 
-Effect의 cleanup 함수를 사용하면 컴포넌트가 unmount되기 전, 그리고 dependecy state의 변화에 의한 리렌더링을 진행하면서 새 effect를 수행하기 직전에 기존 Effect를 중지하거나 무효화시키는 로직을 지정할 수 있습니다.
+Effect의 cleanup 함수를 사용하면 컴포넌트가 unmount되기 전, 그리고 dependecy state의 변화에 의한 리렌더링을 진행하면서 새 effect를 수행하기 직전에 기존 Effect를 중지하거나 무효화시키는 로직을 구현할 수 있습니다.
 
 ```jsx
 import { useState, useEffect } from "react";
@@ -126,7 +124,7 @@ useEffect(() => {
 :::info
 mount되어 현재 userId state를 기준으로 fetchTodos를 수행하는데 중간에 userId 값이 변해서 리렌더링하거나 unmount되는 경우, 기존 fetch의 응답이 컴포넌트 상태에 영향이 가지 않도록 합니다.
 
-useEffect에서 fetch한다면 기본적으로 caching이 안되므로 Next.js, Gatsby 등 프레임워크나 react-router+6.4, react-quer, useSWR 같은 라이브러의 fetch api를 사용하자.
+useEffect에서 fetch한다면 기본적으로 caching이 안되므로 Next.js, Gatsby 등 프레임워크나 react-router+6.4, react-query, useSWR 같은 라이브러의 fetch api를 사용하는 것을 권장합니다.
 :::
 
 :::tip

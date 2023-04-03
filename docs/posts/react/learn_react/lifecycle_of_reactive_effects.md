@@ -16,7 +16,7 @@ DOM에서 제거됩니다.
 
 ## Effect lifecycle
 
-Effect는 현재 state와 props 또는 이들로부터 계산된 reactive value에 맞춰서 컴포넌트의 external system과의 setup(동기화 수행)과 cleanup(동기화 중단)을 수행합니다.
+Effect는 현재 state와 props 또는 이들로부터 계산된 reactive value에 맞춰서 컴포넌트의 외부 시스템과의 setup(동기화 수행)과 cleanup(동기화 중단)을 수행합니다.
 
 ### onMount
 
@@ -37,7 +37,7 @@ depenpency의 변화여부는 `Object.is` 함수를 사용합니다.
 ## Reactive values
 
 컴포넌트 함수 블럭 내부에서 선언한 props, state를 포함한 변수들은 모두 컴포넌트 update시 재연산되는 성질이 있어서 reactive value라고 합니다.
-`
+
 Effect 내부에서 사용된 reactive value들은 모두 dependency로 등록하도록 linter가 강제합니다.
 
 `window`와 같은 전역객체는 컴포넌트 rendering cycle 외부에서 mutate되므로 컴포넌트 리렌더링을 trigger하지 않습니다.

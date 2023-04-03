@@ -18,7 +18,7 @@ export const LevelContext = createContext(0);
 // createContext를 호출할 때마다 별개의 context가 생성됩니다.
 ```
 
-context를 적용할 때는 상위 컴포넌트(Provider)를 `Context.Provider`로 wrapping 하고 `value` props에 내려보낼 데이터를 명시합니다.
+context를 적용할 때는 상위 컴포넌트(Provider)를 `Context.Provider`로 wrapping 하고 내려보낼 데이터를 `value` props에 명시합니다.
 
 ```jsx
 import { LevelContext } from "./LevelContext.js";

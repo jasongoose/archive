@@ -1,6 +1,6 @@
 # Updating Objects in State
 
-`useState` hook으로 객체 state를 관리할 때도 동일한 syntax를 사용하면 됩니다.
+`useState` hook으로 객체형 state를 관리할 때도 동일한 syntax를 사용하면 됩니다.
 
 ```jsx
 const [position, setPosition] = useState({ x: 0, y: 0 });

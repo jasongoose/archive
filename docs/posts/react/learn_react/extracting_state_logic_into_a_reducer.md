@@ -23,14 +23,13 @@ const [state, dispatch] = useReducer(reducer, initialState);
 const reducer = (currState, action) => newState;
 
 // action : state에 적용할 업데이트 정보(type) + 필요한 인자를 가진 객체
-// => 사용자의 의도가 담겨있어야 한다.
 ```
 
-`useReducer`를 활용하면 다음과 같은 이점들을 가질 수 있습니다.
+`useReducer`를 활용하면 다음과 같은 이점들이 있습니다.
 
 1. 컴포넌트 코드량 감소
 
-   - 개별 파일에 상태를 업데이트하는 로직을 독립된 reducer로 구현할 수 있습니다.
+   - 상태를 업데이트하는 로직을 개별 파일에 독립된 reducer로 구현할 수 있습니다.
 
 2. 가독성 증가
 

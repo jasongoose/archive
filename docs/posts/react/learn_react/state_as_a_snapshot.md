@@ -8,7 +8,7 @@ React에서 컴포넌트를 렌더링하는 것은 컴포넌트를 정의한 함
 
 `setState`는 다음 렌더링 때 사용할 state 값을 지정하는 역할만 가질 뿐, `setState`의 호출에 의해서 즉각적으로 + 동기적으로 리렌더링이 일어나지 않습니다.
 
-아래와 같이 특정 event handler에서 setState를 3번 호출한다고 해도 현재 state는 아직 0이므로 다음 state는 3이 아니라 1이 됩니다.
+아래와 같이 특정 event handler에서 `setState`를 3번 호출한다고 해도 현재 state는 아직 0이므로 다음 state는 3이 아니라 1이 됩니다.
 
 ```jsx
 export default function Counter() {

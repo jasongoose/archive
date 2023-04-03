@@ -15,5 +15,5 @@ Effect의 dependency에 함수를 포함한 객체를 전달하면 리렌더링�
 그래서 객체는 dependency로 지정하지 않고 Effect 내부 또는 컴포넌트 함수 외부(상수인 경우)에 두어서 non-reactive value로 만들거나, 속성 단위로 dependency로 전달하면 됩니다.
 
 :::tip
-하지만 `useCallback` hook을 사용하면 특정 dependency들 기반으로 함수 객체를 caching할 수 있어서 함수의 변화도 구현할 수 있다.
+`useCallback` hook을 사용하면 특정 dependency들 기반으로 함수 객체를 caching할 수 있습니다.
 :::

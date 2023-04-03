@@ -4,7 +4,7 @@ React 컴포넌트가 화면에 표시되기까지 과정은 크게 4단계로 �
 
 ## Trigger
 
-`createRoot(rootNode).render(<App />)`의 호출이나 state의 변화 또는 부모 컴포넌트의 리렌더링으로 (리)렌더링이 시작됩니다.
+`createRoot(rootNode).render(<App />)`의 호출이나 state의 변화 또는 부모 컴포넌트의 리렌더링으로 렌더링이 시작됩니다.
 
 여기서 여러 state들의 변화를 한번에 반영하기 위해서 리렌더링 전에 업데이트 항목들은 queueing되어 비동기적으로 처리됩니다.
 

@@ -16,7 +16,7 @@ React는 단일 event handler에서 발생한 다수의 `setState` 호출들을 
 
 ## updater function
 
-`setState` 함수는 queueing에 의해 수정된 직전 state 값을 인자로 받는 순수함수(updater function)를 인자로 받을 수 있습니다.
+`setState` 함수는 queueing에 의해 직전에 수정된 state 값을 인자로 받는 순수함수(updater function)를 콜백으로 받을 수 있습니다.
 
 이 부분은 updater function들을 queueing하는 방식으로 구현됩니다.
 
