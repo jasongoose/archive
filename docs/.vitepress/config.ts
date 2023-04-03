@@ -660,51 +660,6 @@ export default defineConfig({
           ],
         },
       ],
-      "/posts/pwa/": [
-        {
-          text: "PWA",
-          items: [
-            {
-              text: "PWA",
-              link: "/posts/pwa/pwa/pwa",
-            },
-          ],
-        },
-        {
-          text: "Assets and Data",
-          items: [
-            {
-              text: "App Components",
-              link: "/posts/pwa/assets_and_data/app_components",
-            },
-            {
-              text: "Cache & Stroage",
-              link: "/posts/pwa/assets_and_data/cache_storage",
-            },
-            {
-              text: "Size & Lifespan",
-              link: "/posts/pwa/assets_and_data/size_lifespan",
-            },
-          ],
-        },
-        {
-          text: "Service Worker",
-          items: [
-            {
-              text: "Service Worker",
-              link: "/posts/pwa/service_worker/service_worker",
-            },
-            {
-              text: "Scope",
-              link: "/posts/pwa/service_worker/scope",
-            },
-            {
-              text: "Lifecycle",
-              link: "/posts/pwa/service_worker/lifecycle",
-            },
-          ],
-        },
-      ],
       "/posts/react/": [
         {
           text: "Learn React",
@@ -1610,10 +1565,6 @@ export default defineConfig({
           {
             text: "Node",
             link: "/posts/node/",
-          },
-          {
-            text: "PWA",
-            link: "/posts/pwa/",
           },
           {
             text: "React",
