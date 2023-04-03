@@ -90,11 +90,11 @@ console.log(bird.fly().isFlying()); // true
 
 Functional Mixin의 사용이점들은 다음과 같습니다.
 
-- closure 현상으로 private 속성을 추가할 수 있다.
-- [compose](./curry_function.md#compose)나 [pipe](./curry_function.md#pipe)를 사용하여 합성할 수 있다.
-- class 기반 상속과는 달리 root(base) class 없이 다수의 객체로부터 여러 속성과 기능들로 확장할 수 있다.
+1. closure 현상으로 private 속성을 추가할 수 있다.
+2. [compose](./curry_function.md#compose)나 [pipe](./curry_function.md#pipe)를 사용하여 합성할 수 있다.
+3. class 기반 상속과는 달리 root(base) class 없이 다수의 객체로부터 여러 속성과 기능들로 확장할 수 있다.
 
 단, 유의할 점들이 있습니다.
 
-- 인자로 받은 객체에 mutation이 발생하여 side-effect가 발생할 수 있다.
-- Mixin으로 Functional Inheritance를 구현한 사례이므로 기존 class inheritance의 단점을 가질 수 있다.
+1. 인자로 받은 객체에 mutation이 발생하여 side-effect가 발생할 수 있다.
+2. Mixin으로 Functional Inheritance를 구현한 사례이므로 기존 class inheritance의 단점을 가질 수 있다.
