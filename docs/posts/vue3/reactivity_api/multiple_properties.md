@@ -1,6 +1,6 @@
 # Multiple Properties
 
-![Multiple Properties](../image/multiple_properties.jpg){ align="center" }
+![Multiple Properties](../image/multiple_properties.jpg)
 
 하나의 객체에는 여러 개의 속성들을 가지므로 속성별 effect들도 따로 관리할 필요가 있습니다.
 

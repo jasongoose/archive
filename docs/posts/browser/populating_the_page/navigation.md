@@ -26,7 +26,7 @@ DNS lookup으로 목적지 서버 IP를 알아내면 브라우저와 웹 서버 
 
 ## TLS Negotiation
 
-![TLS Negotiation](../image/tls_negotiation.jpg){ align="center" }
+![TLS Negotiation](../image/tls_negotiation.jpg)
 
 TCP handshake를 거쳐서 connection을 생성한 뒤, 통신에 적용할 암호화 방식 및 인증수단을 정하는 handshake를 거쳐야 합니다.
 

@@ -1,6 +1,6 @@
 # Main Branches
 
-![Main Branches](../image/main_branches.png){ align="center" }
+![Main Branches](../image/main_branches.png)
 
 ## master(main)
 

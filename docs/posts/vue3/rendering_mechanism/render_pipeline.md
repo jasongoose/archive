@@ -2,7 +2,7 @@
 
 Vue 컴포넌트가 mount되고 patch가 일어나기까지의 과정을 정리하면 다음과 같습니다.
 
-![Render Pipeline](../image/render_pipeline.png){ align="center" }
+![Render Pipeline](../image/render_pipeline.png)
 
 ## Compile
 

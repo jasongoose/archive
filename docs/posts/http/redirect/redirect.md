@@ -1,6 +1,6 @@
 # Redirect
 
-![HTTP Redirect](../image/http_redirect.png){ align="center" }
+![HTTP Redirect](../image/http_redirect.png)
 
 서버가 클라이언트로 하여금 다른 URL을 요청하도록 유도하기 위한 HTTP 메커니즘으로, 보통 다음과 같은 상황에서 사용됩니다.
 

@@ -4,4 +4,4 @@
 
 <Image src="/image/javascript/for_of.png" alt="for_of" />
 
-![For Of](../image/for_of.png){ align="center" }
+![For Of](../image/for_of.png)

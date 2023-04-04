@@ -30,7 +30,7 @@ Category Theory에서 functor 내부의 데이터를 object, 매핑 콜백함수
 
 functor 내부 데이터를 받아서 그대로 반환하는 매핑을 구현할 수 있습니다.
 
-![Identity](../image/functor_identity.png){ align="center" }
+![Identity](../image/functor_identity.png)
 
 ```jsx
 const a = [20];
@@ -45,7 +45,7 @@ functor 내부 데이터에 대해서 연속으로 여러 번 매핑한 결과�
 
 역으로 단일 arrow에 의한 매핑을 다수 arrow들의 연속된 매핑으로도 구현할 수 있습니다.
 
-![Composition](../image/functor_composition.png){ align="center" }
+![Composition](../image/functor_composition.png)
 
 JS로 functor를 구현하면 다음과 같다.
 
