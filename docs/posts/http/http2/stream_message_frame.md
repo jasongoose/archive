@@ -1,6 +1,6 @@
 # Stream, Message, Frame
 
-![Streams Message Frames](../image/streams_messages_frames.png){ align="center" }
+![Streams Message Frames](../image/streams_messages_frames.png)
 
 ## 단위
 

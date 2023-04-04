@@ -6,7 +6,7 @@ URL 자체 문자열 값과 URL이 가리키는 리소스를 관리하는 것은
 
 <Image src="/image/web_용어정리/url_구조.png" alt="URL 구조" />
 
-![URL 구조](../image/url_%EA%B5%AC%EC%A1%B0.png){ align="center" }
+![URL 구조](../image/url_%EA%B5%AC%EC%A1%B0.png)
 
 ## scheme(protocol)
 
@@ -38,7 +38,7 @@ URL 자체 문자열 값과 URL이 가리키는 리소스를 관리하는 것은
 
 <Image src="/image/web_용어정리/query.png" alt="Query" />
 
-![Query](../image/query.png){ align="center" }
+![Query](../image/query.png)
 
 ## anchor
 

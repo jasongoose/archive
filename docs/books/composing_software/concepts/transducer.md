@@ -1,6 +1,6 @@
 # Transducer
 
-![Transducer](../image/transducer.png){ align="center" }
+![Transducer](../image/transducer.png)
 
 ## Why Transducers?
 

@@ -8,13 +8,13 @@ main 브랜치들을 기능적으로 지원하기 위한 브랜치들로, 다른
 
 feature 개발이 완료되면 다시 `develop` 브랜치로 merge하고, 추후 히스토리로 참고하기 위해 보통 삭제하지 않습니다.
 
-![Feature](../image/feature_merge.png){ align="center" }
+![Feature](../image/feature_merge.png)
 
 ## release
 
 새로운 production-release(= `origin/master` 브랜치로 merge) 직전에 대기하는 브랜치입니다.
 
-![Release](../image/release.png){ align="center" }
+![Release](../image/release.png)
 
 계획했던 release 방안과 거의 가깝게 개발되었을 때, `develop` 브랜치 `HEAD`로부터 새로운 version number를 부여받은 `release` branch를 생성합니다.
 
@@ -26,6 +26,6 @@ release될 준비를 마치면 `master` 브랜치로 merge한 뒤에 보통 삭�
 
 운영 중에 빠른 해결이 필요한 에러가 발생할 때마다 `master` 브랜치 `HEAD`에서 생성하는 브랜치로, 새로운 version number를 부여받습니다.
 
-![Hotfix](../image/hotfix.png){ align="center" }
+![Hotfix](../image/hotfix.png)
 
 commit하면서 trouble shooting을 진행하고 완료되면 다음 release에도 똑같은 문제가 발생하지 않도록 `develop` 브랜치에 merge한 뒤에 `master` 브랜치로 merge합니다.

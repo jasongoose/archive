@@ -2,7 +2,7 @@
 
 `feature` 브랜치의 base를 특정 브랜치 또는 commit으로 옮겨서 현재까지 변경사항을 local에 반영하고 linear history를 유지할 때 사용하는 명령어로, rebase한 이후 `feature` 브랜치에는 새로운 commit들이 만들어집니다.
 
-![Git Rebase](../image/git_rebase.png){ align="center" }
+![Git Rebase](../image/git_rebase.png)
 
 :::danger
 새로운 commit이 만들어지기 때문에 다른 팀원들과 공유하고 있는 브랜치를 로컬에서 rebase하고 push하면 **절대로 안됩니다.**

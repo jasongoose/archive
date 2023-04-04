@@ -4,7 +4,7 @@
 
 <Image src="/image/web_용어정리/web_server.png" alt="Web Server" />
 
-![Web Server](../image/web_server.png){ align="center" }
+![Web Server](../image/web_server.png)
 
 :::info 호스팅(hosting)
 임의의 웹 사이트로 사용자의 요청이 들어올 때마다 요청한 웹 페이지와 관련 리소스를 브라우저로 제공한다는 뜻입니다.

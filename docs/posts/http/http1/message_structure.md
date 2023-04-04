@@ -1,12 +1,12 @@
 # Message Structure
 
-![HTTP1 Message](../image/http1_message.png){ align="center" }
+![HTTP1 Message](../image/http1_message.png)
 
 ## Start Line
 
 ### 요청
 
-![Start Line Req](../image/http1_start_line_req.jpeg){ align="center" }
+![Start Line Req](../image/http1_start_line_req.jpeg)
 
 #### Method
 
@@ -80,7 +80,7 @@ Start Line 아래로 작성되는 요청 메시지와 추후 응답 메시지의
 
 응답 메시지의 경우, 아래와 같이 HTTP version + Status Code로만 간단하게 구성됩니다.
 
-![Start Line Res](../image/http1_start_line_res.jpeg){ align="center" }
+![Start Line Res](../image/http1_start_line_res.jpeg)
 
 ## Headers
 

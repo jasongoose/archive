@@ -660,51 +660,6 @@ export default defineConfig({
           ],
         },
       ],
-      "/posts/pwa/": [
-        {
-          text: "PWA",
-          items: [
-            {
-              text: "PWA",
-              link: "/posts/pwa/pwa/pwa",
-            },
-          ],
-        },
-        {
-          text: "Assets and Data",
-          items: [
-            {
-              text: "App Components",
-              link: "/posts/pwa/assets_and_data/app_components",
-            },
-            {
-              text: "Cache & Stroage",
-              link: "/posts/pwa/assets_and_data/cache_storage",
-            },
-            {
-              text: "Size & Lifespan",
-              link: "/posts/pwa/assets_and_data/size_lifespan",
-            },
-          ],
-        },
-        {
-          text: "Service Worker",
-          items: [
-            {
-              text: "Service Worker",
-              link: "/posts/pwa/service_worker/service_worker",
-            },
-            {
-              text: "Scope",
-              link: "/posts/pwa/service_worker/scope",
-            },
-            {
-              text: "Lifecycle",
-              link: "/posts/pwa/service_worker/lifecycle",
-            },
-          ],
-        },
-      ],
       "/posts/react/": [
         {
           text: "Learn React",
@@ -804,59 +759,59 @@ export default defineConfig({
           items: [
             {
               text: "How to write performant React code: rules, patterns, do's and don'ts",
-              link: "",
+              link: "/posts/react/developer_way_react/how_to_write_performant_react_code",
             },
             {
               text: "Why custom react hooks could destroy your app performance",
-              link: "",
+              link: "/posts/react/developer_way_react/no_custom_hooks",
             },
             {
               text: "How to write performant React apps with Context",
-              link: "",
+              link: "/posts/react/developer_way_react/performant_react_apps_with_context",
             },
             {
               text: "React component as prop: the right way",
-              link: "",
+              link: "/posts/react/developer_way_react/react_component_as_prop",
             },
             {
               text: "Higher-Order Components in React Hooks era",
-              link: "",
+              link: "/posts/react/developer_way_react/hoc",
             },
             {
               text: "Implementing advanced usePrevious hook with React useRef",
-              link: "",
+              link: "/posts/react/developer_way_react/useprevious_hooks_with_useref",
             },
             {
               text: "React components composition: how to get it right",
-              link: "",
+              link: "/posts/react/developer_way_react/react_components_composition",
             },
             {
               text: "React key attribute: best practices for performant lists",
-              link: "",
+              link: "/posts/react/developer_way_react/react_key_attributes",
             },
             {
               text: "How to useMemo and useCallback: you can remove most of them",
-              link: "",
+              link: "/posts/react/developer_way_react/usememo_and_usecallback",
             },
             {
               text: "The mystery of React Element, children, parents and re-renders",
-              link: "",
+              link: "/posts/react/developer_way_react/mystery",
             },
             {
               text: "How to fetch data in React with performance in mind",
-              link: "",
+              link: "/posts/react/developer_way_react/fetch_data",
             },
             {
               text: "Fetching data in React: the case of lost Promises",
-              link: "",
+              link: "/posts/react/developer_way_react/fetch_data_lost_promises",
             },
             {
               text: "How to debounce and throttle in React without losing your mind",
-              link: "",
+              link: "/posts/react/developer_way_react/debounce_throttle",
             },
             {
               text: "How to handle errors in React: full guide",
-              link: "",
+              link: "/posts/react/developer_way_react/handle_errors",
             },
           ],
         },
@@ -1610,10 +1565,6 @@ export default defineConfig({
           {
             text: "Node",
             link: "/posts/node/",
-          },
-          {
-            text: "PWA",
-            link: "/posts/pwa/",
           },
           {
             text: "React",

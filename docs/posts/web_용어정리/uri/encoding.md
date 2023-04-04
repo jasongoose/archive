@@ -35,7 +35,7 @@ Unicode를 컴퓨터에 저장할 수 있는 비트패턴으로 인코딩하기 
 
 인코딩할 때는 아래 테이블을 참조합니다.
 
-![UTF Conversion Table](../image/utf_conversion_table.png){ align="center" }
+![UTF Conversion Table](../image/utf_conversion_table.png)
 
 :::tip
 JS string 은 UTF-16 방식으로 인코딩되어 메모리에 저장됩니다.

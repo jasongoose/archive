@@ -4,7 +4,7 @@
 
 변환된 메시지는 Byte Stream 형식을 가집니다.
 
-![Binary Framing Layer](../image/bfl.png){ align="center" }
+![Binary Framing Layer](../image/bfl.png)
 
 :::info
 BFL은 OSI 계층모델에서 [6계층](../../../books/TCP_IP_완벽_가이드/6장/6-6.html#프리젠테이션-계층-6계층)의 구현체로 볼 수 있습니다.
@@ -35,4 +35,4 @@ frame을 사용하면 아래와 같은 문제를 해결할 수 있습니다.
 - stream들을 생성하면서 header와 body는 분리되기 때문에 개별 압축을 수행할 수 있다.
 - 다수의 stream들을 결합할 수 있기 때문에 단일 TCP connection에서 multiplexing을 구현할 수 있다.
 
-![HTTP2 Frame](../image/http2_frame.png){ align="center" }
+![HTTP2 Frame](../image/http2_frame.png)

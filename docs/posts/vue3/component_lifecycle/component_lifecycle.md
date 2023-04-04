@@ -2,8 +2,8 @@
 
 ## Single Component
 
-![Single Lifecycle](../image/single_lifecycle.png){ align="center" }
+![Single Lifecycle](../image/single_lifecycle.png)
 
 ## Nested Component
 
-![Nested Lifecycle](../image/nested_lifecycle.png){ align="center" }
+![Nested Lifecycle](../image/nested_lifecycle.png)
