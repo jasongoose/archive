@@ -1272,136 +1272,127 @@ export default defineConfig({
           ],
         },
       ],
-      // "/books/코어_자바스크립트/": [
-      //   // done
-      //   {
-      //     text: "데이터 타입",
-      //     items: [
-      //       {
-      //         text: "데이터 타입 종류",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "변수선언과 데이터 할당",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "null",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "undefined",
-      //         link: "",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     text: "실행 컨택스트",
-      //     items: [
-      //       {
-      //         text: "실행 컨택스트란?",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "Lexical Environment",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "Variable Environment",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "this Binding",
-      //         link: "",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     text: "this",
-      //     items: [
-      //       {
-      //         text: "this란?",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "상황에 따라 달라지는 this",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "명시적 binding",
-      //         link: "",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     text: "콜백함수",
-      //     items: [
-      //       {
-      //         text: "콜백함수란?",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "callback HELL",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "동기 / 비동기",
-      //         link: "",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     text: "클로져(Closure)",
-      //     items: [
-      //       {
-      //         text: "클로져란?",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "메모리 관리",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "활용되는 예시",
-      //         link: "",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     text: "프로토타입",
-      //     items: [
-      //       {
-      //         text: "프로토타입이란?",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "constructor 속성",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "프로토타입 체인",
-      //         link: "",
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     text: "클래스",
-      //     items: [
-      //       {
-      //         text: "클래스 상속",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "class field delimiter",
-      //         link: "",
-      //       },
-      //       {
-      //         text: "class accessor",
-      //         link: "",
-      //       },
-      //     ],
-      //   },
-      // ],
+      "/books/코어_자바스크립트/": [
+        {
+          text: "데이터 타입",
+          items: [
+            {
+              text: "데이터 타입 종류",
+              link: "/books/코어_자바스크립트/데이터_타입/데이터_타입_종류",
+            },
+            {
+              text: "변수선언과 데이터 할당",
+              link: "/books/코어_자바스크립트/데이터_타입/변수선언과_데이터_할당",
+            },
+          ],
+        },
+        {
+          text: "실행 컨택스트",
+          items: [
+            {
+              text: "실행 컨택스트",
+              link: "/books/코어_자바스크립트/실행_컨택스트/실행_컨택스트",
+            },
+            {
+              text: "lexical environment",
+              link: "/books/코어_자바스크립트/실행_컨택스트/lexical_environment",
+            },
+            {
+              text: "variable environment",
+              link: "/books/코어_자바스크립트/실행_컨택스트/variable_environment",
+            },
+            {
+              text: "this binding",
+              link: "/books/코어_자바스크립트/실행_컨택스트/this_binding",
+            },
+          ],
+        },
+        {
+          text: "this",
+          items: [
+            {
+              text: "this",
+              link: "/books/코어_자바스크립트/this/this",
+            },
+            {
+              text: "상황에 따라 달라지는 this",
+              link: "/books/코어_자바스크립트/this/상황에_따라_달라지는_this",
+            },
+            {
+              text: "명시적 바인딩",
+              link: "/books/코어_자바스크립트/this/명시적_바인딩",
+            },
+          ],
+        },
+        {
+          text: "콜백함수",
+          items: [
+            {
+              text: "콜백함수",
+              link: "/books/코어_자바스크립트/콜백함수/콜백함수",
+            },
+            {
+              text: "callback HELL",
+              link: "/books/코어_자바스크립트/콜백함수/callback_hell",
+            },
+            {
+              text: "동기 / 비동기",
+              link: "/books/코어_자바스크립트/콜백함수/동기_비동기",
+            },
+          ],
+        },
+        {
+          text: "클로져",
+          items: [
+            {
+              text: "클로져",
+              link: "/books/코어_자바스크립트/클로져/클로져",
+            },
+            {
+              text: "메모리 관리",
+              link: "/books/코어_자바스크립트/클로져/메모리_관리",
+            },
+            {
+              text: "활용예시",
+              link: "/books/코어_자바스크립트/클로져/활용예시",
+            },
+          ],
+        },
+        {
+          text: "프로토타입",
+          items: [
+            {
+              text: "프로토타입",
+              link: "/books/코어_자바스크립트/프로토타입/프로토타입",
+            },
+            {
+              text: "constructor 속성",
+              link: "/books/코어_자바스크립트/프로토타입/constructor_속성",
+            },
+            {
+              text: "프로토타입 체인",
+              link: "/books/코어_자바스크립트/프로토타입/프로토타입_체인",
+            },
+          ],
+        },
+        {
+          text: "클래스",
+          items: [
+            {
+              text: "클래스 상속",
+              link: "/books/코어_자바스크립트/클래스/클래스_상속",
+            },
+            {
+              text: "class field delimiter",
+              link: "/books/코어_자바스크립트/클래스/class_field_delimeter",
+            },
+            {
+              text: "class accessor",
+              link: "/books/코어_자바스크립트/클래스/class_accessor",
+            },
+          ],
+        },
+      ],
       // "/books/TCP_IP_완벽_가이드/": [
       //   {
       //     text: "1장",
@@ -1599,10 +1590,10 @@ export default defineConfig({
             text: "Composing Software",
             link: "/books/composing_software/",
           },
-          // {
-          //   text: "코어 자바스크립트",
-          //   link: "/books/코어_자바스크립트/",
-          // },
+          {
+            text: "코어 자바스크립트",
+            link: "/books/코어_자바스크립트/",
+          },
           // {
           //   text: "TCP/IP 완벽 가이드",
           //   link: "/books/TCP_IP_완벽_가이드/",
