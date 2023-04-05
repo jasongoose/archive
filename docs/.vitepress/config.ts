@@ -1354,10 +1354,6 @@ export default defineConfig({
               link: "/books/코어_자바스크립트/프로토타입/프로토타입",
             },
             {
-              text: "constructor 속성",
-              link: "/books/코어_자바스크립트/프로토타입/constructor_속성",
-            },
-            {
               text: "프로토타입 체인",
               link: "/books/코어_자바스크립트/프로토타입/프로토타입_체인",
             },
