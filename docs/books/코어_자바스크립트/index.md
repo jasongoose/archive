@@ -5,3 +5,5 @@
 [📜 null](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)
 
 [📜 undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+
+[📜 Debouncing and Throttling in JavaScript](https://www.telerik.com/blogs/debouncing-and-throttling-in-javascript)

@@ -1341,10 +1341,6 @@ export default defineConfig({
               link: "/books/코어_자바스크립트/클로져/클로져",
             },
             {
-              text: "메모리 관리",
-              link: "/books/코어_자바스크립트/클로져/메모리_관리",
-            },
-            {
               text: "활용예시",
               link: "/books/코어_자바스크립트/클로져/활용예시",
             },
