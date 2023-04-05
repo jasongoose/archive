@@ -43,4 +43,4 @@ shared state는 다음과 같은 문제점을 가집니다.
 
 1. 데이터 타입에 일반화하여 재사용하기 용이한 함수들을 만들 수 있다.
 2. 콜백함수와 Promise로 함수 내의 비동기 흐름을 제어할 수 있다.
-3. [부분적용함수, 커링함수](../concepts/curry_function.md)로 function composition을 구현할 수 있다.
+3. 부분적용함수, [커링함수](../concepts/curry_function.md)로 function composition을 구현할 수 있다.
