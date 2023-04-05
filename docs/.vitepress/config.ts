@@ -1331,14 +1331,6 @@ export default defineConfig({
               text: "콜백함수",
               link: "/books/코어_자바스크립트/콜백함수/콜백함수",
             },
-            {
-              text: "callback HELL",
-              link: "/books/코어_자바스크립트/콜백함수/callback_hell",
-            },
-            {
-              text: "동기 / 비동기",
-              link: "/books/코어_자바스크립트/콜백함수/동기_비동기",
-            },
           ],
         },
         {
