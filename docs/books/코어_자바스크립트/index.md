@@ -7,3 +7,9 @@
 [📜 undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
 [📜 Debouncing and Throttling in JavaScript](https://www.telerik.com/blogs/debouncing-and-throttling-in-javascript)
+
+[📜 Class Inheritance](https://javascript.info/class-inheritance)
+
+[📜 Static properties and methods](https://javascript.info/static-properties-methods)
+
+[📜 Private and protected properties and methods](https://javascript.info/private-protected-properties-methods)

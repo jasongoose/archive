@@ -1370,10 +1370,6 @@ export default defineConfig({
               text: "class field delimiter",
               link: "/books/코어_자바스크립트/클래스/class_field_delimeter",
             },
-            {
-              text: "class accessor",
-              link: "/books/코어_자바스크립트/클래스/class_accessor",
-            },
           ],
         },
       ],
