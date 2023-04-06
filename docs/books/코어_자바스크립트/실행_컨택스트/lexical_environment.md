@@ -2,11 +2,11 @@
 
 ## environment record
 
-context를 생성한 함수의 이름, 함수정의에 사용된 매개변수들의 이름, 내부에서 선언한 함수 객체, 선언된 변수명 등 context의 환경정보를 속성으로 가지는 객체로, context 내부를 위에서 아래로 횡단하며 순서대로 수집됩니다.
+context를 생성한 함수의 이름, 함수정의에 사용된 매개변수들의 이름, 내부에서 선언한 함수 객체, 선언된 변수명 등 context의 환경정보를 속성으로 가지는 객체로, context 내부를 위에서 아래로 횡단하며 순서대로 수집합니다.
 
 global context의 경우, 런타임별 전역객체를 사용하여 필요한 선언정보들을 수집합니다.
 
-lexEnv/envRec는 코드를 실행하다가 중단되면 해당 시점의 환경정보를 저장합니다.
+코드를 실행하다가 중단하면 해당 시점의 환경정보를 lexEnv/envRec에 저장합니다.
 
 :::tip
 context를 "lexical scope"라고 칭하는 문서들도 종종 있습니다.
@@ -14,13 +14,13 @@ context를 "lexical scope"라고 칭하는 문서들도 종종 있습니다.
 
 ### hoisting
 
-“context의 lexEnv/envRec 생성을 위해 변수와 함수 선언문들을 context의 최상단으로 끌어올린 후에 필요한 환경정보를 수집한다”라는 일종의 해석방식입니다.
+“JS 엔진이 context의 lexEnv/envRec 생성을 위해 변수와 함수 선언문들을 context의 최상단으로 끌어올린 후에 필요한 환경정보를 수집한다”라는 일종의 해석방식입니다.
 
 가만히 있는 코드를 JS 엔진이 직접 수정한다는 의미가 전혀 아닙니다!
 
-단순히 환경정보를 수집하는 과정을 쉽게 이해하도록 도입된 가상의 개념이기 때문에 호이스팅을 적용하여 코드를 수정해서 실행한 결과와 원본 결과를 비교하면 동일하게 나옵니다.
+단순히 환경정보를 수집하는 과정을 쉽게 이해하도록 도입된 가상의 개념이기 때문에 hoisting을 적용하여 코드를 수정해서 실행한 결과와 원본 결과를 비교하면 동일하게 나옵니다.
 
-호이스팅 규칙은 다음과 같습니다.
+hoisting 규칙은 다음과 같습니다.
 
 - 함수 호출을 통해 전달한 매개변수들은 최상단에서 변수 선언과 할당이 동시에 이루어진 것으로 처리한다.
 - 그 외에 변수선언과 함수선언들은 append하고 원래 할당하는 부분은 그대로 둔다.
@@ -41,7 +41,7 @@ function name(parameter1, parameter2, ...parameterN) {
 
 ```js
 let sayHi = function () {
-  // 대입연산자를 사용하여 함수를 정의한다.
+  // 대입연산자를 사용하여 함수를 정의합니다.
   alert("Hello");
 };
 ```
@@ -51,14 +51,14 @@ let sayHi = () => {
   alert("Hello");
 };
 
-// 위의 sayHi에는 Function object가 할당된다.
+// 위의 sayHi에는 Function object가 할당됩니다.
 ```
 
 ## outer environment reference
 
 콜 스택 내에서 직전 상위 context의 lexEnv를 참조하는 속성입니다.
 
-현재 context 상에 특정 변수나 함수의 선언이 없다면 JS 엔진은 outerEnvRef가 참조하는 상위 context의 환경정보에서 일치하는 선언이 있는지 확인합니다.
+현재 context 상에 특정 변수나 함수의 선언이 없다면 [JS 엔진](../../../posts/browser/browser_runtime/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80_%EB%9F%B0%ED%83%80%EC%9E%84_%EA%B5%AC%EC%A1%B0.md)은 outerEnvRef가 참조하는 상위 context의 환경정보에서 일치하는 선언이 있는지 확인합니다.
 
 outerEnvRef와 lexEnv가 있기 때문에 변수나 함수의 유효범위가 정해집니다.
 
@@ -72,7 +72,7 @@ outerEnvRef와 lexEnv가 있기 때문에 변수나 함수의 유효범위가 �
 
 ### scope chain
 
-변수의 유효범위를 상위 context 방향으로 검색하는 과정을 가리킵니다.
+상위 context 방향으로 변수나 함수를 검색하는 과정을 가리킵니다.
 
 여러 context에서 동일한 이름의 변수를 선언한 경우, **무조건 chain 상에서 가장 먼저 발견된 변수에만 접근이 가능**하도록 만듭니다.
 

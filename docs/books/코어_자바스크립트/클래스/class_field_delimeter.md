@@ -4,7 +4,7 @@
 
 ## static
 
-속성이나 메서드를 클래스 **함수의 prototype이 아닌 클래스 함수의 자체 속성, 메서드로 저장합니다.**
+속성이나 메서드를 클래스 **함수의 prototype이 아닌 클래스 자체의 속성, 메서드로 저장합니다.**
 
 `static` 키워드가 붙은 속성, 메서드를 사용할 때는 `<클래스명>.[속성, 메서드 이름]` 과 같이 작성하는데, 인스턴스에서 접근할 수 없어서 클래스 단위의 데이터나 함수를 만들 때 활용됩니다.
 
@@ -94,9 +94,9 @@ class MegaCoffeeMachine extends CoffeeMachine {
 
 단, 외부에서 직접 변경할 수 없도록 getter/setter로만 read와 write가 가능합니다.
 
-자식 클래스로 상속할 때는 저절로 상속됩니다.
+자식 클래스로는 저절로 상속됩니다.
 
-실제 JS에서는 구현되어 있지는 않아서 보통 `protected` 필드의 이름은 앞에 `_`(underscore) prefix를 붙이는 convention이 있습니다.
+실제 JS에서는 구현되지 않아서 `protected` 필드의 이름은 보통 앞에 `_`(underscore) prefix를 붙입니다.
 
 ```js
 class CoffeeMachine {
