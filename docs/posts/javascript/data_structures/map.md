@@ -4,6 +4,11 @@ reference 타입 중 하나인 Map은 key-value pair로 속성을 저장한다�
 
 ![Map과 Object 차이점](../image/map_object_diff.png)
 
+:::tip Map과 Object의 차이점
+
+https://www.builder.io/blog/maps
+:::
+
 ## Iterating Map with forEach method
 
 ```js
