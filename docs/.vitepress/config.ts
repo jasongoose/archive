@@ -1580,6 +1580,10 @@ export default defineConfig({
           },
         ],
       },
+      {
+        text: "Articles",
+        link: "/articles/",
+      },
     ],
   },
 });
