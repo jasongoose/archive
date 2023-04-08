@@ -1500,6 +1500,29 @@ export default defineConfig({
           ],
         },
       ],
+      "/코테준비/": [
+        {
+          text: "자료구조",
+          items: [
+            {
+              text: "Stack",
+              link: "/코테준비/자료구조/stack",
+            },
+            {
+              text: "Queue",
+              link: "/코테준비/자료구조/queue",
+            },
+            {
+              text: "Linked List",
+              link: "/코테준비/자료구조/linked_list",
+            },
+          ],
+        },
+        {
+          text: "알고리즘",
+          items: [],
+        },
+      ],
     },
     nav: [
       {
@@ -1583,6 +1606,14 @@ export default defineConfig({
       {
         text: "Articles",
         link: "/articles/",
+      },
+      {
+        text: "코테준비",
+        link: "/코테준비/",
+      },
+      {
+        text: "면접과제",
+        link: "",
       },
     ],
   },
