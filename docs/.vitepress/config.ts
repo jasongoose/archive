@@ -1516,6 +1516,22 @@ export default defineConfig({
               text: "Linked List",
               link: "/코테준비/자료구조/linked_list",
             },
+            {
+              text: "Tree",
+              link: "/코테준비/자료구조/tree",
+            },
+            {
+              text: "Trie",
+              link: "/코테준비/자료구조/trie",
+            },
+            {
+              text: "Heap",
+              link: "/코테준비/자료구조/heap",
+            },
+            {
+              text: "Hash Table",
+              link: "/코테준비/자료구조/hash_table",
+            },
           ],
         },
         {
