@@ -16,11 +16,11 @@ Binary Tree이면서 특정 node의 값이 왼쪽 자식 node보다 크고 오�
 
 ### 검색
 
-node별로 정해진 순서가 있어서 임의의 node를 검색하는데 `O(logN)`의 시간 복잡도를 가집니다.
+node별로 정해진 순서가 있어서 임의의 node를 검색하는데 `O(logN)` ~ `O(N)`의 시간 복잡도를 가집니다.
 
 ### 삽입
 
-임의의 node를 특정 node의 자식 node로 추가하는 연산입니다.
+임의의 node를 특정 node의 자식 node로 추가하는 연산으로, `O(logN)` ~ `O(N)`의 시간 복잡도를 가집니다.
 
 node를 추가하면서 tree가 한 방향으로만 늘어나는 unbalanced 형태 또는 균일하게 늘어나는 balanced 형태가 존재합니다.
 
