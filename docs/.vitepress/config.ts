@@ -1505,6 +1505,10 @@ export default defineConfig({
           text: "자료구조",
           items: [
             {
+              text: "Array",
+              link: "/코테준비/자료구조/array",
+            },
+            {
               text: "Stack",
               link: "/코테준비/자료구조/stack",
             },
