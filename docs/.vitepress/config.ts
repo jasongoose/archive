@@ -1540,7 +1540,36 @@ export default defineConfig({
         },
         {
           text: "알고리즘",
-          items: [],
+          items: [
+            {
+              text: "Recursion",
+              link: "/코테준비/알고리즘/recursion",
+            },
+            {
+              text: "Sort",
+              link: "/코테준비/알고리즘/sort",
+            },
+            {
+              text: "Binary Search",
+              link: "/코테준비/알고리즘/binary_search",
+            },
+            {
+              text: "Graph Search",
+              link: "/코테준비/알고리즘/graph_search",
+            },
+            {
+              text: "Memoization, Dynamic Programming",
+              link: "/코테준비/알고리즘/memoization_dynamic_programming",
+            },
+            {
+              text: "Bit Manipulation",
+              link: "/코테준비/알고리즘/bit_manipulation",
+            },
+            {
+              text: "Permutation, Combination",
+              link: "/코테준비/알고리즘/permutation_combination",
+            },
+          ],
         },
       ],
     },
