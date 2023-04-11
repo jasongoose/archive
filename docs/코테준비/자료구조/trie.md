@@ -40,17 +40,9 @@ const trie = () => {
     return true;
   };
 
-  const printAllWords = (node = root) => {
-    node[ISEND] && console.log(node[DATA]);
-    for (const m of node[MAP].values()) {
-      printAllWords(m);
-    }
-  };
-
   return {
     insert,
     contains,
-    printAllWords,
   };
 };
 ```

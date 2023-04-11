@@ -20,9 +20,9 @@ root node의 값이 하위 node들의 값보다 작습니다.
 
 제일 마지막에 있는 node를 root로 지정하고 왼쪽, 오른쪽 자식 node들의 값보다 클 때까지 depth를 내려갑니다.
 
-## Max Heap
-
+:::tip Max Heap
 Min Heap과 반대로 구현하면 됩니다!
+:::
 
 ## 구현코드
 

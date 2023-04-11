@@ -41,17 +41,10 @@ const linkedList = (arr) => {
     }
   };
 
-  const printNodes = () => {
-    for (let p = head; hasData(p); p = p[NEXT]) {
-      console.log(p[DATA]);
-    }
-  };
-
   return {
     append,
     prepend,
     deleteData,
-    printNodes,
   };
 };
 ```
