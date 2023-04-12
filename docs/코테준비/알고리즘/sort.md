@@ -41,7 +41,7 @@ const bubbleSort = (data) => {
 
 대상 수열에서 임의의 pivot(중심요소)를 선택하고 pivot 앞으로 pivot보다 작은 수, 뒤로 pivot보다 큰 수가 오도록 swap연산으로 수열을 두 영역으로 나누는데, 이러한 과정을 재귀적으로 수행합니다.
 
-![Quick Sort](../image/%08quick_sort.png)
+![Quick Sort](../image/quick_sort.png)
 
 ### 구현코드
 
