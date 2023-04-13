@@ -1660,10 +1660,10 @@ export default defineConfig({
         text: "코테준비",
         link: "/코테준비/",
       },
-      {
-        text: "면접과제",
-        link: "",
-      },
+      // {
+      //   text: "면접과제",
+      //   link: "",
+      // },
     ],
   },
 });
