@@ -419,8 +419,8 @@ export default defineConfig({
           text: "Strict Mode",
           items: [
             {
-              text: "Strict Mode란?",
-              link: "/studies/javascript/strict_mode/strict_mode란",
+              text: "Strict Mode",
+              link: "/studies/javascript/strict_mode/strict_mode",
             },
             {
               text: "Invoking Strict Mode",
