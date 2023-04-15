@@ -1575,6 +1575,10 @@ export default defineConfig({
     },
     nav: [
       {
+        text: "Posts",
+        link: "/posts/",
+      },
+      {
         text: "Studies",
         items: [
           {
@@ -1653,10 +1657,6 @@ export default defineConfig({
         ],
       },
       {
-        text: "Articles",
-        link: "/articles/",
-      },
-      {
         text: "코테준비",
         link: "/코테준비/",
       },
@@ -1664,6 +1664,10 @@ export default defineConfig({
       //   text: "면접과제",
       //   link: "",
       // },
+      {
+        text: "Articles",
+        link: "/articles/",
+      },
     ],
   },
 });
