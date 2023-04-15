@@ -1500,6 +1500,78 @@ export default defineConfig({
           ],
         },
       ],
+      "/코테준비/": [
+        {
+          text: "자료구조",
+          items: [
+            {
+              text: "Array",
+              link: "/코테준비/자료구조/array",
+            },
+            {
+              text: "Stack",
+              link: "/코테준비/자료구조/stack",
+            },
+            {
+              text: "Queue",
+              link: "/코테준비/자료구조/queue",
+            },
+            {
+              text: "Linked List",
+              link: "/코테준비/자료구조/linked_list",
+            },
+            {
+              text: "Tree",
+              link: "/코테준비/자료구조/tree",
+            },
+            {
+              text: "Trie",
+              link: "/코테준비/자료구조/trie",
+            },
+            {
+              text: "Heap",
+              link: "/코테준비/자료구조/heap",
+            },
+            {
+              text: "Hash Table",
+              link: "/코테준비/자료구조/hash_table",
+            },
+          ],
+        },
+        {
+          text: "알고리즘",
+          items: [
+            {
+              text: "Recursion",
+              link: "/코테준비/알고리즘/recursion",
+            },
+            {
+              text: "Sort",
+              link: "/코테준비/알고리즘/sort",
+            },
+            {
+              text: "Binary Search",
+              link: "/코테준비/알고리즘/binary_search",
+            },
+            {
+              text: "Graph Search",
+              link: "/코테준비/알고리즘/graph_search",
+            },
+            {
+              text: "Memoization, Dynamic Programming",
+              link: "/코테준비/알고리즘/memoization_dynamic_programming",
+            },
+            {
+              text: "Bit Manipulation",
+              link: "/코테준비/알고리즘/bit_manipulation",
+            },
+            {
+              text: "Permutation, Combination",
+              link: "/코테준비/알고리즘/permutation_combination",
+            },
+          ],
+        },
+      ],
     },
     nav: [
       {
@@ -1584,6 +1656,14 @@ export default defineConfig({
         text: "Articles",
         link: "/articles/",
       },
+      {
+        text: "코테준비",
+        link: "/코테준비/",
+      },
+      // {
+      //   text: "면접과제",
+      //   link: "",
+      // },
     ],
   },
 });
