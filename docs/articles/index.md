@@ -58,7 +58,7 @@
 
 [카카오웹툰은 하드웨어 가속과 IntersectionObserver를 어떻게 사용했을까?](https://fe-developers.kakaoent.com/2021/211202-gpu-intersection-observer/)
 
-[When You Should Prefer Map Over Object In JavaScript](https://www.zhenghao.io/posts/object-vs-map)
+[When You Should Prefer Map Over Object In JavaScript](https://www.zhenghao.io/studies/object-vs-map)
 
 [Integer math in JavaScript](https://james.darpinian.com/blog/integer-math-in-javascript)
 

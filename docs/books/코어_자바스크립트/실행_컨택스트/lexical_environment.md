@@ -58,7 +58,7 @@ let sayHi = () => {
 
 콜 스택 내에서 직전 상위 context의 lexEnv를 참조하는 속성입니다.
 
-현재 context 상에 특정 변수나 함수의 선언이 없다면 [JS 엔진](../../../posts/browser/browser_runtime/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80_%EB%9F%B0%ED%83%80%EC%9E%84_%EA%B5%AC%EC%A1%B0.md)은 outerEnvRef가 참조하는 상위 context의 환경정보에서 일치하는 선언이 있는지 확인합니다.
+현재 context 상에 특정 변수나 함수의 선언이 없다면 [JS 엔진](../../../studies/browser/browser_runtime/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80_%EB%9F%B0%ED%83%80%EC%9E%84_%EA%B5%AC%EC%A1%B0.md)은 outerEnvRef가 참조하는 상위 context의 환경정보에서 일치하는 선언이 있는지 확인합니다.
 
 outerEnvRef와 lexEnv가 있기 때문에 변수나 함수의 유효범위가 정해집니다.
 

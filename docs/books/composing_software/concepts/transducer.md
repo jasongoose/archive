@@ -22,7 +22,7 @@ transducer는 다음과 같은 사용이점들이 있습니다.
 
 ## Iterate 연산
 
-JS에서 [iterable](../../../posts/javascript/loop/protocols.md#iterable)의 요소별로 변환하는 연산은 2가지로 나눌 수 있습니다.
+JS에서 [iterable](../../../studies/javascript/loop/protocols.md#iterable)의 요소별로 변환하는 연산은 2가지로 나눌 수 있습니다.
 
 ### Push API
 
@@ -30,7 +30,7 @@ JS에서 [iterable](../../../posts/javascript/loop/protocols.md#iterable)의 요
 
 ### Pull API
 
-[Generator](../../../posts/javascript/loop/protocols.md#generator), [Iterable](../../../posts/javascript/loop/protocols.md#iterable)와 같이 요소의 변환이 필요할 때마다 consumer가 next 요청을 전달해야 하는 lazy evaluation 방식입니다.
+[Generator](../../../studies/javascript/loop/protocols.md#generator), [Iterable](../../../studies/javascript/loop/protocols.md#iterable)와 같이 요소의 변환이 필요할 때마다 consumer가 next 요청을 전달해야 하는 lazy evaluation 방식입니다.
 
 :::tip
 transducer를 통해 입력으로부터 출력을 생성하는 과정은 마치 신호 변환기의 원리와 유사합니다.

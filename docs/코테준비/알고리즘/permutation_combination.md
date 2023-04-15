@@ -79,7 +79,7 @@ const combination = (arr, r) => {
 
 만일 `arr` 인자로 중복요소가 있는 배열이 전달되거나 중복선택이 허용된다면 모든 경우의 수들을 나열했을 때, 중복되는 케이스들이 발생할 수 있습니다.
 
-이 경우, `ans` 배열을 [Set](../../posts/javascript/data_structures/set.md)으로 전환하여 케이스별로 구분자가 있는 문자열들을 저장하도록 수정하면 됩니다.
+이 경우, `ans` 배열을 [Set](../../studies/javascript/data_structures/set.md)으로 전환하여 케이스별로 구분자가 있는 문자열들을 저장하도록 수정하면 됩니다.
 
 ### 순열
 

@@ -6,13 +6,13 @@ export default defineConfig({
   themeConfig: {
     socialLinks: [{ icon: "github", link: "https://github.com/jasongoose" }],
     sidebar: {
-      "/posts/architecture/": [
+      "/studies/architecture/": [
         {
           text: "Architecture",
           items: [
             {
               text: "Architecture",
-              link: "/posts/architecture/architecture/architecture",
+              link: "/studies/architecture/architecture/architecture",
             },
           ],
         },
@@ -21,38 +21,38 @@ export default defineConfig({
           items: [
             {
               text: "MVC",
-              link: "/posts/architecture/history/MVC",
+              link: "/studies/architecture/history/MVC",
             },
             {
               text: "MVVM",
-              link: "/posts/architecture/history/MVVM",
+              link: "/studies/architecture/history/MVVM",
             },
             {
               text: "Container-Presenter",
-              link: "/posts/architecture/history/Container-Presenter",
+              link: "/studies/architecture/history/Container-Presenter",
             },
             {
               text: "Flux",
-              link: "/posts/architecture/history/Flux",
+              link: "/studies/architecture/history/Flux",
             },
             {
               text: "Observer-Observable",
-              link: "/posts/architecture/history/Observer-Observable",
+              link: "/studies/architecture/history/Observer-Observable",
             },
             {
               text: "MVI",
-              link: "/posts/architecture/history/MVI",
+              link: "/studies/architecture/history/MVI",
             },
           ],
         },
       ],
-      "/posts/browser/": [
+      "/studies/browser/": [
         {
           text: "HTML",
           items: [
             {
               text: "script의 위치",
-              link: "/posts/browser/html/script의_위치",
+              link: "/studies/browser/html/script의_위치",
             },
           ],
         },
@@ -61,15 +61,15 @@ export default defineConfig({
           items: [
             {
               text: "Pseudo Element",
-              link: "/posts/browser/css/Pseudo_Element",
+              link: "/studies/browser/css/Pseudo_Element",
             },
             {
               text: "Flexbox",
-              link: "/posts/browser/css/Flexbox",
+              link: "/studies/browser/css/Flexbox",
             },
             {
               text: "Grid",
-              link: "/posts/browser/css/Grid",
+              link: "/studies/browser/css/Grid",
             },
           ],
         },
@@ -78,11 +78,11 @@ export default defineConfig({
           items: [
             {
               text: "구조",
-              link: "/posts/browser/browser_runtime/브라우저_런타임_구조",
+              link: "/studies/browser/browser_runtime/브라우저_런타임_구조",
             },
             {
               text: "비동기 작업 예시",
-              link: "/posts/browser/browser_runtime/비동기_작업_예시",
+              link: "/studies/browser/browser_runtime/비동기_작업_예시",
             },
           ],
         },
@@ -91,23 +91,23 @@ export default defineConfig({
           items: [
             {
               text: "Overview",
-              link: "/posts/browser/populating_the_page/overview",
+              link: "/studies/browser/populating_the_page/overview",
             },
             {
               text: "Navigation",
-              link: "/posts/browser/populating_the_page/navigation",
+              link: "/studies/browser/populating_the_page/navigation",
             },
             {
               text: "Response",
-              link: "/posts/browser/populating_the_page/response",
+              link: "/studies/browser/populating_the_page/response",
             },
             {
               text: "Critical Rendering Path",
-              link: "/posts/browser/populating_the_page/crp",
+              link: "/studies/browser/populating_the_page/crp",
             },
             {
               text: "Reflow, Repaint",
-              link: "/posts/browser/populating_the_page/reflow_repaint",
+              link: "/studies/browser/populating_the_page/reflow_repaint",
             },
           ],
         },
@@ -116,11 +116,11 @@ export default defineConfig({
           items: [
             {
               text: "Session, Cookie",
-              link: "/posts/browser/storage/session_cookie",
+              link: "/studies/browser/storage/session_cookie",
             },
             {
               text: "Web Storage",
-              link: "/posts/browser/storage/web_storage",
+              link: "/studies/browser/storage/web_storage",
             },
           ],
         },
@@ -129,11 +129,11 @@ export default defineConfig({
           items: [
             {
               text: "CSR",
-              link: "/posts/browser/rendering_strategy/csr",
+              link: "/studies/browser/rendering_strategy/csr",
             },
             {
               text: "SSR",
-              link: "/posts/browser/rendering_strategy/ssr",
+              link: "/studies/browser/rendering_strategy/ssr",
             },
           ],
         },
@@ -142,45 +142,45 @@ export default defineConfig({
           items: [
             {
               text: "DOM",
-              link: "/posts/browser/web_api/dom",
+              link: "/studies/browser/web_api/dom",
             },
             {
               text: "Broadcast Channel",
-              link: "/posts/browser/web_api/broadcast_channel",
+              link: "/studies/browser/web_api/broadcast_channel",
             },
             {
               text: "Window",
-              link: "/posts/browser/web_api/window",
+              link: "/studies/browser/web_api/window",
             },
             {
               text: "Cache Storage",
-              link: "/posts/browser/web_api/cache_storage",
+              link: "/studies/browser/web_api/cache_storage",
             },
             {
               text: "IndexedDB",
-              link: "/posts/browser/web_api/indexed_db",
+              link: "/studies/browser/web_api/indexed_db",
             },
           ],
         },
       ],
-      "/posts/clean_code/": [
+      "/studies/clean_code/": [
         {
           text: "Clean Code",
           items: [
             {
               text: "Guard Clauses",
-              link: "/posts/clean_code/clean_code/guard_clauses",
+              link: "/studies/clean_code/clean_code/guard_clauses",
             },
           ],
         },
       ],
-      "/posts/frontend/": [
+      "/studies/frontend/": [
         {
           text: "Tree Shaking",
           items: [
             {
               text: "Tree Shaking",
-              link: "/posts/frontend/tree_shaking/tree_shaking",
+              link: "/studies/frontend/tree_shaking/tree_shaking",
             },
           ],
         },
@@ -189,7 +189,7 @@ export default defineConfig({
           items: [
             {
               text: "Skeleton UI",
-              link: "/posts/frontend/skeleton_ui/skeleton_ui",
+              link: "/studies/frontend/skeleton_ui/skeleton_ui",
             },
           ],
         },
@@ -198,7 +198,7 @@ export default defineConfig({
           items: [
             {
               text: "Lazy Loading",
-              link: "/posts/frontend/lazy_loading/lazy_loading",
+              link: "/studies/frontend/lazy_loading/lazy_loading",
             },
           ],
         },
@@ -207,7 +207,7 @@ export default defineConfig({
           items: [
             {
               text: "SEO",
-              link: "/posts/frontend/seo/seo",
+              link: "/studies/frontend/seo/seo",
             },
           ],
         },
@@ -216,18 +216,18 @@ export default defineConfig({
           items: [
             {
               text: "Cross-Browsing",
-              link: "/posts/frontend/cross_browsing/cross_browsing",
+              link: "/studies/frontend/cross_browsing/cross_browsing",
             },
           ],
         },
       ],
-      "/posts/git/": [
+      "/studies/git/": [
         {
           text: "Why Git?",
           items: [
             {
               text: "Why Git?",
-              link: "/posts/git/why_git/why_git",
+              link: "/studies/git/why_git/why_git",
             },
           ],
         },
@@ -236,11 +236,11 @@ export default defineConfig({
           items: [
             {
               text: "Pull Request",
-              link: "/posts/git/terms/pull_request",
+              link: "/studies/git/terms/pull_request",
             },
             {
               text: "Staging Area",
-              link: "/posts/git/terms/staging_area",
+              link: "/studies/git/terms/staging_area",
             },
           ],
         },
@@ -249,51 +249,51 @@ export default defineConfig({
           items: [
             {
               text: "git init",
-              link: "/posts/git/git_commands/git_init",
+              link: "/studies/git/git_commands/git_init",
             },
             {
               text: "git clone",
-              link: "/posts/git/git_commands/git_clone",
+              link: "/studies/git/git_commands/git_clone",
             },
             {
               text: "git config",
-              link: "/posts/git/git_commands/git_config",
+              link: "/studies/git/git_commands/git_config",
             },
             {
               text: "git commit --amend",
-              link: "/posts/git/git_commands/git_commit_amend",
+              link: "/studies/git/git_commands/git_commit_amend",
             },
             {
               text: "git push",
-              link: "/posts/git/git_commands/git_push",
+              link: "/studies/git/git_commands/git_push",
             },
             {
               text: "git merge",
-              link: "/posts/git/git_commands/git_merge",
+              link: "/studies/git/git_commands/git_merge",
             },
             {
               text: "git stash",
-              link: "/posts/git/git_commands/git_stash",
+              link: "/studies/git/git_commands/git_stash",
             },
             {
               text: "git cherrypick",
-              link: "/posts/git/git_commands/git_cherrypick",
+              link: "/studies/git/git_commands/git_cherrypick",
             },
             {
               text: "git reset vs. git revert",
-              link: "/posts/git/git_commands/git_reset_revert",
+              link: "/studies/git/git_commands/git_reset_revert",
             },
             {
               text: "git fetch vs. git pull",
-              link: "/posts/git/git_commands/git_fetch_pull",
+              link: "/studies/git/git_commands/git_fetch_pull",
             },
             {
               text: "git checkout",
-              link: "/posts/git/git_commands/git_checkout",
+              link: "/studies/git/git_commands/git_checkout",
             },
             {
               text: "git rebase",
-              link: "/posts/git/git_commands/git_rebase",
+              link: "/studies/git/git_commands/git_rebase",
             },
           ],
         },
@@ -302,42 +302,42 @@ export default defineConfig({
           items: [
             {
               text: "Git Flow",
-              link: "/posts/git/git_flow/git_flow",
+              link: "/studies/git/git_flow/git_flow",
             },
             {
               text: "Main Branches",
-              link: "/posts/git/git_flow/main_branches",
+              link: "/studies/git/git_flow/main_branches",
             },
             {
               text: "Support Branches",
-              link: "/posts/git/git_flow/support_branches",
+              link: "/studies/git/git_flow/support_branches",
             },
           ],
         },
       ],
-      "/posts/http/": [
+      "/studies/http/": [
         {
           text: "HTTP/1.x",
           items: [
             {
               text: "Methods",
-              link: "/posts/http/http1/methods",
+              link: "/studies/http/http1/methods",
             },
             {
               text: "Cache",
-              link: "/posts/http/http1/cache",
+              link: "/studies/http/http1/cache",
             },
             {
               text: "Message Structure",
-              link: "/posts/http/http1/message_structure",
+              link: "/studies/http/http1/message_structure",
             },
             {
               text: "MIME",
-              link: "/posts/http/http1/mime",
+              link: "/studies/http/http1/mime",
             },
             {
               text: "Connection Management",
-              link: "/posts/http/http1/connection_management",
+              link: "/studies/http/http1/connection_management",
             },
           ],
         },
@@ -346,19 +346,19 @@ export default defineConfig({
           items: [
             {
               text: "Binary Framing Layer",
-              link: "/posts/http/http2/binary_framing_layer",
+              link: "/studies/http/http2/binary_framing_layer",
             },
             {
               text: "Stream, Message, Frame",
-              link: "/posts/http/http2/stream_message_frame",
+              link: "/studies/http/http2/stream_message_frame",
             },
             {
               text: "Multiplexing",
-              link: "/posts/http/http2/multiplexing",
+              link: "/studies/http/http2/multiplexing",
             },
             {
               text: "Stream Prioritization",
-              link: "/posts/http/http2/stream_prioritization",
+              link: "/studies/http/http2/stream_prioritization",
             },
           ],
         },
@@ -367,42 +367,42 @@ export default defineConfig({
           items: [
             {
               text: "Redirect",
-              link: "/posts/http/redirect/redirect",
+              link: "/studies/http/redirect/redirect",
             },
           ],
         },
       ],
-      "/posts/javascript/": [
+      "/studies/javascript/": [
         {
           text: "ECMAScript",
           items: [
             {
               text: "ECMA International",
-              link: "/posts/javascript/ecmascript/ecma_international",
+              link: "/studies/javascript/ecmascript/ecma_international",
             },
             {
               text: "ECMA-262",
-              link: "/posts/javascript/ecmascript/ecma_262",
+              link: "/studies/javascript/ecmascript/ecma_262",
             },
             {
               text: "ECMAScript",
-              link: "/posts/javascript/ecmascript/ecmascript",
+              link: "/studies/javascript/ecmascript/ecmascript",
             },
             {
               text: "Javascript",
-              link: "/posts/javascript/ecmascript/javascript",
+              link: "/studies/javascript/ecmascript/javascript",
             },
             {
               text: "JS Engine",
-              link: "/posts/javascript/ecmascript/javascript_engine",
+              link: "/studies/javascript/ecmascript/javascript_engine",
             },
             {
               text: "JS Runtime",
-              link: "/posts/javascript/ecmascript/javascript_runtime",
+              link: "/studies/javascript/ecmascript/javascript_runtime",
             },
             {
               text: "Scripting Language",
-              link: "/posts/javascript/ecmascript/scripting_language",
+              link: "/studies/javascript/ecmascript/scripting_language",
             },
           ],
         },
@@ -411,7 +411,7 @@ export default defineConfig({
           items: [
             {
               text: "Garbage Collector",
-              link: "/posts/javascript/memory_management/garbage_collector",
+              link: "/studies/javascript/memory_management/garbage_collector",
             },
           ],
         },
@@ -420,15 +420,15 @@ export default defineConfig({
           items: [
             {
               text: "Strict Mode란?",
-              link: "/posts/javascript/strict_mode/strict_mode란",
+              link: "/studies/javascript/strict_mode/strict_mode란",
             },
             {
               text: "Invoking Strict Mode",
-              link: "/posts/javascript/strict_mode/invoking_strict_mode",
+              link: "/studies/javascript/strict_mode/invoking_strict_mode",
             },
             {
               text: "Changes in Strict Mode",
-              link: "/posts/javascript/strict_mode/changes_in_strict_mode",
+              link: "/studies/javascript/strict_mode/changes_in_strict_mode",
             },
           ],
         },
@@ -437,15 +437,15 @@ export default defineConfig({
           items: [
             {
               text: "Declare → Initialize → Assign",
-              link: "/posts/javascript/variable/declare_initialize_assign",
+              link: "/studies/javascript/variable/declare_initialize_assign",
             },
             {
               text: "var",
-              link: "/posts/javascript/variable/var",
+              link: "/studies/javascript/variable/var",
             },
             {
               text: "const, let",
-              link: "/posts/javascript/variable/const_let",
+              link: "/studies/javascript/variable/const_let",
             },
           ],
         },
@@ -454,23 +454,23 @@ export default defineConfig({
           items: [
             {
               text: "(==)",
-              link: "/posts/javascript/operators/equality",
+              link: "/studies/javascript/operators/equality",
             },
             {
               text: "(===)",
-              link: "/posts/javascript/operators/strict_equality",
+              link: "/studies/javascript/operators/strict_equality",
             },
             {
               text: "(?.)",
-              link: "/posts/javascript/operators/optional_chaining",
+              link: "/studies/javascript/operators/optional_chaining",
             },
             {
               text: "(??)",
-              link: "/posts/javascript/operators/nullish_coalescing",
+              link: "/studies/javascript/operators/nullish_coalescing",
             },
             {
               text: "(??=)",
-              link: "/posts/javascript/operators/logical_nullish_assignment",
+              link: "/studies/javascript/operators/logical_nullish_assignment",
             },
           ],
         },
@@ -479,31 +479,31 @@ export default defineConfig({
           items: [
             {
               text: "Array",
-              link: "/posts/javascript/data_structures/array",
+              link: "/studies/javascript/data_structures/array",
             },
             {
               text: "Object",
-              link: "/posts/javascript/data_structures/object",
+              link: "/studies/javascript/data_structures/object",
             },
             {
               text: "Symbol",
-              link: "/posts/javascript/data_structures/symbol",
+              link: "/studies/javascript/data_structures/symbol",
             },
             {
               text: "Map",
-              link: "/posts/javascript/data_structures/map",
+              link: "/studies/javascript/data_structures/map",
             },
             {
               text: "WeakMap",
-              link: "/posts/javascript/data_structures/weakmap",
+              link: "/studies/javascript/data_structures/weakmap",
             },
             {
               text: "Set",
-              link: "/posts/javascript/data_structures/set",
+              link: "/studies/javascript/data_structures/set",
             },
             {
               text: "WeakSet",
-              link: "/posts/javascript/data_structures/weakset",
+              link: "/studies/javascript/data_structures/weakset",
             },
           ],
         },
@@ -512,27 +512,27 @@ export default defineConfig({
           items: [
             {
               text: "Blob",
-              link: "/posts/javascript/interfaces/blob",
+              link: "/studies/javascript/interfaces/blob",
             },
             {
               text: "FileReader",
-              link: "/posts/javascript/interfaces/filereader",
+              link: "/studies/javascript/interfaces/filereader",
             },
             {
               text: "ArrayBuffer",
-              link: "/posts/javascript/interfaces/arraybuffer",
+              link: "/studies/javascript/interfaces/arraybuffer",
             },
             {
               text: "FormData",
-              link: "/posts/javascript/interfaces/formdata",
+              link: "/studies/javascript/interfaces/formdata",
             },
             {
               text: "Proxy",
-              link: "/posts/javascript/interfaces/proxy",
+              link: "/studies/javascript/interfaces/proxy",
             },
             {
               text: "Reflect",
-              link: "/posts/javascript/interfaces/reflect",
+              link: "/studies/javascript/interfaces/reflect",
             },
           ],
         },
@@ -541,23 +541,23 @@ export default defineConfig({
           items: [
             {
               text: "Protocols",
-              link: "/posts/javascript/loop/protocols",
+              link: "/studies/javascript/loop/protocols",
             },
             {
               text: "for",
-              link: "/posts/javascript/loop/for",
+              link: "/studies/javascript/loop/for",
             },
             {
               text: "for-in",
-              link: "/posts/javascript/loop/for_in",
+              link: "/studies/javascript/loop/for_in",
             },
             {
               text: "for-of",
-              link: "/posts/javascript/loop/for_of",
+              link: "/studies/javascript/loop/for_of",
             },
             {
               text: "for await-of",
-              link: "/posts/javascript/loop/for_await_of",
+              link: "/studies/javascript/loop/for_await_of",
             },
           ],
         },
@@ -566,66 +566,66 @@ export default defineConfig({
           items: [
             {
               text: "async/await",
-              link: "/posts/javascript/syntatic_sugar/async_await",
+              link: "/studies/javascript/syntatic_sugar/async_await",
             },
             {
               text: "Array Intersection",
-              link: "/posts/javascript/syntatic_sugar/array_intersection",
+              link: "/studies/javascript/syntatic_sugar/array_intersection",
             },
             {
               text: "every & some",
-              link: "/posts/javascript/syntatic_sugar/every_some",
+              link: "/studies/javascript/syntatic_sugar/every_some",
             },
             {
               text: "Filter Falsy Values",
-              link: "/posts/javascript/syntatic_sugar/filter_falsy_values",
+              link: "/studies/javascript/syntatic_sugar/filter_falsy_values",
             },
             {
               text: "Computed Property",
-              link: "/posts/javascript/syntatic_sugar/computed_property",
+              link: "/studies/javascript/syntatic_sugar/computed_property",
             },
             {
               text: "-1 bit",
-              link: "/posts/javascript/syntatic_sugar/-1_bit",
+              link: "/studies/javascript/syntatic_sugar/-1_bit",
             },
             {
               text: "Default Parameters",
-              link: "/posts/javascript/syntatic_sugar/default_parameters",
+              link: "/studies/javascript/syntatic_sugar/default_parameters",
             },
             {
               text: "String To Array",
-              link: "/posts/javascript/syntatic_sugar/string_to_array",
+              link: "/studies/javascript/syntatic_sugar/string_to_array",
             },
             {
               text: "Truncating, Expanding Array",
-              link: "/posts/javascript/syntatic_sugar/truncating_expanding_array",
+              link: "/studies/javascript/syntatic_sugar/truncating_expanding_array",
             },
             {
               text: "How to check empty array?",
-              link: "/posts/javascript/syntatic_sugar/how_to_check_empty_array",
+              link: "/studies/javascript/syntatic_sugar/how_to_check_empty_array",
             },
           ],
         },
       ],
-      "/posts/node/": [
+      "/studies/node/": [
         {
           text: "Package",
           items: [
             {
               text: "Package",
-              link: "/posts/node/package/package",
+              link: "/studies/node/package/package",
             },
             {
               text: "Module Resolution",
-              link: "/posts/node/package/module_resolution",
+              link: "/studies/node/package/module_resolution",
             },
             {
               text: "Package Exports",
-              link: "/posts/node/package/package_exports",
+              link: "/studies/node/package/package_exports",
             },
             {
               text: "Package Imports",
-              link: "/posts/node/package/package_imports",
+              link: "/studies/node/package/package_imports",
             },
           ],
         },
@@ -634,11 +634,11 @@ export default defineConfig({
           items: [
             {
               text: "package.json",
-              link: "/posts/node/configuration/package_json",
+              link: "/studies/node/configuration/package_json",
             },
             {
               text: "package-lock.json",
-              link: "/posts/node/configuration/package_lock_json",
+              link: "/studies/node/configuration/package_lock_json",
             },
           ],
         },
@@ -647,110 +647,110 @@ export default defineConfig({
           items: [
             {
               text: "pnpm",
-              link: "/posts/node/pnpm/pnpm",
+              link: "/studies/node/pnpm/pnpm",
             },
             {
               text: "node_modules 구조",
-              link: "/posts/node/pnpm/node_modules의_구조",
+              link: "/studies/node/pnpm/node_modules의_구조",
             },
             {
               text: "peerDependencies Resolution",
-              link: "/posts/node/pnpm/peerDependencies_resolution",
+              link: "/studies/node/pnpm/peerDependencies_resolution",
             },
           ],
         },
       ],
-      "/posts/react/": [
+      "/studies/react/": [
         {
           text: "Learn React",
           items: [
             {
               text: "Keeping Components Pure",
-              link: "/posts/react/learn_react/keeping_components_pure",
+              link: "/studies/react/learn_react/keeping_components_pure",
             },
             {
               text: "Responding to Events",
-              link: "/posts/react/learn_react/responding_to_events",
+              link: "/studies/react/learn_react/responding_to_events",
             },
             {
               text: "State: A Component’s Memory",
-              link: "/posts/react/learn_react/state_a_components_memory",
+              link: "/studies/react/learn_react/state_a_components_memory",
             },
             {
               text: "Render and Commit",
-              link: "/posts/react/learn_react/render_and_commit",
+              link: "/studies/react/learn_react/render_and_commit",
             },
             {
               text: "State as a Snapshot",
-              link: "/posts/react/learn_react/state_as_a_snapshot",
+              link: "/studies/react/learn_react/state_as_a_snapshot",
             },
             {
               text: "Queueing a Series of State Updates",
-              link: "/posts/react/learn_react/queueing_a_series_of_state_updates",
+              link: "/studies/react/learn_react/queueing_a_series_of_state_updates",
             },
             {
               text: "Updating Objects in State",
-              link: "/posts/react/learn_react/updating_objects_in_state",
+              link: "/studies/react/learn_react/updating_objects_in_state",
             },
             {
               text: "Updating Arrays in State",
-              link: "/posts/react/learn_react/updating_arrays_in_state",
+              link: "/studies/react/learn_react/updating_arrays_in_state",
             },
             {
               text: "Reacting to Input with State",
-              link: "/posts/react/learn_react/reacting_to_input_with_state",
+              link: "/studies/react/learn_react/reacting_to_input_with_state",
             },
             {
               text: "Choosing the State Structure",
-              link: "/posts/react/learn_react/choosing_the_state_structure",
+              link: "/studies/react/learn_react/choosing_the_state_structure",
             },
             {
               text: "Sharing State Between Components",
-              link: "/posts/react/learn_react/sharing_state_between_components",
+              link: "/studies/react/learn_react/sharing_state_between_components",
             },
             {
               text: "Preserving and Resetting State",
-              link: "/posts/react/learn_react/preserving_and_resetting_state",
+              link: "/studies/react/learn_react/preserving_and_resetting_state",
             },
             {
               text: "Extracting State Logic into a Reducer",
-              link: "/posts/react/learn_react/extracting_state_logic_into_a_reducer",
+              link: "/studies/react/learn_react/extracting_state_logic_into_a_reducer",
             },
             {
               text: "Passing Data Deeply w/ Context",
-              link: "/posts/react/learn_react/passing_data_deeply_with_context",
+              link: "/studies/react/learn_react/passing_data_deeply_with_context",
             },
             {
               text: "Scaling Up with Reducer and Context",
-              link: "/posts/react/learn_react/scaling_up_with_reducer_and_context",
+              link: "/studies/react/learn_react/scaling_up_with_reducer_and_context",
             },
             {
               text: "Referencing Values with Refs",
-              link: "/posts/react/learn_react/referencing_values_with_refs",
+              link: "/studies/react/learn_react/referencing_values_with_refs",
             },
             {
               text: "Manipulating the DOM w/ Refs",
-              link: "/posts/react/learn_react/manipulating_the_dom_with_refs",
+              link: "/studies/react/learn_react/manipulating_the_dom_with_refs",
             },
             {
               text: "Synchronizing w/ Effects",
-              link: "/posts/react/learn_react/synchronizing_with_effects",
+              link: "/studies/react/learn_react/synchronizing_with_effects",
             },
             {
               text: "You Might Not Need an Effect",
-              link: "/posts/react/learn_react/you_might_not_need_an_effect",
+              link: "/studies/react/learn_react/you_might_not_need_an_effect",
             },
             {
               text: "Lifecyle of Reactive Effects",
-              link: "/posts/react/learn_react/lifecycle_of_reactive_effects",
+              link: "/studies/react/learn_react/lifecycle_of_reactive_effects",
             },
             {
               text: "Seperating Events from Effects",
-              link: "/posts/react/learn_react/seperating_events_from_effects",
+              link: "/studies/react/learn_react/seperating_events_from_effects",
             },
             {
               text: "Removing Effect Dependencies",
-              link: "/posts/react/learn_react/removing_effect_dependencies",
+              link: "/studies/react/learn_react/removing_effect_dependencies",
             },
           ],
         },
@@ -759,70 +759,70 @@ export default defineConfig({
           items: [
             {
               text: "How to write performant React code: rules, patterns, do's and don'ts",
-              link: "/posts/react/developer_way_react/how_to_write_performant_react_code",
+              link: "/studies/react/developer_way_react/how_to_write_performant_react_code",
             },
             {
               text: "Why custom react hooks could destroy your app performance",
-              link: "/posts/react/developer_way_react/no_custom_hooks",
+              link: "/studies/react/developer_way_react/no_custom_hooks",
             },
             {
               text: "How to write performant React apps with Context",
-              link: "/posts/react/developer_way_react/performant_react_apps_with_context",
+              link: "/studies/react/developer_way_react/performant_react_apps_with_context",
             },
             {
               text: "React component as prop: the right way",
-              link: "/posts/react/developer_way_react/react_component_as_prop",
+              link: "/studies/react/developer_way_react/react_component_as_prop",
             },
             {
               text: "Higher-Order Components in React Hooks era",
-              link: "/posts/react/developer_way_react/hoc",
+              link: "/studies/react/developer_way_react/hoc",
             },
             {
               text: "Implementing advanced usePrevious hook with React useRef",
-              link: "/posts/react/developer_way_react/useprevious_hooks_with_useref",
+              link: "/studies/react/developer_way_react/useprevious_hooks_with_useref",
             },
             {
               text: "React components composition: how to get it right",
-              link: "/posts/react/developer_way_react/react_components_composition",
+              link: "/studies/react/developer_way_react/react_components_composition",
             },
             {
               text: "React key attribute: best practices for performant lists",
-              link: "/posts/react/developer_way_react/react_key_attributes",
+              link: "/studies/react/developer_way_react/react_key_attributes",
             },
             {
               text: "How to useMemo and useCallback: you can remove most of them",
-              link: "/posts/react/developer_way_react/usememo_and_usecallback",
+              link: "/studies/react/developer_way_react/usememo_and_usecallback",
             },
             {
               text: "The mystery of React Element, children, parents and re-renders",
-              link: "/posts/react/developer_way_react/mystery",
+              link: "/studies/react/developer_way_react/mystery",
             },
             {
               text: "How to fetch data in React with performance in mind",
-              link: "/posts/react/developer_way_react/fetch_data",
+              link: "/studies/react/developer_way_react/fetch_data",
             },
             {
               text: "Fetching data in React: the case of lost Promises",
-              link: "/posts/react/developer_way_react/fetch_data_lost_promises",
+              link: "/studies/react/developer_way_react/fetch_data_lost_promises",
             },
             {
               text: "How to debounce and throttle in React without losing your mind",
-              link: "/posts/react/developer_way_react/debounce_throttle",
+              link: "/studies/react/developer_way_react/debounce_throttle",
             },
             {
               text: "How to handle errors in React: full guide",
-              link: "/posts/react/developer_way_react/handle_errors",
+              link: "/studies/react/developer_way_react/handle_errors",
             },
           ],
         },
       ],
-      "/posts/security/": [
+      "/studies/security/": [
         {
           text: "XSRF",
           items: [
             {
               text: "XSRF",
-              link: "/posts/security/xsrf/xsrf",
+              link: "/studies/security/xsrf/xsrf",
             },
           ],
         },
@@ -831,7 +831,7 @@ export default defineConfig({
           items: [
             {
               text: "XSS",
-              link: "/posts/security/xss/xss",
+              link: "/studies/security/xss/xss",
             },
           ],
         },
@@ -840,7 +840,7 @@ export default defineConfig({
           items: [
             {
               text: "JWT",
-              link: "/posts/security/jwt/jwt",
+              link: "/studies/security/jwt/jwt",
             },
           ],
         },
@@ -849,7 +849,7 @@ export default defineConfig({
           items: [
             {
               text: "CORS",
-              link: "/posts/security/cors/cors",
+              link: "/studies/security/cors/cors",
             },
           ],
         },
@@ -858,42 +858,42 @@ export default defineConfig({
           items: [
             {
               text: "OAuth",
-              link: "/posts/security/oauth/oauth",
+              link: "/studies/security/oauth/oauth",
             },
           ],
         },
       ],
-      "/posts/typescript/": [
+      "/studies/typescript/": [
         {
           text: "Module",
           items: [
             {
               text: "Module Imports",
-              link: "/posts/typescript/module/module_imports",
+              link: "/studies/typescript/module/module_imports",
             },
             {
               text: "Module Resolution Strategies",
-              link: "/posts/typescript/module/module_resolution_strategies",
+              link: "/studies/typescript/module/module_resolution_strategies",
             },
             {
               text: "Module Standard",
-              link: "/posts/typescript/module/module_standard",
+              link: "/studies/typescript/module/module_standard",
             },
             {
               text: "Share Type Declaration",
-              link: "/posts/typescript/module/share_type_declaration",
+              link: "/studies/typescript/module/share_type_declaration",
             },
             {
               text: "Dynamic Imports",
-              link: "/posts/typescript/module/dynamic_imports",
+              link: "/studies/typescript/module/dynamic_imports",
             },
             {
               text: "Declare Keyword",
-              link: "/posts/typescript/module/declare_keyword",
+              link: "/studies/typescript/module/declare_keyword",
             },
             {
               text: "Ambient Modules",
-              link: "/posts/typescript/module/ambient_modules",
+              link: "/studies/typescript/module/ambient_modules",
             },
           ],
         },
@@ -902,7 +902,7 @@ export default defineConfig({
           items: [
             {
               text: "Namespace",
-              link: "/posts/typescript/namespace/namespace",
+              link: "/studies/typescript/namespace/namespace",
             },
           ],
         },
@@ -911,15 +911,15 @@ export default defineConfig({
           items: [
             {
               text: ".d.ts 파일",
-              link: "/posts/typescript/type_declaration/.d.ts_파일",
+              link: "/studies/typescript/type_declaration/.d.ts_파일",
             },
             {
               text: "Local Type Declaration",
-              link: "/posts/typescript/type_declaration/local_type_declaration",
+              link: "/studies/typescript/type_declaration/local_type_declaration",
             },
             {
               text: "Global Type Declaration",
-              link: "/posts/typescript/type_declaration/global_type_declaration",
+              link: "/studies/typescript/type_declaration/global_type_declaration",
             },
           ],
         },
@@ -928,7 +928,7 @@ export default defineConfig({
           items: [
             {
               text: "Type Assertion",
-              link: "/posts/typescript/type_assertion/type_assertion",
+              link: "/studies/typescript/type_assertion/type_assertion",
             },
           ],
         },
@@ -937,7 +937,7 @@ export default defineConfig({
           items: [
             {
               text: "Conditional Types",
-              link: "/posts/typescript/conditional_types/conditional_types",
+              link: "/studies/typescript/conditional_types/conditional_types",
             },
           ],
         },
@@ -946,7 +946,7 @@ export default defineConfig({
           items: [
             {
               text: "Mapped Types",
-              link: "/posts/typescript/mapped_types/mapped_types",
+              link: "/studies/typescript/mapped_types/mapped_types",
             },
           ],
         },
@@ -955,27 +955,27 @@ export default defineConfig({
           items: [
             {
               text: "Union Type",
-              link: "/posts/typescript/utility_types/union_type",
+              link: "/studies/typescript/utility_types/union_type",
             },
             {
               text: "Record Type",
-              link: "/posts/typescript/utility_types/record_type",
+              link: "/studies/typescript/utility_types/record_type",
             },
             {
               text: "Spread Syntax",
-              link: "/posts/typescript/utility_types/spread_syntax",
+              link: "/studies/typescript/utility_types/spread_syntax",
             },
             {
               text: "Recursion Type",
-              link: "/posts/typescript/utility_types/recursion_type",
+              link: "/studies/typescript/utility_types/recursion_type",
             },
             {
               text: "Template Literal Type",
-              link: "/posts/typescript/utility_types/template_literal_type",
+              link: "/studies/typescript/utility_types/template_literal_type",
             },
             {
               text: "Indexed Signature",
-              link: "/posts/typescript/utility_types/indexed_signature",
+              link: "/studies/typescript/utility_types/indexed_signature",
             },
           ],
         },
@@ -984,7 +984,7 @@ export default defineConfig({
           items: [
             {
               text: "Generic",
-              link: "/posts/typescript/generic/generic",
+              link: "/studies/typescript/generic/generic",
             },
           ],
         },
@@ -993,15 +993,15 @@ export default defineConfig({
           items: [
             {
               text: "Array Type",
-              link: "/posts/typescript/syntax_sugar/array_type",
+              link: "/studies/typescript/syntax_sugar/array_type",
             },
             {
               text: "Tuple Type",
-              link: "/posts/typescript/syntax_sugar/tuple_type",
+              link: "/studies/typescript/syntax_sugar/tuple_type",
             },
             {
               text: "Object Type",
-              link: "/posts/typescript/syntax_sugar/object_type",
+              link: "/studies/typescript/syntax_sugar/object_type",
             },
           ],
         },
@@ -1010,46 +1010,46 @@ export default defineConfig({
           items: [
             {
               text: "infer",
-              link: "/posts/typescript/keywords/infer",
+              link: "/studies/typescript/keywords/infer",
             },
             {
               text: "enum",
-              link: "/posts/typescript/keywords/enum",
+              link: "/studies/typescript/keywords/enum",
             },
           ],
         },
       ],
-      "/posts/vue3/": [
+      "/studies/vue3/": [
         {
           text: "Reactivity API",
           items: [
             {
               text: "Saving Code To Run Later",
-              link: "/posts/vue3/reactivity_api/saving_code_to_run_later",
+              link: "/studies/vue3/reactivity_api/saving_code_to_run_later",
             },
             {
               text: "Multiple Properties",
-              link: "/posts/vue3/reactivity_api/multiple_properties",
+              link: "/studies/vue3/reactivity_api/multiple_properties",
             },
             {
               text: "Multiple Reactive Objects",
-              link: "/posts/vue3/reactivity_api/multiple_reactive_objects",
+              link: "/studies/vue3/reactivity_api/multiple_reactive_objects",
             },
             {
               text: "Proxy, Reflect",
-              link: "/posts/vue3/reactivity_api/proxy_reflect",
+              link: "/studies/vue3/reactivity_api/proxy_reflect",
             },
             {
               text: "activeEffect",
-              link: "/posts/vue3/reactivity_api/active_effect",
+              link: "/studies/vue3/reactivity_api/active_effect",
             },
             {
               text: "ref",
-              link: "/posts/vue3/reactivity_api/ref",
+              link: "/studies/vue3/reactivity_api/ref",
             },
             {
               text: "computed",
-              link: "/posts/vue3/reactivity_api/computed",
+              link: "/studies/vue3/reactivity_api/computed",
             },
           ],
         },
@@ -1058,15 +1058,15 @@ export default defineConfig({
           items: [
             {
               text: "Virtual DOM",
-              link: "/posts/vue3/rendering_mechanism/virtual_dom",
+              link: "/studies/vue3/rendering_mechanism/virtual_dom",
             },
             {
               text: "Render Pipeline",
-              link: "/posts/vue3/rendering_mechanism/render_pipeline",
+              link: "/studies/vue3/rendering_mechanism/render_pipeline",
             },
             {
               text: "Compiler-Informed VDOM",
-              link: "/posts/vue3/rendering_mechanism/compiler_informed_virtual_dom",
+              link: "/studies/vue3/rendering_mechanism/compiler_informed_virtual_dom",
             },
           ],
         },
@@ -1075,7 +1075,7 @@ export default defineConfig({
           items: [
             {
               text: "Component Lifecycle",
-              link: "/posts/vue3/component_lifecycle/component_lifecycle",
+              link: "/studies/vue3/component_lifecycle/component_lifecycle",
             },
           ],
         },
@@ -1084,30 +1084,30 @@ export default defineConfig({
           items: [
             {
               text: "Option Object Parameter",
-              link: "/posts/vue3/composable/option_object_parameter",
+              link: "/studies/vue3/composable/option_object_parameter",
             },
             {
               text: "Flexible arguments",
-              link: "/posts/vue3/composable/flexible_arguments",
+              link: "/studies/vue3/composable/flexible_arguments",
             },
             {
               text: "Async Without Await",
-              link: "/posts/vue3/composable/async_without_await",
+              link: "/studies/vue3/composable/async_without_await",
             },
           ],
         },
       ],
-      "/posts/web_용어정리/": [
+      "/studies/web_용어정리/": [
         {
           text: "Domain",
           items: [
             {
               text: "Domain",
-              link: "/posts/web_용어정리/domain/domain",
+              link: "/studies/web_용어정리/domain/domain",
             },
             {
               text: "Page vs. Site",
-              link: "/posts/web_용어정리/domain/page_vs_site",
+              link: "/studies/web_용어정리/domain/page_vs_site",
             },
           ],
         },
@@ -1116,19 +1116,19 @@ export default defineConfig({
           items: [
             {
               text: "URI",
-              link: "/posts/web_용어정리/uri/uri",
+              link: "/studies/web_용어정리/uri/uri",
             },
             {
               text: "URL",
-              link: "/posts/web_용어정리/uri/url",
+              link: "/studies/web_용어정리/uri/url",
             },
             {
               text: "URN",
-              link: "/posts/web_용어정리/uri/urn",
+              link: "/studies/web_용어정리/uri/urn",
             },
             {
               text: "Encoding",
-              link: "/posts/web_용어정리/uri/encoding",
+              link: "/studies/web_용어정리/uri/encoding",
             },
           ],
         },
@@ -1137,7 +1137,7 @@ export default defineConfig({
           items: [
             {
               text: "Web Server",
-              link: "/posts/web_용어정리/web_server/web_server",
+              link: "/studies/web_용어정리/web_server/web_server",
             },
           ],
         },
@@ -1146,7 +1146,7 @@ export default defineConfig({
           items: [
             {
               text: "Search Engine",
-              link: "/posts/web_용어정리/search_engine/search_engine",
+              link: "/studies/web_용어정리/search_engine/search_engine",
             },
           ],
         },
@@ -1155,7 +1155,7 @@ export default defineConfig({
           items: [
             {
               text: "HyperLink",
-              link: "/posts/web_용어정리/hyperlink/hyperlink",
+              link: "/studies/web_용어정리/hyperlink/hyperlink",
             },
           ],
         },
@@ -1164,7 +1164,7 @@ export default defineConfig({
           items: [
             {
               text: "Browsing Context",
-              link: "/posts/web_용어정리/browsing_context/browsing_context",
+              link: "/studies/web_용어정리/browsing_context/browsing_context",
             },
           ],
         },
@@ -1173,7 +1173,7 @@ export default defineConfig({
           items: [
             {
               text: "User Agent",
-              link: "/posts/web_용어정리/user_agent/user_agent",
+              link: "/studies/web_용어정리/user_agent/user_agent",
             },
           ],
         },
@@ -1182,7 +1182,7 @@ export default defineConfig({
           items: [
             {
               text: "API",
-              link: "/posts/web_용어정리/api/api",
+              link: "/studies/web_용어정리/api/api",
             },
           ],
         },
@@ -1575,63 +1575,63 @@ export default defineConfig({
     },
     nav: [
       {
-        text: "Posts",
+        text: "Studies",
         items: [
           {
             text: "Architecture",
-            link: "/posts/architecture/",
+            link: "/studies/architecture/",
           },
           {
             text: "Browser",
-            link: "/posts/browser/",
+            link: "/studies/browser/",
           },
           {
             text: "Clean Code",
-            link: "/posts/clean_code/",
+            link: "/studies/clean_code/",
           },
           {
             text: "FrontEnd",
-            link: "/posts/frontend/",
+            link: "/studies/frontend/",
           },
           {
             text: "Git",
-            link: "/posts/git/",
+            link: "/studies/git/",
           },
           {
             text: "HTTP",
-            link: "/posts/http/",
+            link: "/studies/http/",
           },
           {
             text: "Javascript",
-            link: "/posts/javascript/",
+            link: "/studies/javascript/",
           },
           {
             text: "Node",
-            link: "/posts/node/",
+            link: "/studies/node/",
           },
           {
             text: "React",
-            link: "/posts/react/",
+            link: "/studies/react/",
           },
           {
             text: "Security",
-            link: "/posts/security/",
+            link: "/studies/security/",
           },
           {
             text: "Typescript",
-            link: "/posts/typescript/",
+            link: "/studies/typescript/",
           },
           // {
           //   text: "Vite",
-          //   link: "/posts/vite/",
+          //   link: "/studies/vite/",
           // },
           {
             text: "Vue3",
-            link: "/posts/vue3/",
+            link: "/studies/vue3/",
           },
           {
             text: "Web 용어정리",
-            link: "/posts/web_용어정리/",
+            link: "/studies/web_용어정리/",
           },
         ],
       },
