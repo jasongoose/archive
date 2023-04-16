@@ -35,3 +35,14 @@ const hashTable = () => {
   };
 };
 ```
+
+:::warning
+Map에 없던 key를 생성하면서 value를 할당할 때는 아래와 같이 괄호로 `??` 연산자 우선순위를 높여야 합니다.
+
+```js
+const m = new Map();
+// ...
+m.set(key, (m.get(key) ?? DEFALUT_VALUE) + ...)
+```
+
+:::

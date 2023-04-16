@@ -22,7 +22,7 @@ FP에서는 원본 객체를 수정하는 대신 수정된 버전의 객체를 �
 
 ### Recursion은 선택적이다.
 
-FP에서 순회할 때는 recursion만 가능하지만, JS에서 [iterable](../../../posts/javascript/loop/protocols.md#iterable)들을 순회할 때는 for-loop, while 문으로도 가능합니다.
+FP에서 순회할 때는 recursion만 가능하지만, JS에서 [iterable](../../../studies/javascript/loop/protocols.md#iterable)들을 순회할 때는 for-loop, while 문으로도 가능합니다.
 
 ## 그래도...
 
