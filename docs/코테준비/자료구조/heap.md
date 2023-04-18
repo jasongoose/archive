@@ -50,8 +50,6 @@ const minHeap = () => {
     [arr[x], arr[y]] = [arr[y], arr[x]];
   };
 
-  const getRoot = () => arr[0];
-
   const heapifyUp = () => {
     let p = arr.length - 1;
     while (hasParent(p) && arr[p] < getParent(p)) {
@@ -76,9 +74,15 @@ const minHeap = () => {
     }
   };
 
+  // root 제거
   const poll = () => {
-    // root 제거
-    if (arr.length <= 1) return;
+    if (arr.length === 0) {
+      return;
+    }
+    if (arr.length === 1) {
+      arr.pop();
+      return;
+    }
     arr[0] = arr.pop();
     heapifyDown();
   };
@@ -89,7 +93,6 @@ const minHeap = () => {
   };
 
   return {
-    getRoot,
     poll,
     add,
   };
