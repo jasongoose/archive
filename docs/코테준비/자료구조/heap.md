@@ -31,46 +31,32 @@ heap은 트리형태를 가지지만 root를 index 0을 가지는 1차원 배열
 ![Heap Array](../image/heap_array.png)
 
 ```js
-const minHeap = () => {
+const heap = (comFn) => {
   let arr = [];
 
-  const getLeftChildIndex = (index) => index * 2 + 1;
-  const getRightChildIndex = (index) => index * 2 + 2;
+  const getLeftIndex = (index) => index * 2 + 1;
+  const getRightIndex = (index) => index * 2 + 2;
   const getParentIndex = (index) => Math.floor((index - 1) / 2);
 
-  const hasLeftChild = (index) => getLeftChildIndex(index) < arr.length;
-  const hasRightChild = (index) => getRightChildIndex(index) < arr.length;
+  const hasLeft = (index) => getLeftIndex(index) < arr.length;
+  const hasRight = (index) => getRightIndex(index) < arr.length;
   const hasParent = (index) => 0 <= getParentIndex(index);
-
-  const getLeftChild = (index) => arr[getLeftChildIndex(index)];
-  const getRightChild = (index) => arr[getRightChildIndex(index)];
-  const getParent = (index) => arr[getParentIndex(index)];
 
   const swap = (x, y) => {
     [arr[x], arr[y]] = [arr[y], arr[x]];
   };
 
-  const heapifyUp = () => {
+  const getRoot = () => arr[0];
+
+  const isEmpty = () => !arr.length;
+
+  const add = (data) => {
+    arr.push(data);
+
     let p = arr.length - 1;
-    while (hasParent(p) && arr[p] < getParent(p)) {
+    while (hasParent(p) && !compFn(arr[getParentIndex(p)], arr[p])) {
       swap(p, getParentIndex(p));
       p = getParentIndex(p);
-    }
-  };
-
-  const heapifyDown = () => {
-    let p = 0;
-    while (hasLeftChild(p)) {
-      // leftChild가 없다면 rightChild도 없게 됩니다.
-      let to = getLeftChildIndex(p);
-      if (hasRightChild(p) && getRightChild(p) < getLeftChild(p)) {
-        to = getRightChildIndex(p);
-      }
-      if (arr[p] < arr[to]) {
-        break;
-      }
-      swap(p, to);
-      p = to;
     }
   };
 
@@ -84,17 +70,32 @@ const minHeap = () => {
       return;
     }
     arr[0] = arr.pop();
-    heapifyDown();
-  };
 
-  const add = (data) => {
-    arr.push(data);
-    heapifyUp();
+    let p = 0;
+    while (hasLeft(p)) {
+      // leftChild가 없다면 rightChild도 없게 됩니다.
+      let to = getLeftIndex(p);
+      if (hasRight(p) && compFn(arr[getRightIndex(p)], arr[to])) {
+        to = getRightIndex(p);
+      }
+      if (compFn(arr[p], arr[to])) {
+        break;
+      }
+      swap(p, to);
+      p = to;
+    }
   };
 
   return {
+    getRoot,
+    isEmpty,
     poll,
     add,
   };
 };
+```
+
+```js
+const { ... } = heap((a, b) => a < b); // min-heap
+const { ... } = heap((a, b) => a > b); // max-heap
 ```
