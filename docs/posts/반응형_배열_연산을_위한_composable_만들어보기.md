@@ -13,7 +13,7 @@
 - 동일한 타입의 다른 배열과의 교집합 요소들만 필터링
 - ...
 
-[Vue에서는 반응형 배열(reactive array)에 의한 trigger를 일으키는 배열 메서드들이 한정](https://vuejs.org/guide/essentials/list.html#array-change-detection)되어 있어서 위 작업들의 개별 구현방식도 반복되는 특징이 있습니다.
+[Vue에서는 반응형 배열의 trigger를 일으키는 메서드들이 한정](https://vuejs.org/guide/essentials/list.html#array-change-detection)되어 있어서 위 작업들의 개별 구현방식도 반복되는 특징이 있습니다.
 
 그래서 활용 빈도수가 높다는 점과 중복로직이 생길 수 있다는 점을 고려하여 객체 타입 `T` 요소를 가지는 배열에 대한 연산들을 정의한 composable인 `useObjectArrayUtils`를 만들었습니다.
 
@@ -32,10 +32,10 @@ export default <T, C extends keyof T = keyof T>(reactiveArr: Ref<T[]>) => {
 };
 ```
 
-이 함수는 [generic type](../studies/typescript/generic/generic.md) 인자로 `T`와 `C`를 받고, 연산대상이 되는 반응형 배열을 `reactiveArr` 인자로 받습니다.
+이 함수는 generic 타입으로 `T`와 `C`를 받고, 연산대상이 되는 반응형 배열을 `reactiveArr` 인자로 받습니다.
 
 - `T` : `reactiveArr`의 요소 타입을 결정합니다.
-- `C` : `reactiveArr`의 요소 ID이자 검색조건 역할을 가진 속성들을 [union type](../studies/typescript/utility_types/union_type.md)으로 지정합니다.
+- `C` : `reactiveArr`의 요소 ID이자 검색조건 역할을 가진 속성들을 union 타입으로 지정합니다.
 
 ## isMatchedWith / isDismatchedWith
 
@@ -101,7 +101,7 @@ function replaceWith(cond: Pick<T, C>, item: T) {
 
 ### filterOnly / filterExcept
 
-특정 조건을 만족 또는 불만족하는 요소들만 필터링한 [shallow-copy](../books/%EC%BD%94%EC%96%B4_%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/%EB%8D%B0%EC%9D%B4%ED%84%B0_%ED%83%80%EC%9E%85/%EB%B3%80%EC%88%98%EC%84%A0%EC%96%B8%EA%B3%BC_%EB%8D%B0%EC%9D%B4%ED%84%B0_%ED%95%A0%EB%8B%B9.md#shallow-copy-deep-copy) 배열을 반환하는 함수입니다.
+특정 조건을 만족 또는 불만족하는 요소들만 필터링한 shallow-copy 배열을 반환하는 함수입니다.
 
 ```ts
 function filterOnly(cond: Pick<T, C>) {
