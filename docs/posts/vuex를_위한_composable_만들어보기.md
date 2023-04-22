@@ -47,15 +47,15 @@ const { state, dispatch, mutation, getters } = useGenericStore(
 
 const seqs = computed(() => state<SeqsType>("seqs"));
 
-const oddSeqs = getters<SeqsType>("getOddSeqs");
+const oddSeqs = computed(() => getters<SeqsType>("getEvenSeqs"));
 
-const updateBeta = () => {
+const updateFn = () => {
   // ...
-  mutation<SeqsType>("setSeqs", sth);
+  mutation<SeqsType>("setSeqs", data);
 };
 
 const fetchAlpha = async () => {
-  await dispatch<ResponseType, ParamsOrDataType>("getSthApi");
+  await dispatch<ResponseType, ParamsOrDataType>("getSeqsApi");
   // ...
 };
 ```
@@ -96,7 +96,7 @@ const SELECTED_GROUP_SEQ = ctlgCommState<string | null>("selectedGroupSeq");
 
 ## 대안
 
-위 문제점들을 해결하기 위해서 다음과 같은 방향으로 `useGenericStore`를 수정해보았습니다.
+위 문제점들을 해결하기 위해서 다음과 같은 방향으로 새로운 composable인 `useVuex`를 만들어보았습니다.
 
 1. 스토어 모듈 단위가 아닌 option별로 접근할 수 있는 4개의 함수들을 정의한다.
 2. 모든 모듈에 대해서 적용할 수 있도록 전달할 인자를 구성한다.
@@ -461,11 +461,11 @@ const useVuex = () => {
 export default useVuex;
 ```
 
-## 검토
+## 테스트 결과
 
-state의 depth별 이름과 accessor 이름은 IDE(IntelliJ)에서는 추론이 되는데, 나머지 getters, mutations, actions는 안되네요😅
+state의 depth별 이름과 accessor 이름은 IDE(IntelliJ)에서는 추론이 되는데 나머지 getters, mutations, actions는 안되네요😅
 
-올바른 accessor의 이름을 넣는다면 반환되는 값이나 함수의 타입이 제대로 나오지만 많이 아쉽군요.
+올바른 accessor의 이름을 넣는다면 반환되는 값이나 함수의 타입이 제대로 나오지만 많이 아쉽군요;
 
 ![useNewStore Test](./images/useNewStore_test.gif)
 
