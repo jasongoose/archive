@@ -2,11 +2,11 @@
 
 ## 2022년
 
+[`v-click-outside` directive 만들어보기](./v_click_outside_directive_%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0.md)
+
 [Vuex를 위한 composable 만들어보기](./vuex%EB%A5%BC_%EC%9C%84%ED%95%9C_composable_%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0.md)
 
 [반응형 배열 연산을 위한 composable 만들어보기](./%EB%B0%98%EC%9D%91%ED%98%95_%EB%B0%B0%EC%97%B4_%EC%97%B0%EC%82%B0%EC%9D%84_%EC%9C%84%ED%95%9C_composable_%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0.md)
-
-[`v-click-outside` directive 만들어보기](./v_click_outside_directive_%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0.md)
 
 [개발인생 첫 리팩토링](./%EA%B0%9C%EB%B0%9C%EC%9D%B8%EC%83%9D_%EC%B2%AB_%EB%A6%AC%ED%8C%A9%ED%86%A0%EB%A7%81.md)
 
