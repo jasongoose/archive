@@ -2,9 +2,9 @@
 
 ## 배경
 
-이전 담당했던 Vue 프로젝트에서 `useGenericStore`라는 composable을 사용했는데, 특정 [Vuex3](https://v3.vuex.vuejs.org/) 스토어 모듈의 option들(state, getter, mutation, dispatch)을 사용하기 위한 함수들을 제공합니다.
+이전에 담당했던 Vue 프로젝트에서 `useGenericStore`라는 composable을 사용했는데, 특정 [Vuex](https://v3.vuex.vuejs.org/) 스토어 모듈의 option들(state, getter, mutation, dispatch)을 사용하기 위한 함수들을 제공합니다.
 
-[다른 Vuex helper](https://github.com/ambit-tsai/vue2-helpers)들과는 달리 option들의 인자 타입과 반환값 타입을 generic 타입으로 직접 지정할 수 있었는데, 이는 타입추론에 의한 자동완성과 디버깅 용이성을 제공하여 스토어 모듈들을 안전하게 사용할 수 있도록 도와주었습니다.
+[다른 Vuex helper](https://github.com/ambit-tsai/vue2-helpers)들과는 달리 option들의 인자 타입과 반환값 타입을 generic으로 직접 지정할 수 있었는데, 이는 타입추론에 의한 자동완성과 디버깅 용이성을 제공하여 스토어 모듈들을 안전하게 사용할 수 있도록 도와주었습니다.
 
 가령 아래와 같은 스토어 모듈이 있다면...
 
@@ -24,7 +24,7 @@ export default {
     // ...
     setSeqs: (state, data) => {
         state.seqs = data;
-    }
+    },
   }
   dispatch: {
     // ...
@@ -47,20 +47,18 @@ const { state, dispatch, mutation, getters } = useGenericStore(
 
 const seqs = computed(() => state<SeqsType>("seqs"));
 
-const oddSeqs = getters<SeqsType>("getOddSeqs");
+const oddSeqs = computed(() => getters<SeqsType>("getEvenSeqs"));
 
-const updateBeta = () => {
+const updateFn = () => {
   // ...
-  mutation<SeqsType>("setSeqs", sth);
+  mutation<SeqsType>("setSeqs", data);
 };
 
 const fetchAlpha = async () => {
-  await dispatch<ResponseType, ParamsOrDataType>("getSthApi");
+  await dispatch<ResponseType, ParamsOrDataType>("getSeqsApi");
   // ...
 };
 ```
-
-## 문제점들
 
 이러한 순기능에도 불구하고 저는 3가지의 문제점들이 있다고 생각했습니다.
 
@@ -94,9 +92,7 @@ const SELECTED_PRODUCT_LIST = ctlgCommState<IProduct[]>("selectedProductList");
 const SELECTED_GROUP_SEQ = ctlgCommState<string | null>("selectedGroupSeq");
 ```
 
-## 대안
-
-위 문제점들을 해결하기 위해서 다음과 같은 방향으로 `useGenericStore`를 수정해보았습니다.
+위 문제점들을 해결하기 위해서 다음과 같은 방향으로 새로운 composable인 `useVuex`를 만들었습니다.
 
 1. 스토어 모듈 단위가 아닌 option별로 접근할 수 있는 4개의 함수들을 정의한다.
 2. 모든 모듈에 대해서 적용할 수 있도록 전달할 인자를 구성한다.
@@ -106,9 +102,9 @@ const SELECTED_GROUP_SEQ = ctlgCommState<string | null>("selectedGroupSeq");
 
 임의의 스토어 모듈에 대해 적용할 수 있도록 모듈의 구조(타입)를 통일시켰습니다.
 
-모듈마다 구성하는 option 객체들은 각자 다른 속성과 메서드를 가지지만 모듈 자체는 일관된 구조를 가져야 타입추론이 가능해지고 함수의 이름, 인자 타입, 반환값 타입 충돌에 의한 버그를 개발하는 중에 해결할 수 있습니다.
+모듈마다 구성하는 option 객체들은 각자 다른 속성과 메서드를 가지지만 모듈 자체가 일관된 구조를 가져야 타입추론이 가능해지면서 함수의 이름, 인자 타입, 반환값 타입 충돌에 의한 버그를 개발하는 중에 해결할 수 있습니다.
 
-기존의 스토어 모듈들을 살펴보면 Vuex의 `Module` 타입이거나 `IStoreModule`이라는 전역타입으로 지정되어 있어 뒤섞여 있는 상태였습니다.
+기존의 스토어 모듈들을 살펴보면 Vuex의 `Module` 또는 `IStoreModule`이라는 전역타입으로 뒤섞여 있는 상태였습니다.
 
 ```ts
 export default <Module<IState, any>>{
@@ -146,7 +142,7 @@ export default <IStoreModule<IState>>{
 
 이를 개선하기 위해서 모든 스토어 모듈에 적용할 generic 타입인 `StoreModule`을 정의했습니다.
 
-여기서 state를 제외한 나머지 option들의 타입은 내부 메서드들의 인자를 맞추기 위해서 Vuex에서 제공하는 `GetterTree`, `MutationTree`, `ActionTree`을 확장하여 적용했고, 특정 action 내에서 사용할 mutation들을 제한하기 위해서 `AugmentedActionContext` 타입을 정의했습니다.
+여기서 state를 제외한 나머지 option들의 타입은 Vuex에서 제공하는 `GetterTree`, `MutationTree`, `ActionTree`을 확장하여 적용했고, 특정 action 내에서 사용할 mutation들을 제한하기 위한 `AugmentedActionContext` 타입을 정의했습니다.
 
 ```ts
 // @/newStore/modules/types.d.ts
@@ -162,7 +158,7 @@ export type AugmentedGetterTree<S, G> = GetterTree<S, S> & G;
 export type AugmentedMutationTree<S, M> = MutationTree<S> & M;
 export type AugmentedActionTree<S, A> = ActionTree<S, S> & A;
 
-export type StoreModules<S, G, M, A> = Omit<
+export type StoreModule<S, G, M, A> = Omit<
   Module,
   "getters" | "mutations" | "actions"
 > & {
@@ -373,7 +369,7 @@ export default {
 
 ## composable 구현
 
-접근하려는 특정 모듈의 depth별 이름과 option의 종류, 인자와 반환값 타입을 자동완성하기 위해서 아래와 같이 일련의 타입들을 정의했습니다.
+접근하려는 특정 스토어 모듈의 depth별 이름과 option의 종류, 인자와 반환값 타입을 자동완성하기 위해서 아래와 같이 일련의 타입들을 정의했습니다.
 
 ```ts
 // @/composables/useVuex/types.d.ts
@@ -392,7 +388,7 @@ type Module<
 
 type Accessor<
   D1 extends Depth1,
-  D2 extends Depth2,
+  D2 extends Depth2<D1>,
   O extends Options
 > = keyof Module<D1, D2>[O];
 
@@ -461,14 +457,14 @@ const useVuex = () => {
 export default useVuex;
 ```
 
-## 검토
+## 테스트 결과
 
-state의 depth별 이름과 accessor 이름은 IDE(IntelliJ)에서는 추론이 되는데, 나머지 getters, mutations, actions는 안되네요😅
+state의 depth별 이름과 accessor 이름은 IDE(IntelliJ)에서는 추론이 되는데 나머지 getters, mutations, actions는 안되네요😅
 
-올바른 accessor의 이름을 넣는다면 반환되는 값이나 함수의 타입이 제대로 나오지만 많이 아쉽군요.
+올바른 accessor의 이름을 넣는다면 반환되는 값이나 함수의 타입이 제대로 나오지만 많이 아쉽군요;
 
 ![useNewStore Test](./images/useNewStore_test.gif)
 
 ## 참고자료
 
-https://dev.to/3vilarthas/vuex-typescript-m4j
+[Vuex + TypeScript](https://dev.to/3vilarthas/vuex-typescript-m4j)

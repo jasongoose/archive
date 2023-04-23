@@ -1,6 +1,6 @@
 # 반응형 배열 연산을 위한 composable 만들어보기
 
-개발을 하다보면 배열을 활용하는 작업들이 다양합니다.
+배열을 활용하는 작업들은 다양합니다.
 
 - 배열 요소 추가
 - 배열 요소 수정
@@ -13,9 +13,9 @@
 - 동일한 타입의 다른 배열과의 교집합 요소들만 필터링
 - ...
 
-[Vue에서는 반응형 배열의 trigger를 일으키는 메서드들이 한정](https://vuejs.org/guide/essentials/list.html#array-change-detection)되어 있어서 위 작업들의 개별 구현방식도 반복되는 특징이 있습니다.
+[Vue에서는 반응형 배열의 trigger를 일으키는 메서드들이 한정](https://vuejs.org/guide/essentials/list.html#array-change-detection)되어 있어서 위 작업들의 개별 구현방식이 반복되는 특징이 있습니다.
 
-그래서 활용 빈도수가 높다는 점과 중복로직이 생길 수 있다는 점을 고려하여 객체 타입 `T` 요소를 가지는 배열에 대한 연산들을 정의한 composable인 `useObjectArrayUtils`를 만들었습니다.
+그래서 활용 빈도수가 높다는 점과 중복로직이 생길 수 있다는 점을 고려하여 타입 `T`인 객체 요소를 가지는 배열에 대한 연산들을 정의한 composable인 `useObjectArrayUtils`를 만들었습니다.
 
 ## 헤더
 
@@ -32,7 +32,7 @@ export default <T, C extends keyof T = keyof T>(reactiveArr: Ref<T[]>) => {
 };
 ```
 
-이 함수는 generic 타입으로 `T`와 `C`를 받고, 연산대상이 되는 반응형 배열을 `reactiveArr` 인자로 받습니다.
+이 함수는 generic 인자로 `T`와 `C`를 받고, 연산대상이 되는 반응형 배열을 `reactiveArr` 인자로 받습니다.
 
 - `T` : `reactiveArr`의 요소 타입을 결정합니다.
 - `C` : `reactiveArr`의 요소 ID이자 검색조건 역할을 가진 속성들을 union 타입으로 지정합니다.
@@ -68,7 +68,7 @@ function isDismatchedWith(cond: Pick<T, C>) {
 ```
 
 :::info
-`Pick<T, C>` 타입을 가지는 `cond`는 타입 `T`를 가지는 요소 `el`이 가져야할 key와 value들의 정보를 가진 객체입니다.
+`Pick<T, C>` 타입을 가지는 매개변수 `cond`는 타입 `T`를 가지는 요소 `el`이 가져야할 key와 value들의 정보를 가진 객체입니다.
 :::
 
 ## isIncluded / isExcluded
@@ -94,8 +94,7 @@ function isExcluded(cond: Pick<T, C>) {
 ```ts
 function replaceWith(cond: Pick<T, C>, item: T) {
   const idx = reactiveArr.value.findIndex(isMatchedWith(cond));
-
-  !~idx && reactiveArr.value.splice(idx, 1, item);
+  ~idx & reactiveArr.value.splice(idx, 1, item);
 }
 ```
 
@@ -122,7 +121,7 @@ function filterExcept(cond: Pick<T, C>) {
 ```ts
 function removeOnly(cond: Pick<T, C>) {
   const idx = reactiveArr.value.findIndex(isMatchedWith(cond));
-  !~idx && reactiveArr.value.splice(idx, 1);
+  ~idx && reactiveArr.value.splice(idx, 1);
 }
 ```
 
