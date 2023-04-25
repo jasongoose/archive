@@ -2,8 +2,6 @@
 
 ## 구조
 
-<Image src="/image/web_용어정리/domain_구조.png" alt="Domain 구조" />
-
 ![Domain 구조](../image/domain_%EA%B5%AC%EC%A1%B0.png)
 
 도메인은 서버 주소의 가독성을 높이기 위해서 사용하는 주소지정 방식으로, 보통 오른쪽에서 왼쪽 방향으로 읽습니다.
