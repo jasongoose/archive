@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "Archive",
-  base: "/portfolio-vitepress/",
+  base: "/archive/",
   themeConfig: {
     socialLinks: [{ icon: "github", link: "https://github.com/jasongoose" }],
     sidebar: {
