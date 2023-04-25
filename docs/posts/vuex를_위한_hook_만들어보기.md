@@ -1,8 +1,8 @@
-# Vuex를 위한 composable 만들어보기
+# Vuex를 위한 hook 만들어보기
 
 ## 배경
 
-이전에 담당했던 Vue 프로젝트에서 `useGenericStore`라는 composable을 사용했는데, 특정 [Vuex](https://v3.vuex.vuejs.org/) 스토어 모듈의 option들(state, getter, mutation, dispatch)을 사용하기 위한 함수들을 제공합니다.
+이전에 담당했던 Vue 프로젝트에서 `useGenericStore`라는 hook을 사용했는데, 특정 [Vuex](https://v3.vuex.vuejs.org/) 스토어 모듈의 option들(state, getter, mutation, dispatch)을 사용하기 위한 함수들을 제공합니다.
 
 [다른 Vuex helper](https://github.com/ambit-tsai/vue2-helpers)들과는 달리 option들의 인자 타입과 반환값 타입을 generic으로 직접 지정할 수 있었는데, 이는 타입추론에 의한 자동완성과 디버깅 용이성을 제공하여 스토어 모듈들을 안전하게 사용할 수 있도록 도와주었습니다.
 
@@ -36,7 +36,7 @@ export default {
 };
 ```
 
-컴포넌트나 다른 composable 파일에서 다음과 같이 사용할 수 있습니다.
+컴포넌트나 다른 hook 파일에서 다음과 같이 사용할 수 있습니다.
 
 ```ts
 // 아래 두 인자 depth1, depth2는 내부 로직에 의해서 자동완성이 가능합니다.
@@ -92,7 +92,7 @@ const SELECTED_PRODUCT_LIST = ctlgCommState<IProduct[]>("selectedProductList");
 const SELECTED_GROUP_SEQ = ctlgCommState<string | null>("selectedGroupSeq");
 ```
 
-위 문제점들을 해결하기 위해서 다음과 같은 방향으로 새로운 composable인 `useVuex`를 만들었습니다.
+위 문제점들을 해결하기 위해서 다음과 같은 방향으로 새로운 hook인 `useVuex`를 만들었습니다.
 
 1. 스토어 모듈 단위가 아닌 option별로 접근할 수 있는 4개의 함수들을 정의한다.
 2. 모든 모듈에 대해서 적용할 수 있도록 전달할 인자를 구성한다.
@@ -367,12 +367,12 @@ export default {
 };
 ```
 
-## composable 구현
+## hook 구현
 
 접근하려는 특정 스토어 모듈의 depth별 이름과 option의 종류, 인자와 반환값 타입을 자동완성하기 위해서 아래와 같이 일련의 타입들을 정의했습니다.
 
 ```ts
-// @/composables/useVuex/types.d.ts
+// @/hooks/useVuex/types.d.ts
 import store from "@/newStore/modules";
 
 type Store = typeof store;
@@ -407,12 +407,12 @@ export type OptionCurry<O extends Options> = <D1 extends Depth1>(
     ) => ReturnType<Module<D1, D2>[O][A]>;
 ```
 
-이제 정의한 타입들을 기반으로 composable인 `useVuex`을 구현하면 됩니다.
+이제 정의한 타입들을 기반으로 hook인 `useVuex`을 구현하면 됩니다.
 
 ```ts
-// @/composables/useVuex/index.ts
+// @/hooks/useVuex/index.ts
 import { getCurrentInstance } from "@vue/composition-api";
-import { OptionCurry } from "@/composables/useVuex/types";
+import { OptionCurry } from "@/hooks/useVuex/types";
 
 const useVuex = () => {
   const inst = getCurrentInstance();

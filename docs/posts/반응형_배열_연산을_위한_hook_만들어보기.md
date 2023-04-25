@@ -1,4 +1,4 @@
-# 반응형 배열 연산을 위한 composable 만들어보기
+# 반응형 배열 연산을 위한 hook 만들어보기
 
 배열을 활용하는 작업들은 다양합니다.
 
@@ -15,11 +15,11 @@
 
 [Vue에서는 반응형 배열의 trigger를 일으키는 메서드들이 한정](https://vuejs.org/guide/essentials/list.html#array-change-detection)되어 있어서 위 작업들의 개별 구현방식이 반복되는 특징이 있습니다.
 
-그래서 활용 빈도수가 높다는 점과 중복로직이 생길 수 있다는 점을 고려하여 타입 `T`인 객체 요소를 가지는 배열에 대한 연산들을 정의한 composable인 `useObjectArrayUtils`를 만들었습니다.
+그래서 활용 빈도수가 높다는 점과 중복로직이 생길 수 있다는 점을 고려하여 타입 `T`인 객체 요소를 가지는 배열에 대한 연산들을 정의한 hook인 `useObjectArrayUtils`를 만들었습니다.
 
 ## 헤더
 
-composable의 헤더 부분은 다음과 같습니다.
+hook의 헤더 부분은 다음과 같습니다.
 
 ```ts
 // useObejctArrayUtils.ts

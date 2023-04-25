@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "Portfolio Vitepress",
+  title: "Archive",
   base: "/portfolio-vitepress/",
   themeConfig: {
     socialLinks: [{ icon: "github", link: "https://github.com/jasongoose" }],
