@@ -1569,6 +1569,10 @@ export default defineConfig({
               text: "Permutation, Combination",
               link: "/코테준비/알고리즘/permutation_combination",
             },
+            {
+              text: "소수",
+              link: "/코테준비/알고리즘/소수",
+            },
           ],
         },
       ],
