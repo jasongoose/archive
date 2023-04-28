@@ -1566,8 +1566,12 @@ export default defineConfig({
               link: "/코테준비/알고리즘/bit_manipulation",
             },
             {
-              text: "Permutation, Combination",
-              link: "/코테준비/알고리즘/permutation_combination",
+              text: "순열, 조합",
+              link: "/코테준비/알고리즘/순열_조합",
+            },
+            {
+              text: "소수",
+              link: "/코테준비/알고리즘/소수",
             },
           ],
         },
