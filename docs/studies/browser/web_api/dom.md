@@ -8,6 +8,10 @@ DOM 트리는 웹 페이지를 구성하는 node들 사이의 포함관계를 �
 
 사용자 또는 외부 원인에 의해 node로부터 어떤 event가 발생하면 target 요소 뿐만 아니라 상위, 하위 node에도 동일한 event가 전달되는데 event가 흐르는 방향은 다음과 같이 3가지가 있습니다.
 
+:::info
+이와 같이 임의의 DOM node에서 발생한 이벤트를 상위 node에서도 처리할 수 있는 메커니즘을 "Event Delegation"라고 합니다.
+:::
+
 ### Capturing
 
 DOM 트리의 최상위 요소(`window`)에서 target의 부모 node까지 event가 전달되는 단계입니다.
