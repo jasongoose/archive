@@ -1573,6 +1573,10 @@ export default defineConfig({
               text: "소수",
               link: "/코테준비/알고리즘/소수",
             },
+            {
+              text: "Greedy Algorithm",
+              link: "/코테준비/알고리즘/greedy_algorithm",
+            },
           ],
         },
       ],
