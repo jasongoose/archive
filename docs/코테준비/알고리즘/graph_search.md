@@ -90,3 +90,44 @@ const bfs = (adj) => {
   };
 };
 ```
+
+### 응용
+
+1. 미로에서 최소경로 구하기
+
+```js
+const maps = [...] // 2차원 인접행렬로 주어진 미로
+const [m, n] = [maps.length, maps[0].length];
+
+const dx = [0, 1, 0, -1];
+const dy = [1, 0, -1, 0];
+
+const q = [[0, 0, 1]]; // q에 저장되는 지점 정보 : [x좌표, y좌표, 해당 지점까지 최단거리]
+const visited = new Set();
+
+while (q.length) {
+  const [px, py, dist] = q.shift();
+  const pStr = `${px}_${py}`;
+
+  if (visited.has(pStr)) {
+    continue;
+  }
+
+  if (px === m - 1 && py === n - 1) {
+    return dist;
+  }
+
+  visited.add(pStr);
+
+  for (let i = 0; i < 4; i++) {
+    const [nx, ny] = [px + dx[i], py + dy[i]];
+
+    if (nx < 0 || m <= nx || ny < 0 || n <= ny || !maps[nx][ny]) {
+      continue;
+    }
+    q.push([nx, ny, dist + 1]);
+  }
+}
+
+return -1;
+```
