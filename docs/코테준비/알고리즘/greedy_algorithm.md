@@ -27,7 +27,7 @@ const unionFind = (n) => {
 
   // 두 node의 root가 동일한지 확인합니다.
   const isSameRoot = (x, y) => {
-    return getParent(x) === getParent(y);
+    return getRoot(x) === getRoot(y);
   };
 
   // index가 작은 쪽으로 두 node가 속한 집합들을 합칩니다.
