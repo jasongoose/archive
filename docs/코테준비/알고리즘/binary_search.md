@@ -1,12 +1,18 @@
 # Binary Search
 
-정렬된 수열에서 특정 값을 검색하는 기법입니다.
+**정렬된 탐색범위**의 크기를 줄여나가면서 구하고자 하는 값으로 접근하는 기법입니다.
 
 ![Binary Search](../image/binary_search.png)
 
-중앙에 위치한 값과 내가 검색하려는 값을 비교했을 때 작다면 왼쪽 부분수열을, 크다면 오른쪽 부분수열을 대상으로 재귀적으로 검색합니다.
+탐색범위 내의 중앙값 `mid`을 사용한 임의의 조건에 의해서 왼쪽 또는 오른쪽 범위를 대상으로 재귀적으로 검색합니다.
 
 한번 검색할 때마다 탐색범위가 절반씩 줄어들기 때문에 총 검색하는데 최대 `O(logN)`의 시간복잡도를 가집니다.
+
+관련 문제를 풀 때는 2가지를 정해야 합니다.
+
+- 무엇을 구하는 것인가? => 시간, 인원 수 등
+- 탐색범위 즉, 최솟값 `left`와 최댓값 `right`는 무엇인가?
+- 어떤 조건으로 탐색범위(왼쪽 혹은 오른쪽)를 정하는가?
 
 ## 구현코드
 
@@ -18,15 +24,13 @@ const binarySearch = (data, x) => {
       return false;
     }
 
-    const middle = Math.floor((left + right) / 2);
+    const mid = Math.floor((left + right) / 2);
 
-    if (data[middle] === x) {
+    if (data[mid] === x) {
       return true;
-    } else if (x < data[middle]) {
-      return search(left, middle);
-    } else {
-      return search(middle + 1, right);
     }
+
+    x < data[mid] ? search(left, mid) : search(mid + 1, right);
   };
 
   return search();
@@ -38,17 +42,24 @@ const binarySearch = (data, x) => {
 const binarySearch = (data, x) => {
   let [left, right] = [0, data.length - 1];
 
-  while (left <= right) {
-    const middle = Math.floor((left + right) / 2);
-    if (data[middle] === x) {
+  while (left < right) {
+    const mid = Math.floor((left + right) / 2);
+    if (data[mid] === x) {
       return true;
-    } else if (data[middle] < x) {
-      left = middle + 1;
-    } else {
-      right = middle;
     }
+
+    x < data[mid] ? (right = mid) : (left = mid + 1);
   }
 
   return false;
 };
 ```
+
+:::tip
+다루는 데이터가 10억까지 되는 문제에서 중앙값 mid을 구하는 중 오버플로우가 발생할 수도 있는데, 그 경우 아래와 같이 구하면 됩니다.
+
+```js
+const mid = Math.floor(left + (right - left) / 2);
+```
+
+:::

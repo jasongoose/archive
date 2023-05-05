@@ -4,8 +4,6 @@ ES6에서 추가한 새로운 primitive 값으로 매 생성할 때마다 고유
 
 이 값은 `number`도, `string`도 아닌 `symbol`이라는 타입을 가집니다.
 
-> 가변성을 지닌 primitive 데이터 타입
-
 ## Using Symbol
 
 symbol을 생성할 때는 `Symbol` 생성자를 사용하면 됩니다.
