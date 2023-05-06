@@ -136,3 +136,47 @@ return memo[rows - 1][cols - 1];
 ```
 
 :::
+
+## Floyd-Warshall Algorithm
+
+인접행렬로 주어진 그래프에서 **임의의 두 node간의 최단경로 또는 경로 존재여부**를 모두 구하기 위한 알고리즘으로, 두 node 간의 거쳐가는 node에 따라 정보를 업데이트합니다.
+
+여기서 단방향 그래프의 경우, 반대방향의 경로는 음수로 표현합니다.
+
+```js
+// 두 노드간의 경로 존재여부
+const edges = []; // [x, y][] : node x에서 node y 방향의 edge
+const n = /* node의 개수 */;
+const adj = Array.from(Array(n), () => Array(n).fill(null));
+
+for (let i = 0; i < n; i++) {
+  adj[i][i] = 0;
+}
+
+for (const [x, y] of edges) {
+  adj[x][y] = 1;
+  adj[y][x] = -1;
+}
+
+for (let mid = 0; mid < n; mid++) {
+  // node i와 j 사이에서 경유하는 node mid
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      if (adj[i][mid] === 1 && adj[mid][j] === 1) {
+        adj[i][j] = 1;
+        continue;
+      }
+      if (adj[i][mid] === -1 && adj[mid][j] === -1) {
+        adj[i][j] = -1;
+        continue;
+      }
+    }
+  }
+}
+
+// 위 과정을 거친 뒤에도...
+// adj[i][j]가 null이면 node i에서 node j로의 경로가 존재하지 않음을 의미합니다.
+// adj[i][j]가 1 또는 -1이면 node i에서 j로 정방향 또는 역방향 경로가 존재함을 의미합니다.
+```
+
+3중 for문을 수행하므로 전체 시간복잡도는 `O(N ^ 3)`을 가집니다.
