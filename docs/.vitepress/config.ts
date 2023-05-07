@@ -1676,10 +1676,10 @@ export default defineConfig({
       //   text: "면접과제",
       //   link: "",
       // },
-      {
-        text: "Articles",
-        link: "/articles/",
-      },
+      // {
+      //   text: "Articles",
+      //   link: "/articles/",
+      // },
     ],
   },
 });
