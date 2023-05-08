@@ -1554,8 +1554,8 @@ export default defineConfig({
               link: "/코테준비/알고리즘/binary_search",
             },
             {
-              text: "Graph Search",
-              link: "/코테준비/알고리즘/graph_search",
+              text: "DFS, BFS",
+              link: "/코테준비/알고리즘/dfs_bfs",
             },
             {
               text: "Memoization, Dynamic Programming",
@@ -1576,6 +1576,10 @@ export default defineConfig({
             {
               text: "Greedy Algorithm",
               link: "/코테준비/알고리즘/greedy_algorithm",
+            },
+            {
+              text: "Prefix Sum",
+              link: "/코테준비/알고리즘/prefix_sum",
             },
           ],
         },
@@ -1672,10 +1676,10 @@ export default defineConfig({
       //   text: "면접과제",
       //   link: "",
       // },
-      {
-        text: "Articles",
-        link: "/articles/",
-      },
+      // {
+      //   text: "Articles",
+      //   link: "/articles/",
+      // },
     ],
   },
 });

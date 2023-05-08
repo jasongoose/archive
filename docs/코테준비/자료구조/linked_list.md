@@ -29,6 +29,23 @@ const linkedList = (arr) => {
     head = [data, head];
   };
 
+  const insertAt = (data, pos) => {
+    let p = head;
+    let index = 0;
+
+    if (!hasData(p) || pos === 0) {
+      prepend(data);
+      return;
+    }
+
+    while (index + 1 < pos) {
+      p = p[NEXT];
+      index++;
+    }
+
+    p[NEXT] = [data, p[NEXT]];
+  };
+
   const deleteData = (data) => {
     if (head[DATA] === data) {
       head = head[NEXT];

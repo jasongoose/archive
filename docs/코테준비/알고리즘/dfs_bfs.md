@@ -1,6 +1,4 @@
-# Graph Search
-
-선으로 연결된 node들의 집합으로, 두 노드 사이의 방향은 단방향 또는 양방향으로 나뉩니다.
+# DFS, BFS
 
 ## DFS
 
@@ -45,6 +43,12 @@ const dfs = (adj) => {
   };
 };
 ```
+
+:::warning
+안타깝게도 위 방식은 양방향 그래프에서만 활용할 수 있습니다.
+
+단방향에서 임의의 두 노드 간의 경로 존재여부는 [Floyd-Warshall Algorithm](memoization_dynamic_programming.md#floyd-warshall-algorithm)을 사용하면 됩니다.
+:::
 
 ## BFS
 
