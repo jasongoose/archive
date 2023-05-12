@@ -14,11 +14,11 @@ root node의 값이 하위 node들의 값보다 작습니다.
 
 ### 삽입
 
-특정 node를 삽입할 때는 우선 가장 마지막에 append 합니다. 그 뒤에 자신보다 더 큰 값을 부모 node를 찾을 때까지 depth를 올라갑니다.
+특정 node를 삽입할 때는 우선 가장 마지막에 append 합니다. 그 뒤에 자신보다 더 작은 값을 가진 부모 node를 찾을 때까지 depth를 올라갑니다.
 
 ### root 제거
 
-제일 마지막에 있는 node를 root로 지정하고 왼쪽, 오른쪽 자식 node들의 값보다 클 때까지 depth를 내려갑니다.
+제일 마지막에 있는 node를 root로 지정하고 왼쪽, 오른쪽 자식 node들의 값보다 작을 때까지 depth를 내려갑니다.
 
 :::tip Max Heap
 Min Heap과 반대로 구현하면 됩니다!
@@ -46,10 +46,6 @@ const heap = (comFn) => {
     [arr[x], arr[y]] = [arr[y], arr[x]];
   };
 
-  const getRoot = () => arr[0];
-
-  const isEmpty = () => !arr.length;
-
   const add = (data) => {
     arr.push(data);
 
@@ -60,15 +56,17 @@ const heap = (comFn) => {
     }
   };
 
-  // root 제거
+  // root 제거 + 반환
   const poll = () => {
     if (arr.length === 0) {
-      return;
+      return null;
     }
     if (arr.length === 1) {
-      arr.pop();
-      return;
+      return arr.pop();
     }
+
+    const top = arr[0];
+
     arr[0] = arr.pop();
 
     let p = 0;
@@ -84,11 +82,11 @@ const heap = (comFn) => {
       swap(p, to);
       p = to;
     }
+
+    return top;
   };
 
   return {
-    getRoot,
-    isEmpty,
     poll,
     add,
   };
