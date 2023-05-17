@@ -54,7 +54,7 @@ function init2dArrOrd(r, c) {
 const isAnagram = (s1, s2) => {
   const getCharIdx = (c) => c.charCodeAt(0) - "a".charCodeAt(0);
 
-  const l = getCharIdx("z") - getCharIdx("a") + 1; // 전체 알파벳 개수
+  const l = getCharIdx("z") + 1; // 전체 알파벳 개수
   const m1 = Array(l).fill(0);
   const m2 = Array(l).fill(0);
 
@@ -76,3 +76,12 @@ const isAnagram = (s1, s2) => {
   return true;
 };
 ```
+
+:::tip substring
+임의의 문자열 S의 부분문자열 S'에는 개별 문자도 포함된다는 점을 기억하면 유용합니다!
+
+```js
+'abc' => ['a', 'b', 'c', 'ab', 'bc', 'ac', 'abc']
+```
+
+::::
