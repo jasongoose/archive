@@ -175,3 +175,7 @@ const mergeSort = (data) => {
   return arr;
 };
 ```
+
+:::tip `Array.prototype.sort`
+V8 엔진 상에서 Merge Sort와 Insertion Sort를 결합한 [Tim Sort 알고리즘](https://d2.naver.com/helloworld/0315536)을 사용하는데 최대 `O(N*logN)`의 시간 복잡도를 가집니다.
+:::
