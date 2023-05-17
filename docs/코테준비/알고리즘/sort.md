@@ -179,3 +179,26 @@ const mergeSort = (data) => {
 :::tip `Array.prototype.sort`
 V8 엔진 상에서 Merge Sort와 Insertion Sort를 결합한 [Tim Sort 알고리즘](https://d2.naver.com/helloworld/0315536)을 사용하는데 최대 `O(N*logN)`의 시간 복잡도를 가집니다.
 :::
+
+## Counting Sort
+
+배열의 요소들끼리 비교하는 것이 아닌 요소들의 빈도수를 사용하여 정렬된 배열을 생성하는 방식입니다.
+
+여기서 요소는 `number`형이고 빈도수 배열의 index는 모든 요소들의 값을 포함해야 합니다.
+
+```js
+const countingSort = (arr) => {
+  const freq = Array(Math.max(...arr) + 1).fill(0);
+  const ans = [];
+
+  for (const n of arr) {
+    freq[n]++;
+  }
+
+  for (let i = 0; i < freq.length; i++) {
+    ans.push(...Array(freq[i]).fill(i));
+  }
+
+  return ans;
+};
+```
