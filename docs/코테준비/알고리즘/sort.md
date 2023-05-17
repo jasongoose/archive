@@ -1,5 +1,37 @@
 # Sort
 
+## Insertion Sort
+
+index 0에서부터 순회하면서 특정 요소를 **앞에서 정렬된 배열**에 적절한 위치에 삽입하는 방식으로, 최대 `O(N^2)`의 시간 복잡도를 가집니다.
+
+![Insertion Sort](../image/insertion_sort.png)
+
+```js
+const insertionSort = (compFn) => (arr) => {
+  const arr_c = [...arr];
+
+  for (let i = 0; i < arr_c.length; i++) {
+    const x = arr_c[i];
+    let j = i;
+
+    while (1 <= j) {
+      if (compFn(arr_c[j - 1], x)) {
+        break;
+      }
+      arr_c[j] = arr_c[j - 1];
+      j--;
+    }
+
+    arr_c[j] = x;
+  }
+
+  return arr_c.join(" ");
+};
+
+const 오름차순 = insertionSort((a, b) => a < b);
+const 내림차순 = insertionSort((a, b) => b < a);
+```
+
 ## Bubble Sort
 
 정렬이 될 때까지 수열을 순회할 때마다 바로 뒤의 있는 요소의 값이 더 작은 경우(오름차순 기준) swap하는 연산을 반복하는 방식입니다.
