@@ -1,6 +1,6 @@
 # Lazy Loading
 
-웹앱에서 사용하는 리소스들을 페이지의 첫 렌더링이 아닌 필요할 때마다 요청하는 기법으로, 브라우저의 [CRP](../../browser/populating_the_page/crp.md) 처리에 의한 페이지 로딩 지연을 줄이기 위한 목적으로 사용합니다.
+웹앱에서 사용하는 리소스들을 페이지의 첫 렌더링이 아닌 필요할 때마다 요청하는 기법으로, 브라우저의 [CRP](../browser/populating_the_page/crp.md) 처리에 의한 페이지 로딩 지연을 줄이기 위한 목적으로 사용합니다.
 
 ## Code Splitting
 
@@ -30,7 +30,7 @@
 
 ## CSS
 
-`.css` 경우, [render-blocking 리소스](../../browser/populating_the_page/crp#css-object-model)로 간주됩니다.
+`.css` 경우, [render-blocking 리소스](../browser/populating_the_page/crp#css-object-model)로 간주됩니다.
 
 파싱 속도는 브라우저에 의존적이라 제어가 불가능하지만 아래와 같이 [media query](https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_types)를 지정하면 현재 device의 상태에 따라 필요한 스타일만 다운받으므로 blocking 시간을 줄일 수 있습니다.
 
@@ -42,7 +42,7 @@
 
 ## Fonts
 
-font는 default로 [Render 트리](../../browser/populating_the_page/crp#render-tree)가 생성된 이후에 요청되기 때문에 text 렌더링이 지연되는 경우가 종종 발생합니다.
+font는 default로 [Render 트리](../browser/populating_the_page/crp#render-tree)가 생성된 이후에 요청되기 때문에 text 렌더링이 지연되는 경우가 종종 발생합니다.
 
 지연을 줄이는 방법으로 CSS `font-display` 속성을 지정하거나 [CSS Font Loading API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Font_Loading_API)를 사용할 수 있습니다.
 

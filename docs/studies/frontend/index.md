@@ -1,4 +1,4 @@
-# FrontEnd
+# Frontend
 
 [📜 Tree Shaking](https://developer.mozilla.org/en-US/docs/Glossary/Tree_shaking)
 

@@ -195,47 +195,27 @@ export default defineConfig({
       ],
       "/studies/frontend/": [
         {
-          text: "Tree Shaking",
+          text: "Techniques",
           items: [
             {
               text: "Tree Shaking",
-              link: "/studies/frontend/tree_shaking/tree_shaking",
+              link: "/studies/frontend/tree_shaking",
             },
-          ],
-        },
-        {
-          text: "Skeleton UI",
-          items: [
             {
               text: "Skeleton UI",
-              link: "/studies/frontend/skeleton_ui/skeleton_ui",
+              link: "/studies/frontend/skeleton_ui",
             },
-          ],
-        },
-        {
-          text: "Lazy Loading",
-          items: [
             {
               text: "Lazy Loading",
-              link: "/studies/frontend/lazy_loading/lazy_loading",
+              link: "/studies/frontend/lazy_loading",
             },
-          ],
-        },
-        {
-          text: "SEO",
-          items: [
             {
               text: "SEO",
-              link: "/studies/frontend/seo/seo",
+              link: "/studies/frontend/seo",
             },
-          ],
-        },
-        {
-          text: "Cross-Browsing",
-          items: [
             {
               text: "Cross-Browsing",
-              link: "/studies/frontend/cross_browsing/cross_browsing",
+              link: "/studies/frontend/cross_browsing",
             },
           ],
         },
@@ -1609,7 +1589,7 @@ export default defineConfig({
             link: "/studies/clean_code/",
           },
           {
-            text: "FrontEnd",
+            text: "Frontend",
             link: "/studies/frontend/",
           },
           {
