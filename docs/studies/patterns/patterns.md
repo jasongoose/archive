@@ -1,4 +1,4 @@
-# Architecture
+# Patterns
 
 코드를 작성하면서 쌓인 노하우들을 기반으로 일반화된 SW 개발패턴을 가리킵니다.
 

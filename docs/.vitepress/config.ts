@@ -8,40 +8,59 @@ export default defineConfig({
     sidebar: {
       "/studies/architecture/": [
         {
-          text: "Architecture",
+          text: "Service",
           items: [
             {
-              text: "Architecture",
-              link: "/studies/architecture/architecture/architecture",
+              text: "Microservice",
+              link: "/studies/architecture/microservice",
+            },
+            {
+              text: "Micro Frontend",
+              link: "/studies/architecture/microfrontend",
             },
           ],
         },
         {
-          text: "History",
+          text: "Project",
           items: [
             {
+              text: "FSD",
+              link: "/studies/architecture/fsd",
+            },
+          ],
+        },
+      ],
+      "/studies/patterns/": [
+        {
+          text: "Patterns",
+          items: [
+            {
+              text: "Patterns",
+              link: "/studies/patterns/patterns",
+            },
+            {
               text: "MVC",
-              link: "/studies/architecture/history/MVC",
+              link: "/studies/patterns/mvc",
             },
             {
               text: "MVVM",
-              link: "/studies/architecture/history/MVVM",
+              link: "/studies/patterns/mvvm",
             },
             {
               text: "Container-Presenter",
-              link: "/studies/architecture/history/Container-Presenter",
+              link: "/studies/patterns/container_presenter",
             },
             {
               text: "Flux",
-              link: "/studies/architecture/history/Flux",
+              link: "/studies/patterns/flux",
             },
             {
               text: "Observer-Observable",
-              link: "/studies/architecture/history/Observer-Observable",
+              link: "/studies/patterns/observer_observable",
             },
             {
               text: "MVI",
-              link: "/studies/architecture/history/MVI",
+              link: "/studies/patterns/mvi",
             },
           ],
         },
@@ -176,47 +195,27 @@ export default defineConfig({
       ],
       "/studies/frontend/": [
         {
-          text: "Tree Shaking",
+          text: "Techniques",
           items: [
             {
               text: "Tree Shaking",
-              link: "/studies/frontend/tree_shaking/tree_shaking",
+              link: "/studies/frontend/tree_shaking",
             },
-          ],
-        },
-        {
-          text: "Skeleton UI",
-          items: [
             {
               text: "Skeleton UI",
-              link: "/studies/frontend/skeleton_ui/skeleton_ui",
+              link: "/studies/frontend/skeleton_ui",
             },
-          ],
-        },
-        {
-          text: "Lazy Loading",
-          items: [
             {
               text: "Lazy Loading",
-              link: "/studies/frontend/lazy_loading/lazy_loading",
+              link: "/studies/frontend/lazy_loading",
             },
-          ],
-        },
-        {
-          text: "SEO",
-          items: [
             {
               text: "SEO",
-              link: "/studies/frontend/seo/seo",
+              link: "/studies/frontend/seo",
             },
-          ],
-        },
-        {
-          text: "Cross-Browsing",
-          items: [
             {
               text: "Cross-Browsing",
-              link: "/studies/frontend/cross_browsing/cross_browsing",
+              link: "/studies/frontend/cross_browsing",
             },
           ],
         },
@@ -818,47 +817,27 @@ export default defineConfig({
       ],
       "/studies/security/": [
         {
-          text: "XSRF",
+          text: "Concepts",
           items: [
             {
               text: "XSRF",
-              link: "/studies/security/xsrf/xsrf",
+              link: "/studies/security/xsrf",
             },
-          ],
-        },
-        {
-          text: "XSS",
-          items: [
             {
               text: "XSS",
-              link: "/studies/security/xss/xss",
+              link: "/studies/security/xss",
             },
-          ],
-        },
-        {
-          text: "JWT",
-          items: [
             {
               text: "JWT",
-              link: "/studies/security/jwt/jwt",
+              link: "/studies/security/jwt",
             },
-          ],
-        },
-        {
-          text: "CORS",
-          items: [
             {
               text: "CORS",
-              link: "/studies/security/cors/cors",
+              link: "/studies/security/cors",
             },
-          ],
-        },
-        {
-          text: "OAuth",
-          items: [
             {
               text: "OAuth",
-              link: "/studies/security/oauth/oauth",
+              link: "/studies/security/oauth",
             },
           ],
         },
@@ -1598,6 +1577,10 @@ export default defineConfig({
             link: "/studies/architecture/",
           },
           {
+            text: "Patterns",
+            link: "/studies/patterns/",
+          },
+          {
             text: "Browser",
             link: "/studies/browser/",
           },
@@ -1606,7 +1589,7 @@ export default defineConfig({
             link: "/studies/clean_code/",
           },
           {
-            text: "FrontEnd",
+            text: "Frontend",
             link: "/studies/frontend/",
           },
           {

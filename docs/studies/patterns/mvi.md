@@ -1,6 +1,6 @@
 # MVI
 
-![MVI](../image/mvi.png)
+![MVI](./image/mvi.png)
 
 [cycle.js](https://cycle.js.org/model-view-intent.html)라는 라이브러리에서 처음 제시한 패턴으로 View와 Model를 분리하지만 사용자의 이벤트별로 수행되는 action들을 정의한 Intent 영역을 Controller로 두는 특징이 있습니다.
 

@@ -1,4 +1,4 @@
-# Cross Browsing
+# Cross-Browsing
 
 모든 브라우저에서 웹페이지가 의도한 대로 렌더링될 수 있도록 수행하는 작업을 의미합니다.
 

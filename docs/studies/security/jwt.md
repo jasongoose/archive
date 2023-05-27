@@ -2,7 +2,7 @@
 
 JSON Web Token의 줄임말로, 두 주체 사이에서 정보를 JSON 객체로 주고받기 위한 조밀하고(compact) 독립적인(self-contained) 방법을 제시합니다.
 
-![JWT Diagram](../image/jwt_diagram.png)
+![JWT Diagram](./image/jwt_diagram.png)
 
 이 방식은 비밀키를 이용한 내부 데이터의 암호화 방식을 통해 정보의 고결성(integrity)을 유지하는 특징이 있습니다.
 
@@ -14,7 +14,7 @@ JWT 방식을 사용하면 정보의 고결성뿐만 아니라 서버 단에서 
 
 곤충처럼 머리(header), 가슴(payload), 배(signature)로 구성되고 '.'(period)로 구분되고, 각 part는 JSON format을 가집니다.
 
-![JWT Arch](../image/jwt_arch.png)
+![JWT Arch](./image/jwt_arch.png)
 
 ### Header
 
@@ -73,7 +73,7 @@ HMACSHA256(base64UrlEncode(header) + "." + base64UrlEncode(payload), secret);
 
 ## 작동방식
 
-![JWT Auth](../image/jwt_auth.png)
+![JWT Auth](./image/jwt_auth.png)
 
 1. 클라이언트는 인증 이후, 인가 서버로부터 jwt 토큰을 받습니다.
 
