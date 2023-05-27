@@ -17,7 +17,7 @@
 다른 도메인에 속하는 페이지에서 현재 페이지로 연결하는 링크로, external link의 방향과 반대입니다.
 
 :::tip
-웹 사이트를 만들 때는 internal link의 적절한 구성이 중요하지만 [SEO](../../frontend/seo/seo.md)를 위해서는 external, incoming link의 구성도 중요합니다.
+웹 사이트를 만들 때는 internal link의 적절한 구성이 중요하지만 [SEO](../../frontend/seo.md)를 위해서는 external, incoming link의 구성도 중요합니다.
 :::
 
 ## Anchors

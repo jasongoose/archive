@@ -76,7 +76,7 @@ link와 같은 off-page 요소뿐만 아니라 페이지 내부구조도 중요�
 
 뒤에 숨겨진 의미를 전달하는 페이지 컨텐츠로, 페이지로부터 누가 작가이고 어떤 종류의 내용을 담는지를 잘 보여주는 마크업을 가리킵니다.
 
-![Semantic HTML](../image/semantic_html.png)
+![Semantic HTML](./image/semantic_html.png)
 
 semantic markup을 사용하면 검색결과 페이지에서 사용할 수 있는 질 좋은 snippet을 제공할 수 있습니다.
 
