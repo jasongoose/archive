@@ -89,7 +89,7 @@ HTTP는 클라이언트와 서버 사이의 통신을 할 때마다 TCP 연결�
 
 쿠키를 생성한 서버만 쿠키를 읽을 수 있는 특별한 케이스입니다.
 
-해당 쿠키는 클라이언트 script(`document.cookie`)에서 접근하지 못하도록 차단하여 [XSS 공격](../../security/xss/xss.md)에 의해서 탈취되지 않도록 도와주기 때문에 [JWT](../../security/jwt/jwt.md)을 저장할 때 활용할 수 있습니다.
+해당 쿠키는 클라이언트 script(`document.cookie`)에서 접근하지 못하도록 차단하여 [XSS 공격](../../security/xss.md)에 의해서 탈취되지 않도록 도와주기 때문에 [JWT](../../security/jwt.md)을 저장할 때 활용할 수 있습니다.
 
 #### 4. Secure Cookie
 

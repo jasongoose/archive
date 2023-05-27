@@ -1,6 +1,6 @@
 # Passing Data Deeply w/ Context
 
-공통된 상위 컴포넌트에서 props를 통해 여러 하위 컴포넌트들로 데이터를 전달하면 중간에 거쳐야 하는 컴포넌트마다 일일이 props를 추가/수정해야 하고 이로 인해 컴포넌트의 재사용성을 떨어뜨리는 [props drilling](../../architecture/history/Container-Presenter.md#props-drilling) 문제가 생깁니다.
+공통된 상위 컴포넌트에서 props를 통해 여러 하위 컴포넌트들로 데이터를 전달하면 중간에 거쳐야 하는 컴포넌트마다 일일이 props를 추가/수정해야 하고 이로 인해 컴포넌트의 재사용성을 떨어뜨리는 [props drilling](../../patterns/container_presenter.md#props-drilling) 문제가 생깁니다.
 
 ## Context API
 
