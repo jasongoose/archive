@@ -8,40 +8,59 @@ export default defineConfig({
     sidebar: {
       "/studies/architecture/": [
         {
-          text: "Architecture",
+          text: "Service",
           items: [
             {
-              text: "Architecture",
-              link: "/studies/architecture/architecture/architecture",
+              text: "Microservice",
+              link: "/studies/architecture/microservice",
+            },
+            {
+              text: "Micro Frontend",
+              link: "/studies/architecture/microfrontend",
             },
           ],
         },
         {
-          text: "History",
+          text: "Project",
           items: [
             {
+              text: "FSD",
+              link: "/studies/architecture/fsd",
+            },
+          ],
+        },
+      ],
+      "/studies/patterns/": [
+        {
+          text: "Patterns",
+          items: [
+            {
+              text: "Patterns",
+              link: "/studies/patterns/patterns",
+            },
+            {
               text: "MVC",
-              link: "/studies/architecture/history/MVC",
+              link: "/studies/patterns/mvc",
             },
             {
               text: "MVVM",
-              link: "/studies/architecture/history/MVVM",
+              link: "/studies/patterns/mvvm",
             },
             {
               text: "Container-Presenter",
-              link: "/studies/architecture/history/Container-Presenter",
+              link: "/studies/patterns/container_presenter",
             },
             {
               text: "Flux",
-              link: "/studies/architecture/history/Flux",
+              link: "/studies/patterns/flux",
             },
             {
               text: "Observer-Observable",
-              link: "/studies/architecture/history/Observer-Observable",
+              link: "/studies/patterns/observer_observable",
             },
             {
               text: "MVI",
-              link: "/studies/architecture/history/MVI",
+              link: "/studies/patterns/mvi",
             },
           ],
         },
@@ -1576,6 +1595,10 @@ export default defineConfig({
           {
             text: "Architecture",
             link: "/studies/architecture/",
+          },
+          {
+            text: "Patterns",
+            link: "/studies/patterns/",
           },
           {
             text: "Browser",
