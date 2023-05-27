@@ -818,47 +818,27 @@ export default defineConfig({
       ],
       "/studies/security/": [
         {
-          text: "XSRF",
+          text: "Concepts",
           items: [
             {
               text: "XSRF",
-              link: "/studies/security/xsrf/xsrf",
+              link: "/studies/security/xsrf",
             },
-          ],
-        },
-        {
-          text: "XSS",
-          items: [
             {
               text: "XSS",
-              link: "/studies/security/xss/xss",
+              link: "/studies/security/xss",
             },
-          ],
-        },
-        {
-          text: "JWT",
-          items: [
             {
               text: "JWT",
-              link: "/studies/security/jwt/jwt",
+              link: "/studies/security/jwt",
             },
-          ],
-        },
-        {
-          text: "CORS",
-          items: [
             {
               text: "CORS",
-              link: "/studies/security/cors/cors",
+              link: "/studies/security/cors",
             },
-          ],
-        },
-        {
-          text: "OAuth",
-          items: [
             {
               text: "OAuth",
-              link: "/studies/security/oauth/oauth",
+              link: "/studies/security/oauth",
             },
           ],
         },
