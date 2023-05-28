@@ -17,7 +17,7 @@ Microservice(이하 msa)가 보편화되기 전에는 일반적으로 앱을 구
 
 Component(이라 component)란 독립적으로 대체되면서 업데이트할 수 있는 SW 구성단위를 의미하는데, 크게 Library와 Service로 나뉩니다.
 
-Libraray(이하 lib)는 임의의 프로그램에 연결되어 in-memory 함수 내에서 호출하는 방식으로 사용되고 Service(이하 svc)는 프로세스 외부에 위치하여 웹 API나 원격 호출로 사용할 수 있습니다.
+Library(이하 lib)는 임의의 프로그램에 연결되어 in-memory 함수 내에서 호출하는 방식으로 사용되고 Service(이하 svc)는 프로세스 외부에 위치하여 웹 API나 원격 호출로 사용할 수 있습니다.
 
 :::info
 monolith 환경에서 component는 lib이고 msa 환경에서 component는 svc입니다.
@@ -25,7 +25,7 @@ monolith 환경에서 component는 lib이고 msa 환경에서 component는 svc�
 
 svc를 component로 가지면 앱 전체 재빌드 및 재배포가 불필요해지고 component API를 원격 호출 메커니즘에 기반하여 더 구체적으로 구성할 수 있는 장점이 있습니다.
 
-다만, 네트워크 통신을 위한 추가비용이 발생하고 통합적인 관리가 용이하도록 개별 svc에게 작업을 어떻게 할당할지에 대한 고민이 필요합니다.
+다만, 네트워크 통신과 인프라 유지를 위한 추가비용이 발생하고 통합적인 관리가 용이하도록 개별 svc에게 작업을 어떻게 할당할지에 대한 고민이 필요합니다.
 
 ## Organized around Business Capabilites
 
@@ -35,7 +35,7 @@ svc를 component로 가지면 앱 전체 재빌드 및 재배포가 불필요해
 >
 > _Melvin Conway, 1968_
 
-mas 환경에서는 비지니스 역량을 기반으로 목적조직을 구성할 수 있어서 단일 팀에서 기획, 개발 등의 다양한 역할들을 수행할 수 있습니다.
+msa 환경에서는 비지니스 역량을 기반으로 목적조직을 구성할 수 있어서 단일 팀에서 단일 svc에 대한 기획, 개발 등의 다양한 역할들을 수행할 수 있습니다.
 
 ## Products not Projects
 
@@ -55,4 +55,4 @@ msa 기반 앱은 RESTful API를 사용하여 component들을 분리하거나 �
 
 ## Evolutionary Design
 
-다른 svc에 영향을 주지 않으면서 개발할 수 있으므로 장기적으로 임의의 svc나 전체 앱의 디자인을 개선할 수 있습니다.
+다른 svc에 영향을 주지 않으면서 개발할 수 있으므로 장기적으로 특정 svc나 전체 앱의 디자인을 개선할 수 있습니다.
