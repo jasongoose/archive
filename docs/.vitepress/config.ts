@@ -18,6 +18,10 @@ export default defineConfig({
               text: "Micro Frontend",
               link: "/studies/architecture/microfrontend",
             },
+            {
+              text: "BFF",
+              link: "/studies/architecture/bff",
+            },
           ],
         },
         {
