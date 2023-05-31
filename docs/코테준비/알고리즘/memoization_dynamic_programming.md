@@ -10,6 +10,17 @@
 - 작은 문제에서 구한 정답은 그것을 포함하는 큰 문제에서도 동일합니다.
   :::
 
+:::tip
+문제에서 1234567과 같이 큰 수(`NUM`)로 나눈 나머지를 반환하는 것을 조건으로 제시하는 경우도 종종 있습니다.
+
+이러한 경우에는 dp배열을 아래와 같이 나머지 값으로 업데이트하면 됩니다!
+
+```js
+dp[i] = fn(dp[j] % NUM, dp[k] % NUM) % NUM;
+```
+
+:::
+
 ## 피보나치 수열
 
 피보나치의 수열을 기존 재귀적인 방법에 memoization을 적용하면 다음과 같이 구현할 수 있습니다.
@@ -18,7 +29,7 @@
 
 ```js
 const fibo = (n) => {
-  const memo = Array(n).fill(0);
+  const dp = Array(n).fill(0);
 
   const calc = (x = n) => {
     if (x === 0) {
@@ -27,11 +38,11 @@ const fibo = (n) => {
       return 1;
     }
 
-    if (!memo[x]) {
-      memo[x] = calc(x - 1) + calc(x - 2);
+    if (!dp[x]) {
+      dp[x] = calc(x - 1) + calc(x - 2);
     }
 
-    return memo[x];
+    return dp[x];
   };
 
   return calc();
@@ -76,32 +87,32 @@ const countPaths = (grid) => {
 ```js
 const countPaths = (grid) => {
   const [rows, cols] = [grid.length, grid[0].length];
-  const memo = Array.from(Array(rows), () => Array(cols).fill(0));
+  const dp = Array.from(Array(rows), () => Array(cols).fill(0));
 
   for (let i = rows - 1; 0 <= i; i--) {
     for (let j = cols - 1; 0 <= j; j--) {
       if (i === rows - 1 && j === cols - 1) {
-        memo[i][j] = 1;
+        dp[i][j] = 1;
         continue;
       }
       // 갈 수 없는 지점이 1로 표시한 grid인 경우
       if (grid[i][j]) {
-        memo[i][j] = 0;
+        dp[i][j] = 0;
         continue;
       }
       if (i === rows - 1) {
-        memo[i][j] = memo[i][j + 1];
+        dp[i][j] = dp[i][j + 1];
         continue;
       }
       if (j === cols - 1) {
-        memo[i][j] = memo[i + 1][j];
+        dp[i][j] = dp[i + 1][j];
         continue;
       }
-      memo[i][j] = memo[i + 1][j] + memo[i][j + 1];
+      dp[i][j] = dp[i + 1][j] + dp[i][j + 1];
     }
   }
 
-  return memo[0][0];
+  return dp[0][0];
 };
 ```
 
@@ -113,26 +124,26 @@ const countPaths = (grid) => {
 for (let i = 0; i < rows; i++) {
   for (let j = 0; j < cols; j++) {
     if (i === 0 && j === 0) {
-      memo[i][j] = 1;
+      dp[i][j] = 1;
       continue;
     }
     if (grid[i][j]) {
-      memo[i][j] = 0;
+      dp[i][j] = 0;
       continue;
     }
     if (i === 0) {
-      memo[i][j] = memo[i][j - 1];
+      dp[i][j] = dp[i][j - 1];
       continue;
     }
     if (j === 0) {
-      memo[i][j] = memo[i - 1][j];
+      dp[i][j] = dp[i - 1][j];
       continue;
     }
-    memo[i][j] = memo[i][j - 1] + memo[i - 1][j];
+    dp[i][j] = dp[i][j - 1] + dp[i - 1][j];
   }
 }
 
-return memo[rows - 1][cols - 1];
+return dp[rows - 1][cols - 1];
 ```
 
 :::
