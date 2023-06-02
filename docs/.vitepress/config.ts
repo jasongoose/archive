@@ -1564,6 +1564,10 @@ export default defineConfig({
               text: "Prefix Sum",
               link: "/코테준비/알고리즘/prefix_sum",
             },
+            {
+              text: "최소공배수, 최대공약수",
+              link: "/코테준비/알고리즘/lcm_gcd.md",
+            },
           ],
         },
       ],
