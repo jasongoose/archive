@@ -34,13 +34,13 @@ heap은 트리형태를 가지지만 root를 index 0을 가지는 1차원 배열
 const heap = (comFn) => {
   let arr = [];
 
-  const getLeftIndex = (index) => index * 2 + 1;
-  const getRightIndex = (index) => index * 2 + 2;
-  const getParentIndex = (index) => Math.floor((index - 1) / 2);
+  const leftIndex = (index) => index * 2 + 1;
+  const rightIndex = (index) => index * 2 + 2;
+  const parentIndex = (index) => Math.floor((index - 1) / 2);
 
-  const hasLeft = (index) => getLeftIndex(index) < arr.length;
-  const hasRight = (index) => getRightIndex(index) < arr.length;
-  const hasParent = (index) => 0 <= getParentIndex(index);
+  const hasLeft = (index) => leftIndex(index) < arr.length;
+  const hasRight = (index) => rightIndex(index) < arr.length;
+  const hasParent = (index) => 0 <= parentIndex(index);
 
   const swap = (x, y) => {
     [arr[x], arr[y]] = [arr[y], arr[x]];
@@ -48,11 +48,13 @@ const heap = (comFn) => {
 
   const add = (data) => {
     arr.push(data);
-
     let p = arr.length - 1;
-    while (hasParent(p) && !compFn(arr[getParentIndex(p)], arr[p])) {
-      swap(p, getParentIndex(p));
-      p = getParentIndex(p);
+
+    while (hasParent(p)) {
+      const pr = parentIndex(p);
+      if (compFn(arr[pr], arr[p])) break;
+      swap(p, pr);
+      p = pr;
     }
   };
 
@@ -61,26 +63,26 @@ const heap = (comFn) => {
     if (arr.length === 0) {
       return null;
     }
-    if (arr.length === 1) {
-      return arr.pop();
-    }
 
-    const top = arr[0];
+    const top = arr.shift();
+    const last = arr.pop();
 
-    arr[0] = arr.pop();
+    if (arr.length) {
+      arr.unshift(last);
 
-    let p = 0;
-    while (hasLeft(p)) {
-      // leftChild가 없다면 rightChild도 없게 됩니다.
-      let to = getLeftIndex(p);
-      if (hasRight(p) && compFn(arr[getRightIndex(p)], arr[to])) {
-        to = getRightIndex(p);
+      let p = 0;
+      while (hasLeft(p)) {
+        // leftChild가 없다면 rightChild도 없게 됩니다.
+        let to = leftIndex(p);
+        if (hasRight(p) && compFn(arr[rightIndex(p)], arr[to])) {
+          to = rightIndex(p);
+        }
+        if (compFn(arr[p], arr[to])) {
+          break;
+        }
+        swap(p, to);
+        p = to;
       }
-      if (compFn(arr[p], arr[to])) {
-        break;
-      }
-      swap(p, to);
-      p = to;
     }
 
     return top;
