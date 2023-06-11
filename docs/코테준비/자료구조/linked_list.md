@@ -12,38 +12,30 @@
 const [DATA, NEXT] = [0, 1];
 
 const pair = (a, b) => [b, a];
-const hasData = (node) => node.length;
+const hasData = (node) => Boolean(node.length);
 
 const linkedList = (arr) => {
   let head = arr.reduceRight(pair, []);
 
   const append = (data) => {
-    for (let p = head; ; p = p[NEXT]) {
-      if (hasData(p)) continue;
-      p.push(data, []);
-      break;
-    }
+    for (let p = head; hasData(p); p = p[NEXT]) {}
+    p.push(data, []);
   };
 
   const prepend = (data) => {
     head = [data, head];
   };
 
-  const insertAt = (data, pos) => {
-    let p = head;
-    let index = 0;
-
-    if (!hasData(p) || pos === 0) {
+  const insertAt = (pos, data) => {
+    if (pos === 0 || !hasData(head)) {
       prepend(data);
       return;
     }
-
-    while (index + 1 < pos) {
-      p = p[NEXT];
-      index++;
+    for (let p = head, i = 0; hasData(p); p = p[NEXT], i++) {
+      if (i + 1 !== pos) continue;
+      p[NEXT] = [data, p[NEXT]];
+      break;
     }
-
-    p[NEXT] = [data, p[NEXT]];
   };
 
   const deleteData = (data) => {

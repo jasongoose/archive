@@ -59,46 +59,40 @@ const tree = () => {
   const root = [];
 
   const insert = (data) => {
-    let p = root;
-
-    while (hasData(p)) {
-      if (data < p[DATA]) {
-        p = p[LEFT];
-      } else if (p[DATA] < data) {
-        p = p[RIGHT];
-      }
+    for (let p = root; hasData(p); ) {
+      p = data < p[DATA] ? p[LEFT] : p[RIGHT];
     }
     p.push(data, [], []);
   };
 
   const contains = (data) => {
     for (let p = root; hasData(p); ) {
-      if (data === p[DATA]) {
+      if (p[DATA] === data) {
         return true;
-      } else if (data < p[DATA]) {
-        p = p[LEFT];
-      } else if (p[DATA] < data) {
-        p = p[RIGHT];
       }
+      p = data < p[DATA] ? p[LEFT] : p[RIGHT];
     }
     return false;
   };
 
-  const printPreorder = (node = root) => {
+  const preorder = (node = root) => {
+    if (!hasData(node)) return;
     console.log(node[DATA]);
-    hasData(node[LEFT]) && printPreorder(node[LEFT]);
-    hasData(node[RIGHT]) && printPreorder(node[RIGHT]);
+    preorder(node[LEFT]);
+    preorder(node[RIGHT]);
   };
 
-  const printInorder = (node = root) => {
-    hasData(node[LEFT]) && printPreorder(node[LEFT]);
+  const inorder = (node = root) => {
+    if (!hasData(node)) return;
+    inorder(node[LEFT]);
     console.log(node[DATA]);
-    hasData(node[RIGHT]) && printPreorder(node[RIGHT]);
+    inorder(node[RIGHT]);
   };
 
-  const printPostorder = (node = root) => {
-    hasData(node[LEFT]) && printPreorder(node[LEFT]);
-    hasData(node[RIGHT]) && printPreorder(node[RIGHT]);
+  const postorder = (node = root) => {
+    if (!hasData(node)) return;
+    postorder(node[LEFT]);
+    postorder(node[RIGHT]);
     console.log(node[DATA]);
   };
 
@@ -127,10 +121,10 @@ const tree = () => {
   return {
     insert,
     contains,
-    printPreorder,
-    printInorder,
-    printPostorder,
-    checkValidBst,
+    preorder,
+    inorder,
+    postorder,
+    isValidBst,
   };
 };
 ```

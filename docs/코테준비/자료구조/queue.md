@@ -49,7 +49,7 @@ const lru = (data, cacheSize) => {
     // 크기가 0인 cache에 대한 예외처리
   }
 
-  const isHit = (d) => q.some(el === d);
+  const isHit = (d) => q.some((el) => el === d);
 
   for (const x of data) {
     if (isHit(x)) {

@@ -1,6 +1,6 @@
 # Heap
 
-우선순위 큐를 구현하기 위한 완전 이진 트리의 일종으로 2가지 종류가 있습니다.
+우선순위 큐를 구현하기 위한 완전이진트리의 일종으로, 매 순회마다 최댓값 또는 최솟값을 얻고 싶을 때 유용한 구조입니다.
 
 :::info 완전이진트리
 이진트리의 높이가 h일 때, (h-1)까지는 모든 node들이 자식 node들을 2개씩 가지고 h에서부터 왼쪽부터 차례대로 채워진 형태를 가집니다.
@@ -26,33 +26,33 @@ Min Heap과 반대로 구현하면 됩니다!
 
 ## 구현코드
 
-heap은 트리형태를 가지지만 root를 index 0을 가지는 1차원 배열로 간결하게 나타낼 수 있습니다.
+heap은 트리형태를 가지지만 root를 index 0으로 가지는 1차원 배열로 간결하게 나타낼 수 있습니다.
 
 ![Heap Array](../image/heap_array.png)
 
 ```js
-const heap = (comFn) => {
+const heap = (cmpFn) => {
   let arr = [];
 
-  const leftIndex = (index) => index * 2 + 1;
-  const rightIndex = (index) => index * 2 + 2;
-  const parentIndex = (index) => Math.floor((index - 1) / 2);
+  const leftIdx = (idx) => 2 * idx + 1;
+  const rightIdx = (idx) => 2 * idx + 2;
+  const parentIdx = (idx) => Math.floor((idx - 1) / 2);
 
-  const hasLeft = (index) => leftIndex(index) < arr.length;
-  const hasRight = (index) => rightIndex(index) < arr.length;
-  const hasParent = (index) => 0 <= parentIndex(index);
+  const hasLeft = (idx) => leftIdx(idx) < heap.length;
+  const hasRight = (idx) => rightIdx(idx) < heap.length;
+  const hasParent = (idx) => 0 <= parentIdx(idx);
 
   const swap = (x, y) => {
     [arr[x], arr[y]] = [arr[y], arr[x]];
   };
 
   const add = (data) => {
-    arr.push(data);
-    let p = arr.length - 1;
-
-    while (hasParent(p)) {
-      const pr = parentIndex(p);
-      if (compFn(arr[pr], arr[p])) break;
+    heap.push(data);
+    for (let p = heap.length - 1; hasParent(p); ) {
+      const pr = parentIdx(p);
+      if (cmpFn(heap[pr], heap[p])) {
+        break;
+      }
       swap(p, pr);
       p = pr;
     }
@@ -60,26 +60,24 @@ const heap = (comFn) => {
 
   // root 제거 + 반환
   const poll = () => {
-    if (arr.length === 0) {
+    if (heap.length === 0) {
       return null;
     }
+    if (heap.length === 1) {
+      return heap[0];
+    }
 
-    const top = arr.shift();
-    const last = arr.pop();
+    const top = heap.shift();
+    const last = heap.pop();
 
-    if (arr.length) {
-      arr.unshift(last);
-
-      let p = 0;
-      while (hasLeft(p)) {
-        // leftChild가 없다면 rightChild도 없게 됩니다.
-        let to = leftIndex(p);
-        if (hasRight(p) && compFn(arr[rightIndex(p)], arr[to])) {
-          to = rightIndex(p);
+    if (heap.length) {
+      heap.unshift(last);
+      for (let p = 0; hasLeft(p); ) {
+        let to = leftIdx(p);
+        if (hasRight(p) && cmpFn(heap[rightIdx(p)], heap[to])) {
+          to = rightIdx(p);
         }
-        if (compFn(arr[p], arr[to])) {
-          break;
-        }
+        if (cmpFn(heap[p], heap[to])) break;
         swap(p, to);
         p = to;
       }
@@ -89,8 +87,8 @@ const heap = (comFn) => {
   };
 
   return {
-    poll,
     add,
+    poll,
   };
 };
 ```
