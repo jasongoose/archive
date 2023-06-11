@@ -905,7 +905,7 @@ export default defineConfig({
           items: [
             {
               text: ".d.ts 파일",
-              link: "/studies/typescript/type_declaration/.d.ts_파일",
+              link: "/studies/typescript/type_declaration/_d_ts_파일",
             },
             {
               text: "Local Type Declaration",
