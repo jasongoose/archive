@@ -14,19 +14,17 @@ nextjs에서 모든 페이지는 pre-rendering으로 생성됩니다.
 
 ![no-pre-rendering](../images/no-pre-rendering.png)
 
-## Three Forms of Pre-rendering
+## Two Forms of Pre-rendering
 
 pre-rendering 기법은 SSR, SSG, ISR 방식이 있습니다.
 
 ### SSR(Server-side Rendering)
 
-pre-rendering을 **빌드타임** 중에 진행하여 매 요청마다 동일한 페이지가 재사용됩니다.
+pre-rendering을 **런타임** 중에 진행하여 매 요청마다 새로운 페이지를 생성합니다.
 
 ### SSG(Static Site Generation)
 
-pre-rendering을 **런타임** 중에 진행하여 매 요청마다 새로운 페이지를 생성합니다.
-
-### ISR(Incremental Static Regeneration)
+pre-rendering을 **빌드타임** 중에 진행하여 매 요청마다 동일한 페이지가 재사용됩니다.
 
 ## Static Generation with and without Data
 
