@@ -1010,6 +1010,10 @@ export default defineConfig({
               text: "enum",
               link: "/studies/typescript/keywords/enum",
             },
+            {
+              text: "type vs. interface",
+              link: "/studies/typescript/keywords/type_vs_interface",
+            },
           ],
         },
       ],
