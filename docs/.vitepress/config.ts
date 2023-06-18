@@ -1672,24 +1672,16 @@ export default defineConfig({
             text: "코어 자바스크립트",
             link: "/books/코어_자바스크립트/",
           },
-          {
-            text: "TCP/IP 완벽 가이드",
-            link: "/books/TCP_IP_완벽_가이드/",
-          },
+          // {
+          //   text: "TCP/IP 완벽 가이드",
+          //   link: "/books/TCP_IP_완벽_가이드/",
+          // },
         ],
       },
       {
         text: "코테준비",
         link: "/코테준비/",
       },
-      // {
-      //   text: "면접과제",
-      //   link: "",
-      // },
-      // {
-      //   text: "Articles",
-      //   link: "/articles/",
-      // },
     ],
   },
 });
