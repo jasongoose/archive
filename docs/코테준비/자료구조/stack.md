@@ -35,7 +35,7 @@ Array.prototype.pop 메서드는 마지막 요소를 반환합니다!
 
 ## 응용
 
-1. 뒤집은 문자열
+### 뒤집은 문자열
 
 ```js
 const reversed = (str) => {
@@ -52,3 +52,19 @@ const reversed = (str) => {
   return ans;
 };
 ```
+
+### Monotonic Stack
+
+일련의 값에서 바로 다음 큰값이나, 바로 다음 작은 값을 구할 때 사용할 수 있는 풀이법입니다.
+
+1. increasing
+
+- 삽입하려는 값이 stack의 top보다 클때만 push, 삽입하려는 값보다 작은 값은 모두 stack에서 pop합니다.
+- 배열에서 다음 작은 값이 무엇인지 알아낼 때 사용합니다.
+
+2. decreasing
+
+- 삽입하려는 값이 stack의 top보다 작을 때만 push, 삽입하려는 값보다 큰값은 모두 stack에서 pop합니다.
+- 배열에서 다음 큰 값이 무엇인지 알아낼 때 사용합니다.
+
+[1475. Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/)
