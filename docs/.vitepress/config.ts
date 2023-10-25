@@ -1498,6 +1498,21 @@ export default defineConfig({
           ],
         },
       ],
+      "/books/nodejs_교과서": [
+        {
+          text: "1장",
+          items: [
+            {
+              text: "1-1장",
+              link: "/books/nodejs_교과서/1장/1-1장",
+            },
+            {
+              text: "1-2장",
+              link: "/books/nodejs_교과서/1장/1-2장",
+            },
+          ],
+        },
+      ],
       "/코테준비/": [
         {
           text: "자료구조",
@@ -1678,7 +1693,7 @@ export default defineConfig({
           },
           {
             text: "Node.js 교과서(개정 3판)",
-            link: "/books/nodejs_textbook/",
+            link: "/books/nodejs_교과서/",
           },
         ],
       },
