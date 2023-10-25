@@ -1676,6 +1676,10 @@ export default defineConfig({
             text: "TCP/IP 완벽 가이드",
             link: "/books/TCP_IP_완벽_가이드/",
           },
+          {
+            text: "Node.js 교과서(개정 3판)",
+            link: "/books/nodejs_textbook/",
+          },
         ],
       },
       {
