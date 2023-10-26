@@ -1525,6 +1525,31 @@ export default defineConfig({
             },
           ],
         },
+        {
+          text: "3장",
+          items: [
+            {
+              text: "3-1장",
+              link: "/books/nodejs_교과서/3장/3-1장",
+            },
+            {
+              text: "3-2장",
+              link: "/books/nodejs_교과서/3장/3-2장",
+            },
+            {
+              text: "3-3장",
+              link: "/books/nodejs_교과서/3장/3-3장",
+            },
+            {
+              text: "3-4장",
+              link: "/books/nodejs_교과서/3장/3-4장",
+            },
+            {
+              text: "3-5장",
+              link: "/books/nodejs_교과서/3장/3-5장",
+            },
+          ],
+        },
       ],
       "/코테준비/": [
         {
