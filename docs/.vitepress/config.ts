@@ -1498,6 +1498,59 @@ export default defineConfig({
           ],
         },
       ],
+      "/books/nodejs_교과서": [
+        {
+          text: "1장",
+          items: [
+            {
+              text: "1-1장",
+              link: "/books/nodejs_교과서/1장/1-1장",
+            },
+            {
+              text: "1-2장",
+              link: "/books/nodejs_교과서/1장/1-2장",
+            },
+          ],
+        },
+        {
+          text: "2장",
+          items: [
+            {
+              text: "2-1장",
+              link: "/books/nodejs_교과서/2장/2-1장",
+            },
+            {
+              text: "2-2장",
+              link: "/books/nodejs_교과서/2장/2-2장",
+            },
+          ],
+        },
+        {
+          text: "3장",
+          items: [
+            {
+              text: "3-1장",
+              link: "/books/nodejs_교과서/3장/3-1장",
+            },
+            {
+              text: "3-2장",
+              link: "/books/nodejs_교과서/3장/3-2장",
+            },
+            {
+              text: "3-3장",
+              link: "/books/nodejs_교과서/3장/3-3장",
+            },
+            {
+              text: "3-4장",
+              link: "/books/nodejs_교과서/3장/3-4장",
+            },
+            {
+              text: "3-5장",
+              link: "/books/nodejs_교과서/3장/3-5장",
+            },
+          ],
+        },
+      ],
       "/코테준비/": [
         {
           text: "자료구조",
@@ -1672,10 +1725,14 @@ export default defineConfig({
             text: "코어 자바스크립트",
             link: "/books/코어_자바스크립트/",
           },
-          // {
-          //   text: "TCP/IP 완벽 가이드",
-          //   link: "/books/TCP_IP_완벽_가이드/",
-          // },
+          {
+            text: "TCP/IP 완벽 가이드",
+            link: "/books/TCP_IP_완벽_가이드/",
+          },
+          {
+            text: "Node.js 교과서(개정 3판)",
+            link: "/books/nodejs_교과서/",
+          },
         ],
       },
       {
