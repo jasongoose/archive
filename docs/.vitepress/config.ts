@@ -1550,6 +1550,18 @@ export default defineConfig({
             },
           ],
         },
+        {
+          text: "4장",
+          items: [],
+        },
+        {
+          text: "11장",
+          items: [],
+        },
+        {
+          text: "12장",
+          items: [],
+        },
       ],
       "/코테준비/": [
         {
