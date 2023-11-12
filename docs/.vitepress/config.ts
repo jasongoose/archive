@@ -1552,6 +1552,10 @@ export default defineConfig({
               text: "3-6장",
               link: "/books/nodejs_교과서/3장/3-6장",
             },
+            {
+              text: "3-7장",
+              link: "/books/nodejs_교과서/3장/3-7장",
+            },
           ],
         },
         {
