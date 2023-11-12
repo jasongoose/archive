@@ -1548,6 +1548,18 @@ export default defineConfig({
               text: "3-5장",
               link: "/books/nodejs_교과서/3장/3-5장",
             },
+            {
+              text: "3-6장",
+              link: "/books/nodejs_교과서/3장/3-6장",
+            },
+            {
+              text: "3-7장",
+              link: "/books/nodejs_교과서/3장/3-7장",
+            },
+            {
+              text: "3-8장",
+              link: "/books/nodejs_교과서/3장/3-8장",
+            },
           ],
         },
         {
@@ -1750,6 +1762,10 @@ export default defineConfig({
       {
         text: "코테준비",
         link: "/코테준비/",
+      },
+      {
+        text: "Articles",
+        link: "/articles/",
       },
     ],
   },
