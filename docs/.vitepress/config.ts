@@ -1572,6 +1572,23 @@ export default defineConfig({
           ],
         },
         {
+          text: "5장",
+          items: [
+            {
+              text: "5-2장",
+              link: "/books/nodejs_교과서/5장/5-2장",
+            },
+            {
+              text: "5-3장",
+              link: "/books/nodejs_교과서/5장/5-3장",
+            },
+            {
+              text: "5-4장",
+              link: "/books/nodejs_교과서/5장/5-4장",
+            },
+          ],
+        },
+        {
           text: "11장",
           items: [],
         },
