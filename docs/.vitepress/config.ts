@@ -1619,7 +1619,12 @@ export default defineConfig({
         },
         {
           text: "12장",
-          items: [],
+          items: [
+            {
+              text: "12-1장",
+              link: "/books/nodejs_교과서/12장/12-1장",
+            },
+          ],
         },
       ],
       "/코테준비/": [
