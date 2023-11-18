@@ -1590,11 +1590,41 @@ export default defineConfig({
         },
         {
           text: "11장",
-          items: [],
+          items: [
+            {
+              text: "11-1장",
+              link: "/books/nodejs_교과서/11장/11-1장",
+            },
+            {
+              text: "11-2장",
+              link: "/books/nodejs_교과서/11장/11-2장",
+            },
+            {
+              text: "11-3장",
+              link: "/books/nodejs_교과서/11장/11-3장",
+            },
+            {
+              text: "11-4장",
+              link: "/books/nodejs_교과서/11장/11-4장",
+            },
+            {
+              text: "11-5장",
+              link: "/books/nodejs_교과서/11장/11-5장",
+            },
+            {
+              text: "11-6장",
+              link: "/books/nodejs_교과서/11장/11-6장",
+            },
+          ],
         },
         {
           text: "12장",
-          items: [],
+          items: [
+            {
+              text: "12-1장",
+              link: "/books/nodejs_교과서/12장/12-1장",
+            },
+          ],
         },
       ],
       "/코테준비/": [
