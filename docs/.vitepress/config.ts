@@ -1719,7 +1719,16 @@ export default defineConfig({
     nav: [
       {
         text: "Posts",
-        link: "/posts/",
+        items: [
+          {
+            text: "Articles",
+            link: "/posts/articles/",
+          },
+          {
+            text: "Dev",
+            link: "/posts/dev/",
+          },
+        ],
       },
       {
         text: "Studies",
