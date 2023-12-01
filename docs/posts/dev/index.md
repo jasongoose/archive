@@ -1,6 +1,6 @@
-# Posts
+# Dev
 
-## 2022년
+## 2021년 ~ 2022년
 
 [`v-click-outside` directive 만들어보기](./v_click_outside_directive_%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0.md)
 
