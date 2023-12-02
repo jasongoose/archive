@@ -1,4 +1,4 @@
-# 코테준비
+# 코딩테스트
 
 [🎬 HackerRank](https://www.youtube.com/@HackerrankOfficial/playlists)
 
