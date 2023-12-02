@@ -1824,10 +1824,6 @@ export default defineConfig({
         text: "코테준비",
         link: "/코테준비/",
       },
-      {
-        text: "Articles",
-        link: "/articles/",
-      },
     ],
   },
 });
