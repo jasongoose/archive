@@ -1627,41 +1627,41 @@ export default defineConfig({
           ],
         },
       ],
-      "/코테준비/": [
+      "/코딩테스트/": [
         {
           text: "자료구조",
           items: [
             {
               text: "Array",
-              link: "/코테준비/자료구조/array",
+              link: "/코딩테스트/자료구조/array",
             },
             {
               text: "Stack",
-              link: "/코테준비/자료구조/stack",
+              link: "/코딩테스트/자료구조/stack",
             },
             {
               text: "Queue",
-              link: "/코테준비/자료구조/queue",
+              link: "/코딩테스트/자료구조/queue",
             },
             {
               text: "Linked List",
-              link: "/코테준비/자료구조/linked_list",
+              link: "/코딩테스트/자료구조/linked_list",
             },
             {
               text: "Tree",
-              link: "/코테준비/자료구조/tree",
+              link: "/코딩테스트/자료구조/tree",
             },
             {
               text: "Trie",
-              link: "/코테준비/자료구조/trie",
+              link: "/코딩테스트/자료구조/trie",
             },
             {
               text: "Heap",
-              link: "/코테준비/자료구조/heap",
+              link: "/코딩테스트/자료구조/heap",
             },
             {
               text: "Hash Table",
-              link: "/코테준비/자료구조/hash_table",
+              link: "/코딩테스트/자료구조/hash_table",
             },
           ],
         },
@@ -1670,47 +1670,47 @@ export default defineConfig({
           items: [
             {
               text: "Recursion",
-              link: "/코테준비/알고리즘/recursion",
+              link: "/코딩테스트/알고리즘/recursion",
             },
             {
               text: "Sort",
-              link: "/코테준비/알고리즘/sort",
+              link: "/코딩테스트/알고리즘/sort",
             },
             {
               text: "Binary Search",
-              link: "/코테준비/알고리즘/binary_search",
+              link: "/코딩테스트/알고리즘/binary_search",
             },
             {
               text: "DFS, BFS",
-              link: "/코테준비/알고리즘/dfs_bfs",
+              link: "/코딩테스트/알고리즘/dfs_bfs",
             },
             {
               text: "Memoization, Dynamic Programming",
-              link: "/코테준비/알고리즘/memoization_dynamic_programming",
+              link: "/코딩테스트/알고리즘/memoization_dynamic_programming",
             },
             {
               text: "Bit Manipulation",
-              link: "/코테준비/알고리즘/bit_manipulation",
+              link: "/코딩테스트/알고리즘/bit_manipulation",
             },
             {
               text: "순열, 조합",
-              link: "/코테준비/알고리즘/순열_조합",
+              link: "/코딩테스트/알고리즘/순열_조합",
             },
             {
               text: "소수",
-              link: "/코테준비/알고리즘/소수",
+              link: "/코딩테스트/알고리즘/소수",
             },
             {
               text: "Greedy Algorithm",
-              link: "/코테준비/알고리즘/greedy_algorithm",
+              link: "/코딩테스트/알고리즘/greedy_algorithm",
             },
             {
               text: "Prefix Sum",
-              link: "/코테준비/알고리즘/prefix_sum",
+              link: "/코딩테스트/알고리즘/prefix_sum",
             },
             {
               text: "최소공배수, 최대공약수",
-              link: "/코테준비/알고리즘/lcm_gcd.md",
+              link: "/코딩테스트/알고리즘/lcm_gcd.md",
             },
           ],
         },
@@ -1821,12 +1821,8 @@ export default defineConfig({
         ],
       },
       {
-        text: "코테준비",
-        link: "/코테준비/",
-      },
-      {
-        text: "Articles",
-        link: "/articles/",
+        text: "코딩테스트",
+        link: "/코딩테스트/",
       },
     ],
   },
