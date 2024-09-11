@@ -1,7 +1,5 @@
 # Articles
 
-## 2021년 ~ 2022년
-
 [자바스크립트와 서양철학](./자바스크립트와%20서양철학.md)
 
 [Node.js Memory Limits](./nodejs_memory_limits.md)
@@ -67,5 +65,3 @@
 [Next, Nest, Nuxt… Nust?](./next_nest_nuxt_nust.md)
 
 [How Many Repositories Do You Need for a Microservices Project?](./how_many_repositories.md)
-
-## 2023년
