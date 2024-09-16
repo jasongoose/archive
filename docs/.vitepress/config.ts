@@ -818,6 +818,19 @@ export default defineConfig({
             },
           ],
         },
+        {
+          text: "Fiber Architecture",
+          items: [
+            {
+              text: "React Fiber Architecture란?",
+              link: "/studies/react/fiber/react_fiber_architecture란",
+            },
+            {
+              text: "Inside Fiber: an in-depth overview of the new reconciliation algorithm in React",
+              link: "/studies/react/fiber/in_depth_overview_of_fiber.md",
+            },
+          ],
+        },
       ],
       "/studies/security/": [
         {
