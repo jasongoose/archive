@@ -610,17 +610,6 @@ export default defineConfig({
           ],
         },
       ],
-      "/studies/nextjs": [
-        {
-          text: "Learn basics",
-          items: [
-            {
-              text: "Pre-rendering and Data Fetching",
-              link: "/studies/nextjs/learn_basics/prerendering_and_data_fetching",
-            },
-          ],
-        },
-      ],
       "/studies/node/": [
         {
           text: "Package",
@@ -1764,10 +1753,6 @@ export default defineConfig({
           {
             text: "Javascript",
             link: "/studies/javascript/",
-          },
-          {
-            text: "NextJS",
-            link: "/studies/nextjs/",
           },
           {
             text: "Node",
