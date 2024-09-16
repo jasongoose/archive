@@ -610,17 +610,6 @@ export default defineConfig({
           ],
         },
       ],
-      "/studies/nextjs": [
-        {
-          text: "Learn basics",
-          items: [
-            {
-              text: "Pre-rendering and Data Fetching",
-              link: "/studies/nextjs/learn_basics/prerendering_and_data_fetching",
-            },
-          ],
-        },
-      ],
       "/studies/node/": [
         {
           text: "Package",
@@ -826,6 +815,35 @@ export default defineConfig({
             {
               text: "How to handle errors in React: full guide",
               link: "/studies/react/developer_way_react/handle_errors",
+            },
+            {
+              text: "Refs in React: from access to DOM to imperative API",
+              link: "/studies/react/developer_way_react/refs_in_react",
+            },
+            {
+              text: 'Say no to "flickering" UI: useLayoutEffect, painting and browsers story',
+              link: "/studies/react/developer_way_react/say_no_to_flickering_ui",
+            },
+            {
+              text: "React reconciliation: how it works and why should we care",
+              link: "/studies/react/developer_way_react/react_reconciliation",
+            },
+            {
+              text: "React useTransition: performance game changer or...?",
+              link: "/studies/react/developer_way_react/react_usetransition",
+            },
+          ],
+        },
+        {
+          text: "Fiber Architecture",
+          items: [
+            {
+              text: "React Fiber Architecture란?",
+              link: "/studies/react/fiber/react_fiber_architecture란",
+            },
+            {
+              text: "Inside Fiber: an in-depth overview of the new reconciliation algorithm in React",
+              link: "/studies/react/fiber/in_depth_overview_of_fiber.md",
             },
           ],
         },
@@ -1764,10 +1782,6 @@ export default defineConfig({
           {
             text: "Javascript",
             link: "/studies/javascript/",
-          },
-          {
-            text: "NextJS",
-            link: "/studies/nextjs/",
           },
           {
             text: "Node",
