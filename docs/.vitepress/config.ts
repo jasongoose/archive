@@ -816,6 +816,22 @@ export default defineConfig({
               text: "How to handle errors in React: full guide",
               link: "/studies/react/developer_way_react/handle_errors",
             },
+            {
+              text: "Refs in React: from access to DOM to imperative API",
+              link: "/studies/react/developer_way_react/refs_in_react",
+            },
+            {
+              text: 'Say no to "flickering" UI: useLayoutEffect, painting and browsers story',
+              link: "/studies/react/developer_way_react/say_no_to_flickering_ui",
+            },
+            {
+              text: "React reconciliation: how it works and why should we care",
+              link: "/studies/react/developer_way_react/react_reconciliation",
+            },
+            {
+              text: "React useTransition: performance game changer or...?",
+              link: "/studies/react/developer_way_react/react_usetransition",
+            },
           ],
         },
         {
