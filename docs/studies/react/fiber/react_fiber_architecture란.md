@@ -4,7 +4,7 @@
 
 ### What is reconciliation?
 
-React는 기본적으로 특정 state update(이하 update)는 전체 앱으로 하여금 리렌더링을 일으키는데 굉장한 많은 컴포넌트들로 구성된 큰 규모의 앱이라면 좋지 않은 성능의 원인이 될 수 있습니다.
+React에서 특정 state update(이하 update)는 기본적으로 전체 앱으로 하여금 리렌더링을 일으키는데 굉장히 많은 컴포넌트들로 구성된 큰 규모의 앱이라면 좋지 않은 성능의 원인이 될 수 있습니다.
 
 그래서 이를 위한 최적화 기법인 Reconciliation을 제공합니다.
 
